@@ -1,0 +1,1029 @@
+{
+ "metadata": {
+  "name": ""
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "heading",
+     "level": 1,
+     "metadata": {},
+     "source": [
+      "Scikit-learn \ubc30\uc6b0\uae30: \ud30c\uc774\uc36c\uacfc \uae30\uacc4 \ud559\uc2b5\n"
+     ]
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "4\uc7a5 : \uace0\uae09 \uae30\ub2a5 - \uc18d\uc131 \uc5d4\uc9c0\ub2c8\uc5b4\ub9c1(Feature Engineering)\uacfc \uc18d\uc131 \uc120\ud0dd(Feature Selection)\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "%pylab inline"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Populating the interactive namespace from numpy and matplotlib\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stderr",
+       "text": [
+        "WARNING: pylab import has clobbered these variables: ['mean']\n",
+        "`%pylab --no-import-all` prevents importing * from pylab and numpy\n"
+       ]
+      }
+     ],
+     "prompt_number": 32
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "import pandas as pd\n",
+      "import numpy as np\n",
+      "import matplotlib.pyplot as plt"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 33
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "pandas\uc744 \uc0ac\uc6a9\ud558\uc5ec \ud0c0\uc774\ud0c0\ub2c9 \ub370\uc774\ud130\ub97c \uc784\ud3ec\ud2b8\ud55c\ub2e4.\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "titanic = pd.read_csv('data/titanic.csv')\n",
+      "print titanic"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "<class 'pandas.core.frame.DataFrame'>\n",
+        "Int64Index: 1313 entries, 0 to 1312\n",
+        "Data columns (total 11 columns):\n",
+        "row.names    1313  non-null values\n",
+        "pclass       1313  non-null values\n",
+        "survived     1313  non-null values\n",
+        "name         1313  non-null values\n",
+        "age          633  non-null values\n",
+        "embarked     821  non-null values\n",
+        "home.dest    754  non-null values\n",
+        "room         77  non-null values\n",
+        "ticket       69  non-null values\n",
+        "boat         347  non-null values\n",
+        "sex          1313  non-null values\n",
+        "dtypes: float64(1), int64(2), object(8)\n"
+       ]
+      }
+     ],
+     "prompt_number": 34
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print titanic.head()[['pclass', 'survived', 'age', 'embarked', 'boat', 'sex']]"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "  pclass  survived      age     embarked   boat     sex\n",
+        "0    1st         1  29.0000  Southampton      2  female\n",
+        "1    1st         0   2.0000  Southampton    NaN  female\n",
+        "2    1st         0  30.0000  Southampton  (135)    male\n",
+        "3    1st         0  25.0000  Southampton    NaN  female\n",
+        "4    1st         1   0.9167  Southampton     11    male\n"
+       ]
+      }
+     ],
+     "prompt_number": 35
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "titanic.describe()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "html": [
+        "<div style=\"max-height:1000px;max-width:1500px;overflow:auto;\">\n",
+        "<table border=\"1\" class=\"dataframe\">\n",
+        "  <thead>\n",
+        "    <tr style=\"text-align: right;\">\n",
+        "      <th></th>\n",
+        "      <th>row.names</th>\n",
+        "      <th>survived</th>\n",
+        "      <th>age</th>\n",
+        "    </tr>\n",
+        "  </thead>\n",
+        "  <tbody>\n",
+        "    <tr>\n",
+        "      <th>count</th>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 633.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>mean</th>\n",
+        "      <td>  657.000000</td>\n",
+        "      <td>    0.341965</td>\n",
+        "      <td>  31.194181</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>std</th>\n",
+        "      <td>  379.174762</td>\n",
+        "      <td>    0.474549</td>\n",
+        "      <td>  14.747525</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>min</th>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>   0.166700</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>25%</th>\n",
+        "      <td>  329.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>  21.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>50%</th>\n",
+        "      <td>  657.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>  30.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>75%</th>\n",
+        "      <td>  985.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>  41.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>max</th>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>  71.000000</td>\n",
+        "    </tr>\n",
+        "  </tbody>\n",
+        "</table>\n",
+        "</div>"
+       ],
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 36,
+       "text": [
+        "         row.names     survived         age\n",
+        "count  1313.000000  1313.000000  633.000000\n",
+        "mean    657.000000     0.341965   31.194181\n",
+        "std     379.174762     0.474549   14.747525\n",
+        "min       1.000000     0.000000    0.166700\n",
+        "25%     329.000000     0.000000   21.000000\n",
+        "50%     657.000000     0.000000   30.000000\n",
+        "75%     985.000000     1.000000   41.000000\n",
+        "max    1313.000000     1.000000   71.000000"
+       ]
+      }
+     ],
+     "prompt_number": 36
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "\uc18d\uc131 \ucd94\ucd9c(Feature extraction)\n"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "_DictVectorizer_\uc744 \uc0ac\uc6a9\ud558\uc5ec \ubc94\uc8fc\uc801 \uc18d\uc131(categorical features)\uc744 1-of-k\ub85c \ubcc0\ud658\ud55c\ub2e4.\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from sklearn import feature_extraction\n",
+      "\n",
+      "def one_hot_dataframe(data, cols, replace=False):\n",
+      "    vec = feature_extraction.DictVectorizer()\n",
+      "    mkdict = lambda row: dict((col, row[col]) for col in cols)\n",
+      "    vecData = pd.DataFrame(vec.fit_transform(data[cols].apply(mkdict, axis=1)).toarray())\n",
+      "    vecData.columns = vec.get_feature_names()\n",
+      "    vecData.index = data.index\n",
+      "    if replace:\n",
+      "        data = data.drop(cols, axis=1)\n",
+      "        data = data.join(vecData)\n",
+      "    return (data, vecData)\n",
+      "\n",
+      "titanic, titanic_n = one_hot_dataframe(titanic, ['pclass', 'embarked', 'sex'], replace=True)\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 37
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "titanic.describe()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "html": [
+        "<div style=\"max-height:1000px;max-width:1500px;overflow:auto;\">\n",
+        "<table border=\"1\" class=\"dataframe\">\n",
+        "  <thead>\n",
+        "    <tr style=\"text-align: right;\">\n",
+        "      <th></th>\n",
+        "      <th>row.names</th>\n",
+        "      <th>survived</th>\n",
+        "      <th>age</th>\n",
+        "      <th>embarked</th>\n",
+        "      <th>embarked=Cherbourg</th>\n",
+        "      <th>embarked=Queenstown</th>\n",
+        "      <th>embarked=Southampton</th>\n",
+        "      <th>pclass=1st</th>\n",
+        "      <th>pclass=2nd</th>\n",
+        "      <th>pclass=3rd</th>\n",
+        "      <th>sex=female</th>\n",
+        "      <th>sex=male</th>\n",
+        "    </tr>\n",
+        "  </thead>\n",
+        "  <tbody>\n",
+        "    <tr>\n",
+        "      <th>count</th>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 633.000000</td>\n",
+        "      <td> 821</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td> 1313.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>mean</th>\n",
+        "      <td>  657.000000</td>\n",
+        "      <td>    0.341965</td>\n",
+        "      <td>  31.194181</td>\n",
+        "      <td>   0</td>\n",
+        "      <td>    0.154608</td>\n",
+        "      <td>    0.034273</td>\n",
+        "      <td>    0.436405</td>\n",
+        "      <td>    0.245240</td>\n",
+        "      <td>    0.213252</td>\n",
+        "      <td>    0.541508</td>\n",
+        "      <td>    0.352628</td>\n",
+        "      <td>    0.647372</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>std</th>\n",
+        "      <td>  379.174762</td>\n",
+        "      <td>    0.474549</td>\n",
+        "      <td>  14.747525</td>\n",
+        "      <td>   0</td>\n",
+        "      <td>    0.361668</td>\n",
+        "      <td>    0.181998</td>\n",
+        "      <td>    0.496128</td>\n",
+        "      <td>    0.430393</td>\n",
+        "      <td>    0.409760</td>\n",
+        "      <td>    0.498464</td>\n",
+        "      <td>    0.477970</td>\n",
+        "      <td>    0.477970</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>min</th>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>   0.166700</td>\n",
+        "      <td>   0</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>25%</th>\n",
+        "      <td>  329.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>  21.000000</td>\n",
+        "      <td>   0</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>50%</th>\n",
+        "      <td>  657.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>  30.000000</td>\n",
+        "      <td>   0</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>75%</th>\n",
+        "      <td>  985.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>  41.000000</td>\n",
+        "      <td>   0</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    0.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "    </tr>\n",
+        "    <tr>\n",
+        "      <th>max</th>\n",
+        "      <td> 1313.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>  71.000000</td>\n",
+        "      <td>   0</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "      <td>    1.000000</td>\n",
+        "    </tr>\n",
+        "  </tbody>\n",
+        "</table>\n",
+        "</div>"
+       ],
+       "metadata": {},
+       "output_type": "pyout",
+       "prompt_number": 38,
+       "text": [
+        "         row.names     survived         age  embarked  embarked=Cherbourg  \\\n",
+        "count  1313.000000  1313.000000  633.000000       821         1313.000000   \n",
+        "mean    657.000000     0.341965   31.194181         0            0.154608   \n",
+        "std     379.174762     0.474549   14.747525         0            0.361668   \n",
+        "min       1.000000     0.000000    0.166700         0            0.000000   \n",
+        "25%     329.000000     0.000000   21.000000         0            0.000000   \n",
+        "50%     657.000000     0.000000   30.000000         0            0.000000   \n",
+        "75%     985.000000     1.000000   41.000000         0            0.000000   \n",
+        "max    1313.000000     1.000000   71.000000         0            1.000000   \n",
+        "\n",
+        "       embarked=Queenstown  embarked=Southampton   pclass=1st   pclass=2nd  \\\n",
+        "count          1313.000000           1313.000000  1313.000000  1313.000000   \n",
+        "mean              0.034273              0.436405     0.245240     0.213252   \n",
+        "std               0.181998              0.496128     0.430393     0.409760   \n",
+        "min               0.000000              0.000000     0.000000     0.000000   \n",
+        "25%               0.000000              0.000000     0.000000     0.000000   \n",
+        "50%               0.000000              0.000000     0.000000     0.000000   \n",
+        "75%               0.000000              1.000000     0.000000     0.000000   \n",
+        "max               1.000000              1.000000     1.000000     1.000000   \n",
+        "\n",
+        "        pclass=3rd   sex=female     sex=male  \n",
+        "count  1313.000000  1313.000000  1313.000000  \n",
+        "mean      0.541508     0.352628     0.647372  \n",
+        "std       0.498464     0.477970     0.477970  \n",
+        "min       0.000000     0.000000     0.000000  \n",
+        "25%       0.000000     0.000000     0.000000  \n",
+        "50%       1.000000     0.000000     1.000000  \n",
+        "75%       1.000000     1.000000     1.000000  \n",
+        "max       1.000000     1.000000     1.000000  "
+       ]
+      }
+     ],
+     "prompt_number": 38
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "'embarked' \uc18d\uc131\uc740 \ubb34\uc5c7\uc744 \uac00\uc9c0\ub294\uac00?\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print titanic_n.head(5)\n",
+      "print titanic_n[titanic_n['embarked'] != 0].head()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "   embarked  embarked=Cherbourg  embarked=Queenstown  embarked=Southampton  \\\n",
+        "0         0                   0                    0                     1   \n",
+        "1         0                   0                    0                     1   \n",
+        "2         0                   0                    0                     1   \n",
+        "3         0                   0                    0                     1   \n",
+        "4         0                   0                    0                     1   \n",
+        "\n",
+        "   pclass=1st  pclass=2nd  pclass=3rd  sex=female  sex=male  \n",
+        "0           1           0           0           1         0  \n",
+        "1           1           0           0           1         0  \n",
+        "2           1           0           0           0         1  \n",
+        "3           1           0           0           1         0  \n",
+        "4           1           0           0           0         1  \n",
+        "     embarked  embarked=Cherbourg  embarked=Queenstown  embarked=Southampton  \\\n",
+        "62        NaN                   0                    0                     0   \n",
+        "165       NaN                   0                    0                     0   \n",
+        "195       NaN                   0                    0                     0   \n",
+        "196       NaN                   0                    0                     0   \n",
+        "229       NaN                   0                    0                     0   \n",
+        "\n",
+        "     pclass=1st  pclass=2nd  pclass=3rd  sex=female  sex=male  \n",
+        "62            1           0           0           0         1  \n",
+        "165           1           0           0           0         1  \n",
+        "195           1           0           0           0         1  \n",
+        "196           1           0           0           0         1  \n",
+        "229           1           0           0           0         1  \n"
+       ]
+      }
+     ],
+     "prompt_number": 39
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\ub0a8\uc740 \ubc94\uc8fc\uc801 \uc18d\uc131\ub3c4 \ubcc0\ud658\ud55c\ub2e4."
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print titanic.head()\n",
+      "titanic, titanic_n = one_hot_dataframe(titanic, ['home.dest', 'room', 'ticket', 'boat'], replace=True)\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "   row.names  survived                                             name  \\\n",
+        "0          1         1                     Allen, Miss Elisabeth Walton   \n",
+        "1          2         0                      Allison, Miss Helen Loraine   \n",
+        "2          3         0              Allison, Mr Hudson Joshua Creighton   \n",
+        "3          4         0  Allison, Mrs Hudson J.C. (Bessie Waldo Daniels)   \n",
+        "4          5         1                    Allison, Master Hudson Trevor   \n",
+        "\n",
+        "       age                        home.dest room      ticket   boat  embarked  \\\n",
+        "0  29.0000                     St Louis, MO  B-5  24160 L221      2         0   \n",
+        "1   2.0000  Montreal, PQ / Chesterville, ON  C26         NaN    NaN         0   \n",
+        "2  30.0000  Montreal, PQ / Chesterville, ON  C26         NaN  (135)         0   \n",
+        "3  25.0000  Montreal, PQ / Chesterville, ON  C26         NaN    NaN         0   \n",
+        "4   0.9167  Montreal, PQ / Chesterville, ON  C22         NaN     11         0   \n",
+        "\n",
+        "   embarked=Cherbourg  embarked=Queenstown  embarked=Southampton  pclass=1st  \\\n",
+        "0                   0                    0                     1           1   \n",
+        "1                   0                    0                     1           1   \n",
+        "2                   0                    0                     1           1   \n",
+        "3                   0                    0                     1           1   \n",
+        "4                   0                    0                     1           1   \n",
+        "\n",
+        "   pclass=2nd  pclass=3rd  sex=female  sex=male  \n",
+        "0           0           0           1         0  \n",
+        "1           0           0           1         0  \n",
+        "2           0           0           0         1  \n",
+        "3           0           0           1         0  \n",
+        "4           0           0           0         1  \n"
+       ]
+      }
+     ],
+     "prompt_number": 40
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\ub098\uc774\uc758 \uacb0\uce21\uce58\uc5d0 \ud3c9\uade0 \ub098\uc774\ub97c \ubd80\uc5ec\ud55c\ub2e4."
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print titanic['age'].describe()\n",
+      "mean = titanic['age'].mean()\n",
+      "titanic['age'].fillna(mean, inplace=True)\n",
+      "print titanic['age'].describe()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "count    633.000000\n",
+        "mean      31.194181\n",
+        "std       14.747525\n",
+        "min        0.166700\n",
+        "25%       21.000000\n",
+        "50%       30.000000\n",
+        "75%       41.000000\n",
+        "max       71.000000\n",
+        "dtype: float64\n",
+        "count    1313.000000\n",
+        "mean       31.194181\n",
+        "std        10.235540\n",
+        "min         0.166700\n",
+        "25%        30.000000\n",
+        "50%        31.194181\n",
+        "75%        31.194181\n",
+        "max        71.000000\n",
+        "dtype: float64\n"
+       ]
+      }
+     ],
+     "prompt_number": 41
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "0\uc73c\ub85c \ub098\uba38\uc9c0 \uacb0\uce21\uce58\uc5d0 \ubd80\uc5ec\ud55c\ub2e4.\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "titanic.fillna(0, inplace=True)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 42
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print titanic"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "<class 'pandas.core.frame.DataFrame'>\n",
+        "Int64Index: 1313 entries, 0 to 1312\n",
+        "Columns: 581 entries, row.names to ticket=L15 1s\n",
+        "dtypes: float64(578), int64(2), object(1)\n"
+       ]
+      }
+     ],
+     "prompt_number": 43
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\ud6c8\ub828 \ub370\uc774\ud130\uc640 \ud14c\uc2a4\ud2b8 \ub370\uc774\ud130\ub97c \ub9cc\ub4e0\ub2e4."
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from sklearn.cross_validation import train_test_split\n",
+      "titanic_target = titanic['survived']\n",
+      "titanic_data = titanic.drop(['name', 'row.names', 'survived'], axis=1)\n",
+      "X_train, X_test, y_train, y_test = train_test_split(titanic_data, titanic_target, test_size=0.25, random_state=33)\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 44
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from sklearn import tree\n",
+      "dt = tree.DecisionTreeClassifier(criterion='entropy')\n",
+      "dt = dt.fit(X_train, y_train)\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 45
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "import pydot, StringIO\n",
+      "dot_data = StringIO.StringIO()\n",
+      "tree.export_graphviz(dt, out_file=dot_data, feature_names=titanic_data.columns)\n",
+      "graph = pydot.graph_from_dot_data(dot_data.getvalue())\n",
+      "graph.write_png('titanic.png')\n",
+      "from IPython.core.display import Image\n",
+      "Image(filename='titanic.png')"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "ename": "NameError",
+       "evalue": "global name 'dot_parser' is not defined",
+       "output_type": "pyerr",
+       "traceback": [
+        "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+        "\u001b[1;32m<ipython-input-48-9bbac218ded7>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[0mdot_data\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mStringIO\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mStringIO\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      3\u001b[0m \u001b[0mtree\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mexport_graphviz\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mdt\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mout_file\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mdot_data\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mfeature_names\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mtitanic_data\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcolumns\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 4\u001b[1;33m \u001b[0mgraph\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mpydot\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mgraph_from_dot_data\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mdot_data\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mgetvalue\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      5\u001b[0m \u001b[0mgraph\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mwrite_png\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'titanic.png'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      6\u001b[0m \u001b[1;32mfrom\u001b[0m \u001b[0mIPython\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mcore\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdisplay\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mImage\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+        "\u001b[1;32m/home/brenden/workspace/infinity/dist/local/lib/python2.7/site-packages/pydot.pyc\u001b[0m in \u001b[0;36mgraph_from_dot_data\u001b[1;34m(data)\u001b[0m\n\u001b[0;32m    218\u001b[0m     \"\"\"\n\u001b[0;32m    219\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 220\u001b[1;33m     \u001b[1;32mreturn\u001b[0m \u001b[0mdot_parser\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mparse_dot_data\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mdata\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    221\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    222\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+        "\u001b[1;31mNameError\u001b[0m: global name 'dot_parser' is not defined"
+       ]
+      }
+     ],
+     "prompt_number": 48
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from sklearn import metrics\n",
+      "measure_performance(X_test, y_test, dt, show_confussion_matrix=False, show_classification_report=False)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Accuracy:0.833 \n",
+        "\n"
+       ]
+      }
+     ],
+     "prompt_number": 47
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from sklearn import metrics\n",
+      "def measure_performance(X, y, clf, show_accuracy=True, show_classification_report=True, show_confussion_matrix=True):\n",
+      "    y_pred = clf.predict(X)   \n",
+      "    if show_accuracy:\n",
+      "         print \"Accuracy:{0:.3f}\".format(metrics.accuracy_score(y, y_pred)),\"\\n\"\n",
+      "    if show_classification_report:\n",
+      "        print \"Classification report\"\n",
+      "        print metrics.classification_report(y, y_pred),\"\\n\"\n",
+      "      \n",
+      "    if show_confussion_matrix:\n",
+      "        print \"Confussion matrix\"\n",
+      "        print metrics.confusion_matrix(y, y_pred),\"\\n\""
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [],
+     "prompt_number": 21
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "\uc18d\uc131 \uc120\ud0dd(Feature Selection)\n"
+     ]
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\uce74\uc774\uc81c\uacf1 \ud14c\uc2a4\ud2b8\ub97c \uc0ac\uc6a9\ud558\uc5ec \uac00\uc7a5 \uc911\uc694\ud55c 20%\ub9cc \uc120\ud0dd\ud55c\ub2e4.\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from sklearn import feature_selection\n",
+      "fs = feature_selection.SelectPercentile(feature_selection.chi2, percentile=20)\n",
+      "X_train_fs = fs.fit_transform(X_train, y_train)\n",
+      "print titanic_data.columns[fs.get_support()]\n",
+      "print fs.scores_[2]\n",
+      "print titanic_data.columns[2]\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Index([u'age', u'embarked=Cherbourg', u'embarked=Southampton', u'pclass=1st', u'pclass=2nd', u'pclass=3rd', u'sex=female', u'sex=male', u'boat=1', u'boat=10', u'boat=11', u'boat=12', u'boat=13', u'boat=14', u'boat=14/12', u'boat=14/D', u'boat=15', u'boat=16', u'boat=2', u'boat=3', u'boat=4', u'boat=5', u'boat=5/7', u'boat=6', u'boat=7', u'boat=8', u'boat=9', u'boat=A', u'boat=B', u'boat=C', u'boat=D', u'home.dest=Aberdeen / Portland, OR', u'home.dest=Albany, NY', u'home.dest=Australia Fingal, ND', u'home.dest=Austria-Hungary / Germantown, Philadelphia, PA', u'home.dest=Ballydehob, Co Cork, Ireland New York, NY', u'home.dest=Bangkok, Thailand / Roseville, IL', u'home.dest=Barcelona, Spain / Havana, Cuba', u'home.dest=Bayside, Queens, NY', u'home.dest=Belgium  Montreal, PQ', u'home.dest=Belmont, MA', u'home.dest=Berne, Switzerland / Central City, IA', u'home.dest=Birkdale, England Cleveland, Ohio', u'home.dest=Bournmouth, England', u'home.dest=Bristol, Avon / Jacksonville, FL', u'home.dest=Brooklyn, NY', u'home.dest=Bryn Mawr, PA', u'home.dest=Calgary, AB', u'home.dest=Chelsea, London', u'home.dest=Chicago, IL', u'home.dest=Co Athlone, Ireland New York, NY', u'home.dest=Co Clare, Ireland Washington, DC', u'home.dest=Co Longford, Ireland New York, NY', u'home.dest=Cooperstown, NY', u'home.dest=Cornwall / Hancock, MI', u'home.dest=Deer Lodge, MT', u'home.dest=Denver, CO', u'home.dest=Detroit, MI', u'home.dest=Dowagiac, MI', u'home.dest=Duluth, MN', u'home.dest=England / Bennington, VT', u'home.dest=England Albion, NY', u'home.dest=England Brooklyn, NY', u'home.dest=England Oglesby, IL', u'home.dest=Finland / Minneapolis, MN', u'home.dest=Finland / Washington, DC', u'home.dest=Folkstone, Kent / New York, NY', u'home.dest=Green Bay, WI', u'home.dest=Greenwich, CT', u'home.dest=Guntur, India / Benton Harbour, MI', u'home.dest=Halifax, NS', u'home.dest=Harrisburg, PA', u'home.dest=Harrow, England', u'home.dest=Haverford, PA', u'home.dest=Haverford, PA / Cooperstown, NY', u'home.dest=Hessle, Yorks', u'home.dest=Hudson, NY', u'home.dest=India / Rapid City, SD', u'home.dest=Indianapolis, IN', u'home.dest=Italy Philadelphia, PA', u'home.dest=Lima, Peru', u'home.dest=Liverpool', u'home.dest=Liverpool, England Bedford, OH', u'home.dest=London  Vancouver, BC', u'home.dest=London /  East Orange, NJ', u'home.dest=London / Paris', u'home.dest=London, England Norfolk, VA', u'home.dest=Mt Airy, Philadelphia, PA', u'home.dest=New York, NY', u'home.dest=New York, NY / Ithaca, NY', u'home.dest=Norwich / New York, NY', u'home.dest=Paris / Haiti', u'home.dest=Paris, France', u'home.dest=Plymouth, Devon / Detroit, MI', u'home.dest=Rotherfield, Sussex, England Essex Co, MA', u'home.dest=Spain / Havana, Cuba', u'home.dest=St Louis, MO', u'home.dest=Sweden Winnipeg, MN', u'home.dest=Syria New York, NY', u'home.dest=Tuxedo Park, NY', u'home.dest=Wiltshire, England Niagara Falls, NY', u'home.dest=Youngstown, OH', u'room=B-18', u'room=B-49', u'room=C-101', u'room=C-125', u'room=C-7', u'room=D-35', u'ticket=111361 L57 19s 7d', u'ticket=13502 L77', u'ticket=17582 L153 9s 3d', u'ticket=17608 L262 7s 6d', u'ticket=230136 L39', u'ticket=24160 L221', u'ticket=392091'], dtype=object)\n",
+        "41.2650346212\n",
+        "embarked=Cherbourg\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stderr",
+       "text": [
+        "/home/brenden/workspace/infinity/dist/local/lib/python2.7/site-packages/sklearn/feature_selection/univariate_selection.py:319: UserWarning: Duplicate scores. Result may depend on feature ordering.There are probably duplicate features, or you used a classification score for a regression task.\n",
+        "  warn(\"Duplicate scores. Result may depend on feature ordering.\"\n"
+       ]
+      }
+     ],
+     "prompt_number": 22
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\uc0c8\ub85c\uc6b4 \uc18d\uc131\uc73c\ub85c \uc131\ub2a5\uc744 \ud3c9\uac00\ud55c\ub2e4.\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "dt.fit(X_train_fs, y_train)\n",
+      "X_test_fs = fs.transform(X_test)\n",
+      "measure_performance(X_test_fs, y_test, dt, show_confussion_matrix=False, show_classification_report=False)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Accuracy:0.848 \n",
+        "\n"
+       ]
+      }
+     ],
+     "prompt_number": 23
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\ud6c8\ub828 \ub370\uc774\ud130\ub85c \uad50\ucc28 \uac80\uc99d\uc744 \uc0ac\uc6a9\ud558\uc5ec \ucd5c\uc801\uc758 \ubc31\ubd84\uc704\uc218\ub97c \uad6c\ud55c\ub2e4.\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "from sklearn import cross_validation\n",
+      "\n",
+      "percentiles = range(1, 100, 5)\n",
+      "results = []\n",
+      "for i in range(1, 100, 5):\n",
+      "    fs = feature_selection.SelectPercentile(feature_selection.chi2, percentile=i)\n",
+      "    X_train_fs = fs.fit_transform(X_train, y_train)\n",
+      "    scores = cross_validation.cross_val_score(dt, X_train_fs, y_train, cv=5)\n",
+      "    #print i,scores.mean()\n",
+      "    results = np.append(results, scores.mean())\n",
+      "\n",
+      "optimal_percentil = np.where(results == results.max())[0]\n",
+      "print \"Optimal number of features:{0}\".format(percentiles[optimal_percentil]), \"\\n\"\n",
+      "\n",
+      "# \uc18d\uc131\uc758 \uac1c\uc218 VS. \uad50\ucc28 \uac80\uc99d \uc810\uc218\ub97c \uadf8\ub9b0\ub2e4\n",
+      "import pylab as pl\n",
+      "pl.figure()\n",
+      "pl.xlabel(\"Number of features selected\")\n",
+      "pl.ylabel(\"Cross validation accuracy)\")\n",
+      "pl.plot(percentiles,results)\n",
+      "print \"Mean scores:\",results"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Optimal number of features:11 \n",
+        "\n",
+        "Mean scores:"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        " [ 0.83437791  0.88212473  0.88415001  0.88313996  0.87499223  0.87704341\n",
+        "  0.87297731  0.88214027  0.87908422  0.8831555   0.88010981  0.88009945\n",
+        "  0.87604372  0.88010981  0.88010463  0.87299803  0.87908422  0.87400808\n",
+        "  0.87908422  0.87603336]\n"
+       ]
+      },
+      {
+       "metadata": {},
+       "output_type": "display_data",
+       "png": "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\n",
+       "text": [
+        "<matplotlib.figure.Figure at 0x3b65350>"
+       ]
+      }
+     ],
+     "prompt_number": 24
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\ud14c\uc2a4\ud2b8 \ub370\uc774\ud130\ub85c \uc18d\uc131\uc758 \ucd5c\uc801 \uac1c\uc218\ub97c \ud3c9\uac00\ud55c\ub2e4.\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "fs = feature_selection.SelectPercentile(feature_selection.chi2, percentile=percentiles[optimal_percentil])\n",
+      "X_train_fs = fs.fit_transform(X_train, y_train)\n",
+      "dt.fit(X_train_fs, y_train)\n",
+      "X_test_fs = fs.transform(X_test)\n",
+      "measure_performance(X_test_fs, y_test, dt, show_confussion_matrix=False, show_classification_report=False)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Accuracy:0.848 \n",
+        "\n"
+       ]
+      }
+     ],
+     "prompt_number": 25
+    },
+    {
+     "cell_type": "heading",
+     "level": 2,
+     "metadata": {},
+     "source": [
+      "\ubaa8\ub378 \uc120\ud0dd(Model selection)\n"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "print dt.get_params()"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "{'splitter': 'best', 'min_density': None, 'compute_importances': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'random_state': None, 'criterion': 'entropy', 'max_features': None, 'max_depth': None}\n"
+       ]
+      }
+     ],
+     "prompt_number": 26
+    },
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "\ucd5c\uc0c1\uc758 criterion\uc744 \uacc4\uc0b0\ud55c\ub2e4."
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "dt = tree.DecisionTreeClassifier(criterion='entropy')\n",
+      "scores = cross_validation.cross_val_score(dt, X_train_fs, y_train, cv=5)\n",
+      "print \"Entropy criterion accuracy on cv: {0:.3f}\".format(scores.mean())\n",
+      "dt = tree.DecisionTreeClassifier(criterion='gini')\n",
+      "scores = cross_validation.cross_val_score(dt, X_train_fs, y_train, cv=5)\n",
+      "print \"Gini criterion accuracy on cv: {0:.3f}\".format(scores.mean())\n",
+      "\n"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Entropy criterion accuracy on cv: 0.887\n",
+        "Gini criterion accuracy on cv: 0.892"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "\n"
+       ]
+      }
+     ],
+     "prompt_number": 27
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "dt.fit(X_train_fs, y_train)\n",
+      "X_test_fs = fs.transform(X_test)\n",
+      "measure_performance(X_test_fs, y_test, dt, show_confussion_matrix=False, show_classification_report=False)"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Accuracy:0.845 \n",
+        "\n"
+       ]
+      }
+     ],
+     "prompt_number": 28
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
