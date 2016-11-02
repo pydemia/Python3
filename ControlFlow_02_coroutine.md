@@ -80,3 +80,42 @@ def averager():
           count += 1
           average = total/count
 ```
+
+---
+### Coroutine 종료, 예외 처리: throw(), close() Method
+
+* **generator.throw(exc_type[, exc_value[, trackback]])**  
+> Generator가 중단한 곳의 yield 표현식에 예외 전달  
+> Generator가 예외를 처리하면, 다음 yield 문까지 진행하고 생성값은 generator.throw() 호출 값이 됨.  
+> 예외 처리를 하지 않으면 Caller까지 예외 전파
+
+* **generator.close()**
+> Generator가 실행을 중단한 yield 표현식이 GeneratorExit 예외를 발생하게 함.  
+> Generator가 예외 처리를 하지 않거나 StopIteration 예외(일반적으로, Generator 실행 완료 시 발생)를 발생시키면,  
+> 아무 에러도 Caller에 전달되지 않음.  
+> Generator는 GeneratorExit 예외를 받으면 아무 값도 생성하지 않아야 함, 아니면 RuntimeError 예외 발생
+
+#### Example
+```python
+class DemoException(Exception):
+
+def demo_exc_handling():
+    print('-> coroutine started')
+    while True:
+          try:
+              x = yield
+          except DemoException:
+                 print('*** DemoException handled. Continuing...')
+          else:
+                 print('-> coroutine received: {!r}'. format(x))
+    raise RuntimeError('THis line sould never run.')
+
+exc_coro = demo_exc_handling()
+next(exc_coro)
+exc_coro.send(11)
+exc_coro.send(22)
+exc_coro.close()
+from inspect import getgeneratorstate
+getgeneratorstate(exc_coro)#'GET_CLOSED'
+```
+#이 무한루프는 처리되지 않은 예외에 의해서만 중단, 예외 처리하지 않으면 Coroutine 실행이 중단됨.
