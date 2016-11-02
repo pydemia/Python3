@@ -118,4 +118,6 @@ exc_coro.close()
 from inspect import getgeneratorstate
 getgeneratorstate(exc_coro)#'GET_CLOSED'
 ```
-#이 무한루프는 처리되지 않은 예외에 의해서만 중단, 예외 처리하지 않으면 Coroutine 실행이 중단됨.
+이 무한루프는 처리되지 않은 예외에 의해서만 중단, 예외 처리하지 않으면 Coroutine 실행이 중단됨.
+---
+
