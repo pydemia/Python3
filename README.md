@@ -3,4 +3,4 @@ It contains the information &amp; sources of Python, which is a programming lang
 
 
 Control Flow  
-*[IterAbles, Iterator, Generator](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
+[* Iterables, Iterator, Generator](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
