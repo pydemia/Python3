@@ -76,6 +76,9 @@ for x in gen():
 ###yield Operator
 return과는 다르게 함수 중간에 빠져나와 값을 반환,  
 Generator는 yield에 전달된 표현식의 값을 생성하는 Iterator.
+> next()의 Caller(호출자)에 반환될 값을 생성/양보하여 Caller가 작업 진행,  
+> 이후 Caller가 다른 값을 필요로 하여 다음 번 next()를 호출할 때 까지  
+> Generator 실행을 중단
 
 ###yiled from
 다른 Generator에서 생성된 값을 상위 Generator 함수가 생성해야 할 때
