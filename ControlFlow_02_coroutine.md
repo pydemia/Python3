@@ -22,10 +22,10 @@ my_coro.send(42)
 ```
 
 ### Coroutine의 기본 상태
-* 'GEN_CREATED': 실행 전 대기 상태  
-* 'GEN_RUNNING': 실행 중(by Interpreter)  
-* 'GEN_SUSPENDED': yield 문에서 대기하는 상태
-* 'GEN_CLOSED': 실행완료 상태
+* **'GEN_CREATED'**: 실행 전 대기 상태  
+* **'GEN_RUNNING'**: 실행 중(by Interpreter)  
+* **'GEN_SUSPENDED'**: yield 문에서 대기하는 상태
+* **'GEN_CLOSED'**: 실행완료 상태
 
 ### Example: Moving Average Coroutine
 
