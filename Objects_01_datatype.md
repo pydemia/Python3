@@ -112,7 +112,7 @@ mystr[2]#c
 mystr[-2]#f
 ```
 ####Slicing, Substring
-* **[start\:end\:step]**(_like a list_)
+* **[start \: end \: step]**(_like a list_)
 * offset
 start:0  
 end: last-1
@@ -170,4 +170,4 @@ sentence = '! '.join(mywords)
 | __string__.**ljust(50)** | str | align string on left within 50 spaces |
 | __string__.**rjust(50)** | str | align string on right within 50 spaces |
 | __string__.**replace('a', 'b', 7)** | str | replace 'a' to 'b', in string, by 7 times |
-| __string__.**center(50)** | str | align string on center within 50 spaces |
+
