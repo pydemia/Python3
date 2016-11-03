@@ -22,7 +22,7 @@ mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 
 | OPERATION | METHOD          | EXAMPLE   | RESULT    |
 | :-------- | :-------------- | :-------- | :-------: |
-| Generate  | * **[**a, b**]** <br/> * **list(**a, b**)**  | ['t', 1]  | ['t', 1]  |
+| Generate  | **[**a, b**]** <br/> **list(**a, b**)**  | ['t', 1]  | ['t', 1]  |
 | Transform to list(ex) tuple to list) | **list((**seq**))** | list(question) | ['q', 'u', 'e', 's', 't', 'i', 'o', 'n'] |
 | Offset | _list_**[**int**]** | _mylist_**[**-2**]** | 'o' |
 | Slice  | _list_**[**start\:end\:step**]** | _mylist_**[**7:2:-2**]** | ['n', 'i', 's'] |
@@ -35,11 +35,11 @@ yrlist = ['e', 'c', 'd']
 
 | OPERATION | METHOD | EXAMPLE | RESULT |
 | :-------- | :----- | :------ | :----- |
-| append | _list_.**append(var)** | mylist.append(yrlist)** | ['a', 1, 'b', ['e', 'c', 'd']] |
+| append | _list_.**append(var)** | mylist.append(yrlist) | ['a', 1, 'b', ['e', 'c', 'd']] |
 | annex  | _list_.**extend(**_list_**)**  <br/> __list1__ **+=** __list2__ | mylist.extend(yrlist)  <br/> * mylist += yrlist | ['a', 1, 'b', 'e', 'c', 'd'] |
 | insert | _list_.**insert(index, var)** | mylist.insert(1, 'z') | ['a', 'z', 1, 'b'] |
 | remove | _list_.**remove(var)** | mylist.remove(1) | ['a', 'b'] |
-| get var & remove | _list_.**pop( )** <br/> _list_.**pop(0)** <br/> _list_.**pop(-1)** | mylist.**pop( )** <br/> mylist.**pop(0)** <br/> mylist.**pop(-1)** | console>'a' <br/> (list) [1, 'b'] <br/> console>'b' <br/> (list) ['a', 1] <br/> console>'b' <br/> (list) ['a', 1] |
+| get var & remove | _list_.**pop( )** <br/> _list_.**pop(**0**)** <br/> _list_.**pop(**-1**)** | mylist.pop( ) <br/> mylist.pop(0) <br/> mylist.pop(-1) | console>'a' <br/> (list) [1, 'b'] <br/> console>'b' <br/> (list) ['a', 1] <br/> console>'b' <br/> (list) ['a', 1] |
 | get index | _list_.**index(var)** | mylist.index('a') | 0 |
 | count | _list_.**count(var)** | mylist.count('b') | 1 |
 | sort | asc: _list_.**sort( )** <br/> desc: _list_.**sort(reverse=True)** | yrlist.sort() <br/> yrlist.sort(reverse=True) | ['c', 'd', 'e'] <br/> 'e', 'd', 'c'] |
