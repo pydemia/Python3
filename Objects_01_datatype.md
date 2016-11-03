@@ -1,10 +1,10 @@
-#Objects
+(Objects)
 
 Variable:Object(Data) = 참조(이름):실제 객체(memory에 존재)  
 mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는지 없는 지
 
 ---
-#### Variable Naming  
+## Variable Naming  
 
 | ATTRIBUTE                                          | EXAMPLE            |
 | :------------------------------------------------- | :----------------- |
@@ -26,7 +26,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 
 
 ---
-##Data type
+#Data type
 * integer: 정수;5,0,~~05~~  
 * numeric: 실수  
 * float: 실수(소수점, 지수 등)  
@@ -34,17 +34,17 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 * boolean
 
 ---
-###integer, numeric, float
+##integer, numeric, float
 
-#### Change Data Type Built-in Function(trunc)
+### Change Data Type Built-in Function(trunc)
 * **int()**
 * **float()**
 
 
-#### Operation
+### Operation
 
 | OPERATOR | DESCRIPTION         | EXAMPLE | RESULT | FUNCTION                 |
-| :------: | :------------------ | :------ | -----: | :----------------------- |
+| :------: | :------------------ | :-----: | :----: | :----------------------- |
 | +        | addition            | 3 + 8   | 24     | add(a, b)                |
 | -        | subtraction         | 20 - 7  | 13     | sub(a, b)                |
 | *        | multiplication      | 5 * 3   | 15     | mul(a, b)                |
@@ -53,7 +53,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 | %        | division(remainder) | 20 % 8  | 4      | mod(a, b), devmod(a, b)  |
 | **       | exponentiation      | 3 ** 5  | 243    | pow(a, b)                |
 
-#### Assignment: **=**
+### Assignment: **=**
 ```python
 foo = 10
 foo = foo -3
@@ -69,14 +69,14 @@ foo = foo -3
 | a %= b   | a = a % b    |
 | a **= b  | a = a ** b   |
 
-#### Base: decimal(default), binary, octal, hex(0~9,a~f)
+### Base: decimal(default), binary, octal, hex(0~9,a~f)
 | BASE   | DESCRIPTION  | EXAMPLE | RESULT |
-| :----: | :----------: | :------ | :----- |
+| :----: | :----------: | :-----: | :----- |
 | binary | 0b, 0B       | 0b10    | 2      |
 | octal  | 0o, 0O       | 0o10    | 8      |
 | hex    | 0x, 0X       | 0x10    | 16     |
 
-#### Approximation
+### Approximation
 | APPROX   | BUILT-IN FUNCTION/METHOD       |
 | :------: | :----------- |
 | round    | round()      |
@@ -85,20 +85,20 @@ foo = foo -3
 | truncate | amth.trunc() |
 
 ---
-### String
+## String
 
 * Single Line Quatation: **' '**, **" "**
 * Multiple Line Quatation: **''' '''**, **""" """**
 * Escape: \n, \t, \\
 
-#### Operation
+### Operation
 
 | OPERATOR | DESCRIPTION       | EXAMPLE     | RESULT   | FUNCTION                 |
-| :------: | :---------------- | :---------- | -------: | :----------------------- |
-| +        | concatenate       | 'aa' + 'bb' | 'aabb'    | concat(a, b)             |
+| :------: | :---------------- | :---------- | :------: | :----------------------- |
+| +        | concatenate       | 'aa' + 'bb' | 'aabb'   | concat(a, b)             |
 | *        | copy              | 'aa' * 3    | 'aaaaaa' |                          |
 
-#### Indexing
+### Indexing
 * **[ ]**(_like a list_)
 ```python
 mystr = 'abcdefg'
@@ -106,7 +106,7 @@ mystr[0]#a
 mystr[2]#c
 mystr[-2]#f
 ```
-####Slicing, Substring
+###Slicing, Substring
 * **[start \: end \: step]**(_like a list_)
 * offset
 start:0  
@@ -121,15 +121,15 @@ mystr[1:5]#'bcde'
 mystr[1:5:2]#'bd'
 ```
 
-#### Methods
-##### Built-in Functions
+### Methods
+#### Built-in Functions
 
 | OPERATION          | FUNCTION | EXAMPLE | RESULT | RESULT TYPE |
-| :----------------- | :----- | :------ | :----- | :---------- |
+| :----------------- | :----- | :------ | :----: | :---------: |
 | length of string   | **len()** | len('11') | 2 | int         |
 | change to string   | **str()** | str('11') | '11'| str    |
 
-##### String Methods
+#### String Methods
 * split a string to smaller strings: __string__.**split()**
 ```python
 myword = 'to be, or not to be'
