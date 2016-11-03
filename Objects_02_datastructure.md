@@ -39,27 +39,27 @@ yrlist = ['e', 'c', 'd']
 
 | OPERATION | METHOD | EXAMPLE | RESULT |
 | :-------- | :----- | :------ | :----- |
-| append | __list__.**append(var)** | mylist.append(yrlist)** | ['a', 1, 'b', ['e', 'c', 'd']] |
-| annex  | __list__.**extend(**__list__**)**  <br/> __list1__ **+=** __list2__ | mylist.extend(yrlist)  <br/> * mylist += yrlist | ['a', 1, 'b', 'e', 'c', 'd'] |
-| insert | __list__.**insert(index, var)** | mylist.insert(1, 'z') | ['a', 'z', 1, 'b'] |
-| remove | __list__.**remove(var)** | mylist.remove(1) | ['a', 'b'] |
-| get var & remove | __list__.**pop( )** <br/> __list__.**pop(0)** <br/> __list__.**pop(-1)** | mylist.**pop( )** <br/> mylist.**pop(0)** <br/> mylist.**pop(-1)** | console>'a' <br/> (list) [1, 'b'] <br/> console>'b' <br/> (list) ['a', 1] <br/> console>'b' <br/> (list) ['a', 1] |
-| get index | __list__.**index(var)** | mylist.index('a') | 0 |
-| count | __list__.**count(var)** | mylist.count('b') | 1 |
-| sort | asc: __list__.**sort( )** <br/> desc: __list__.**sort(reverse=True)** | yrlist.sort() <br/> yrlist.sort(reverse=True) | ['c', 'd', 'e'] <br/> 'e', 'd', 'c'] |
+| append | _list_.**append(var)** | mylist.append(yrlist)** | ['a', 1, 'b', ['e', 'c', 'd']] |
+| annex  | _list_.**extend(**_list_**)**  <br/> __list1__ **+=** __list2__ | mylist.extend(yrlist)  <br/> * mylist += yrlist | ['a', 1, 'b', 'e', 'c', 'd'] |
+| insert | _list_.**insert(index, var)** | mylist.insert(1, 'z') | ['a', 'z', 1, 'b'] |
+| remove | _list_.**remove(var)** | mylist.remove(1) | ['a', 'b'] |
+| get var & remove | _list_.**pop( )** <br/> _list_.**pop(0)** <br/> _list_.**pop(-1)** | mylist.**pop( )** <br/> mylist.**pop(0)** <br/> mylist.**pop(-1)** | console>'a' <br/> (list) [1, 'b'] <br/> console>'b' <br/> (list) ['a', 1] <br/> console>'b' <br/> (list) ['a', 1] |
+| get index | _list_.**index(var)** | mylist.index('a') | 0 |
+| count | _list_.**count(var)** | mylist.count('b') | 1 |
+| sort | asc: _list_.**sort( )** <br/> desc: _list_.**sort(reverse=True)** | yrlist.sort() <br/> yrlist.sort(reverse=True) | ['c', 'd', 'e'] <br/> 'e', 'd', 'c'] |
 
 #### Built-in Function
 
 | OPERATION | FUNCTION | EXAMPLE | RESULT |
 | :-------- | :------- | :------ | :----- |
-| sort & return a new list | **sorted(**__list__**)** | sorted(yrlist) | ['c', 'd', 'e'] |
-| length | **len(**__list__**)** | len(mylist) | 3 |
+| sort & return a new list | **sorted(**_list_**)** | sorted(yrlist) | ['c', 'd', 'e'] |
+| length | **len(**_list_**)** | len(mylist) | 3 |
 
 #### Statements
 
 | OPERATION | STATEMENT | EXAMPLE | RESULT |
 | :-------- | :-------- | :------ | :----- |
-| delete | **del** __list__**[ ]** | del mylist[2] | ['a', 1] |
+| delete | **del** _list_**[ ]** | del mylist[2] | ['a', 1] |
 
 ---
 #### Align
