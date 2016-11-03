@@ -111,7 +111,7 @@ foo = foo -3
 [종류 및 용법]
 
 #### Indexing
-* **[]**(_like a list_)
+* **[ ]**(_like a list_)
 ```python
 mystr = 'abcdefg'
 mystr[0]#a
@@ -119,7 +119,7 @@ mystr[2]#c
 mystr[-2]#f
 ```
 ####Slicing, Substring
-* **[start:end:step]**(_like a list_)
+* **[start\:end\:step]**(_like a list_)
 * offset
 start:0  
 end: last-1
@@ -157,11 +157,13 @@ sentence = '! '.join(mywords)
 # str
 ```
 
-> __string__.**startswith(str)** : boolean  
-> __string__.**endswith(str)** : boolean  
-> __string__.**find(str)** : int #get the first index of a str you find from string  
-> __string__.**rfind(str)** : int #get the last index of a str you find from string    
-> __string__.**count(str)** : int #how many the str exists in string
-> __string__.**split(str)**  
-> __string__.**split(str)**  
+| METHOD | RESULT TYPE | DESCRIPTION |
+| :----- | :---------: | :---------- |
+| __string__.**startswith(str)** | boolean | check if string starts with str |  
+| __string__.**endswith(str)** | boolean | check if string ends with str | 
+| __string__.**find(str)** | int | get the first index of a str you find from string  
+| __string__.**rfind(str)** | int | get the last index of a str you find from string    
+| __string__.**count(str)** | int #how many the str exists in string
+| __string__.**split(str)**  
+| __string__.**split(str)**  
 > __string__.**split()**  
