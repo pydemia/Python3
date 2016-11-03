@@ -38,6 +38,7 @@ yrlist = ['e', 'c', 'd']
 ```
 
 | OPERATION | METHOD | EXAMPLE | RESULT |
+| :-------- | :----- | :------ | :----- |
 | append | __list__.**append(var)** | mylist.append(yrlist)** | ['a', 1, 'b', ['e', 'c', 'd']] |
 | annex  | * __list__.**extend(**__list__**)**  <br/> * __list1__ **+=** __list2__ | * mylist.extend(yrlist)  <br/> * mylist += yrlist | ['a', 1, 'b', 'e', 'c', 'd'] |
 | insert | __list__.**insert(index, var)** | mylist.insert(1, 'z') | ['a', 'z', 1, 'b'] |
