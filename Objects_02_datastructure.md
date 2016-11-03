@@ -16,21 +16,17 @@
 ---
 ## List
 A *MUTABLE* Sequence of Data: It can contains different types
+```python
+mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
+```
 
-### Generate
-* **[**a, b**]**
-* _list_**(**a, b**)**
+| OPERATION | METHOD          | EXAMPLE   | RESULT    |
+| :-------- | :-------------- | :-------- | :-------: |
+| Generate  | * **[**a, b**]** <br/> * **list(**a, b**)**  | ['t', 1]  | ['t', 1]  |
+| Transform to list(ex) tuple to list) | **list((**seq**))** | list(question) | ['q', 'u', 'e', 's', 't', 'i', 'o', 'n'] |
+| Offset | _list_**[**int**]** | _mylist_**[**-2**]** | 'o' |
+| Slice  | _list_**[**start\:end\:step**]** | _mylist_**[**7:2:-2**]** | ['n', 'i', 's'] |
 
-### Transform to list(ex) tuple to list)
-* _list_**(**'a', 'b', 'c'**)**
-
-### Offset
-* _list_**[**-2**]**
-
-### Slice
-* _list_**[**0:7:-2**]**
-
----
 ### Methods
 ```python
 mylist = ['a', 1, 'b']
@@ -61,7 +57,6 @@ yrlist = ['e', 'c', 'd']
 | :-------- | :-------- | :------ | :----- |
 | delete | **del** _list_**[ ]** | del mylist[2] | ['a', 1] |
 
----
 ### Align
 
 ```python
