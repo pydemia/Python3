@@ -51,12 +51,14 @@ yrlist = ['e', 'c', 'd']
 #### Built-in Function
 
 | OPERATION | FUNCTION | EXAMPLE | RESULT |
+| :-------- | :------- | :------ | :----- |
 | sort & return a new list | **sorted(**__list__**)** | sorted(yrlist) | ['c', 'd', 'e'] |
 | length | **len(**__list__**)** | len(mylist) | 3 |
 
 #### Statements
 
 | OPERATION | STATEMENT | EXAMPLE | RESULT |
+| :-------- | :-------- | :------ | :----- |
 | delete | **del** __list__**[ ]** | del mylist[2] | ['a', 1] |
 
 ---
@@ -68,7 +70,7 @@ xylist = mylist
 xylist#[1, 2, 3]
 ```
 
-* __**xylist refers to mylist**__
+* __**xylist refers to mylist**__  
 It means the list [1, 2, 3] is assigned to mylist & xylist.
 (In other words, that list can be called with both of names)  
 If a mylist's variable changes, xylist  
@@ -88,4 +90,3 @@ __** A copied list is not affected by the root list.**__
 
 ---
 ### Tuple
-
