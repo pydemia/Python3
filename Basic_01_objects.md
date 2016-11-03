@@ -43,7 +43,7 @@ variable naming
 ###integer, numeric, float
 
 
-#### Change Data Type Method(trunc)
+#### Change Data Type Built-in Function(trunc)
 * **int()**
 * **float()**
 
@@ -87,7 +87,7 @@ foo = foo -3
 [종류 및 용법]
 
 #### Approximation
-| APPROX   | METHOD       |
+| APPROX   | BUILT-IN FUNCTION/METHOD       |
 | :------: | :----------- |
 | round    | round()      |
 | ceiling  | math.ceil()  |
@@ -102,19 +102,11 @@ foo = foo -3
 * Multiple Line Quatation: **''' '''**, **""" """**
 * Escape: \n, \t, \\
 
-#### Change Data Type Method
-| OPERATION          | METHOD | EXAMPLE | RESULT | RESULT TYPE |
-| :----------------- | :----- | :------ | :----- | :---------- |
-| length of string   | **len()** | len('11') | 2 | int         |
-| change to string   | **str()** | str('11') | '11'| str    |
-| split a string     | **split()** | myword='to be, or not to be'<br/>myword.split(',') | ['to be', 'or not to be' | list |
-
-
 #### Operation
 
 | OPERATOR | DESCRIPTION       | EXAMPLE     | RESULT   | FUNCTION                 |
 | :------: | :---------------- | :---------- | -------: | :----------------------- |
-| +        | concatenate       | 'aa' + 'bb' | 'aabb    | concat(a, b)             |
+| +        | concatenate       | 'aa' + 'bb' | 'aabb'    | concat(a, b)             |
 | *        | copy              | 'aa' * 3    | 'aaaaaa' |                          |
 [종류 및 용법]
 
@@ -142,6 +134,34 @@ mystr[1:5:2]#'bd'
 ```
 
 #### Methods
-| GET
-| length: **len()**
-* splitsplit()
+##### Built-in Functions
+
+| OPERATION          | FUNCTION | EXAMPLE | RESULT | RESULT TYPE |
+| :----------------- | :----- | :------ | :----- | :---------- |
+| length of string   | **len()** | len('11') | 2 | int         |
+| change to string   | **str()** | str('11') | '11'| str    |
+
+##### String Methods
+* split a string to smaller strings: __string__.**split()**
+```python
+myword = 'to be, or not to be'
+myword.split(',')
+# ['to be', 'or not to be']
+# list
+```
+* join a list of strings together: __string__.**join()**
+```python
+mywords = ['to be', 'or not to be', 'that is my question']
+sentence = '! '.join(mywords)
+# 'to be! or not to be! that is my question!'
+# str
+```
+
+> __string__.**startswith(str)** : boolean  
+> __string__.**endswith(str)** : boolean  
+> __string__.**find(str)** : int #get the first index of a str you find from string  
+> __string__.**rfind(str)** : int #get the last index of a str you find from string    
+> __string__.**count(str)** : int #how many the str exists in string
+> __string__.**split(str)**  
+> __string__.**split(str)**  
+> __string__.**split()**  
