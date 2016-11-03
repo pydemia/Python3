@@ -38,8 +38,8 @@ yrlist = ['e', 'c', 'd']
 ```
 
 | OPERATION | METHOD | EXAMPLE | RESULT |
-| append | __list__.**append(var)** | mylist.append(yrlist)** | ['a', 1, 'b', ['e', 'c', 'd']]
-| annex  | * __list__.**extend(**__list__**)**  <br/> * __list1__ **+=** __list2__ | * mylist.extend(yrlist)  <br/> * mylist += yrlist | ['a', 1, 'b', 'e', 'c', 'd']
+| append | __list__.**append(var)** | mylist.append(yrlist)** | ['a', 1, 'b', ['e', 'c', 'd']] |
+| annex  | * __list__.**extend(**__list__**)**  <br/> * __list1__ **+=** __list2__ | * mylist.extend(yrlist)  <br/> * mylist += yrlist | ['a', 1, 'b', 'e', 'c', 'd'] |
 | insert | __list__.**insert(index, var)** | mylist.insert(1, 'z') | ['a', 'z', 1, 'b'] |
 | remove | __list__.**remove(var)** | mylist.remove(1) | ['a', 'b'] |
 | get var & remove | * __list__.**pop( )** <br/> * __list__.**pop(0)** <br/> * __list__.**pop(-1)** | * mylist.**pop( )** <br/> * mylist.**pop(0)** <br/> * mylist.**pop(-1)** | * 'a' \ [1, 'b'] <br/> * 'b' \ ['a', 1] <br/> * 'b' \ ['a', 1] |
@@ -78,9 +78,9 @@ xylist#[1, 5, 3]
 
 __** A copied list is not affected by the root list.**__
 
-* **Copy( )**  
-* **list( )**  
-* **[:]**
+* **Copy(  )**  
+* **list(  )**  
+* **[ : ]**
 
 ---
 ### Tuple
