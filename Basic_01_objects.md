@@ -5,6 +5,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 
 ---
 variable naming  
+
 | list                                               | example            |
 | :------------------------------------------------- | :----------------- |
 | **lower alphabet**                                 | foo, bAr, baZ      | 
