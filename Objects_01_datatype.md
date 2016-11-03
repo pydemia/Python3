@@ -83,7 +83,7 @@ foo = foo -3
 | round    | round()      |
 | ceiling  | math.ceil()  |
 | floor    | math.floor() |
-| truncate | amth.trunc() |
+| truncate | math.trunc() |
 
 ---
 ## String
