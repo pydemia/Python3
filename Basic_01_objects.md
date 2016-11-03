@@ -38,8 +38,9 @@ variable naming
 ###integer, numeric, float
 
 * Operator
+
 | Operator | explanation         | example | result |
-| :------- | :-----------------: | :-----: | -----: |
+| :------- | :------------------ | :-----: | :----: |
 | +        | addition            | 3 + 8   | 24     |
 | -        | subtraction         | 20 - 7  | 13     |
 | *        | multiplication      | 5 * 3   | 15     |
