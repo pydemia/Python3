@@ -16,6 +16,19 @@
 ---
 ## List
 A *MUTABLE* Sequence of Data: It can contains __different__ data types.
+
+### Atom of list
+* boolean  
+* integer  
+* numeric  
+* float  
+* string  
+* another list  
+* tuple  
+* dictionary  
+* set  
+
+### Operation
 ```python
 mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 ```
@@ -86,6 +99,16 @@ __** A copied list is not affected by the root list.**__
 ---
 ## Tuple
 A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
+
+## Atom of tuple (key: value)
+* boolean  
+* integer  
+* numeric  
+* float  
+* string  
+
+
+### Operation
 ```python
 mytuple = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 ```
