@@ -29,6 +29,7 @@ A *MUTABLE* Sequence of Data: It can contains __different__ data types.
 * set  
 
 ### Operation
+ 
 ```python
 mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 ```
@@ -41,6 +42,7 @@ mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 | Slice  | _list_**[**start\:end\:step**]** | _mylist_**[**7:2:-2**]** | ['n', 'i', 's'] |
 
 ### Methods
+ 
 ```python
 mylist = ['a', 1, 'b']
 yrlist = ['e', 'c', 'd']
