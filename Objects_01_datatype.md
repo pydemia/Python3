@@ -1,6 +1,6 @@
 #Objects
 
-Variable:Object(Data) = 참조(이름):실제 객체(memory에 존재)
+Variable:Object(Data) = 참조(이름):실제 객체(memory에 존재)  
 mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는지 없는 지
 
 ---
