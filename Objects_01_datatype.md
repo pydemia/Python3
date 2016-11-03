@@ -33,15 +33,8 @@ variable naming
 * string:  텍스트 문자열 Sequence;indexing/slicing 가능)
 * boolean
 
-##Data Structure
-* list
-* tuple
-* dictionary
-* set
-
 ---
 ###integer, numeric, float
-
 
 #### Change Data Type Built-in Function(trunc)
 * **int()**
@@ -157,13 +150,24 @@ sentence = '! '.join(mywords)
 # str
 ```
 
+* Other Methods
+
 | METHOD | RESULT TYPE | DESCRIPTION |
 | :----- | :---------: | :---------- |
 | __string__.**startswith(str)** | boolean | check if string starts with str |  
 | __string__.**endswith(str)** | boolean | check if string ends with str | 
 | __string__.**find(str)** | int | get the first index of a str you find from string  
 | __string__.**rfind(str)** | int | get the last index of a str you find from string    
-| __string__.**count(str)** | int #how many the str exists in string
-| __string__.**split(str)**  
-| __string__.**split(str)**  
-> __string__.**split()**  
+| __string__.**count(str)** | int | how many str exists in string |
+| __string__.**isalnum(str)** | boolean | check if string only contains numbers |  
+| __string__.**strip(str)** | str | new string eliminated str at the startpoint & endpoint |
+| __string__.**capitalize()** | str | Capitalize the first alphabet of string |
+| __string__.**title()** | str | Capitalize The First Alphabet Of Each Words |
+| __string__.**upper()** | str | CAPITALIZE ALL ALPHABETS |
+| __string__.**lower()** | str | un-capitalize all alphabets |
+| __string__.**swapcase()** | str | CAPITALIZE LOWER ALPHABETS & un-capitalize upper alphabets |
+| __string__.**center(50)** | str | align string on center within 50 spaces |
+| __string__.**ljust(50)** | str | align string on left within 50 spaces |
+| __string__.**rjust(50)** | str | align string on right within 50 spaces |
+| __string__.**replace('a', 'b', 7)** | str | replace 'a' to 'b', in string, by 7 times |
+| __string__.**center(50)** | str | align string on center within 50 spaces |
