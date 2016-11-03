@@ -28,6 +28,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 ---
 #Data type
 * integer: 정수;5,0,~~05~~  
+	concatenate	'aa' + 'bb'	'aabb'	concat(a, b)
 * numeric: 실수  
 * float: 실수(소수점, 지수 등)  
 * string:  텍스트 문자열 Sequence;indexing/slicing 가능)
@@ -130,14 +131,14 @@ mystr[1:5:2]#'bd'
 | change to string   | **str()** | str('11') | '11'| str    |
 
 #### String Methods
-* split a string to smaller strings: __string__.**split()**
+* split a string to smaller strings: _string_.**split()**
 ```python
 myword = 'to be, or not to be'
 myword.split(',')
 # ['to be', 'or not to be']
 # list
 ```
-* join a list of strings together: __string__.**join()**
+* join a list of strings together: _string_.**join()**
 ```python
 mywords = ['to be', 'or not to be', 'that is my question']
 sentence = '! '.join(mywords)
@@ -149,20 +150,20 @@ sentence = '! '.join(mywords)
 
 | METHOD | RESULT TYPE | DESCRIPTION |
 | :----- | :---------: | :---------- |
-| __string__.**startswith(str)** | boolean | check if string starts with str |  
-| __string__.**endswith(str)** | boolean | check if string ends with str | 
-| __string__.**find(str)** | int | get the first index of a str you find from string  
-| __string__.**rfind(str)** | int | get the last index of a str you find from string    
-| __string__.**count(str)** | int | how many str exists in string |
-| __string__.**isalnum(str)** | boolean | check if string only contains numbers |  
-| __string__.**strip(str)** | str | new string eliminated str at the startpoint & endpoint |
-| __string__.**capitalize()** | str | Capitalize the first alphabet of string |
-| __string__.**title()** | str | Capitalize The First Alphabet Of Each Words |
-| __string__.**upper()** | str | CAPITALIZE ALL ALPHABETS |
-| __string__.**lower()** | str | un-capitalize all alphabets |
-| __string__.**swapcase()** | str | CAPITALIZE LOWER ALPHABETS & un-capitalize upper alphabets |
-| __string__.**center(50)** | str | align string on center within 50 spaces |
-| __string__.**ljust(50)** | str | align string on left within 50 spaces |
-| __string__.**rjust(50)** | str | align string on right within 50 spaces |
-| __string__.**replace('a', 'b', 7)** | str | replace 'a' to 'b', in string, by 7 times |
+| _string_.**startswith(str)** | boolean | check if string starts with str |  
+| _string_.**endswith(str)** | boolean | check if string ends with str | 
+| _string_.**find(str)** | int | get the first index of a str you find from string  
+| _string_.**rfind(str)** | int | get the last index of a str you find from string    
+| _string_.**count(str)** | int | how many str exists in string |
+| _string_.**isalnum(str)** | boolean | check if string only contains numbers |  
+| _string_.**strip(str)** | str | new string eliminated str at the startpoint & endpoint |
+| _string_.**capitalize()** | str | Capitalize the first alphabet of string |
+| _string_.**title()** | str | Capitalize The First Alphabet Of Each Words |
+| _string_.**upper()** | str | CAPITALIZE ALL ALPHABETS |
+| _string_.**lower()** | str | un-capitalize all alphabets |
+| _string_.**swapcase()** | str | CAPITALIZE LOWER ALPHABETS & un-capitalize upper alphabets |
+| _string_.**center(50)** | str | align string on center within 50 spaces |
+| _string_.**ljust(50)** | str | align string on left within 50 spaces |
+| _string_.**rjust(50)** | str | align string on right within 50 spaces |
+| _string_.**replace('a', 'b', 7)** | str | replace 'a' to 'b', in string, by 7 times |
 
