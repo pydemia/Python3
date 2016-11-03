@@ -1,6 +1,6 @@
-#Objects
+<Objects>
 
-##Data Structure
+#Data Structure
 * list
 * tuple
 * dictionary
@@ -14,24 +14,24 @@
 | set | Hashmap | {key1, kye2} | O | X |
 
 ---
-### List
+## List
 A *MUTABLE* Sequence of Data: It can contains different types
 
-#### Generate
-* **[a, b]**
-* **list(a, b)**
+### Generate
+* **[**a, b**]**
+* _list_**(**a, b**)**
 
-#### Transform to list
-* **list(('a', 'b', 'c')**
+### Transform to list(ex) tuple to list)
+* _list_**(**'a', 'b', 'c'**)**
 
-#### Offset
-* **ls_name[-2]**
+### Offset
+* _list_**[**-2**]**
 
-#### Slice
-* **ls_name[0:7:-2]**
+### Slice
+* _list_**[**0:7:-2**]**
 
 ---
-#### Methods
+### Methods
 ```python
 mylist = ['a', 1, 'b']
 yrlist = ['e', 'c', 'd']
@@ -48,21 +48,21 @@ yrlist = ['e', 'c', 'd']
 | count | _list_.**count(var)** | mylist.count('b') | 1 |
 | sort | asc: _list_.**sort( )** <br/> desc: _list_.**sort(reverse=True)** | yrlist.sort() <br/> yrlist.sort(reverse=True) | ['c', 'd', 'e'] <br/> 'e', 'd', 'c'] |
 
-#### Built-in Function
+### Built-in Function
 
 | OPERATION | FUNCTION | EXAMPLE | RESULT |
 | :-------- | :------- | :------ | :----- |
 | sort & return a new list | **sorted(**_list_**)** | sorted(yrlist) | ['c', 'd', 'e'] |
 | length | **len(**_list_**)** | len(mylist) | 3 |
 
-#### Statements
+### Statements
 
 | OPERATION | STATEMENT | EXAMPLE | RESULT |
 | :-------- | :-------- | :------ | :----- |
 | delete | **del** _list_**[ ]** | del mylist[2] | ['a', 1] |
 
 ---
-#### Align
+### Align
 
 ```python
 mylist = [1, 2, 3]
@@ -80,7 +80,7 @@ mylist#[1, 5, 3]
 xylist#[1, 5, 3]
 ```
 
-#### Copy
+### Copy
 
 __** A copied list is not affected by the root list.**__
 
@@ -89,4 +89,4 @@ __** A copied list is not affected by the root list.**__
 * **[ : ]**
 
 ---
-### Tuple
+## Tuple
