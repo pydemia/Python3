@@ -3,21 +3,25 @@
 Variable:Object(Data) = 참조(이름):실제 객체(memory에 존재)
 mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는지 없는 지
 
+---
 variable naming  
-> *lower alphabet*;foo, bAr, baZ   
-> *upper alphabet*: FOO, Bar, BaZ  
-> *number*(_A name cannot be started with number_); ~~1foo~~, b2ar  
-> *underscore*; _foo, _b_a_r, _baz_  
-> _\# a name started with underscore is dealt with in some special way._ 
+| list                                               | example            |
+| :------------------------------------------------- | :----------------- |
+| **lower alphabet**                                 | foo, bAr, baZ      | 
+| **upper alphabet**                                 | FOO, Bar, BaZ      |  
+| **number**(_A name cannot be started with number_) | ~~1foo~~, b2ar     |  
+| **underscore**                                     | _foo, _b_a_r, _baz_ |  
+ __\# a name started with underscore is dealt with in some special way.__  
+---
 
-* **Reserved words*
-> False None True  
-> and or not is in  
-> class def lambda global nonlocal  
-> for if else elif while pass break continue  
-> try except with yield return  
-> del assert finally raise  
-> from import as  
+* **Reserved words**
+> False None   True  
+> and   or     not is  in  
+> class def    lambda  global   nonlocal  
+> for   if     else    elif     try      except
+> while pass   break   continue   with   yield  return  
+> del   assert finally raise  
+> from  import as  
 
 
 ---
@@ -102,12 +106,19 @@ foo = foo -3
 
 #### Operation
 
-| Operator | description         | example     | result   | function                 |
-| :------: | :------------------ | :---------- | -------: | :----------------------- |
-| +        | concatenation       | 'aa' + 'bb' | 'aabb    | concat(a, b)             |
-| *        | multiplication      | 5 * 3       | 15       | mul(a, b)                |
-| /        | division(float)     | 20 / 8      | 2.5      | div(a, b), trediv(a, b)  |
-| //       | division(integer)   | 20 // 8     | 2      | floordiv(a, b)           |
-| %        | division(remainder) | 20 % 8      | 4      | mod(a, b), devmod(a, b)  |
-| **       | exponentiation      | 3 ** 5      | 243    | pow(a, b)                |
+| Operator | description       | example     | result   | function                 |
+| :------: | :---------------- | :---------- | -------: | :----------------------- |
+| +        | concatenate       | 'aa' + 'bb' | 'aabb    | concat(a, b)             |
+| *        | copy              | 'aa' * 3    | 'aaaaaa' |                          |
 [종류 및 용법]
+
+#### Indexing
+* **[]**(_like a list_)
+```python
+mystr = 'abcdefg'
+mystr[0]#a
+mystr[2]#c
+mystr[-2]#f
+
+####Slicing, Substring
+* **[start:end:step]**(_like a list_)
