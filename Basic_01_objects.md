@@ -37,15 +37,77 @@ variable naming
 ---
 ###integer, numeric, float
 
-* Operator
 
-| Operator | explanation         | example | result |
-| :------- | :------------------ | :-----: | :----: |
-| +        | addition            | 3 + 8   | 24     |
-| -        | subtraction         | 20 - 7  | 13     |
-| *        | multiplication      | 5 * 3   | 15     |
-| /        | division(float)     | 20 / 8  | 2.5    |
-| //       | division(integer)   | 20 // 8 | 2      |
-| %        | division(remainder) | 20 // 8 | 4      |
-| **       | power               | 3 ** 5  | 243    |
+#### Change Data Type Method(trunc)
+* **int()**
+* **float()**
+
+
+#### Operation
+
+| Operator | description         | example | result | function                 |
+| :------: | :------------------ | :------ | -----: | :----------------------- |
+| +        | addition            | 3 + 8   | 24     | add(a, b)                |
+| -        | subtraction         | 20 - 7  | 13     | sub(a, b)                |
+| *        | multiplication      | 5 * 3   | 15     | mul(a, b)                |
+| /        | division(float)     | 20 / 8  | 2.5    | div(a, b), trediv(a, b)  |
+| //       | division(integer)   | 20 // 8 | 2      | floordiv(a, b)           |
+| %        | division(remainder) | 20 % 8  | 4      | mod(a, b), devmod(a, b)  |
+| **       | exponentiation      | 3 ** 5  | 243    | pow(a, b)                |
+[종류 및 용법]
+
+#### Assignment: **=**
+```python
+foo = 10
+foo = foo -3
+```
+
+| Operator | description  |
+| :------: | :----------: |
+| a += b   | a = a + b    |
+| a -= b   | a = a - b    |
+| a *= b   | a = a * b    |
+| a /= b   | a = a / b    |
+| a //= b  | a = a // b   |
+| a %= b   | a = a % b    |
+| a **= b  | a = a ** b   |
+[종류 및 용법]
+
+#### Base: decimal(default), binary, octal, hex(0~9,a~f)
+| Base   | description  | example | result |
+| :----: | :----------: | :------ | :----- |
+| binary | 0b, 0B       | 0b10    | 2      |
+| octal  | 0o, 0O       | 0o10    | 8      |
+| hex    | 0x, 0X       | 0x10    | 16     |
+[종류 및 용법]
+
+#### Approximation
+| Appox    | method       |
+| :------: | :----------- |
+| round    | round()      |
+| ceiling  | math.ceil()  |
+| floor    | math.floor() |
+| truncate | amth.trunc() |
+[종류 및 용법]
+
+---
+### String
+
+* Single Line Quatation: **' '**, **" "**
+* Multiple Line Quatation: **''' '''**, **""" """**
+* Escape: \n, \t, \\
+
+#### Change Data Type Method
+* **str()**
+
+#### Operation
+
+| Operator | description         | example     | result   | function                 |
+| :------: | :------------------ | :---------- | -------: | :----------------------- |
+| +        | concatenation       | 'aa' + 'bb' | 'aabb    | concat(a, b)             |
+| *        | multiplication      | 5 * 3       | 15       | mul(a, b)                |
+| /        | division(float)     | 20 / 8      | 2.5      | div(a, b), trediv(a, b)  |
+| //       | division(integer)   | 20 // 8     | 2      | floordiv(a, b)           |
+| %        | division(remainder) | 20 % 8      | 4      | mod(a, b), devmod(a, b)  |
+| **       | exponentiation      | 3 ** 5      | 243    | pow(a, b)                |
 [종류 및 용법]
