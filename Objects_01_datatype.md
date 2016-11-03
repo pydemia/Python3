@@ -52,7 +52,6 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 | //       | division(integer)   | 20 // 8 | 2      | floordiv(a, b)           |
 | %        | division(remainder) | 20 % 8  | 4      | mod(a, b), devmod(a, b)  |
 | **       | exponentiation      | 3 ** 5  | 243    | pow(a, b)                |
-[종류 및 용법]
 
 #### Assignment: **=**
 ```python
@@ -69,7 +68,6 @@ foo = foo -3
 | a //= b  | a = a // b   |
 | a %= b   | a = a % b    |
 | a **= b  | a = a ** b   |
-[종류 및 용법]
 
 #### Base: decimal(default), binary, octal, hex(0~9,a~f)
 | BASE   | DESCRIPTION  | EXAMPLE | RESULT |
@@ -77,7 +75,6 @@ foo = foo -3
 | binary | 0b, 0B       | 0b10    | 2      |
 | octal  | 0o, 0O       | 0o10    | 8      |
 | hex    | 0x, 0X       | 0x10    | 16     |
-[종류 및 용법]
 
 #### Approximation
 | APPROX   | BUILT-IN FUNCTION/METHOD       |
@@ -86,7 +83,6 @@ foo = foo -3
 | ceiling  | math.ceil()  |
 | floor    | math.floor() |
 | truncate | amth.trunc() |
-[종류 및 용법]
 
 ---
 ### String
@@ -101,7 +97,6 @@ foo = foo -3
 | :------: | :---------------- | :---------- | -------: | :----------------------- |
 | +        | concatenate       | 'aa' + 'bb' | 'aabb'    | concat(a, b)             |
 | *        | copy              | 'aa' * 3    | 'aaaaaa' |                          |
-[종류 및 용법]
 
 #### Indexing
 * **[ ]**(_like a list_)
