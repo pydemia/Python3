@@ -6,7 +6,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 ---
 variable naming  
 
-| list                                               | example            |
+| ATTRIBUTE                                          | EXAMPLE            |
 | :------------------------------------------------- | :----------------- |
 | **lower alphabet**                                 | foo, bAr, baZ      | 
 | **upper alphabet**                                 | FOO, Bar, BaZ      |  
@@ -50,7 +50,7 @@ variable naming
 
 #### Operation
 
-| Operator | description         | example | result | function                 |
+| OPERATOR | DESCRIPTION         | EXAMPLE | RESULT | FUNCTION                 |
 | :------: | :------------------ | :------ | -----: | :----------------------- |
 | +        | addition            | 3 + 8   | 24     | add(a, b)                |
 | -        | subtraction         | 20 - 7  | 13     | sub(a, b)                |
@@ -67,7 +67,7 @@ foo = 10
 foo = foo -3
 ```
 
-| Operator | description  |
+| OPERATOR | DESCRIPTION  |
 | :------: | :----------: |
 | a += b   | a = a + b    |
 | a -= b   | a = a - b    |
@@ -79,7 +79,7 @@ foo = foo -3
 [종류 및 용법]
 
 #### Base: decimal(default), binary, octal, hex(0~9,a~f)
-| Base   | description  | example | result |
+| BASE   | DESCRIPTION  | EXAMPLE | RESULT |
 | :----: | :----------: | :------ | :----- |
 | binary | 0b, 0B       | 0b10    | 2      |
 | octal  | 0o, 0O       | 0o10    | 8      |
@@ -87,7 +87,7 @@ foo = foo -3
 [종류 및 용법]
 
 #### Approximation
-| Appox    | method       |
+| APPROX   | METHOD       |
 | :------: | :----------- |
 | round    | round()      |
 | ceiling  | math.ceil()  |
@@ -103,11 +103,16 @@ foo = foo -3
 * Escape: \n, \t, \\
 
 #### Change Data Type Method
-* **str()**
+| OPERATION          | METHOD | EXAMPLE | RESULT | RESULT TYPE |
+| :----------------- | :----- | :------ | :----- | :---------- |
+| length of string   | **len()** | len('11') | 2 | int         |
+| change to string   | **str()** | str('11') | '11'| str    |
+| split a string     | **split()** | myword='to be, or not to be'<br/>myword.split(',') | ['to be', 'or not to be' | list |
+
 
 #### Operation
 
-| Operator | description       | example     | result   | function                 |
+| OPERATOR | DESCRIPTION       | EXAMPLE     | RESULT   | FUNCTION                 |
 | :------: | :---------------- | :---------- | -------: | :----------------------- |
 | +        | concatenate       | 'aa' + 'bb' | 'aabb    | concat(a, b)             |
 | *        | copy              | 'aa' * 3    | 'aaaaaa' |                          |
@@ -120,6 +125,23 @@ mystr = 'abcdefg'
 mystr[0]#a
 mystr[2]#c
 mystr[-2]#f
-
+```
 ####Slicing, Substring
 * **[start:end:step]**(_like a list_)
+* offset
+start:0  
+end: last-1
+```python
+mystr = 'abcdefg'
+mystr[:]#'abcdefg'
+mystr[3:]#'defg'
+mystr[3:8]#'defg'
+mystr[:4]#'abcd'
+mystr[1:5]#'bcde'
+mystr[1:5:2]#'bd'
+```
+
+#### Methods
+| GET
+| length: **len()**
+* splitsplit()
