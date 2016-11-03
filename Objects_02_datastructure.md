@@ -68,7 +68,10 @@ xylist = mylist
 xylist#[1, 2, 3]
 ```
 
-* __**xylist only refers to mylist**__
+* __**xylist refers to mylist**__
+It means the list [1, 2, 3] is assigned to mylist & xylist.
+(In other words, that list can be called with both of names)  
+If a mylist's variable changes, xylist  
 ```python
 mylist[1] = 5
 mylist#[1, 5, 3]
