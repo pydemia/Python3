@@ -15,14 +15,14 @@
 
 ---
 ## List
-A *MUTABLE* Sequence of Data: It can contains different types
+A *MUTABLE* Sequence of Data: It can contains __different__ data types.
 ```python
 mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 ```
 
 | OPERATION | METHOD          | EXAMPLE   | RESULT    |
 | :-------- | :-------------- | :-------- | :-------: |
-| Generate  | **[**a, b**]** <br/> **list(**a, b**)**  | ['t', 1]  | ['t', 1]  |
+| Generate  | **[**a, b**]** <br/> **list(**a, b**)**  | ['t', 1] <br/> list('t', 1)  | ['t', 1]  |
 | Transform to list(ex) tuple to list) | **list((**seq**))** | list(question) | ['q', 'u', 'e', 's', 't', 'i', 'o', 'n'] |
 | Offset | _list_**[**int**]** | _mylist_**[**-2**]** | 'o' |
 | Slice  | _list_**[**start\:end\:step**]** | _mylist_**[**7:2:-2**]** | ['n', 'i', 's'] |
@@ -85,3 +85,35 @@ __** A copied list is not affected by the root list.**__
 
 ---
 ## Tuple
+A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
+```python
+mytuple = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
+```
+| OPERATION | METHOD          | EXAMPLE   | RESULT    |
+| :-------- | :-------------- | :-------- | :-------: |
+| Generate  | **(**var1, var2**)** <br/> **tuple(**var1, var2**)** <br/> var1**,** var2 | ('t', 1) <br/> tuple('t', 1) <br/> 't', 1 | ('t', 1)  |
+| Generate(single var)  | **(**var1**,)** <br/> **tuple(**var1**,)** <br/> var1**,**  | ('t',) <br/> tuple('t',) <br/> 't', | ('t',)  |
+| **UNPACKING** | name1, ..., nameN = _tuple_ (len=N) | foo, bar = tuple('t', 1) | foo # 't', bar # 1 |
+
+### Advantages of TUPLE
+* A Tuple uses less space than a list  
+* Items of a tuple are IMMUTABLE; It cannot be damaged  
+
+---
+##Dictionary
+Not a sequence; A dictionary cannot be indexed & cannot use offset
+```python
+mydict = ['a': 10, 'b': 3, 'c': 5, 'd': 8]
+```
+
+
+| OPERATION | METHOD          | EXAMPLE   | RESULT    |
+| :-------- | :-------------- | :-------- | :-------: |
+| Generate  | **{**a: b**}** <br/> **dict(**a, b**)**  | ['t': 1] <br/> dict('t', 1)  | ['t', 1]  |
+| Transform to list(ex) tuple to list) | **list((**seq**))** | list(question) | ['q', 'u', 'e', 's', 't', 'i', 'o', 'n'] |
+| Offset | _list_**[**int**]** | _mylist_**[**-2**]** | 'o' |
+| Slice  | _list_**[**start\:end\:step**]** | _mylist_**[**7:2:-2**]** | ['n', 'i', 's'] |
+
+
+
+##Set
