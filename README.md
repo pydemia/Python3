@@ -10,16 +10,16 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 ---
 ## Variable Naming  
 
-| ATTRIBUTE                                          | EXAMPLE            |
-| :------------------------------------------------- | :----------------- |
-| **lower alphabet**                                 | foo, bAr, baZ      | 
-| **upper alphabet**                                 | FOO, Bar, BaZ      |  
-| **number**(_A name cannot be started with number_) | ~~1foo~~, b2ar     |  
-| **underscore**                                     | _foo, _b_a_r, _baz_ |  
+| ATTRIBUTE                                              | EXAMPLE                   |
+| :----------------------------------------------------- | :------------------------ |
+| **lower alphabet**                                     | foo, bAr, baZ             | 
+| **upper alphabet**                                     | FOO, Bar, BaZ             |  
+| **number(**_A name cannot be started with number_**)** | ~~1foo~~, b2ar            |  
+| **underscore**                                         | \_foo, \_b\_a\_r, \_baz\_ |  
  __\# a name started with underscore is dealt with in some special way.__  
 ---
 
-* **Reserved words**_(cannot be used by a object name)
+* **Reserved words**_(cannot be used by a object name)_
 ```python
 False None   True    and       or      not  
 is    in     class   def       lambda  global   nonlocal  
