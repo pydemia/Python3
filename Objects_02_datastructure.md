@@ -150,4 +150,4 @@ mydict = ['a': 10, 'b': 3, 'c': 5, 'd': 8]
 
 
 ---
-(https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
