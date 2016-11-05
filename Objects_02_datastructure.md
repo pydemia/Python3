@@ -1,8 +1,8 @@
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
 
 
-Data Structure
-===
+# Data Structure
+
 * list
 * tuple
 * dictionary
@@ -16,7 +16,7 @@ Data Structure
 | set | Hashmap | {key1, kye2} | O | X |
 
 ---
-# List
+## List
 A *MUTABLE* Sequence of Data: It can contains __different__ data types.
 
 ### Atom of list
