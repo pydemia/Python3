@@ -20,7 +20,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 ---
 
 * **Reserved words**_(cannot be used by a object name)_
-```sh
+```
 False None   True    and       or      not  
 is    in     class   def       lambda  global   nonlocal  
 for   if     else    elif      try     except 
