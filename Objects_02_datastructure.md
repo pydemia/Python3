@@ -39,7 +39,7 @@ mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 | OPERATION | METHOD          | EXAMPLE   | RESULT    |
 | :-------- | :-------------- | :-------- | :-------: |
 | Generate  | **[**a, b**]** <br/> **list(**a, b**)**  | ['t', 1] <br/> list('t', 1)  | ['t', 1]  |
-| Transform to list(ex) tuple to list) | **list((**seq**))** | list('question') | ['q', 'u', 'e', 's', 't', 'i', 'o', 'n'] |
+| Transform to list<br/>(ex) tuple to list) | **list((**seq**))** | list('question') | ['q', 'u', 'e', 's', 't', 'i', 'o', 'n'] |
 | Offset | _list_**[**int**]** | _mylist_**[**-2**]** | 'o' |
 | Slice  | _list_**[**start\:end\:step**]** | _mylist_**[**7:2:-2**]** | ['n', 'i', 's'] |
 
@@ -126,28 +126,7 @@ mytuple = 'q', 'u', 'e', 's', 't', 'i', 'o', 'n'
 * A Tuple uses less space than a list  
 * Items of a tuple are IMMUTABLE; It cannot be damaged  
 
----
-##Dictionary
-Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.  
-* Its _Key value_ **MUST BE UNIQUE** _(If overlapped, the Last input will be used.)_
 
-Key에 리스트는 쓸 수 없다는 것이다. 하지만 튜플은 Key로 쓸 수 있다. 딕셔너리의 Key로 쓸 수 있느냐 없느냐는 Key가 변하는 값인지 변하지 않는 값인지에 달려 있다. 리스트는 그 값이 변할 수 있기 때문에 Key로 쓸 수 없는 것이다. 아래 예처럼 리스트를 Key로 설정하면 리스트를 키 값으로 사용할 수 없다는 형 오류(TypeError)가 발생한다.
-
-```python
-mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
-```
-
-
-| OPERATION | METHOD          | EXAMPLE   | RESULT    |
-| :-------- | :-------------- | :-------- | :-------: |
-| Generate  | **{**a: b**}** <br/> **dict(**a, b**)**  | {'water': 20, 'wine': 'outofstock'} <br/> dict('water': 20, 'wine': 'outofstock')  | {'water': 20, 'wine': 'outofstock'}  |
-| Transform to dict(ex) tuple to dict) | **dict((**pair or pairlist**))** | dict([('sape', 4139), ('guido', 4127), ('jack', 4098)]) | {'sape': 4139, 'jack': 4098, 'guido': 4127} |
-| Offset | _dict_**[**int**]** | _mydict_**[**-2**]** | 'o' |
-| Slice  | _dict_**[**start\:end\:step**]** | _mydict_**[**7:2:-2**]** | ['n', 'i', 's'] |
-
-
-dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
-{'sape': 4139, 'jack': 4098, 'guido': 4127}
 
 ##Set
 An **UNORDERED** Data Structure consists of **UNIQUE** values.
@@ -161,6 +140,25 @@ s2
 {'e', 'l', 'o', 'H'}
 ```
 
+
+
+---
+## Dictionary
+Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.  
+* Its _Key value_ **MUST BE UNIQUE** _(If overlapped, the Last input will be used.)_
+
+Key에 리스트는 쓸 수 없다는 것이다. 하지만 튜플은 Key로 쓸 수 있다. 딕셔너리의 Key로 쓸 수 있느냐 없느냐는 Key가 변하는 값인지 변하지 않는 값인지에 달려 있다. 리스트는 그 값이 변할 수 있기 때문에 Key로 쓸 수 없는 것이다. 아래 예처럼 리스트를 Key로 설정하면 리스트를 키 값으로 사용할 수 없다는 형 오류(TypeError)가 발생한다.
+
+```python
+mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+```
+
+
+| OPERATION | METHOD          | EXAMPLE   | RESULT    |
+| :-------- | :-------------- | :-------- | :-------: |
+| Generate  | **{**a: b**}** <br/> **dict(**a, b**)**  | {'water': 20, 'wine': 'outofstock'} <br/> dict('water': 20, 'wine': 'outofstock')  | {'water': 20, 'wine': 'outofstock'}  |
+| Transform to dict<br/>(ex) tuple to dict) | **dict((**pair or pairlist**))** | dict([('milk', 11), ('water': 20)]) | {'milk': 11, 'water': 20} |
+| Offset | _dict_**[**key**]** | _mydict_**[**'milk'**]** | 11 |
 
 
 
