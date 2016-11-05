@@ -21,11 +21,11 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 
 * **Reserved words**_(cannot be used by a object name)_
 ```
-False None   True    and       or      not  
-is    in     class   def       lambda  global   nonlocal  
-for   if     else    elif      try     except 
-while pass   break   continue  with    yield    return  
-del   assert finally raise     from    import   as  
+False   None     True      and         or        not  
+is      in       class     def         lambda    global     nonlocal  
+for     if       else      elif        try       except 
+while   pass     break     continue    with      yield      return  
+del     assert   finally   raise       from      import     as  
 ```
 
 * [Data Types](https://github.com/dawkiny/Python3/blob/master/Objects_01_datatype.md)
