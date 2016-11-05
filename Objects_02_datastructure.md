@@ -108,7 +108,7 @@ A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
 
 | KEY | VALUE |
 | :-: | :---: |
-| * boolean<br/>* integer<br/>* numeric<br/>* float<br/>* string<br/>*tuple  | * boolean<br/>* integer<br/>* numeric<br/>* float<br/>* string<br/>* list |
+| boolean<br/>integer<br/>numeric<br/>float<br/>string<br/>tuple  | boolean<br/>integer<br/>numeric<br/>float<br/>string<br/>list |
 
 
 
