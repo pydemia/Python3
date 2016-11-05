@@ -104,7 +104,7 @@ __** A copied list is not affected by the root list.**__
 ## Tuple
 A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
 
-### Atom of tuple (key: value)
+### Type of tuple (key: value)
 
 | KEY | VALUE |
 | :-: | :---: |
