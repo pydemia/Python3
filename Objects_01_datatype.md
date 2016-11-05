@@ -1,4 +1,7 @@
-#Data type
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+
+Data type
+===
 * integer: 정수;5,0,~~05~~  
 	concatenate	'aa' + 'bb'	'aabb'	concat(a, b)
 * numeric: 실수  
@@ -139,3 +142,6 @@ sentence = '! '.join(mywords)
 | _string_.**rjust(50)** | str | align string on right within 50 spaces |
 | _string_.**replace('a', 'b', 7)** | str | replace 'a' to 'b', in string, by 7 times |
 
+
+---
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
