@@ -16,7 +16,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 | **upper alphabet**                                     | FOO, Bar, BaZ             |  
 | **number(**_A name cannot be started with number_**)** | ~~1foo~~, b2ar            |  
 | **underscore**                                         | \_foo, \_b\_a\_r, \_baz\_ |  
-_ a name started with underscore is dealt with in some special way._
+[_ a name started with underscore is dealt with in some special way._]
 ---
 
 * **Reserved words**_(cannot be used by a object name)_
