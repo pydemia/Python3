@@ -1,6 +1,8 @@
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+---
 
-#Data Structure
+Data Structure
+===
 * list
 * tuple
 * dictionary
@@ -146,6 +148,6 @@ mydict = ['a': 10, 'b': 3, 'c': 5, 'd': 8]
 
 
 
-<div align="right">
-  [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
-</div>
+
+---
+(https://github.com/dawkiny/Python3/blob/master/README.md)
