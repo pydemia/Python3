@@ -1,4 +1,4 @@
-(Objects)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
 
 #Data Structure
 * list
@@ -142,3 +142,8 @@ mydict = ['a': 10, 'b': 3, 'c': 5, 'd': 8]
 
 
 ##Set
+
+
+->This is text-align:center<-
+
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
