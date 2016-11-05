@@ -2,7 +2,10 @@
 It contains the information &amp; sources of Python, which is a programming language.
 
 ---
-##Objects
+## Objects
+
+* [Data Types](https://github.com/dawkiny/Python3/blob/master/Objects_01_datatype.md)
+* [Data Structure](https://github.com/dawkiny/Python3/blob/master/Objects_02_datastructure.md)
 
 Variable:Object(Data) = 참조(이름):실제 객체(memory에 존재)  
 mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는지 없는 지
@@ -28,9 +31,6 @@ for     if       else      elif        try       except
 while   pass     break     continue    with      yield      return  
 del     assert   finally   raise       from      import     as  
 ```
-
-* [Data Types](https://github.com/dawkiny/Python3/blob/master/Objects_01_datatype.md)
-* [Data Structure](https://github.com/dawkiny/Python3/blob/master/Objects_02_datastructure.md)
 
 ---
 ##Control Flow  
