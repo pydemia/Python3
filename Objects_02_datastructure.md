@@ -75,7 +75,6 @@ yrlist = ['e', 'c', 'd']
 | delete | **del** _list_**[ ]** | del mylist[2] | ['a', 1] |
 
 ### Align
-
 ```python
 mylist = [1, 2, 3]
 xylist = mylist
@@ -108,7 +107,7 @@ A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
 
 | KEY | VALUE |
 | :-: | :---: |
-| boolean<br/>integer<br/>numeric<br/>float<br/>string<br/>**tuple**  | boolean<br/>integer<br/>numeric<br/>float<br/>string<br/>**list** |
+| boolean<br/>integer<br/>numeric<br/>float<br/>string<br/>**tuple**  | boolean<br/>integer<br/>numer### Operationic<br/>float<br/>string<br/>**list** |
 
 
 
@@ -134,13 +133,14 @@ Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.
 > Key에 list는 사용 불가, tuple은 사용 가능.(Immutable)  
 > list를 Key로 설정하면 TypeError 발생.  
 
+### Operation
 ```python
 mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 yrdict = {'milk' : 8, 'juice' = 7 }
 ```
 
 | OPERATION | METHOD          | EXAMPLE   | RESULT    |
-| :-------- | :-------------- | :-------- | :-------: |
+| :-------- | :-------------- | :-------- | :-------- |
 | Generate  | **{**a: b**}** <br/> **dict(**a, b**)**  | {'water': 20, 'wine': 'outofstock'} <br/> dict('water': 20, 'wine': 'outofstock')  | {'water': 20, 'wine': 'outofstock'}  |
 | Transform to dict<br/>(ex) tuple to dict) | **dict((**pair or pairlist**))** | dict([('milk', 11), ('water': 20)]) | {'milk': 11, 'water': 20} |
 | Select | _dict_**[**key**]** | mydict['milk'] | 11 |
@@ -182,31 +182,37 @@ mydict#{'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 ##Set
 An **UNORDERED** Data Structure consists of **UNIQUE** items.(As a dict, only the KEY part)
 * If there are overlapped values, ONLY ONE can remains.
-* Set is used to calculate Union & Intersection
+* Set is used to calculate "Sets" on Mathmatics;Unions,Differences & Intersections
 
 
 ### Operation
 ```python
 myset = {'e', 'l', 'e', 'm', 'e', 'n', 't', 's'}
 myset#{'e', 'l', 'm', 'n', 't', 's'}
-myset = { }#It generates A DICTIONARY!
+yrset = {'e', 'l', 'e', 'f', 'a', 'n', 't', 's'}
+yrset#{'e', 'l', 'f', 'a', 'n', 't', 's'}
+
+myset = { }#It generates A DICTIONARY, NOT A SET!
 mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 ```
 
 | OPERATION | METHOD          | EXAMPLE   | RESULT    |
-| :-------- | :-------------- | :-------- | :-------: |
+| :-------- | :-------------- | :-------- | :-------- |
 | Generate  | **set( )**<br/>**set(**list & string & tuple & dict**)**<br/>**{**values**}** | myset = set()<br/>set(mydict)<br/>myset = {'e', 'l', 'e', 'm', 'e', 'n', 't', 's'} | { }(a set)<br/>{'coffee', 'milk', 'water', 'wine'}#_(only the keys)_<br/>{'e', 'l', 'm', 'n', 't', 's'} |
+| Union(|) | _set1_.**union(**_set2_**)** | myset.union(yrset) | {'e', 'l', 'm', 'n', 't', 's', 'f', 'a'} |
+| Intersection(&) | _set1_.**intersection(**_set2_**)** | myset.intersection(yrset) | {'e', 'l', 'n', 't', 's'} |
+| Difference(_set1_ **-** _set2_) | _set1_.**difference(**_set2_**)** | myset.difference(yrset) | {'m'} | 
+| Difference(_set2_ **-** _set1_) | _set2_.**difference(**_set1_**)** | yrset.difference(myset) | {'f', 'a'} | 
+| Symmetric<br/>Difference<br/>(_Union_ **-** _Intersection_) | _set1_.**symmetric_difference(**_set2_**)** | myset.union(yrset) | {'m', 'f', 'a'} |
 
-
-
+---
+## Ndarray(numpy.ndarray)
+[Numpy]()
+## Operation
 ```python
-s2 = set("Hello")
-s2
-{'e', 'l', 'o', 'H'}
-# EMPTY SET = set(), NOT {}
+import numpy as np
+myarray = np.array([0, 1, 2.5, 4, 4.5])
 ```
-
-
 
 
 ---
