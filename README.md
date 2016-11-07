@@ -70,4 +70,17 @@ del     assert   finally   raise       from      import     as
 
 ---
 ## Standard Libraries
-* []()
+* [os]()
+* [sys]()
+* [itertools]()
+
+---
+## Famous Libraries
+* [Numpy]()
+* [Scipy]()
+* [Pandas]()
+
+
+* [matplotlib]()
+* [seaborn]()
+* [Plotly]()
