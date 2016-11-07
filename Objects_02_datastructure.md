@@ -98,7 +98,7 @@ __** A copied list is not affected by the root list.**__
 * **list(  )**  
 * **[ : ]**
 
-[to the head](#data-structure)
+[↑ Up to the Top](#data-structure)
 
 ---
 ## Tuples
@@ -127,7 +127,7 @@ mytuple = 'q', 'u', 'e', 's', 't', 'i', 'o', 'n'
 * Items of a tuple are IMMUTABLE; It cannot be damaged  
 
 
-[to the head](#data-structure)
+[↑ Up to the Top](#data-structure)
 
 ---
 ## Dictionaries
@@ -183,7 +183,7 @@ otdict == mydict#False
 ```
 
 
-[to the head](#data-structure)
+[↑ Up to the Top](#data-structure)
 
 ## Sets
 An **UNORDERED** Data Structure consists of **UNIQUE** items.(As a dict, only the KEY part)
@@ -212,7 +212,7 @@ mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 | Symmetric<br/>Difference<br/>(_Union_ **-** _Intersection_) | _set1_.**symmetric_difference(**_set2_**)** | myset.union(yrset) | {'m', 'f', 'a'} |
 
 
-[to the head](#data-structure)
+[↑ Up to the Top](#data-structure)
 
 ---
 ## Ndarray(numpy.ndarray)
