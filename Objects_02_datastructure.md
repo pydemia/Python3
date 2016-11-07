@@ -126,11 +126,76 @@ mytuple = 'q', 'u', 'e', 's', 't', 'i', 'o', 'n'
 * A Tuple uses less space than a list  
 * Items of a tuple are IMMUTABLE; It cannot be damaged  
 
+---
+## Dictionary
+Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.  
+* Its _Key value_ **MUST BE UNIQUE** ~~_(If overlapped, the Last input will be used.)_~~
+
+> Key에 list는 사용 불가, tuple은 사용 가능.(Immutable)  
+> list를 Key로 설정하면 TypeError 발생.  
+
+```python
+mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+yrdict = {'milk' : 8, 'juice' = 7 }
+```
+
+| OPERATION | METHOD          | EXAMPLE   | RESULT    |
+| :-------- | :-------------- | :-------- | :-------: |
+| Generate  | **{**a: b**}** <br/> **dict(**a, b**)**  | {'water': 20, 'wine': 'outofstock'} <br/> dict('water': 20, 'wine': 'outofstock')  | {'water': 20, 'wine': 'outofstock'}  |
+| Transform to dict<br/>(ex) tuple to dict) | **dict((**pair or pairlist**))** | dict([('milk', 11), ('water': 20)]) | {'milk': 11, 'water': 20} |
+| Select | _dict_**[**key**]** | mydict['milk'] | 11 |
+| Select All keys | _dict_.**keys( )** | mydict.keys() | dict_keys(['coffee', 'milk', 'water', 'wine']) |
+| Select All values | _dict_.**values( )** | mydict.values() | dict_values([7, 11, 20, 'outofstock']) |
+| Select All elements by tuple | _dict_.**items( )** | mydict.items() | dict_items([('coffee', 7), ('milk', 11), ('water', 20), ('wine', 'outofstock')]) |
+| Replace | _dict_**[**key**]=newval**<br/>_dict_**[**newkey**]**=newval | mydict['milk']=10<br/>mydict['tea']=10 | {'coffee': 7, 'milk': 10, 'water': 20, 'wine': 'outofstock'}<br/>{'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock', 'tea' = 10} |
+| Update or Join | _dict1_.**update(**dict2**)** | mydict.update(yrdict) | {'coffee': 7, 'milk': 8, 'water': 20, 'wine': 'outofstock', 'juice' = 7 } |
+| **_Copy_** | _dict_.**copy( ) ** | otdict = mydict.copy() | {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'} |
+| Delete | **del** _dict_**[**key**]** | del mydict['wine'] | {'coffee': 7, 'milk': 11, 'water': 20} |
+| Delete All | _dict_.**clear( )**<br/>_dict_ **= { }** | mydict.clear()<br/>mydict = {} | {} |
+| Check a key | **'**key**' in **_dict_ | 'beer' in mydict<br/>'coffee' in mydict | False<br/>True |
+
+* #-- **_"Copy()" Method is used to copy & edit a dict!)_** --#
+1. Case 1(not using **_copy()_**)
+```python
+mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+otdict = mydict
+otdict['coffee'] = 10
+otdict#{'coffee': 10, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+mydict#{'coffee': 10, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+otdict == mydict#True
+
+#If one is changed, both of dicts will be changed.
+```
+
+2. Case 2(using **_copy()_**)
+```python
+mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+otdict = mydict.copy()
+otdict['coffee'] = 10
+otdict#{'coffee': 10, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+mydict#{'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+#otdict == mydict#False
+#Even if one is changed, the other will NOT be changed.
+```
 
 
 ##Set
-An **UNORDERED** Data Structure consists of **UNIQUE** values.
+An **UNORDERED** Data Structure consists of **UNIQUE** items.(As a dict, only the KEY part)
+* If there are overlapped values, ONLY ONE can remains.
+* Set is used to calculate Union & Intersection
 
+
+### Operation
+```python
+myset = {'e', 'l', 'e', 'm', 'e', 'n', 't', 's'}
+myset#{'e', 'l', 'm', 'n', 't', 's'}
+myset = { }#It generates A DICTIONARY!
+mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
+```
+
+| OPERATION | METHOD          | EXAMPLE   | RESULT    |
+| :-------- | :-------------- | :-------- | :-------: |
+| Generate  | **set( )**<br/>**set(**list & string & tuple & dict**)**<br/>**{**values**}** | myset = set()<br/>set(mydict)<br/>myset = {'e', 'l', 'e', 'm', 'e', 'n', 't', 's'} | { }(a set)<br/>{'coffee', 'milk', 'water', 'wine'}#_(only the keys)_<br/>{'e', 'l', 'm', 'n', 't', 's'} |
 
 
 
@@ -138,27 +203,9 @@ An **UNORDERED** Data Structure consists of **UNIQUE** values.
 s2 = set("Hello")
 s2
 {'e', 'l', 'o', 'H'}
+# EMPTY SET = set(), NOT {}
 ```
 
-
-
----
-## Dictionary
-Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.  
-* Its _Key value_ **MUST BE UNIQUE** _(If overlapped, the Last input will be used.)_
-
-Key에 리스트는 쓸 수 없다는 것이다. 하지만 튜플은 Key로 쓸 수 있다. 딕셔너리의 Key로 쓸 수 있느냐 없느냐는 Key가 변하는 값인지 변하지 않는 값인지에 달려 있다. 리스트는 그 값이 변할 수 있기 때문에 Key로 쓸 수 없는 것이다. 아래 예처럼 리스트를 Key로 설정하면 리스트를 키 값으로 사용할 수 없다는 형 오류(TypeError)가 발생한다.
-
-```python
-mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
-```
-
-
-| OPERATION | METHOD          | EXAMPLE   | RESULT    |
-| :-------- | :-------------- | :-------- | :-------: |
-| Generate  | **{**a: b**}** <br/> **dict(**a, b**)**  | {'water': 20, 'wine': 'outofstock'} <br/> dict('water': 20, 'wine': 'outofstock')  | {'water': 20, 'wine': 'outofstock'}  |
-| Transform to dict<br/>(ex) tuple to dict) | **dict((**pair or pairlist**))** | dict([('milk', 11), ('water': 20)]) | {'milk': 11, 'water': 20} |
-| Offset | _dict_**[**key**]** | _mydict_**[**'milk'**]** | 11 |
 
 
 
