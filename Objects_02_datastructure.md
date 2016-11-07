@@ -98,7 +98,6 @@ __** A copied list is not affected by the root list.**__
 * **list(  )**  
 * **[ : ]**
 
-
 [to the head](#data structure)
 ---
 ## Tuples
