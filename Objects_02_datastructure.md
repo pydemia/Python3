@@ -3,8 +3,8 @@
 
 # Data Structure
 
-* [list](## Lists)
-* [tuple](## Tuples)
+* [list](## lists)
+* [tuple](# tuples)
 * [dictionary](## Dictionaries)
 * [set](## Sets)
 
