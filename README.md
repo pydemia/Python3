@@ -15,7 +15,7 @@ mutable:immutable = memory에 있는 실제 Data value를 변경할 수 있는�
 ---
 ## Variable Naming  
 
-| ATTRIBUTE                                              | EXAMPLE                   |
+| ATTRIBUTE                                              | EXAMPLE   ,                |
 | :----------------------------------------------------- | :------------------------ |
 | **lower alphabet**                                     | foo, bAr, baZ             | 
 | **upper alphabet**                                     | FOO, Bar, BaZ             |  
@@ -44,7 +44,7 @@ del     assert   finally   raise       from      import     as
 
 ---
 ## Modules
-* []()
+* [Basic on Modules]()
 * [Packages]()
 
 ---
@@ -54,14 +54,17 @@ del     assert   finally   raise       from      import     as
 
 ---
 ## Errors & Exceptions
-* []()
+* [Errors]()
+* [Exceptions]()
+* [Clean-up Actions]()
 
 ---
 ## Classes
-* [Names, Objects, Scopes and Namespaces]()
-* [Classes & Methods & Instances]()
+* [Names & Objects]()
+* [Scopes & Namespaces]()
+* [Classes & Instances & Methods]()
 * [Inheritance]()
-* [Iterables, Iterators, Generators](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
+* [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
 * [Coroutine](https://github.com/dawkiny/Python3/blob/master/ControlFlow_02_coroutine.md)
 * []()
 
