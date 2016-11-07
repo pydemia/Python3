@@ -99,6 +99,7 @@ __** A copied list is not affected by the root list.**__
 * **[ : ]**
 
 [to the head](#data-structure)
+
 ---
 ## Tuples
 A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
@@ -126,7 +127,8 @@ mytuple = 'q', 'u', 'e', 's', 't', 'i', 'o', 'n'
 * Items of a tuple are IMMUTABLE; It cannot be damaged  
 
 
-[to the head](#datastructure)
+[to the head](#data-structure)
+
 ---
 ## Dictionaries
 Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.  
@@ -181,7 +183,8 @@ otdict == mydict#False
 ```
 
 
-[to the head](#datastructure)
+[to the head](#data-structure)
+
 ## Sets
 An **UNORDERED** Data Structure consists of **UNIQUE** items.(As a dict, only the KEY part)
 * If there are overlapped values, ONLY ONE can remains.
@@ -209,7 +212,8 @@ mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 | Symmetric<br/>Difference<br/>(_Union_ **-** _Intersection_) | _set1_.**symmetric_difference(**_set2_**)** | myset.union(yrset) | {'m', 'f', 'a'} |
 
 
-[to the head](#datastructure)
+[to the head](#data-structure)
+
 ---
 ## Ndarray(numpy.ndarray)
 [Go to Numpy]()
@@ -219,6 +223,7 @@ import numpy as np
 myarray = np.array([0, 1, 2.5, 4, 4.5])
 ```
 
+[to the head](#data-structure)
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
