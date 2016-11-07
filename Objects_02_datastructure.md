@@ -4,7 +4,7 @@
 # Data Structure
 
 * [list](## lists)
-* [tuple](# tuples)
+* [tuple](#tuples)
 * [dictionary](## Dictionaries)
 * [set](## Sets)
 
