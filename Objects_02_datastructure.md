@@ -16,7 +16,7 @@
 | set | Hashmap | **{**key1, kye2**}** | O | X |
 
 ---
-## Lists [to the head](#data structure)
+## Lists
 A *MUTABLE* Sequence of Data: It can contains __different__ data types.
 
 ### Atom of a list
@@ -98,6 +98,8 @@ __** A copied list is not affected by the root list.**__
 * **list(  )**  
 * **[ : ]**
 
+
+[to the head](#datastructure)
 ---
 ## Tuples
 A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
@@ -124,6 +126,8 @@ mytuple = 'q', 'u', 'e', 's', 't', 'i', 'o', 'n'
 * A Tuple uses less space than a list  
 * Items of a tuple are IMMUTABLE; It cannot be damaged  
 
+
+[to the head](#datastructure)
 ---
 ## Dictionaries
 Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.  
@@ -173,11 +177,12 @@ otdict = mydict.copy()
 otdict['coffee'] = 10
 otdict#{'coffee': 10, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 mydict#{'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
-#otdict == mydict#False
+otdict == mydict#False
 #Even if one is changed, the other will NOT be changed.
 ```
 
 
+[to the head](#datastructure)
 ## Sets
 An **UNORDERED** Data Structure consists of **UNIQUE** items.(As a dict, only the KEY part)
 * If there are overlapped values, ONLY ONE can remains.
@@ -204,6 +209,8 @@ mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 | Difference(_set2_ **-** _set1_) | _set2_.**difference(**_set1_**)** | yrset.difference(myset) | {'f', 'a'} | 
 | Symmetric<br/>Difference<br/>(_Union_ **-** _Intersection_) | _set1_.**symmetric_difference(**_set2_**)** | myset.union(yrset) | {'m', 'f', 'a'} |
 
+
+[to the head](#datastructure)
 ---
 ## Ndarray(numpy.ndarray)
 [Go to Numpy]()
