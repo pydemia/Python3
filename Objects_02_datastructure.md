@@ -223,7 +223,7 @@ import numpy as np
 myarray = np.array([0, 1, 2.5, 4, 4.5])
 ```
 
-[to the head](#data-structure)
+[↑ Up to the Top](#data-structure)
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
