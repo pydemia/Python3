@@ -99,7 +99,7 @@ __** A copied list is not affected by the root list.**__
 * **[ : ]**
 
 
-[to the head](#datastructure)
+[to the head](#data structure)
 ---
 ## Tuples
 A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
