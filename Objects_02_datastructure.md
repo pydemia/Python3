@@ -16,7 +16,7 @@
 | set | Hashmap | **{**key1, kye2**}** | O | X |
 
 ---
-## Lists
+## Lists [to the head](#data structure)
 A *MUTABLE* Sequence of Data: It can contains __different__ data types.
 
 ### Atom of a list
