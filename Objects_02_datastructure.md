@@ -3,10 +3,10 @@
 
 # Data Structure
 
-* [list](#Lists)
-* [tuple](#Tuples)
-* [dictionary](#Dictionaries)
-* [set](#Sets)
+* [list](## Lists)
+* [tuple](## Tuples)
+* [dictionary](## Dictionaries)
+* [set](## Sets)
 
 | TYPE | DESCRIPTION | EXAMPLE | UNIQUE VARIABLES | IMMUTABLE |
 | :--- | :---------- | :------ | :--------------: | :-----: |
