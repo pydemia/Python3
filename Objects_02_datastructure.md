@@ -13,7 +13,7 @@
 | list | Sequence | **[**'a', 1, 4,0, (tuple), [list]**]** | X | X |
 | tuple | Sequence | **(**'a', 1, 4.0, (tuple), [list]**)** | X | O |
 | dictionary | Hashmap(pair) | **{**key1**:**value1, key2**:**value2**}** | O(Key) | X |
-| set | Hashmap | **{**key1, kye2**}** | O | X |
+| set | Hashmap | **{**key1, key2**}** | O | X |
 
 ---
 ## Lists
