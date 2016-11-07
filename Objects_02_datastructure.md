@@ -207,7 +207,7 @@ mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 
 ---
 ## Ndarray(numpy.ndarray)
-[Numpy]()
+[Go to Numpy]()
 ## Operation
 ```python
 import numpy as np
