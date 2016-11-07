@@ -3,23 +3,23 @@
 
 # Data Structure
 
-* list
-* tuple
-* dictionary
-* set
+* [list](##Lists)
+* [tuple](##Tuples)
+* [dictionary](##Dictionaries)
+* [set](##Sets)
 
 | TYPE | DESCRIPTION | EXAMPLE | UNIQUE VARIABLES | IMMUTABLE |
-| :--: | :---------- | :------ | :--------------: | :-----: |
-| list | Sequence | ['a', 1, 4,0, (tuple), [list]] | X | X |
-| tuple | Sequence | ('a', 1, 4.0, (tuple), [list]] | X | O |
-| dictionary | Hashmap(pair) | {key1:value1, key2:value2} | O(Key) | X |
-| set | Hashmap | {key1, kye2} | O | X |
+| :--- | :---------- | :------ | :--------------: | :-----: |
+| list | Sequence | **[**'a', 1, 4,0, (tuple), [list]**]** | X | X |
+| tuple | Sequence | **(**'a', 1, 4.0, (tuple), [list]**)** | X | O |
+| dictionary | Hashmap(pair) | **{**key1**:**value1, key2**:**value2**}** | O(Key) | X |
+| set | Hashmap | **{**key1, kye2**}** | O | X |
 
 ---
-## List
+## Lists
 A *MUTABLE* Sequence of Data: It can contains __different__ data types.
 
-### Atom of list
+### Atom of a list
 * boolean  
 * integer  
 * numeric  
@@ -44,7 +44,6 @@ mylist = ['q', 'u', 'e', 's', 't', 'i', 'o', 'n']
 | Slice  | _list_**[**start\:end\:step**]** | _mylist_**[**7:2:-2**]** | ['n', 'i', 's'] |
 
 ### Methods
- 
 ```python
 mylist = ['a', 1, 'b']
 yrlist = ['e', 'c', 'd']
@@ -100,10 +99,10 @@ __** A copied list is not affected by the root list.**__
 * **[ : ]**
 
 ---
-## Tuple
+## Tuples
 A *IMMUTABLE* Sequence of Data: It can contains __different__ data types.
 
-### Type of tuple (key: value)
+### Type of a tuple (key: value)
 
 | KEY | VALUE |
 | :-: | :---: |
@@ -126,7 +125,7 @@ mytuple = 'q', 'u', 'e', 's', 't', 'i', 'o', 'n'
 * Items of a tuple are IMMUTABLE; It cannot be damaged  
 
 ---
-## Dictionary
+## Dictionaries
 Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.  
 * Its _Key value_ **MUST BE UNIQUE** ~~_(If overlapped, the Last input will be used.)_~~
 
@@ -179,7 +178,7 @@ mydict#{'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
 ```
 
 
-##Set
+## Sets
 An **UNORDERED** Data Structure consists of **UNIQUE** items.(As a dict, only the KEY part)
 * If there are overlapped values, ONLY ONE can remains.
 * Set is used to calculate "Sets" on Mathmatics;Unions,Differences & Intersections
