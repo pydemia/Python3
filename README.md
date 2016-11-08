@@ -16,7 +16,7 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ---
 ## Control Flow
-* [if Statements]()
+* [if Statements](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditions_and_loops .md#if-statements)
 * [for Statements]()
 * [while Statements]()
 * [with]()
