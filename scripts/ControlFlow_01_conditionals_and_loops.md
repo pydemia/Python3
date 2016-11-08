@@ -3,10 +3,11 @@
 
 # Control Flow Statements(Conditionals & Loops)
 
-* [Conditions](#conditions)
-* [if statememts](#if-statements)
-* [while statements](#while-statements)
-* [for statements](#for-statements)
+* [Conditionals](#conditions)
+* [if Statememts](#if-statements)
+* [while Statements](#while-statements)
+* [for Statements](#for-statements)
+* [Comprehensions](#comprehensions)
 
 ---
 ## Conditionals
