@@ -11,16 +11,37 @@ This contains the information &amp; sources of Python, which is a programming la
 
 * [Data Types](https://github.com/dawkiny/Python3/blob/master/Objects_01_datatype.md)
 * [Data Structures](https://github.com/dawkiny/Python3/blob/master/Objects_02_datastructure.md)
-* [Comprehension(Advanced Data Structure)]()
 
 
 ---
 ## Control Flow
 * [Conditions](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditions_and_loops.md#conditions)
+### Conditionals & Loops
 * [if Statements](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditions_and_loops.md#if-statements)
 * [while Statements](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditions_and_loops.md#while-statements)
 * [for Statements](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditions_and_loops.md#for-statements)
+### Advanced Control Flow
 * [Comprehensions](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditions_and_loops.md#comprehensions)
+
+
+---
+## Functions
+### Defining Functions
+* [Defining Fuctions]()
+* [Positional Arguments]()
+* [Keyword Arguments]()
+* [Docstring]()
+
+### Advanced Functions
+* [Inner Functions & Closures]()
+* [Lambda Functions]()
+* [Iterator]()
+* [Generator]()
+* [Decorator]()
+### Errors & Exceptions
+* [Errors]()
+* [Exceptions]()
+* [Clean-up Actions]()
 
 
 ---
@@ -34,29 +55,24 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Reading & Writing Files]()
 
 ---
-## Errors & Exceptions
-* [Errors]()
-* [Exceptions]()
-* [Clean-up Actions]()
-
----
 ## Classes
+### Defining Classes
 * [Names & Objects]()
 * [Scopes & Namespaces]()
 * [Classes & Instances & Methods]()
+### Advanced Classes
 * [Inheritance]()
 * [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
 * [Coroutine](https://github.com/dawkiny/Python3/blob/master/ControlFlow_02_coroutine.md)
 * []()
 
 ---
-## Standard Libraries
+## Libraries
+### Standard Libraries
 * [os]()
 * [sys]()
 * [itertools]()
-
----
-## Famous Libraries
+### Famous Libraries
 * [Numpy]()
 * [Scipy]()
 * [Pandas]()
