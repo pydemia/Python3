@@ -9,24 +9,24 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Basic Objects
 
-* [Data Types](https://github.com/dawkiny/Python3/blob/master/Objects_01_datatype.md)
-* [Data Structures](https://github.com/dawkiny/Python3/blob/master/Objects_02_datastructure.md)
+* [Data Types](https://github.com/dawkiny/Python3/scripts/blob/master/Objects_01_datatype.md)
+* [Data Structures](https://github.com/dawkiny/Python3/scripts/blob/master/Objects_02_datastructure.md)
 
 
 ---
 ## Control Flow
 
-* [Conditionals](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditionals_and_loops.md#conditionals)
+* [Conditionals](https://github.com/dawkiny/Python3/scripts/blob/master/ControlFlow_01_conditionals_and_loops.md#conditionals)
 
 ### Conditionals & Loops
 
-* [if Statements](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditionals_and_loops.md#if-statements)
-* [while Statements](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditionals_and_loops.md#while-statements)
-* [for Statements](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditionals_and_loops.md#for-statements)
+* [if Statements](https://github.com/dawkiny/Python3/scripts/blob/master/ControlFlow_01_conditionals_and_loops.md#if-statements)
+* [while Statements](https://github.com/dawkiny/Python3/scripts/blob/master/ControlFlow_01_conditionals_and_loops.md#while-statements)
+* [for Statements](https://github.com/dawkiny/Python3/scripts/blob/master/ControlFlow_01_conditionals_and_loops.md#for-statements)
 
 ### Advanced Loops
 
-* [Comprehensions](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditions_and_loops.md#comprehensions)
+* [Comprehensions](https://github.com/dawkiny/Python3/scripts/blob/master/ControlFlow_01_conditions_and_loops.md#comprehensions)
 
 
 ---
@@ -34,7 +34,7 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Basics on Functions
 
-* [Defining Fuctions]()
+* [Defining Fuctions]((https://github.com/dawkiny/Python3/scripts/blob/master/Functions_01_.md#defining-functions))
 * [Positional Arguments]()
 * [Keyword Arguments]()
 * [Docstring]()
