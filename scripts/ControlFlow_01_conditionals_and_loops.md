@@ -1,7 +1,7 @@
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
 
 
-# Control Flow Statements(Conditionals & Loops)
+# Control Flow(Conditionals & Loops)
 
 * [Conditionals](#conditions)
 * [if Statememts](#if-statements)
