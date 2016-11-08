@@ -34,7 +34,7 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Basics on Functions
 
-* [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_.md#defining-functions)
+* [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#defining-functions)
 * [Positional Arguments]()
 * [Keyword Arguments]()
 * [Docstring]()
