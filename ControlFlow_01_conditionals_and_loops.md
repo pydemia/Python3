@@ -1,7 +1,7 @@
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
 
 
-# Control Flow Statements(Conditions & Loops)
+# Control Flow Statements(Conditionals & Loops)
 
 * [Conditions](#conditions)
 * [if statememts](#if-statements)
@@ -9,7 +9,7 @@
 * [for statements](#for-statements)
 
 ---
-## Conditions
+## Conditionals
 
 An operation returns boolean(True or False)
 
@@ -64,7 +64,7 @@ True
 | an empty dict | {} |
 | an empty set | set() |
 
-[↑ Up to the Top](#control-flow-statements(conditions-&-loops))
+[↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
 ---
 ## if Statements
@@ -164,7 +164,7 @@ else :
 "This number is negative!"
 ```
 
-[↑ Up to the Top](#control-flow-statements(conditions-&-loops))
+[↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
 ---
 ## while Statements
@@ -278,7 +278,7 @@ else:
 "There is no even number found!"
 ```
 
-[↑ Up to the Top](#control-flow-statements(conditions-&-loops))
+[↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
 ---
 ## for Statements
@@ -401,6 +401,7 @@ i2
 list(zip(mylist, xylist))#[('l', 1), ('i', 2)]; its length = the shortest sequence
 ```
 
+[↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
 ---
 ## Comprehensions
@@ -408,7 +409,7 @@ list(zip(mylist, xylist))#[('l', 1), ('i', 2)]; its length = the shortest sequen
 The Compact ways to generate Data Structures using Iterators.
 
 
-### list Comprehension
+### List Comprehension
 
 ```python
 [expression for items in iterables]
@@ -417,21 +418,65 @@ The Compact ways to generate Data Structures using Iterators.
 
 * Example
 ```python
-mylist = [var for i in range(2,8)]
+mylist = [i for i in range(2,8)]
 mylist#[2, 3, 4, 5, 6, 7]
 
-mylist = [var+1 for i in range(2,8)]
+mylist = [i+1 for i in range(2,8)]
 mylist#[3, 4, 5, 6, 7, 8]
 
+mylist = [i for i in range(2, 8) if i % 2 != 0]
+mylist#[3,5,7]
 
-### Operation
- 
+mylist = ['a', 'b', 'c']
+xylist = [1, 2]
+ids = [(i, j) for i in mylist for j in xylist]#geneerate a list of tuples
+for i, j in ids:#Unpacking a tuple!
+    print(i, j)
+```
+
+### Dictionary Comprehension
+
 ```python
-codes
+{ key_exp : val_exp for expression in iterables}
+{ key_exp : val_exp for expression in iterables if condition}
+```
+
+* Example
+
+```python
+{i : i**2 for i in range(1,6)}
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+{i : i**2 for i in range(1,6) if i < 4}
+{1: 1, 2: 4, 3: 9}
 ```
 
 
-[↑ Up to the Top](#control-flow-statements(conditions-&-loops))
+### Set Comprehension
+
+```python
+{expression for expression in itreables}
+{expression for expression in itreables if condition}
+```
+
+* Example
+
+```python
+words = "python"
+{i for i in words if i != "p"}
+{'t', 'o', 'h', 'n', 'y'}
+```
+
+### Generator Comprehensions(NOT TUPLE COMPREHENSIONS!)
+
+```python
+(expression for expression in itreables)
+(expression for expression in itreables if condition)
+```
+
+This returns a Generator object.[Go to "Generators"]()
+
+[↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
