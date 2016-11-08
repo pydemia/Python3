@@ -401,7 +401,28 @@ i2
 list(zip(mylist, xylist))#[('l', 1), ('i', 2)]; its length = the shortest sequence
 ```
 
-### words
+
+---
+## Comprehensions
+
+The Compact ways to generate Data Structures using Iterators.
+
+
+### list Comprehension
+
+```python
+[expression for items in iterables]
+[expression for items in iterables if condition]
+```
+
+* Example
+```python
+mylist = [var for i in range(2,8)]
+mylist#[2, 3, 4, 5, 6, 7]
+
+mylist = [var+1 for i in range(2,8)]
+mylist#[3, 4, 5, 6, 7, 8]
+
 
 ### Operation
  
