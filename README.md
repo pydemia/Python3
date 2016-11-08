@@ -16,7 +16,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Control Flow
 
-* [Conditions](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditionals_and_loops.md#conditionals)
+* [Conditionals](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_conditionals_and_loops.md#conditionals)
 
 ### Conditionals & Loops
 
