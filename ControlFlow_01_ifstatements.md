@@ -14,6 +14,7 @@
 An operation returns boolean(True or False)
 
 * Comparison Opeators
+
 | Operator | Description |
 | :------: | :---------- |
 | == | Equal to |
@@ -33,7 +34,8 @@ x = 5
 True
 ```
 
-* Boolean Operator
+* Boolean Operators
+
 | Operator | Description |
 | :------: | :---------- |
 | and(&) | Equal to |
@@ -44,12 +46,13 @@ Comparison Operator **is PRIOR to** Boolean Operator
 ```python
 x = 5
 #--------------#
-3< x and x < 6
+3 < x and x < 6
 #--------------#
 True
 ```
 
-* Other False Type
+* Other False Cases
+
 | Objects | Description |
 | :-----: | :---------- |
 | null | None |
@@ -87,7 +90,7 @@ if x < 5:
 if x > 5:
     print(x)
 #------------------#
-Nothing is printed
+#Nothing is printed
 ```
 
 
@@ -137,6 +140,25 @@ else :
 "This number is equal to Zero!"
 ```
 
+
+### inner if(precising your conditions)
+
+* Example
+```python
+x = -1
+#------------------#
+if x < 0:
+    if x == -2
+        print("This number is -2")
+    else:
+        print("This number is negative!")
+elif x == 0:
+    print("This number is equal to Zero!")
+else :
+    print("This number is positive!")
+#------------------#
+"This number is negative!"
+```
 
 
 ```
