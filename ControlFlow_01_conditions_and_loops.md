@@ -5,7 +5,7 @@
 
 * [Conditions](#conditions)
 * [if statememts](#if-statements)
-* [while statements](#while=statements)
+* [while statements](#while-statements)
 * [for statements](#for-statements)
 
 ---
@@ -67,7 +67,7 @@ True
 [↑ Up to the Top](#control-flow-statements(conditions-&-loops)
 
 ---
-## If Statements
+## if Statements
 
 Conditional Statements: Execute ONCE.
 
@@ -167,7 +167,7 @@ else :
 [↑ Up to the Top](#control-flow-statements(conditions-&-loops)
 
 ---
-## While Statements
+## while Statements
 
 Loop statements with conditions(Repeat while condition is True)
 
@@ -281,7 +281,7 @@ else:
 [↑ Up to the Top](#control-flow-statements(conditions-&-loops)
 
 ---
-## for statement
+## for Statements
 
 Loop statements with Sequences(Iterate sequences)
 
