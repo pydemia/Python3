@@ -11,6 +11,7 @@
 
 ---
 ## Conditions
+
 An operation returns boolean(True or False)
 
 * Comparison Opeators
@@ -64,8 +65,11 @@ True
 | an empty dict | {} |
 | an empty set | set() |
 
+[↑ Up to the Top](#data-structure)
+
 ---
 ## If Statements
+
 Conditional Statements: Execute ONCE.
 
 ### if
@@ -161,10 +165,12 @@ else :
 "This number is negative!"
 ```
 
+[↑ Up to the Top](#data-structure)
 
 ---
 ## While Statements
-Loop statements(Repeat while condition is True)
+
+Loop statements with conditions(Repeat while condition is True)
 
 
 ### while
@@ -180,7 +186,7 @@ while condition:
 x = 3
 #------------------#
 while x < 7:
-    print(str(x) + " is less than 7!")
+    print(str(x) + " is less than 7!")#str() for converting int to str
     x += 1
 #------------------#
 "'3' is less than 7!"
@@ -190,11 +196,13 @@ while x < 7:
 ```
 
 ### break
+
 ```python
 condition1 = True
 while condition1:
     operation1
     if condition2:
+        operation_when_break#This line is not necessary
         break
 ```
 
@@ -205,6 +213,7 @@ x = 0
 while True:
     x += 1
     if x == 4:
+        print(x
         break
     print (x)
 #-------------#
@@ -214,6 +223,7 @@ while True:
 ```
 
 ### continue: jump to next
+
 ```python
 condition1 = True
 while condition1:
@@ -239,47 +249,158 @@ while x < 10:
 9
 ```
 
-### else: following break statements
+### else: with break statements(break or even)
+
 ```python
 condition1 = True
 while condition1:
     operation1
     if condition2:
+        operation_when_break#This line is not necessary
         break
+else:
+    operation3
 ```
 
 * Example
 ```python
-x = 0
+x = [1, 3, 5, 7, 9]
+ord = 0
 #-------------#
-while True:
-    x += 1
-    if x == 4:
+while ord < len(x):
+    number = x[ord]
+    if x % 2 == 0:#if 'x' is even number
+        print('An even number is detected!')
         break
-    print (x)
+    x += 1
+else: 
+    print ('There is no even number found!')
 #-------------#
-1
-2
-3
+"There is no even number found!"
 ```
-
-
-### words
-
-### Operation
- 
-```python
-codes
-```
-
-
 
 [↑ Up to the Top](#data-structure)
-
 
 ---
-## words
-words
+## for statement
+
+Loop statements with Sequences(Iterate sequences)
+
+### for
+
+```python
+for i in iterables:
+    operation(with i or not)
+```
+
+* Example 1(with range( ))
+```python
+#-------------------#
+for i in range(4):
+    print(i)
+#-------------------#
+0
+1
+2
+3#startswith 0, endswith 4-1 = 3(the last one is not used)
+```
+
+* Example 2(with 2:5 sequence)
+```python
+#range(start, stop, step)
+#-------------------#
+for i in range(5, 2, -1):
+    print(i)
+#-------------------#
+5
+4
+3#startswith 5, endswith 2+1 = 3(the last one is not used)
+```
+
+* Example 3(with a list)
+```python
+mylist = ['l', 'o', 'o', 'p']
+#-------------------#
+for i in mylist:
+    print(i)
+#-------------------#
+l
+o
+o
+p#startswith 0, endswith len(mylist) = 4
+```
+
+### break
+
+It's same as break of 'while'
+
+### continue
+
+It's same as continue of 'while'
+
+### Multiple for loop statements
+
+```python
+for i in iterable1 
+    for j in iterable2
+     operation
+```
+
+* Example 1
+```python
+mylist = ['l', 'i', 's', 't']
+xylist = [1, 2]
+#-------------------#
+for i in mylist:
+    for j in xylist: 
+        print(i + str(j))#str() for converting int to str
+#-------------------#
+l1
+l2
+i1
+i2
+s1
+s2
+t1
+t2
+#loop len(mylist) * len(xylist) = 4 * 2 = 8 outputs
+```
+
+* Example 2(itertools.product( ))
+```python
+mylist = ['l', 'i', 's', 't']
+xylist = [1, 2]
+#-------------------#
+import itertools
+for i, j in itertools.product(mylist, xylist):
+    print(i + str(j))#str() for converting int to str
+#-------------------#
+l1
+l2
+i1
+i2
+s1
+s2
+t1
+t2
+#loop len(mylist) * len(xylist) = 4 * 2 = 8 outputs
+```
+
+### zip( )(Parallel loop)
+
+* Example
+```python
+mylist = ['l', 'i', 's', 't']
+xylist = [1, 2]
+#-------------------#
+for i, j in zip(mylist, xylist):
+    print(i + str(j))#str() for converting int to str
+#-------------------#
+l1
+i2
+#zip( ) generates an iterable values(pairing sequences)
+list(zip(mylist, xylist))#[('l', 1), ('i', 2)]; its length = the shortest sequence
+```
 
 ### words
 
@@ -290,12 +411,7 @@ codes
 ```
 
 
-
 [↑ Up to the Top](#data-structure)
-
-
-
-
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
