@@ -64,7 +64,7 @@ True
 | an empty dict | {} |
 | an empty set | set() |
 
-[↑ Up to the Top](#control-flow-statements)
+[↑ Up to the Top](#control-flow-statements(conditions-&-loops)
 
 ---
 ## If Statements
@@ -164,7 +164,7 @@ else :
 "This number is negative!"
 ```
 
-[↑ Up to the Top](#control-flow-statements)
+[↑ Up to the Top](#control-flow-statements(conditions-&-loops)
 
 ---
 ## While Statements
@@ -278,7 +278,7 @@ else:
 "There is no even number found!"
 ```
 
-[↑ Up to the Top](#control-flow-statements)
+[↑ Up to the Top](#control-flow-statements(conditions-&-loops)
 
 ---
 ## for statement
@@ -410,7 +410,7 @@ codes
 ```
 
 
-[↑ Up to the Top](#control-flow-statements)
+[↑ Up to the Top](#control-flow-statements(conditions-&-loops)
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
