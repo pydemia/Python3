@@ -1,13 +1,12 @@
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
 
 
-# Control Flow Statements
+# Control Flow Statements(Conditions & Loops)
 
 * [Conditions](#conditions)
-* [if statememts](#words)
-* [for statements](#words)
-* [while statements](#words)
-
+* [if statememts](#if-statements)
+* [while statements](#while=statements)
+* [for statements](#for-statements)
 
 ---
 ## Conditions
@@ -65,7 +64,7 @@ True
 | an empty dict | {} |
 | an empty set | set() |
 
-[↑ Up to the Top](#data-structure)
+[↑ Up to the Top](#control-flow-statements)
 
 ---
 ## If Statements
@@ -165,7 +164,7 @@ else :
 "This number is negative!"
 ```
 
-[↑ Up to the Top](#data-structure)
+[↑ Up to the Top](#control-flow-statements)
 
 ---
 ## While Statements
@@ -279,7 +278,7 @@ else:
 "There is no even number found!"
 ```
 
-[↑ Up to the Top](#data-structure)
+[↑ Up to the Top](#control-flow-statements)
 
 ---
 ## for statement
@@ -411,7 +410,7 @@ codes
 ```
 
 
-[↑ Up to the Top](#data-structure)
+[↑ Up to the Top](#control-flow-statements)
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
