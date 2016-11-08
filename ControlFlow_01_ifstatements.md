@@ -66,10 +66,10 @@ True
 
 ---
 ## If Statements
-A Condition Statements
+Conditional Statements: Execute ONCE.
 
 ### if
-* Code Structure
+
 ```python
 condition = True
 if condition:
@@ -85,7 +85,6 @@ if x < 5:
 #------------------#
 3
 
-
 #------------------#
 if x > 5:
     print(x)
@@ -95,6 +94,7 @@ if x > 5:
 
 
 ### if-else
+
 ```python
 condition = True
 if condition:
@@ -108,14 +108,15 @@ else:
 x = 3
 #------------------#
 if x < 0:
-    print("This number is negative!")
+    print("'x' is negative!")
 else :
-    print("This number is not negative!")
+    print("'x' is not negative!")
 #------------------#
 "This number is not negative!"
 ```
 
 ### if-elif-else(multiple conditions)
+
 ```python
 condition = True
 if condition1:
@@ -131,13 +132,13 @@ else:
 x = 0
 #------------------#
 if x < 0:
-    print("This number is negative!")
+    print("'x' is negative!")
 elif x == 0:
-    print("This number is equal to Zero!")
+    print("'x' is equal to Zero!")
 else :
-    print("This number is positive!")
+    print("'x' is positive!")
 #------------------#
-"This number is equal to Zero!"
+"'x' is equal to Zero!"
 ```
 
 
@@ -149,19 +150,119 @@ x = -1
 #------------------#
 if x < 0:
     if x == -2
-        print("This number is -2")
+        print("x is -2")
     else:
-        print("This number is negative!")
+        print("'x' is negative!")
 elif x == 0:
-    print("This number is equal to Zero!")
+    print("'x' is equal to Zero!")
 else :
-    print("This number is positive!")
+    print("'x' is positive!")
 #------------------#
 "This number is negative!"
 ```
 
 
+---
+## While Statements
+Loop statements(Repeat while condition is True)
+
+
+### while
+
+```python
+condition = True
+while condition:
+    operation
 ```
+
+* Example
+```python
+x = 3
+#------------------#
+while x < 7:
+    print(str(x) + " is less than 7!")
+    x += 1
+#------------------#
+"'3' is less than 7!"
+"'4' is less than 7!"
+"'5' is less than 7!"
+"'6' is less than 7!"
+```
+
+### break
+```python
+condition1 = True
+while condition1:
+    operation1
+    if condition2:
+        break
+```
+
+* Example
+```python
+x = 0
+#-------------#
+while True:
+    x += 1
+    if x == 4:
+        break
+    print (x)
+#-------------#
+1
+2
+3
+```
+
+### continue: jump to next
+```python
+condition1 = True
+while condition1:
+    operation1
+    if condition2:
+        continue
+```
+
+* Example
+```python
+x = 0
+#-------------#
+while x < 10:
+    x += 1
+    if x % 2 == 0:#if 'x' is even number 
+        continue
+    print (x)
+#-------------#
+1
+3
+5
+7
+9
+```
+
+### else: following break statements
+```python
+condition1 = True
+while condition1:
+    operation1
+    if condition2:
+        break
+```
+
+* Example
+```python
+x = 0
+#-------------#
+while True:
+    x += 1
+    if x == 4:
+        break
+    print (x)
+#-------------#
+1
+2
+3
+```
+
 
 ### words
 
