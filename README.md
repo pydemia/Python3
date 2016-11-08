@@ -32,7 +32,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Functions
 
-### Defining Functions
+### Basics on Functions
 
 * [Defining Fuctions]()
 * [Positional Arguments]()
