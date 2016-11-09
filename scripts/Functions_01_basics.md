@@ -59,7 +59,7 @@ adder('Result', 2, 3)
 
 ## Keyword Arguments
 
-The way to use _arguments_ depending on its name.(Don't need to keep _arguments_ in order!)
+The way to use _arguments_ depending on its keyword(parameter).(Don't need to keep _arguments_ in order!)
 ```python
 def adder(srt=string, num1=a, num2=b)
     print(srt, ': ', a + b)
