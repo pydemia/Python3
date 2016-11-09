@@ -35,7 +35,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ### Basics on Functions
 
 * [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#defining-functions)
-* [Local & Global Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#local-and-global-variables)
+* [Local / Global Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#local-/-global-variables)
 * [Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arguments)
 * [Docstrings](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
 
