@@ -338,8 +338,13 @@ runfunc_and_double(adder, 3, 5)
 ---
 ## Nested Functions - Inner Functions
 
-You can define a **_Function_** within another **_Function_**  
-the inner Functions can access to the variables within the outer functions.
+You can define a **_Function_** within another **_Function_**.  
+It is built for complex operations repeated within Functions.
+The inner Functions can access to the variables within the outer functions.  
+
+* The Outer functions have the nested Functions.  
+* The Nested Functions(the child functions) refer to the variables of the Outer Function(the parent functions).  
+* The Outer Functions(the outer functions) return the Nested Functions(the child functions).  
 
 ```python
 def runfunc_and_mult(a, b, c):
@@ -357,14 +362,27 @@ runfunc_and_mult(3, 5, 4)
 ---
 ## Closures
 
-* The Outer functions have the nested Functions.  
-* The Nested Functions(the child functions) refer to the variables of the Outer Function(the parent functions).  
-* The Outer Functions(the outer functions) return the Nested Functions(the child functions).  
-
+Closures can be generated to other Functions, and operate & change the variables from _the outer Functions._
 When do you use **_Closure_**?  
 
 * Not to use _Global Variables_.
 * Keep & Hide the inner data.  
+
+```python
+def runfunc_and_mult(a, b):
+    def adder():
+        return a + b
+    return adder            # the outer function did not CALL function, but RETURN the copied one.
+
+a = runfunc_and_mult(1,2)
+a
+<function runfunc_and_mult.<locals>.adder at 0x7fc9bace8620>
+type(a)
+<class 'function'>
+a()
+3                          # It remembers the variables from the outer functions.
+```
+
 
 
 
