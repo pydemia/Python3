@@ -445,7 +445,7 @@ It's _iterable_ so you can iterate through HUGE Sequences without creaating & st
 
 Look at the custom ver. of ```range()```
 ```python
-def myrnage(start, end, step):
+def myrange(start, end, step):
     i = start
     while i < end:
         yield i
@@ -529,16 +529,6 @@ adder(1, 2)
 res*2: 6 # 1. double  Decorator
 res+1: 7 # 2. plusone Decorator
 ```
-
-## Errors
-
-## Exceptions
-
-## Clean-up Actions
-[↑ Up to the Top](#data-structure)
-
-
-
 
 
 
