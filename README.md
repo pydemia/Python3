@@ -39,7 +39,7 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arguments)
 * [Docstrings](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
 
-### Advances in Functions
+### Intermediate Functions
 
 * [Functions as Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#functions-as-objects)
 * [Nested Functions - Inner Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#nested-functions---inner-functions)
@@ -48,28 +48,33 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Generators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#generators)
 * [Decorators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#decorators)
 
+### Advanced Functions
+* [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_02_iter.md)
+* [Coroutine](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_03_coroutine.md)
+
 ---
 ## Classes
 
-### Defining Classes
+### Basics in Classes
 
-* [Names & Objects]()
-* [Scopes & Namespaces]()
-* [Classes & Instances & Methods]()
+* [Names & Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
+* [Scopes & Namespaces](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
+* [Classes & Instances & Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
 
 
 ### Errors & Exceptions
 
-* [Errors]()
-* [Exceptions]()
-* [Clean-up Actions]()
+* [Errors](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
+* [Exceptions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
+* [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
 
 
-### Advances in Classes
+### Intermediate Classes
 
-* [Inheritance]()
-* [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
-* [Coroutine](https://github.com/dawkiny/Python3/blob/master/ControlFlow_02_coroutine.md)
+* [Inheritance](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
+
+### Advanced Classes
+
 
 ---
 ## Modules
