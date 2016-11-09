@@ -69,7 +69,7 @@ res
 
 
 ---
-## Local / Global Variables
+## Local and Global Variables
 
 
 
