@@ -48,6 +48,14 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Generators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#generators)
 * [Decorators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#decorators)
 
+---
+## Classes
+
+### Defining Classes
+
+* [Names & Objects]()
+* [Scopes & Namespaces]()
+* [Classes & Instances & Methods]()
 
 
 ### Errors & Exceptions
@@ -56,6 +64,12 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Exceptions]()
 * [Clean-up Actions]()
 
+
+### Advanced Classes
+
+* [Inheritance]()
+* [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
+* [Coroutine](https://github.com/dawkiny/Python3/blob/master/ControlFlow_02_coroutine.md)
 
 ---
 ## Modules
@@ -68,21 +82,6 @@ This contains the information &amp; sources of Python, which is a programming la
 
 * [Output Formatting]()
 * [Reading & Writing Files]()
-
----
-## Classes
-
-### Defining Classes
-
-* [Names & Objects]()
-* [Scopes & Namespaces]()
-* [Classes & Instances & Methods]()
-
-### Advanced Classes
-
-* [Inheritance]()
-* [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
-* [Coroutine](https://github.com/dawkiny/Python3/blob/master/ControlFlow_02_coroutine.md)
 
 ---
 ## Libraries
