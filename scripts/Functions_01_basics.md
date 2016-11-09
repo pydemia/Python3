@@ -28,26 +28,7 @@ printer()
 #'Python!'
 ```
 
-### Arguments
 
-A **Function** can have _arguments_.
-```python
-def adder(a, b)
-    return(a + b)
-
-adder(1, 2)
-#3
-```
-
-Using _arguments_ should be careful, because of its **data type**.  
-If you don't you would encounter many _Errors_ & _Exceptions_.
-```python
-adder('q', 2)
-#Trackback (most recent call last):'
-#TypeError: Can't convert 'int' object to str implicitly
-```
-
----
 ### ```return``` Statements
 
 It returns the result object of a _Fcuntion_ When the _Function_ is called.  
@@ -85,8 +66,11 @@ When Using a _Function_, the variables inside of the _Function_ and ones outside
 
 _Inside of Objects like Classes or Functions_ are called **_Local Environments_**,  
 and _Outside of Objects_ is called **_Global Environment_**.  
+
 The variables belong to **_Local Environments_** are called **_Local Variables_**,  
-and the variables belong to **_Global Environment_** are called **_Global Variables_**.
+and the variables belong to **_Global Environment_** are called **_Global Variables_**.  
+
+**_Local Variables_** cannot affected to **_Global Variables_**
 ```python
 x = 2        # 'x' is a global variable.
 def funct():
@@ -101,9 +85,55 @@ x
 ```
 
 
-But in Local(in this case, inside of the Function), you can use Global Variables.  
-This way is _**not recommended_** because operations in the local environments get affected to the **_Global Environment_** and throw _Errors b Exceptions._ despite Local operations are **CORRECT**!.  
+But in Local(in this case, inside of Functions), you can use Global Variables.  
+This way is _**not recommended_** because operations in the local environments get affected to the **_Global Environment_** and throw _Errors & Exceptions_, despite Local operations are **CORRECT**!.  
 _That's why we should use **Arguments**._
+
+```python
+x = 2        # 'x' is a global variable.
+def funct():
+    print(x)
+```
+funct()
+#2           # Local 'x' is not defined: then it refers to Global.
+```
+
+### ```global``` Statements
+
+To change **_Global Variables_** in **_Local Environments_**, use ```global``` Statements.  
+```python
+x = 2        # 'x' is a global variable.
+def funct():
+    global x # For now, we use this 'x' as a global variable.
+    x = 10   # Assign 10 to 'x' in the global environment.
+    print(x)
+
+funct()
+#10
+
+x
+#10
+```
+
+
+### Arguments
+
+A **Function** can have _arguments_.
+```python
+def adder(a, b)
+    return(a + b)
+
+adder(1, 2)
+#3
+```
+
+Using _arguments_ should be careful, because of its **data type**.  
+If you don't you would encounter many _Errors_ & _Exceptions_.
+```python
+adder('q', 2)
+#Trackback (most recent call last):'
+#TypeError: Can't convert 'int' object to str implicitly
+```
 
 
 ## Positional Arguments
@@ -139,6 +169,13 @@ The following is wrong:
 ```python
 def func(a=1, b)
 ```
+
+
+## VarArges: Variable Arguments
+
+Using **_\*_**, you can express variable numbers of arguments.  
+
+
 
 [↑ Up to the Top](#data-structure)
 
