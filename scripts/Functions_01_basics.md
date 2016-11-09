@@ -71,10 +71,6 @@ res
 ---
 ## Local and Global Variables
 
-
-
-### Local Variables
-
 When Using a _Function_, the variables inside of the _Function_ and ones outside of the _Function_ are separate.  
 
 _Inside of Objects like Classes or Functions_ are called **_Local Environments_**,  
@@ -465,7 +461,7 @@ This function can show how **_Generator_** works.
 Using **_Decorators_**, you can modify existing functions without changing it.  
 It's a _Function_ takes one function as input & returns another.
 
-Let's define a **_Decorator_**
+Let's define a **_Decorator_**.
 ```python
 def plusone(func):
     def function(*args):
@@ -475,7 +471,7 @@ def plusone(func):
     return function
 ```
 
-And then,  define a _normal Function_ and use the**_Decorator_**
+And then,  define a _normal Function_ and use the**_Decorator_**.
 
 * Case 1: without the Decorator
 ```python
