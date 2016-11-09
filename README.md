@@ -37,6 +37,9 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#defining-functions)
 * [Local and Global Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#local-and-global-variables)
 * [Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arguments)
+1. [Positional Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#positional-arguments)
+1. [Keyword Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#keyword-arguments)
+1. [Arbitrary Arguments Lists](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arbitrary-arguments-lists)
 * [Docstrings](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
 
 ### Intermediate Functions
