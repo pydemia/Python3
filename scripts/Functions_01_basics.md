@@ -3,7 +3,7 @@
 ---
 # Functions
 
-
+---
 # Basics on Functions
 
 ## Defining Functions
@@ -68,7 +68,7 @@ res
 
 
 
-
+---
 ## Local & Global Variables
 
 
@@ -132,7 +132,9 @@ x
 
 
 
-### Arguments
+
+---
+## Arguments
 
 A **Function** can have _arguments_.
 ```python
@@ -155,7 +157,8 @@ adder('q', 2)
 
 
 
-## Positional Arguments
+---
+### Positional Arguments
 
 The way to use _arguments_ depending on its **order**.
 ```python
@@ -169,8 +172,8 @@ adder('Result', 2, 3)
 
 
 
-
-## Keyword Arguments
+---
+### Keyword Arguments
 
 The way to use _arguments_ depending on its keyword(parameter).(Don't need to keep _arguments_ in order!)  
 When using _Keyword Arguments_, you can set default values.  
@@ -196,8 +199,8 @@ def func(a=1, b):
 
 
 
-
-## VarArges: Arbitrary Arguments Lists
+---
+### VarArges: Arbitrary Arguments Lists
 
 Using **_\*_**, you can express variable numbers of **_Positional Arguments_**.  
 At this time, ```*args```are gathered as a **_Tuple_**.  
@@ -254,7 +257,7 @@ num2: 4
 
 
 
-
+---
 ## Docstrings
 
 For _Readability_, You can attach **_Documentation Strings_**.  
@@ -309,6 +312,9 @@ print(adder.__doc__)
 
 
 
+---
+# Advances in Functions  
+
 
 ## Functions as an _Object_
 
@@ -329,7 +335,7 @@ runfunc_and_double(adder, 3, 5)
 
 
 
-
+---
 ## Nested Functions(Inner Functions)
 
 You can define a **_Function_** within another **_Function_**  
@@ -348,7 +354,7 @@ runfunc_and_mult(3, 5, 4)
 
 
 
-
+---
 ## Closures
 
 * The Outer functions have the nested Functions.  
@@ -363,7 +369,7 @@ When do you use **_Closure_**?
 
 
 
-
+---
 ## Lambda Functions
 
 Anonymous Functions of Python.  It generates & returns retults **_ONCE_**.  
@@ -412,16 +418,99 @@ editor(numlist, lambda i: i+1)
 
 
 
-
-## Iterators
-
-
-
+---
 ## Generators
 
+The Python Sequence Objects.  
+It's _iterable_ so you can iterate through HUGE Sequences without creaating & storing the entire sequence in memory at once.  
+```range()``` is the most famous generator in Python3.(```xrange()``` in Python2.  
 
+Look at the custom ver. of ```range()```
+```python
+def myrnage(start, end, step):
+    i = start
+    while i < end:
+        yield i
+        i += step
+```
+
+It's a normal Function,  
+and it returns a **_Generator Object_**.  
+This function can show how **_Generator_** works.  
+```yield``` Statements can throw out the output of ```i```, step by step, while the function is operating(the ```while``` Statement is looping).  
+
+
+
+---
 ## Decorators
 
+Using **_Decorators_**, you can modify existing functions without changing it.  
+It's a _Function_ takes one function as input & returns another.
+
+Let's define a **_Decorator_**
+```python
+def plusone(func):
+    def function(*args):
+        res = func(*args):
+        print('res + 1:', res+1)
+        return res+1
+    return function
+```
+
+And then,  define a _normal Function_ and use the**_Decorator_**
+
+* Case 1: without the Decorator
+```python
+def adder(a, b):
+    return a+b
+
+adder(1, 2)
+3 # it returns 3
+```
+
+* Case 2: with the Decorator
+```python
+@plusone
+def adder(a, b):
+    return a+b
+
+adder(1, 2)
+res+1: 4 # print & +1 function: adder function was Decorated!
+4         # return the Decoratsed result!
+```
+
+
+You can use multiple **_Decorators_**.  
+The closer one decorates the function first.
+```python
+# Create another Decorator
+def double(func):
+    def function(*args):
+        res = func(*args)
+        print('res*2:', res*2)
+        return res*2
+    return function
+
+@double
+@plusone
+def adder(a, b):
+    return a+b
+
+adder(1, 2)
+res+1: 4 # 1. plusone Decorator
+res*2: 8 # 2. double  Decorator
+```
+
+```python
+@print_form
+@double
+def adder(a, b):
+    return a+b
+
+adder(1, 2)
+res*2: 6 # 1. double  Decorator
+res+1: 7 # 2. plusone Decorator
+```
 
 ## Errors
 
