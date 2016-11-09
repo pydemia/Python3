@@ -313,7 +313,7 @@ print(adder.__doc__)
 
 
 ---
-# Advances in Functions  
+# Advanced Functions  
 
 
 ## Functions as _Objects_
