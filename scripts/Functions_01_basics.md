@@ -3,6 +3,9 @@
 ---
 # Functions
 
+
+# Basics on Functions
+
 ## Defining Functions
 
 A **Fuction** has 2 steps;_Define_ & _Call_.
