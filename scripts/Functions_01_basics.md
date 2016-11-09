@@ -8,6 +8,7 @@
 A **Fuction** has 2 steps;_Define_ & _Call_.
 It operates when it is _called_.
 
+### ```python def ```
 ```python
 # Define
 def func_name():
@@ -26,7 +27,7 @@ printer()
 #'Python!'
 ```
 
-* Arguments
+### Arguments
 
 A **Function** can have _arguments_.
 ```python
@@ -60,35 +61,25 @@ adder('Result', 2, 3)
 ## Keyword Arguments
 
 The way to use _arguments_ depending on its keyword(parameter).(Don't need to keep _arguments_ in order!)
+When using _Keyword Arguments_, you can set default values.
+The default values should be **_Constants_**
 ```python
-def adder(srt=string, num1=a, num2=b)
-    print(srt, ': ', a + b)
+def adder(srt=string, num1=1, num2=2)
+    print(srt, ': ', num1 + num2)
 
-adder(num1=4, str='Result', num2=3)
-#'Result :  7'
+adder(num1=4, str='Result')
+#'Result :  6'
 ```
 
-# Data Structure
-
-* [words](#words)
-
-
-
-
-
----
-## words
-words
-
-### words
-
-### Operation
- 
+**_Keyword Arguments_** should be defined behind **_Positional Arguments_**.
+This is correct:
 ```python
-codes
+def func(a, b=1)
 ```
-
-
+The following is wrong:
+```python
+def func(a=1, b)
+```
 
 [↑ Up to the Top](#data-structure)
 
