@@ -8,7 +8,8 @@
 A **Fuction** has 2 steps;_Define_ & _Call_.
 It operates when it is _called_.
 
-### ```python def ```
+### ```def ``` & Statements
+
 ```python
 # Define
 def func_name():
@@ -31,10 +32,9 @@ printer()
 
 A **Function** can have _arguments_.
 ```python
-#-----------------#
 def adder(a, b)
     return(a + b)
-#-----------------#
+
 adder(1, 2)
 #3
 ```
@@ -47,6 +47,62 @@ adder('q', 2)
 #TypeError: Can't convert 'int' object to str implicitly
 ```
 
+---
+### ```return``` Statements
+
+It returns the result object of a _Fcuntion_ When the _Function_ is called.
+Using ```return``` can assign the result of a _Function_ as an _object_.
+
+Look at the difference between ```print``` and ```return```
+
+With ```print```, it just prints the result.
+```python
+def adder(a, b)
+    print(a + b)
+
+res = adder(1, 2)
+#3 (print operation)
+res
+#Nothing is shown!
+```
+
+With ```return``` Statements:
+```python
+def adder(a, b)
+    return(a + b)
+
+res = adder(1, 2)
+#Nothing is shown, but assignment is done!
+res
+#3
+```
+
+## Local & Global Variables
+
+### Local Variables
+
+When Using a _Function_, the variables inside of the _Function_ and ones outside of the _Function_ are separate.
+
+_Inside of Objects like Classes or Functions_ is called **_Local Environment_**,
+and _Outside of Objects_ is called **_Global Environment_**.
+the variables belong to **_Local Environment_** are called **_Local Variables_**,
+and the variables belong to **_Global Environment_** are called **_Global Variables_**
+```python
+x = 2        # 'x' is a global variable.
+def funct():
+    x = 10   # This 'x' is a local variable.
+    print(x)
+
+funct()
+#10          # It's about the local.
+
+x
+#2           # It's about the global.
+```
+
+
+But in Local(in this case, inside of the Function), you can use Global Variables.
+This way is not recommended because operations in the local environments 
 ## Positional Arguments
 
 The way to use _arguments_ depending on its **order**.
