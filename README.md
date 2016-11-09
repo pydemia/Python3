@@ -1,8 +1,4 @@
-​
-75
-​
-76
-### Local Variables# Python3
+# Python3
 This contains the information &amp; sources of Python, which is a programming language.
 
 ---
