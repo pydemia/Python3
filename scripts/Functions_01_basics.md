@@ -276,7 +276,7 @@ print(adder.__doc__)
 'This function operates addition.'
 ```
 
-## Functions as A Object
+## Functions as an _Object_
 
 **_Functions_** can be **_Arguments_**.
 
@@ -292,9 +292,11 @@ runfunc_and_double(adder, 3, 5)
 16 # res = adder(3, 5) = 3+5, and res*2 = 8*2 = 16
 ```
 
-## Inner Functions
+## Nested Functions(Inner Functions)
 
 You can define a **_Function_** within another **_Function_**  
+the inner Functions can access to the variables within the outer functions.
+
 ```python
 def runfunc_and_mult(a, b, c):
     def adder(a, b):
@@ -307,8 +309,78 @@ runfunc_and_mult(3, 5, 4)
 
 ## Closures
 
+* The Outer functions have the nested Functions.  
+* The Nested Functions(the child functions) refer to the variables of the Outer Function(the parent functions).  
+* The Outer Functions(the outer functions) return the Nested Functions(the child functions).  
 
+When do you use **_Closure_**?  
+
+* Not to use _Global Variables_.
+* Keep & Hide the inner data.  
+
+
+## Lambda Functions
+
+Anonymous Functions of Python.  It generates & returns retults **_ONCE_**.  
+It is the simple way to generate Functions. You can use **_Lambda Functions_** _temporarily_.  
+
+
+```lambda``` takes one argument.
+```python
+[lambda arg: operation(arg)]
+```
+
+* Example
+```python
+numlist = [1, 2, 3, 4]
+
+def editor(numbers, func):
+    for i in numbers:
+        print(func(i))
+
+def plusone(num):
+    return num + 1
+
+editor(numlist, plusone)
+2
+3
+4
+5 
+```
+
+```lambda``` is more simple!
+
+```python
+numlist = [1, 2, 3, 4]
+
+def editor(numbers, func):
+    for i in numbers:
+        print(func(i))
+
+editor(numlist, lambda i: i+1)
+2
+3
+4
+5
+```
+
+## Iterators
+
+
+
+## Generators
+
+
+## Decorators
+
+
+## Errors
+
+## Exceptions
+
+## Clean-up Actions
 [↑ Up to the Top](#data-structure)
+
 
 
 
