@@ -39,7 +39,7 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arguments)
 * [Docstrings](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
 
-### Advanced Functions
+### Advances in Functions
 
 * [Functions as Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#functions-as-objects)
 * [Nested Functions - Inner Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#nested-functions---inner-functions)
@@ -65,7 +65,7 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Clean-up Actions]()
 
 
-### Advanced Classes
+### Advances in Classes
 
 * [Inheritance]()
 * [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/ControlFlow_01_iter.md)
