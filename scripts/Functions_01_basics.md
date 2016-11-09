@@ -11,6 +11,8 @@
 A **Fuction** has 2 steps;_Define_ & _Call_.
 It operates when it is _called_.
 
+
+
 ### ```def ``` Statements
 
 ```python
@@ -30,6 +32,7 @@ def printer():
 printer()
 #'Python!'
 ```
+
 
 
 ### ```return``` Statements
@@ -61,7 +64,14 @@ res
 #3
 ```
 
+
+
+
+
+
 ## Local & Global Variables
+
+
 
 ### Local Variables
 
@@ -101,6 +111,8 @@ funct()
 2           # Local 'x' is not defined: then it refers to Global.
 ```
 
+
+
 ### ```global``` Statements
 
 To change **_Global Variables_** in **_Local Environments_**, use ```global``` Statements.  
@@ -117,6 +129,7 @@ funct()
 x
 #10
 ```
+
 
 
 ### Arguments
@@ -139,6 +152,9 @@ adder('q', 2)
 ```
 
 
+
+
+
 ## Positional Arguments
 
 The way to use _arguments_ depending on its **order**.
@@ -150,11 +166,15 @@ adder('Result', 2, 3)
 #'Result :  5'
 ```
 
+
+
+
+
 ## Keyword Arguments
 
-The way to use _arguments_ depending on its keyword(parameter).(Don't need to keep _arguments_ in order!)
-When using _Keyword Arguments_, you can set default values.
-The default values should be **_Constants_**
+The way to use _arguments_ depending on its keyword(parameter).(Don't need to keep _arguments_ in order!)  
+When using _Keyword Arguments_, you can set default values.  
+The default values should be **_Constants_**  
 ```python
 def adder(srt=string, num1=1, num2=2):
     print(srt, ': ', num1 + num2)
@@ -172,6 +192,9 @@ The following is wrong:
 ```python
 def func(a=1, b):
 ```
+
+
+
 
 
 ## VarArges: Arbitrary Arguments Lists
@@ -228,6 +251,10 @@ num2: 4
 {'num8': 7, 'num9': 24, 'num7': 5)  # a dict
 ```
 
+
+
+
+
 ## Docstrings
 
 For _Readability_, You can attach **_Documentation Strings_**.  
@@ -279,6 +306,10 @@ print(adder.__doc__)
 'This function operates addition.'
 ```
 
+
+
+
+
 ## Functions as an _Object_
 
 **_Functions_** can be **_Arguments_**.
@@ -295,6 +326,10 @@ runfunc_and_double(adder, 3, 5)
 16 # res = adder(3, 5) = 3+5, and res*2 = 8*2 = 16
 ```
 
+
+
+
+
 ## Nested Functions(Inner Functions)
 
 You can define a **_Function_** within another **_Function_**  
@@ -310,6 +345,10 @@ runfunc_and_mult(3, 5, 4)
 32 # 3+5 = 8, and 8*4 = 32
 ```
 
+
+
+
+
 ## Closures
 
 * The Outer functions have the nested Functions.  
@@ -320,6 +359,9 @@ When do you use **_Closure_**?
 
 * Not to use _Global Variables_.
 * Keep & Hide the inner data.  
+
+
+
 
 
 ## Lambda Functions
@@ -366,6 +408,10 @@ editor(numlist, lambda i: i+1)
 4
 5
 ```
+
+
+
+
 
 ## Iterators
 
