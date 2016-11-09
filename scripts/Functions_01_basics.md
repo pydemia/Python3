@@ -336,7 +336,7 @@ runfunc_and_double(adder, 3, 5)
 
 
 ---
-## Nested Functions
+## Nested Functions - Inner Functions
 
 You can define a **_Function_** within another **_Function_**  
 the inner Functions can access to the variables within the outer functions.
