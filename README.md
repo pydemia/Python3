@@ -38,9 +38,9 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Basics on Functions
 
-* [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#defining-functions)
- *. [```def``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#def-statements)
- *. [```return``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#return-statements)
+* [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#defining-functions)  
+ *. [```def``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#def-statements)  
+ *. [```return``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#return-statements)  
 * [Local and Global Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#local-and-global-variables)
 * [Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arguments)
  1. [Positional Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#positional-arguments)
