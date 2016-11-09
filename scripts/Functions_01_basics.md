@@ -200,7 +200,7 @@ def func(a=1, b):
 
 
 ---
-### VarArges: Arbitrary Arguments Lists
+### Arbitrary Arguments Lists
 
 Using **_\*_**, you can express variable numbers of **_Positional Arguments_**.  
 At this time, ```*args```are gathered as a **_Tuple_**.  
@@ -316,7 +316,7 @@ print(adder.__doc__)
 # Advances in Functions  
 
 
-## Functions as an _Object_
+## Functions as _Objects_
 
 **_Functions_** can be **_Arguments_**.
 
