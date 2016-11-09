@@ -423,7 +423,7 @@ editor(numlist, lambda i: i+1)
 
 The Python Sequence Objects.  
 It's _iterable_ so you can iterate through HUGE Sequences without creaating & storing the entire sequence in memory at once.  
-```range()``` is the most famous generator in Python3.(```xrange()``` in Python2.  
+```range()``` is the most famous generator in Python3(```xrange()``` in Python2).  
 
 Look at the custom ver. of ```range()```
 ```python
