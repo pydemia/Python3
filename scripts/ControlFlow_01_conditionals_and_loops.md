@@ -18,7 +18,7 @@ An operation returns boolean(True or False)
 
 | Operator | Description |
 | :------: | :---------- |
-| == | Equal to |
+| ```==``` | Equal to |
 | != | NOT Equal to |
 | <  | Less than |
 | >  | Greater than |
