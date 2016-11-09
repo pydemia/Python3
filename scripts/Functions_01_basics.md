@@ -10,29 +10,24 @@ It operates when it is _called_.
 
 ```python
 # Define
-#-----------------#
 def func_name():
     operation
-#-----------------#
 
 # Call
-#-----------------#
 func_name()
-#-----------------#
 ```
 
 * Example
 ```python
-#-----------------#
 def printer()
     print("Python!")
-#-----------------#
 
 printer()
 #'Python!'
 ```
 
 * Arguments
+
 A **Function** can have _arguments_.
 ```python
 #-----------------#
