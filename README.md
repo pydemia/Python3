@@ -35,14 +35,14 @@ This contains the information &amp; sources of Python, which is a programming la
 ### Basics on Functions
 
 * [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#defining-functions)
-* [Local & Global Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#local-&-global-variables)
+* [Local & Global Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#local-\&-global-variables)
 * [Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arguments)
 * [Docstrings](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
 
 ### Advanced Functions
 
 * [Functions as Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#functions-as-objects)
-* [Nested Functions(Inner Functions)](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#nested-functions(inner-functions))
+* [Nested Functions(Inner Functions)](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#nested-functions\(inner-functions\))
 * [Closures](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#closures)
 * [Lambda Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#lambda-functions)
 * [Generators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#generators)
