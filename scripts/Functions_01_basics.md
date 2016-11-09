@@ -8,7 +8,7 @@
 A **Fuction** has 2 steps;_Define_ & _Call_.
 It operates when it is _called_.
 
-### ```def ``` & Statements
+### ```def ``` Statements
 
 ```python
 # Define
@@ -39,7 +39,7 @@ adder(1, 2)
 #3
 ```
 
-Using _arguments_ should be careful, because of its **data type**.
+Using _arguments_ should be careful, because of its **data type**.  
 If you don't you would encounter many _Errors_ & _Exceptions_.
 ```python
 adder('q', 2)
@@ -50,7 +50,7 @@ adder('q', 2)
 ---
 ### ```return``` Statements
 
-It returns the result object of a _Fcuntion_ When the _Function_ is called.
+It returns the result object of a _Fcuntion_ When the _Function_ is called.  
 Using ```return``` can assign the result of a _Function_ as an _object_.
 
 Look at the difference between ```print``` and ```return```
@@ -81,12 +81,12 @@ res
 
 ### Local Variables
 
-When Using a _Function_, the variables inside of the _Function_ and ones outside of the _Function_ are separate.
+When Using a _Function_, the variables inside of the _Function_ and ones outside of the _Function_ are separate.  
 
-_Inside of Objects like Classes or Functions_ is called **_Local Environment_**,
-and _Outside of Objects_ is called **_Global Environment_**.
-the variables belong to **_Local Environment_** are called **_Local Variables_**,
-and the variables belong to **_Global Environment_** are called **_Global Variables_**
+_Inside of Objects like Classes or Functions_ are called **_Local Environments_**,  
+and _Outside of Objects_ is called **_Global Environment_**.  
+The variables belong to **_Local Environments_** are called **_Local Variables_**,  
+and the variables belong to **_Global Environment_** are called **_Global Variables_**.
 ```python
 x = 2        # 'x' is a global variable.
 def funct():
@@ -101,8 +101,11 @@ x
 ```
 
 
-But in Local(in this case, inside of the Function), you can use Global Variables.
-This way is not recommended because operations in the local environments 
+But in Local(in this case, inside of the Function), you can use Global Variables.  
+This way is _**not recommended_** because operations in the local environments get affected to the **_Global Environment_** and throw _Errors b Exceptions._ despite Local operations are **CORRECT**!.  
+_That's why we should use **Arguments**._
+
+
 ## Positional Arguments
 
 The way to use _arguments_ depending on its **order**.
