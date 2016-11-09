@@ -21,7 +21,7 @@ func_name()
 
 * Example
 ```python
-def printer()
+def printer():
     print("Python!")
 
 printer()
@@ -38,7 +38,7 @@ Look at the difference between ```print``` and ```return```
 
 With ```print```, it just prints the result.
 ```python
-def adder(a, b)
+def adder(a, b):
     print(a + b)
 
 res = adder(1, 2)
@@ -49,8 +49,8 @@ res
 
 With ```return``` Statements:
 ```python
-def adder(a, b)
-    return(a + b)
+def adder(a, b):
+    return a + b
 
 res = adder(1, 2)
 #Nothing is shown, but assignment is done!
@@ -78,10 +78,10 @@ def funct():
     print(x)
 
 funct()
-#10          # It's about the local.
+10          # It's about the local.
 
 x
-#2           # It's about the global.
+2           # It's about the global.
 ```
 
 
@@ -95,7 +95,7 @@ def funct():
     print(x)
 ```
 funct()
-#2           # Local 'x' is not defined: then it refers to Global.
+2           # Local 'x' is not defined: then it refers to Global.
 ```
 
 ### ```global``` Statements
@@ -120,7 +120,7 @@ x
 
 A **Function** can have _arguments_.
 ```python
-def adder(a, b)
+def adder(a, b):
     return(a + b)
 
 adder(1, 2)
@@ -140,7 +140,7 @@ adder('q', 2)
 
 The way to use _arguments_ depending on its **order**.
 ```python
-def adder(string, num1, num2)
+def adder(string, num1, num2):
     print(string, ': ', num1 + num2)
 
 adder('Result', 2, 3)
@@ -153,7 +153,7 @@ The way to use _arguments_ depending on its keyword(parameter).(Don't need to ke
 When using _Keyword Arguments_, you can set default values.
 The default values should be **_Constants_**
 ```python
-def adder(srt=string, num1=1, num2=2)
+def adder(srt=string, num1=1, num2=2):
     print(srt, ': ', num1 + num2)
 
 adder(num1=4, str='Result')
@@ -163,18 +163,149 @@ adder(num1=4, str='Result')
 **_Keyword Arguments_** should be defined behind **_Positional Arguments_**.
 This is correct:
 ```python
-def func(a, b=1)
+def func(a, b=1):
 ```
 The following is wrong:
 ```python
-def func(a=1, b)
+def func(a=1, b):
 ```
 
 
-## VarArges: Variable Arguments
+## VarArges: Arbitrary Arguments Lists
 
-Using **_\*_**, you can express variable numbers of arguments.  
+Using **_\*_**, you can express variable numbers of **_Positional Arguments_**.  
+At this time, ```*args```are gathered as a **_Tuple_**.  
+It should be the end of the **_Positional Arguments_** lists.
 
+* Example: ```*args```
+
+```python
+def printer(num1, num2, *args):
+    print('num1:', num1)
+    print('num2:', num2)
+    print(args)
+
+printer(2, 3, 4, 5, 7, 24)
+num1: 2
+num2: 3
+(4, 5, 7, 24)   # a tuple
+```
+
+Using **_\*\*_**, you can express variable numbers of **_Keyword Arguments_**.  
+At this time, ```*args```are gathered as a **_Dictionary_**.  
+It should be the end of the **_Keword Arguments_** lists.
+
+* Example: ```**kwargs```
+
+```python
+def printer(num1, num2=11, **args):
+    print('num1:', num1)
+    print('num2:', num2)
+    print(kwargs)
+
+printer(2, num2=4, num7=5, num8=7, num9=24)
+num1: 2
+num2: 4
+{'num8': 7, 'num9': 24, 'num7': 5)   # a dict
+```
+
+* Order of Arguments: ```(arg, *args, kwarg, **kwargs)```
+
+```python
+def printer(num1, num2=11, **args):
+    print('num1:', num1)
+    print(args)
+    print('num2:', num2)
+    print(kwargs)
+
+printer(1, 2, 3, num2=4, num7=5, num8=7, num9=24)
+num1: 1
+(2, 3)                              # a tuple
+num2: 4
+{'num8': 7, 'num9': 24, 'num7': 5)  # a dict
+```
+
+## Docstrings
+
+For _Readability_, You can attach **_Documentation Strings_**.  
+Just put the strings at the beginning of the function body; the first line of it!  
+
+
+```python
+def adder(a, b):
+    'This function operates addition.'
+    return(a + b)
+
+adder(1, 2)
+```
+
+You can make multilined-Docstrings.
+```python
+def adder(a, b):
+    '''
+    This function
+    operates
+    addition.
+    '''
+    return(a + b)
+```
+
+**_Docstrings doesn't appear when the function is called.
+```python
+adder(1, 2)
+3
+```
+
+To show **_Docstrings_**(if it exists), call the ```help()``` function.
+```python
+help(adder)
+Help on function adder in module __main__:
+
+adder(a, b)
+    This function operates addition.
+```
+
+To show the raw **_Docstrings_**, call the ```__doc__``` variable.  
+It is the internal name of **_Docstrings_** within the function.
+
+```python
+adder.__doc__
+'This function operates addition.'
+
+print(adder.__doc__)
+'This function operates addition.'
+```
+
+## Functions as A Object
+
+**_Functions_** can be **_Arguments_**.
+
+```python
+def adder(a, b):
+    return a + b
+
+def runfunc_and_double(func, a, b):
+    res = func(a, b)
+    return res * 2
+
+runfunc_and_double(adder, 3, 5)
+16 # res = adder(3, 5) = 3+5, and res*2 = 8*2 = 16
+```
+
+## Inner Functions
+
+You can define a **_Function_** within another **_Function_**  
+```python
+def runfunc_and_mult(a, b, c):
+    def adder(a, b):
+        return a + b
+    return adder(a, b) * c
+
+runfunc_and_mult(3, 5, 4)
+32 # 3+5 = 8, and 8*4 = 32
+```
+
+## Closures
 
 
 [↑ Up to the Top](#data-structure)
