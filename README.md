@@ -42,7 +42,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ### Advanced Functions
 
 * [Functions as Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#functions-as-objects)
-* [Nested Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#nested-functions---inner-functions)
+* [Nested Functions - Inner Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#nested-functions---inner-functions)
 * [Closures](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#closures)
 * [Lambda Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#lambda-functions)
 * [Generators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#generators)
