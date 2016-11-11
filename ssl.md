@@ -12,7 +12,4 @@ conda config --set ssl_verify false
 1. download ```ibm_db.2.0.7.tar.gz``` from ```https://pypi.python.org/pypi/ibm_db```.   
 2. edit ```setup.py```; change url(startswith ```https://``` to ```http://```) manually.  
 3. change directory to ```ibm_db.2.0.7.tar.gz```.  
-4. ```sh
-pip install ibm_db_2.0.7.tar.gz
-```
- 
+4. ```pip install ibm_db_2.0.7.tar.gz``` 
