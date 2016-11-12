@@ -59,11 +59,9 @@ bruce.introduce()                  # Hello, I'm a member, Bruce Lee
 ```__init__``` Methods is _called_ when A **_Class_** is _instantiated_!
 ```__init__``` Methods _initialize_ a UNIQUE **_Class_** from **_Classes_** Definition when **_Objects_** are _generated_.   
 
-```self``` is the First Arguments refer to the **_Instance_** itself.  
-It is invisible when ```bruce``` _Instance_ is generated(We delivered only one argument in ```Membership('Bruce Lee')```), but automatically delivered to Python Method.  
-```__init___``` Method should have one Argument, which refer to the **_Instance_** itself.
-And this Argument should be the first Argument of ```__init___``` Method.  
-The word 'Self' is _generally_ used and _highly recommended_ for its name.  
+```self``` is the First Arguments refer to the **_Instance_** itself. It is invisible when ```bruce``` _Instance_ is generated(We delivered only one argument in ```Membership('Bruce Lee')```), but automatically delivered to Python Method.  
+
+```__init___``` Method should have one Argument, which refer to the **_Instance_** itself. It should be the first Argument of ```__init___``` Method. The word 'Self' is _generally_ used and _highly recommended_ for its name.  
  
 
 ### Class Variables and Method Variables
