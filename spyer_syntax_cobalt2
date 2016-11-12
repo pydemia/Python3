@@ -1,0 +1,18 @@
+Background	#193549
+Side areas	#0d3a58
+
+Current cell	#1f4662
+Current line 	#0d3a58
+Occurrence 	#3b5364
+Matched parens 	#0088ff
+Unmatchedparens #e1efff
+Link 		#0088ff
+
+Normal text 	#ffffff
+Comment 	#0088ff
+String 		#3ad900
+Number 		#ff628c
+Keyword 	#ff9d00
+Builtin 	#edef7d
+Definition 	#ffc600
+Instance 	#ff80e1
