@@ -156,6 +156,7 @@ print("In global scope:", spam)
 
 ```
 
+
 ## Errors and Exceptions
 
 ### Errors
