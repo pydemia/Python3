@@ -21,7 +21,7 @@ Classes have Methods. For example, ```str``` **_Class_** has ```.find()``` or ``
 **These Methods are defined in** ```str``` **_Class_** **and called for some operation with its Attribute(Data)** _keyboard_.  
 
 
-> In **O**bject-**O**riented **P**rogramming(**OOP**),  Attributes & Methods are hierarchically classificated into Classes.  
+> In Object-Oriented Programming(**OOP**),  Attributes & Methods are hierarchically classificated into Classes.  
 > **_Classes_** are sort of boxes, which is classificated by its usage.  
 > (A steel box for heavy things, a paper box for books, and a plastic box for fishes or water thing.)  
 > Like this, **Each** **_Classes_** **are defined & ready to deal with Data & Codes.**  
