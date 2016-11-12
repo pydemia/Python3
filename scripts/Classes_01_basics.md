@@ -156,11 +156,7 @@ print("In global scope:", spam)
 
 ```
 
-
-
-Class Methods , Instance Methods  
-
-## Errors & Exceptions
+## Errors and Exceptions
 
 ### Errors
 ### Exceptions
