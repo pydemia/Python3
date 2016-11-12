@@ -18,7 +18,7 @@ and Function ```adder``` represents A Function 'Code' _adder', Using  **_Class_*
 
 * Methods  
 Classes have Methods. For example, ```str``` **_Class_** has ```.find()``` or ```.upper()``` Methods.  
-**These Methods are defined in** ```str``` **_Class_** **and called for some operation with its Attribute(Data) ** _keyboard_.  
+**These Methods are defined in** ```str``` **_Class_** **and called for some operation with its Attribute(Data)** _keyboard_.  
 
 
 > In **O**bject-**O**riented **P**rogramming(**OOP**),  Attributes & Methods are hierarchically classificated into Classes.  
