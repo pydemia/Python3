@@ -103,14 +103,13 @@ In ```Person()``` **_Classes_**, some **_Objects_** are defined.
 
 _Class Variable_ is shared by all **_Instance_**.  
 _Instance Variable_ should be unique to each **_Instance_**, not interrupting each other. 
-```paul.fullname``` is a _Instance Variable_, so It has an _Unique_ name.  
-```paul.count``` is A _Class Variable_, so It has an _Shared_ number, 2.    
 
-### Scopes and Namespaces
+```paul.fullname``` is a _Instance Variable_, so It has an _Unique_ name. ```paul.count``` is A _Class Variable_, so It has an _Shared_ number, 2.    
 
-As the previous case , you saw two kinds of _Variables_ have different _Value-sharing ranges_. 
-This _ranges_ are named **_Namespaces_**, literally.   
-It's the mapping between _Names_ and _Objects_, so **_Namespaces_** are mostly made of _Dictionaries_.  
+
+### Scopes and Namespaces  
+
+As the previous case , you saw two kinds of _Variables_ have different _Value-sharing ranges_. This _ranges_ are named **_Namespaces_**, literally. It's the mapping between _Names_ and _Objects_, so **_Namespaces_** are mostly made of _Dictionaries_.  
 
 To show the **_Namespaces_**, use ```__dict__``` Methods, which is the _Built-in Methods_.  
 ```python
