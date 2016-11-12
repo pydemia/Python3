@@ -27,6 +27,8 @@ Classes have **_Methods_**. **_Methods_** are _Functions_ defined within **_Clas
 > With **_Instance_**, **_Classes_** are _instantiated_ and **_Objects_** that have some concrete things are generated.  
 
 
+
+---
 ### Defining Classes  
 
 * ```class``` Statements  
@@ -63,7 +65,9 @@ bruce.introduce()                  # Hello, I'm a member, Bruce Lee
 
 ```__init___``` Method should have one Argument, which refer to the **_Instance_** itself. It should be the first Argument of ```__init___``` Method. The word 'Self' is _generally_ used and _highly recommended_ for its name.  
  
-
+ 
+ 
+---
 ### Class Variables and Method Variables
 
 Let's define a basic **_Class_**.  
@@ -107,6 +111,8 @@ _Instance Variable_ should be unique to each **_Instance_**, not interrupting ea
 ```paul.fullname``` is a _Instance Variable_, so It has an _Unique_ name. ```paul.count``` is A _Class Variable_, so It has an _Shared_ number, 2.    
 
 
+
+---
 ### Scopes and Namespaces  
 
 As the previous case , you saw two kinds of _Variables_ have different _Value-sharing ranges_. This _ranges_ are named **_Namespaces_**, literally. It's the mapping between _Names_ and _Objects_, so **_Namespaces_** are mostly made of _Dictionaries_.  
@@ -157,6 +163,8 @@ print("In global scope:", spam)
 ```
 
 
+
+---
 ## Errors and Exceptions
 
 ### Errors
