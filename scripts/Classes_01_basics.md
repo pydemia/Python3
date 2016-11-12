@@ -17,7 +17,7 @@ String ```keyboard``` represents An Attribute 'Word' _keyboard_, Using **_Class_
 and Function ```adder``` represents A Function 'Code' _adder', Using  **_Class_** ```function```.  
 
 * **Methods**  
-Classes have Methods. For example, ```str``` **_Class_** has ```.find()``` or ```.upper()``` Methods.  
+Classes have **_Methods_**. **_Methods_** are _Functions_ defined within **_Classes_**. For example, ```str``` **_Class_** has ```.find()``` or ```.upper()``` **_Methods_**.  
 **These Methods are defined in** ```str``` **_Class_** **and called for some operation with its Attribute(Data)** _keyboard_.  
 
 
@@ -33,12 +33,12 @@ Classes have Methods. For example, ```str``` **_Class_** has ```.find()``` or ``
 * ```class``` Statements  
 You can make **_Classes_** with ```class``` Statements.
 ```python
-class Person():
+class Membership:
     pass
 ```
 It's an empty **_Class_**. Like Functions, We can assign this **_Class_** and generate an **_Object_**.  
 ```python
-someone = Person()
+someone = Membership()
 someone
 <__main__.Person object at 0x7fac781345f8> # An Object with __main__ Module, Person Class
 ```
@@ -48,31 +48,56 @@ someone
 Let's make another one.  
 
 ```python
-class Person():
-    def __init__(self):
-        pass
+class Membership:
+    def __init__(self, name):
+        self.name = name
+    def introduce(self):
+        print("Hello, I'm a member,", self.name)
+
+bruce = Membership('Bruce Lee')    # Instance bruce
+bruce.introduce()                  # Hello, I'm a member, Bruce Lee
 ```
 ```__init__``` Methods is _called_ when A **_Class_** is _instantiated_!
 ```__init__``` Methods _initialize_ a UNIQUE **_Class_** from **_Classes_** Definition when **_Objects_** are _generated_.   
 
-And ```self``` is the First Arguments refer Methods itself.  
+```self``` is the First Arguments refer to the **_Instance_** itself.  
+It is invisible when ```bruce``` _Instance_ is generated(We delivered only one argument in ```Membership('Bruce Lee')```), but automatically delivered to Python Method.  
+```__init___``` Method should have one Argument, which refer to the **_Instance_** itself.
+And this Argument should be the first Argument of ```__init___``` Method.  
 The word 'Self' is _generally_ used and _highly recommended_ for its name.  
-
-Let's define & use A basic **_Class_**!  
-```python
-class Person():
-    def __init__(self, name):
-        self.name = name
-    def hello(self):
-        print('Hello, my name is', self.name)        
-
-bruce = Person('Bruce Lee')  # Instance bruce
-bruce.hello()                # Hello, my name is Bruce Lee
-```
+ 
 
 ### Scopes & Namespaces
 
+Let's define a basic **_Class_**.  
+```python
+class Membership:
+    count = 0
+    def __init__(self, name):
+        self.name = name
+        Membership.count += 1
+    def introduce(self):
+        print("Hello, I'm a member,", self.name)
+    def __del__(self):
+        Membership.count -= 1
+
+bruce = Membership('Bruce Lee')    # Instance bruce
+bruce.introduce()                  # Hello, I'm a member, Bruce Lee
+
+paul = Membership('Paul Phoenix')  # Instance paul
+paul.introduce()                   # Hello, I'm a member, Paul Phoenix
+
+bruce.name
+paul.name
+
+```
+
 In ```Person()``` **_Classes_**, some **_Objects_** are defined.  
+* ```count``` Argument: A _Class Variable_
+* ```__init__``` Method: A _Class Method_   
+1. ```self``` Argument A _ 
+2. ```name``` Argument: A _Local Variable_ within __init__ _Method_ 
+3. ```name``` Argument = self.name: A _Instance Variable_  
 
 
 
