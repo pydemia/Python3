@@ -20,9 +20,9 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Conditionals & Loops
 
-* [if Statements](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
-* [while Statements](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#while-statements)
-* [for Statements](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#for-statements)
+* [```if``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
+* [```while``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#while-statements)
+* [```for``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#for-statements)
 
 ### Advanced Loops
 
@@ -41,15 +41,15 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arguments)
  1. [Positional Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#positional-arguments)
  1. [Keyword Arguments](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#keyword-arguments)
- 1. [Arbitrary Arguments Lists](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arbitrary-arguments-lists)
-* [Docstrings](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
+ 1. [Arbitrary Arguments Lists(```*args```, ```**kwargs```)](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arbitrary-arguments-lists)
+* [Docstrings(```__doc__```)](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
 
 ### Intermediate Functions
 
 * [Functions as Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#functions-as-objects)
 * [Nested Functions - Inner Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#nested-functions---inner-functions)
 * [Closures](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#closures)
-* [Lambda Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#lambda-functions)
+* [```lambda``` Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#lambda-functions)
 * [Generators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#generators)
 * [Decorators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#decorators)
 
