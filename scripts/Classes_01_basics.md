@@ -124,7 +124,7 @@ paul.__dict__  # {'name': 'Paul Phoenix'}
 Membership__dict__
 # mappingproxy({'__weakref__': <attribute '__weakref__' of 'Membership' objects>, '__del__': <function Membership.__del__ at 0x7fe9da53f400>, 'count': 2, '__init__': <function Membership.__init__ at 0x7fe9da53f2f0>, '__dict__': <attribute '__dict__' of 'Membership' objects>, '__module__': '__main__', 'introduce': <function Membership.introduce at 0x7fe9da53f378>, '__doc__': None})
 ```
-You can see ```name``` Variables are in the _Instance_ **_Namespaces_** and ```count``` Variable is in the _Class_ **_Namespace_**. When you call ```.count``` Variable from each _Instances_, Python searches it from _Instances_ first, and then from _Classes_ next. That's how ```paul.count``` returns ```2```.   
+You can see ```name``` _Variables_ are in the _Instance_ **_Namespaces_** and ```count``` _Variable_ is in the _Class_ **_Namespace_**. When you call ```.count``` _Variable_ from each _Instances_, Python searches it from _Instances_ first, and then from _Classes_ next. That's how ```paul.count``` returns ```2```.   
 
 
 * ```global``` Statements  
