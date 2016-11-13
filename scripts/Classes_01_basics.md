@@ -8,8 +8,8 @@
 ### Objects & Classes
 
 * **Objects**  
-Data(Variables, Attributes) or Codes(Functions, Methods)  
-Objects are **_THE UNIQUE INSTANCE_** of something concrete.  
+Data(_Variables_, _Attributes_) or Codes(_Functions_, _Methods_)  
+_Objects_ are **_THE UNIQUE INSTANCE_** of something concrete.  
 
 * **Classes**  
 Number ```7```, String ```'keyboard'``` and Function ```adder``` are _Objects_, **Each of them represents something concrete**.  Number ```7``` represents An Attribute 'Number' _Seven_, Using **_Class_** ```int```.  
