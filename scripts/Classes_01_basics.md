@@ -19,6 +19,7 @@ and Function ```adder``` represents A Function 'Code' _adder', Using  **_Class_*
 * **Methods**  
 Classes have **_Methods_**. **_Methods_** are _Functions_ defined within **_Classes_**. For example, ```str``` **_Class_** has ```.find()``` or ```.upper()``` **_Methods_**.  
 **These Methods are defined in** ```str``` **_Class_** **and called for some operation with its Attribute(Data)** _keyboard_.  
+( _Class Methods_, _Static Methods_)  
 
 > In Object-Oriented Programming(**OOP**),  Attributes & Methods are hierarchically classificated into Classes.  
 > **_Classes_** are sort of boxes, which is classificated by its usage.  
@@ -126,10 +127,46 @@ Membership__dict__
 ```
 You can see ```name``` _Variables_ are in the _Instance_ **_Namespaces_** and ```count``` _Variable_ is in the _Class_ **_Namespace_**. When you call ```.count``` _Variable_ from each _Instances_, Python searches it from _Instances_ first, and then from _Classes_ next. That's how ```paul.count``` returns ```2```.   
 
+> Scopes:
+> *global > nonlocal > local*
 
 * ```global``` Statements  
+As the above, **_Objects_** in _Functions_ or _Methods_ are not shared. It means that _Methods_ normally returns only **_Objects_** with ```return``` Statements.  By using ```global``` Statements, we can get more **_Objects_** existing within _Methods_.   
 
 * ```nonlocal``` Statements  
+By Using ```nonlocal``` Statements, we can access variables existing over *local* Scopes.  as the following, ```nonlocal``` Statements can access ```deposit```& ```withdraw``` _Functions_ to ```balance``` _Variable_, which is **_non-global_**.  
+
+```python
+def bank_account1(initial_balance) :
+    balance = initial_balance
+    def deposit(amount) :
+        balance += amount     # Error
+        return balance
+    def withdraw(amount) :
+        balance -= amount
+        return balance
+    return deposit, withdraw
+ 
+d, w = bank_account1(100)
+print(d(100))
+
+
+def bank_account1(initial_balance) :
+    balance = initial_balance
+    def deposit(amount) :
+        nonlocal balance
+        balance += amount
+        return balance
+    def withdraw(amount) :
+        nonlocal balance
+        balance -= amount
+        return balance
+    return deposit, withdraw
+ 
+d, w = bank_account1(100)
+print(d(100))
+200
+```
 
 ```python
 def scope_test():
@@ -162,7 +199,7 @@ print("In global scope:", spam)
 
 ```
 
-
+[↑ Up to the Top](#Basics on Classes)
 
 ---
 ## Errors and Exceptions
@@ -172,62 +209,80 @@ print("In global scope:", spam)
 ### Clean-up Actions
 
 
+[↑ Up to the Top](#Errors and Exceptions)
+
+---
 ## Advances in Classes
 
 ### Inheritance
+
+Sometimes we don't satisfy with existing **_Classes_**. If **_Classes_** are too huge or complex to customize, modifying it is dangerous! We have a solution. **_Interitance_** can get things easier. _Child classes_(or _Subclasses_, _Derived classes_) inherited _Attributes_ and _Methods_ from their _Parent classes_(or _Superclasses_, _Base classes_). It's for **_Code reuse_** to improve productivity in Objective Oriented Programming. and more, _Child classes_ refer to _Parent classes_ when _Parent classes_ are modified. This is called **_Polymorphism_**.  
+
+```python
+class Membership:
+    count = 0
+    def __init__(self, name):
+        self.fullname = name
+        Membership.count += 1
+    def introduce(self):
+        print("Hello, I'm a member,", self.fullname)
+    def __del__(self):
+        Membership.count -= 1
+
+bruce = Membership('Bruce Lee')    # Instance bruce
+bruce.introduce()                  # Hello, I'm a member, Bruce Lee
+bruce.fullname                     # Bruce Lee
+bruce.count                        # 1
+
+paul = Membership('Paul Phoenix')  # Instance paul
+paul.introduce()                   # Hello, I'm a member, Paul Phoenix
+paul.fullname                      # Paul Phoenix
+paul.count                         # 2
+
+
+# Inheritance
+class New_Membership(Membership):
+    pass
+```
+
+```New_Membership``` **_Class_** is a specialized **_Class_** from ```Membership``` **_Class_**.  
+
+You can do **_Multiple Inheritance_**  
+```python
+class DerivedClassName(Base1, Base2, Base3):
+    {statement-1}
+    .
+    .
+    .
+    {statement-N}
+```
+
+### Method Overriding
+
+You can re-define and modify existing _Methods_ derived from _Superclasses_ within _Subclasses_. That's **_Method Overriding_**.  
+
+### Add new Methods   
+Just use ```def``` Statements to define new _Functions_!  
+
+
+### ```super()``` Methods
+
+To call the _Methods_ from _Superclass_ within _Subclass_, use ```super()``` _Methods_!
+
+```python
+super().{superclass_method}
+```
+
+
 ### Iterables, Iterators and Generators
+
 ### Coroutine
 
 ---
 
 
 
-[↑ Up to the Top](#data-structure)
-
-
-
-
-
----
-## words​
-4
-# Data Structure
-5
-​
-6
-* [words](#words)
-7
-​
-8
-​
-9
-​
-10
-​
-11
-## Errors
-12
-​
-13
-## Exceptions
-14
-​
-15
-## Clean-up Actions
-words
-
-### words
-
-### Operation
- 
-```python
-codes
-```
-
-
-
-[↑ Up to the Top](#data-structure)
-
+[↑ Up to the Top](#Advances in Classes)
 
 
 
