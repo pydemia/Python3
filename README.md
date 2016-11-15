@@ -44,6 +44,14 @@ This contains the information &amp; sources of Python, which is a programming la
  1. [Arbitrary Arguments Lists(```*args```, ```**kwargs```)](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#arbitrary-arguments-lists)
 * [Docstrings(```__doc__```)](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#docstrings)
 
+
+### Errors & Exceptions
+
+* [Errors](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#errors)  
+* [Exceptions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#exceptions)  
+* [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#clean-up-actions)  
+
+
 ### Intermediate Functions
 
 * [Functions as Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#functions-as-objects)
@@ -52,6 +60,7 @@ This contains the information &amp; sources of Python, which is a programming la
 * [```lambda``` Functions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#lambda-functions)
 * [Generators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#generators)
 * [Decorators](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#decorators)
+
 
 ### Advanced Functions
 * [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_02_iter.md)
@@ -66,13 +75,6 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Defining Classes](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#defining-classes)
 * [Class Variables and Method Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#class- variables-and-method-variables)  
 * [Scopes and Namespaces](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#scopes-and-namespaces)
-
-### Errors & Exceptions
-
-* [Errors](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#errors)  
-* [Exceptions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#exceptions)  
-* [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#clean-up-actions)  
-
 
 ### Advanced Classes
 
