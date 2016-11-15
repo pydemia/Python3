@@ -305,6 +305,17 @@ print(adder.__doc__)
 'This function operates addition.'
 ```
 
+[↑ Up to the Top](#basics-on-functions)
+
+---
+## Errors and Exceptions
+
+### Errors
+### Exceptions
+### Clean-up Actions
+
+
+[↑ Up to the Top](#errors-and-exceptions)
 
 
 
