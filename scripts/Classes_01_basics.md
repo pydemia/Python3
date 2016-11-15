@@ -199,7 +199,7 @@ print("In global scope:", spam)
 
 ```
 
-[↑ Up to the Top](#Basics on Classes)
+[↑ Up to the Top](#basics-on-classes)
 
 ---
 ## Errors and Exceptions
@@ -209,7 +209,7 @@ print("In global scope:", spam)
 ### Clean-up Actions
 
 
-[↑ Up to the Top](#Errors and Exceptions)
+[↑ Up to the Top](#errors-and-exceptions)
 
 ---
 ## Advances in Classes
@@ -282,7 +282,7 @@ super().{superclass_method}
 
 
 
-[↑ Up to the Top](#Advances in Classes)
+[↑ Up to the Top](#advances-in-classes)
 
 
 
