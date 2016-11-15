@@ -60,11 +60,11 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Classes
 
-### Basics in Classes
+### Basics on Classes
 
-* [Names & Objects](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
-* [Scopes & Namespaces](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
-* [Classes & Instances & Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
+* [Objects & Classes](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#objects-and-classes)
+* [Defining Classes](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#defining-classes)
+* [Class Variables and Method Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#Class Variables-and-Method-Variables)
 
 
 ### Errors & Exceptions
