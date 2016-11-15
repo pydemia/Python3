@@ -47,9 +47,9 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Errors & Exceptions
 
-* [Errors](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#errors)  
-* [Exceptions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#exceptions)  
-* [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#clean-up-actions)  
+* [Errors](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#errors)  
+* [Exceptions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#exceptions)  
+* [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/Functions_01_basics.md#clean-up-actions)  
 
 
 ### Intermediate Functions
