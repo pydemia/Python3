@@ -65,20 +65,20 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Objects & Classes](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#objects-and-classes)
 * [Defining Classes](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#defining-classes)
 * [Class Variables and Method Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#class- variables-and-method-variables)  
-* [Scopes and Namespaces](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#Scopes-and-Namespaces)
+* [Scopes and Namespaces](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#scopes-and-namespaces)
 
 ### Errors & Exceptions
 
-* [Errors](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
-* [Exceptions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
-* [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
+* [Errors](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#errors)  
+* [Exceptions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#exceptions)  
+* [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#clean-up-actions)  
 
-
-### Intermediate Classes
-
-* [Inheritance](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md)
 
 ### Advanced Classes
+
+* [Inheritance](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance)  
+* [Method Overriding](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance#method-overriding)  
+* [Add new Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance#add-new-methods)  * [```super()``` Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super()-methods)
 
 
 ---
