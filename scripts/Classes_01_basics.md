@@ -212,7 +212,7 @@ print("In global scope:", spam)
 [↑ Up to the Top](#errors-and-exceptions)
 
 ---
-## Advances in Classes
+## Advanced Classes
 
 ### Inheritance
 
