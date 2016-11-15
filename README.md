@@ -76,13 +76,22 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Class Variables and Method Variables](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#class- variables-and-method-variables)  
 * [Scopes and Namespaces](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#scopes-and-namespaces)
 
-### Advanced Classes
+### Intermediate Classes
 
 * [Inheritance](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance)  
 * [Method Overriding](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance#method-overriding)  
 * [Add new Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#add-new-methods)  
 * [```super()``` Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
 
+### Advanced Classes
+
+* [Property](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
+* [Private Name Mangling](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
+* [Method Types](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
+* [Duck-typing(lazy-polymorphism)](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
+* [Special Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
+* [Composition & Aggregation](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
+* [Named-Tuple](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
 
 ---
 ## Modules
