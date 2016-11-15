@@ -78,7 +78,8 @@ This contains the information &amp; sources of Python, which is a programming la
 
 * [Inheritance](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance)  
 * [Method Overriding](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance#method-overriding)  
-* [Add new Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#inheritance#add-new-methods)  * [```super()``` Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super()-methods)
+* [Add new Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#add-new-methods)  
+* [```super()``` Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
 
 
 ---
