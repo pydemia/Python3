@@ -273,10 +273,25 @@ super().{superclass_method}
 
 
 
-[↑ Up to the Top](#advances-in-classes)
+[↑ Up to the Top](#intermediate-classes)
 
 
+## Advanced Classes
 
+### Property
+
+### Private Name Mangling
+
+### Duck-typing
+
+### Special Methods
+
+### Composition and Aggregation
+
+### Named-tuple
+
+
+[↑ Up to the Top](#advanced-classes)
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
