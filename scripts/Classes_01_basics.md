@@ -201,15 +201,6 @@ print("In global scope:", spam)
 
 [↑ Up to the Top](#basics-on-classes)
 
----
-## Errors and Exceptions
-
-### Errors
-### Exceptions
-### Clean-up Actions
-
-
-[↑ Up to the Top](#errors-and-exceptions)
 
 ---
 ## Advanced Classes
