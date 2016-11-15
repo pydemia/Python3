@@ -5,7 +5,7 @@
 
 ## Basics on Classes
 
-### Objects & Classes
+### Objects and Classes
 
 * **Objects**  
 Data(_Variables_, _Attributes_) or Codes(_Functions_, _Methods_)  
