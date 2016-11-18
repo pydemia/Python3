@@ -1,4 +1,4 @@
-def query_postgresql(query_str):
+def query_postgresql(query):
 
     import pandas as pd
     import psycopg2 as pg
