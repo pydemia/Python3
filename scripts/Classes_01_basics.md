@@ -252,13 +252,38 @@ class DerivedClassName(Base1, Base2, Base3):
 
 You can re-define and modify existing _Methods_ derived from _Superclasses_ within _Subclasses_. That's **_Method Overriding_**.  
 
+```python
+class Membership:
+    count = 0
+    def __init__(self, name):
+        self.fullname = name
+        Membership.count += 1
+    def introduce(self):
+        print("Hello, I'm a member,", self.fullname)
+    def __del__(self):
+        Membership.count -= 1
+        
+class New_Membership(Membership):
+    def introduce(self):
+        print("Hello, I'm a member of brand-new council,", self.fullname)
+        
+        
+bruce = Membership('Bruce Lee')          # Instance bruce
+bruce.introduce()                        # Hello, I'm a member, Bruce Lee
+
+newbruce = NewMembership('Bruce Lee')    # Instance bruce
+newbruce.introduce()                        # Hello, I'm a member of brand-new council, Bruce Lee
+```
+
 ### Add new Methods   
 Just use ```def``` Statements to define new _Functions_!  
 
 
 ### ```super()``` Methods
 
-To call the _Methods_ from _Superclass_ within _Subclass_, use ```super()``` _Methods_!
+To call the _Methods_ from _Superclass_ within _Subclass_, use ```super()``` _Methods_ in **_Subclasses_**!
+
+
 
 ```python
 super().{superclass_method}
