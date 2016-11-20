@@ -314,7 +314,7 @@ super().{superclass_method}
 
 ### Property
 
-As different with _Java_, _Python_ doesn't support ```private``` Object property, because all properties & _Methods_ in _Python_ are ```public```!. In _Python_, you just declare it in ```public``` first, and use ```property()``` or ```@property, @name.setter``` _decorator_ when you need to hide it to users.  
+As different with _Java_, _Python_ doesn't support ```private``` Object property, because all properties & _Methods_ in _Python_ are ```public```! In _Python_, you just declare it in ```public``` first, and use ```property()``` or ```@property, @name.setter``` _decorator_ when you need to hide it to users.  
 
 ```property(get_name, set_name)```  
 ```python
@@ -393,7 +393,7 @@ tmp.diameter = 4     # without 'setter property', it cannot be modified from out
 
 ### Private Name Mangling
 
-use **_DOUBLE UNDERSCORE_** naming like ```__init__```. Its _Mangling_.  
+use **_DOUBLE UNDERSCORE_** naming like ```__init__```, to hide attributes from outside. Its _Mangling_.  
 
 ### Method Type
 
