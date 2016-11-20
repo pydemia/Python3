@@ -395,7 +395,7 @@ tmp.diameter = 4     # without 'setter property', it cannot be modified from out
 
 use **_DOUBLE UNDERSCORE_** naming like ```__init__```, to hide attributes from outside. Its _Mangling_.  
 
-### Method Type
+### Method Types
 
 **_Instance Methods_** : _Methods_ have ```self``` as the first parameter. It valid & affect the its _Class_.  
 **_Class Methods_** : _Methods_ have ```cls``` as the first parameter. It affect **_WHOLE CLASSES_** using ```@classmethod```.  
