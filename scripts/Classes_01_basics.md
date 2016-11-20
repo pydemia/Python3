@@ -3,6 +3,12 @@
 
 # Classes
 
+* [Basics on Classes](#basics-on-classes)  
+* [Intermediate Classes](#intermediate-classes)  
+* [Advanced Classes](#advanced-classes)  
+
+
+
 ## Basics on Classes
 
 ### Objects and Classes
@@ -199,7 +205,7 @@ print("In global scope:", spam)
 
 ```
 
-[↑ Up to the Top](#basics-on-classes)
+[↑ Up to the Top](#classes)
 
 
 ---
@@ -300,7 +306,7 @@ super().{superclass_method}
 
 
 
-[↑ Up to the Top](#intermediate-classes)
+[↑ Up to the Top](#classes)
 
 
 ## Advanced Classes
@@ -318,7 +324,7 @@ super().{superclass_method}
 ### Named-tuple
 
 
-[↑ Up to the Top](#advanced-classes)
+[↑ Up to the Top](#classes)
 
 ---
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
