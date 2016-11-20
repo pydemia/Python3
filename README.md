@@ -94,9 +94,9 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Named-Tuple](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
 
 ---
-## Modules
+## Modules & Packages
 
-* [Basic on Modules]()
+* [Modules]()
 * [Packages]()
 
 ---
