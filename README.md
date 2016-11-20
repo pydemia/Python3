@@ -85,13 +85,13 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Advanced Classes
 
-* [Property](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
-* [Private Name Mangling](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
-* [Method Types](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
-* [Duck-typing(lazy-polymorphism)](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
-* [Special Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
-* [Composition & Aggregation](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
-* [Named-Tuple](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#super-methods)
+* [Property](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#property)
+* [Private Name Mangling](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#private-name-mangling)
+* [Method Types](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#method-types)
+* [Duck-typing(lazy-polymorphism)](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#duck-typing)
+* [Special Methods](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#special-methods)
+* [Composition & Aggregation](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#composition-and-aggregation)
+* [Named-Tuple](https://github.com/dawkiny/Python3/blob/master/scripts/Classes_01_basics.md#named-tuple)
 
 ---
 ## Modules & Packages
