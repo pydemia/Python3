@@ -7,7 +7,14 @@
 
 
 ```python
+import [Package]
+import [Package] as [alias]
+
+from [Package] import [Module]
+from [Package] import *
 from [Package] import [Module] as [alias] 
+from [Package] import [Module1], [Module2] as [alias] 
+
 ```
 
 
