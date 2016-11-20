@@ -6,15 +6,15 @@
 * [words](#words)
 
 
-
+```python
+from [Package] import [Module] as [alias] 
+```
 
 
 ---
 ## Modules
 words
 
-```python
-from [Package] import [Module] as [alias] 
 
 
 ### words
