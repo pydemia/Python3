@@ -96,8 +96,8 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Modules & Packages
 
-* [Modules](Modules_and_Packages_01_basic.md#modules)
-* [Packages](Modules_and_Packages_01_basic.md#packages)
+* [Modules](https://github.com/dawkiny/Python3/blob/master/scripts/Modules_and_Packages_01_basic.md#modules)
+* [Packages](https://github.com/dawkiny/Python3/blob/master/scripts/Modules_and_Packages_01_basic.md#packages)
 
 ---
 ## Input & Output
