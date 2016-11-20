@@ -13,6 +13,10 @@
 ## Modules
 words
 
+```python
+from [Package] import [Module] as [alias] 
+
+
 ### words
 
 ### Operation
