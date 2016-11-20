@@ -398,7 +398,7 @@ use **_DOUBLE UNDERSCORE_** naming like ```__init__```, to hide attributes from 
 ### Method Type
 
 **_Instance Methods_** : _Methods_ have ```self``` as the first parameter. It valid & affect the its _Class_.  
-**_Class Methods_** : _Methods_ have ```cls``` as the first parameter. It affect **_WHOLE CLASSES_**. use ```@classmethod```.  
+**_Class Methods_** : _Methods_ have ```cls``` as the first parameter. It affect **_WHOLE CLASSES_** using ```@classmethod```.  
 **_Static Methods_** : These _Methods_ have no parameter. It's just for _Classes_ itself and you don't need to generate _Objects_ to use this _Methods_. just use ```@staticmethod```
 
 
