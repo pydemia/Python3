@@ -12,7 +12,19 @@
 
 ---
 ## Numpy
-words
+
+* ```ndarray```  
+
+
+Installation
+```sh
+pip install numpy
+conda install numpy
+```
+
+```python
+import numpy as np
+```
 
 ### words
 
@@ -28,6 +40,22 @@ codes
 
 ---
 ## Pandas
+
+* ```Series```  
+* ```DataFrame```  
+
+Installation
+```sh
+pip install pandas
+conda install pandas
+```
+
+```python
+import pandas as pd
+from pandas import Series as sr
+from pandas import DataFrame as df
+```
+
 words
 
 ### words
