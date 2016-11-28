@@ -1,4 +1,4 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
 
 
 # Data Structure
@@ -30,4 +30,4 @@ codes
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
