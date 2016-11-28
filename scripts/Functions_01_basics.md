@@ -1,4 +1,4 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
 
 ---
 # Functions
@@ -540,6 +540,6 @@ res+1: 7 # 2. plusone Decorator
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
 
 
