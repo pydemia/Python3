@@ -3,9 +3,10 @@
 
 # Python Data Manipulation
 
-* [Numpy](#numpy)
-
-
+* [Numpy](#numpy)  
+* [Pandas](#pandas)  
+* [datetime](#datetime)  
+* [PyTables](#pytables)  
 
 
 
