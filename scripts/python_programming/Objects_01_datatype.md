@@ -1,4 +1,4 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
 
 Data type
 ===
@@ -144,4 +144,4 @@ sentence = '! '.join(mywords)
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
