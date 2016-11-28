@@ -4,7 +4,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Python Programming
 
-* [Python Basics](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+* [Python Basics](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
 * [Built-in Libraries: os, sys](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
 
 
