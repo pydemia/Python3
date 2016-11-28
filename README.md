@@ -5,16 +5,16 @@ This contains the information &amp; sources of Python, which is a programming la
 ## Python Programming
 
 * [Python Basics](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
-* [Built-in Libraries: os, sys](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+* [Built-in Libraries: os, sys](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
 
 
 ---
 ## Python Data Manipulation
 
-* [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
-* [Pandas](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#conditionals)
-* [datetime](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#conditionals)
-* [PyTables](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#conditionals)
+* [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#numpy)
+* [Pandas](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pandas)
+* [datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
+* [PyTables](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
 
 
 ---
