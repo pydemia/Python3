@@ -1,4 +1,4 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
 
 
 # Control Flow(Conditionals & Loops)
@@ -480,5 +480,5 @@ This returns a Generator object.[Go to "Generators"]()
 [↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
 
