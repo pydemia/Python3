@@ -1,4 +1,4 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
 
 
 # Data Structure
@@ -274,4 +274,4 @@ myarray = np.array([0, 1, 2.5, 4, 4.5])
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
