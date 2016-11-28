@@ -1,4 +1,4 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
 
 
 # Classes
@@ -424,4 +424,4 @@ A _Subclass_ of **_Tuple_**. You can access its values with ```.name``` and ```[
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
