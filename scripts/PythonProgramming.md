@@ -1,5 +1,4 @@
-# Python3
-This contains the information &amp; sources of Python, which is a programming language.
+# Python Basics
 
 ---
 ## Writing Python Codes
