@@ -1,4 +1,4 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
 
 
 # Modules & Packages
@@ -44,4 +44,4 @@ words
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
