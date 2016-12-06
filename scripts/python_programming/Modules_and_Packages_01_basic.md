@@ -81,10 +81,9 @@ for directory in sys.path:
 
 ```Packages``` can be defined that contain one or more ```modules```.  If you want to get the result of ```plus``` **_Function_** with ```integer``` only, you can build two ```modules``` in one ```package```.  Let's make a ```operators``` directory, and put ```int_operators.py``` & ```float_operators.py``` under that directory:
 
+```int_operators.py```
 
-```int_operators.py```   
-
-
+```python
 def plus(a, b):
     return int(a + b)
 def minus(a, b):
