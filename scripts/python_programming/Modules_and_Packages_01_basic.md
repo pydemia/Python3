@@ -83,7 +83,8 @@ for directory in sys.path:
 
 
 ```int_operators.py```   
-```python
+
+
 def plus(a, b):
     return int(a + b)
 def minus(a, b):
