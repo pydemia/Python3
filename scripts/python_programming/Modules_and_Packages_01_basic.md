@@ -113,8 +113,7 @@ def mul(a, b):
 ```
 
 
-To build a ```Module```, ```operators``` directory should have ```__init__.py```. It can be empty.  Python consider the directories have ```__init__.py``` as ```Packages```.  
-
+To build a ```Package```, ```operators``` directory should have ```__init__.py```. It can be empty.  Python consider the directories have ```__init__.py``` as ```Packages```.  
 Now you can import this ```package```.
 ```python
 from operators import int_operators, float_operators as iop, fop
