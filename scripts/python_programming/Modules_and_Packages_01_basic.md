@@ -59,7 +59,7 @@ import calculator
 calculator.minus(3, 1) # 2
 ```
 
-The name ```calculator``` is too long. You can use **_Functions_** in ```calculator.py``` with its **_alias_**, ```cc```  .  or whatever you want
+The name ```calculator``` is too long. You can use **_Functions_** in ```calculator.py``` with its **_alias_**, ```cc``` or whatever you want.
 ```python
 import calculator as cc
 cc.plus(1, 2) # 3
