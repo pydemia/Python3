@@ -21,6 +21,7 @@
 | %p | AM, PM |
 | %M | Minute(2 digits) |
 | %S | Second(2 digits) |
+| %f | microsecond(6 digits) |
 | %w | Weekday(Int)[0:Sun] |
 | %A | Weekday(str)[0:Sun] |
 | %a | Weekday-alias(str)[0:Sun] |
