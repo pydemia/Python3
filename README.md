@@ -16,7 +16,7 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Pandas](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pandas.md)
   - [DataFrame](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pandas.md#dataframe)  
   - [DataFrameGroupby](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/groupby.md)  
-  - [PivotTable & MultiIndex & Crosstab](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation#pivottable.md)  
+  - [PivotTable & MultiIndex](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pivottable.md)   - [PivotTable & MultiIndex](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/crosstab.md)  
 * [datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
 * [PyTables](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
 
