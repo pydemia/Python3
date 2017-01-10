@@ -3,10 +3,12 @@
 
 # Numpy
 
+## Data Structure
+
 * [array](#numpy)
 * [ndarray](#pandas)  
 
-
+##
 
 * ```ndarray```  
 
