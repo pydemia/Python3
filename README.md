@@ -11,9 +11,12 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Python Data Manipulation
 
-* [Datasets](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#standby.md)
-* [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#numpy)
-* [Pandas](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pandas)
+* [Datasets](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/standby.md)
+* [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/numpy.md)
+* [Pandas](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pandas.md)
+  -* [DataFrame](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pandas.md#dataframe)
+  -* [DataFrameGroupby](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/groupby.md)
+  -* [PivotTable & MultiIndex](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation#pivottable.md#)
 * [datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
 * [PyTables](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
 
