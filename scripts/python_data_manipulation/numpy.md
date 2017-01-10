@@ -1,17 +1,12 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/PythonDataManipulation.md)
 
 
-# Python Data Manipulation
+# Numpy
 
-* [Numpy](#numpy)  
-* [Pandas](#pandas)  
-* [datetime](#datetime)  
-* [PyTables](#pytables)  
+* [array](#numpy)  
+* [ndarray](#pandas)  
 
 
-
----
-## Numpy
 
 * ```ndarray```  
 
