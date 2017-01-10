@@ -13,8 +13,21 @@ This contains the information &amp; sources of Python, which is a programming la
   - [Classes](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#classes)
   - [Modules & Packages](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#modules--packages)
   - [Input & Output](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
-  - [Libraries](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#libraries)
-* [Built-in Libraries: os, sys](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+* [Built-in Libraries](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+  - [os](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [sys](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [itertools](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [functools](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [math](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [re](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [collections](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [tarfile & zipfile](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [tty](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [syslog](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [2to3](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [tkinter](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
+  - [bisect](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
 
 
 ---
