@@ -11,6 +11,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Python Data Manipulation
 
+* [Datasets](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#standby.md)
 * [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#numpy)
 * [Pandas](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pandas)
 * [datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
