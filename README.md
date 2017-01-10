@@ -27,7 +27,7 @@ This contains the information &amp; sources of Python, which is a programming la
   - [DataFrameGroupby](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/groupby.md)  
   - [PivotTable & MultiIndex](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pivottable.md)  
   - [CrossTab](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/crosstab.md)  
-* [datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
+* [Datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
 * [PyTables](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
 
 
@@ -43,7 +43,7 @@ This contains the information &amp; sources of Python, which is a programming la
 
 * [Scipy](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
 * [Sympy](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
-* [scikit-learn](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
+* [Scikit-Learn](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
 * [PyMC3](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
 
 ---
