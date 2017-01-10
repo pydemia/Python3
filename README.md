@@ -37,6 +37,10 @@ This contains the information &amp; sources of Python, which is a programming la
 * [scikit-learn](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
 * [PyMC3](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
 
+---
+## Python Neural Networks
+
+* [Neupy](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
 
 ---
 ## Python Plots
@@ -59,3 +63,12 @@ This contains the information &amp; sources of Python, which is a programming la
 * [httplib](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [urllib](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 
+
+---
+## Python Multithreading & Multiprocessing
+* [threading](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+* [multiprocessing](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+
+---
+## Python Multithreading & Multiprocessing
+* [asyncio](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
