@@ -8,6 +8,8 @@ This contains the information &amp; sources of Python, which is a programming la
   - [Basic Objects](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#basic-objects)
   - [Control Flow](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#control-flow)
   - [Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#functions)
+    - [Intermediate Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#intermediate-functions)
+    - [Advanced Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#advanced-functions)
   - [Classes](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#classes)
   - [Modules & Packages](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#modules--packages)
   - [Input & Output](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)
