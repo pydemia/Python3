@@ -3,7 +3,7 @@
 
 # Numpy
 
-* [array](#numpy)  
+* [array](#numpy)
 * [ndarray](#pandas)  
 
 
