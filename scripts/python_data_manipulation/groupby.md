@@ -35,7 +35,7 @@ Out[2]:
 4                       Energy  kcal  376.00  
 ```
 
-#### groupby object(split)
+### groupby object(split)
 
 It's an compressed object from ```DataFrame```,  grouped(splitted) by a given index(usually its column index).
 ```python
@@ -64,7 +64,7 @@ Out[]:
 and more: functions(len, ...), MultiIndex(level='', axis=1)
 
 
-#### groupby operation(apply and combine)
+### groupby operation(apply and combine)
 
 you can apply some functions for each groups splitted by the given index.
 ```python
@@ -97,7 +97,7 @@ Baby Foods  Baby food, fortified cereal bar, fruit filling     3964
 
 The results of the above have ```MultiIndex```(Hierachical Index).  
 
-#### Iterate for each group
+### Iterate for each group
 
 ```python
 i = 1
@@ -184,7 +184,7 @@ describe()
 data.groupby(key).describe()
 ```
 
-#### advanced operations
+### advanced operations
 
 agg()
 ```python
@@ -201,7 +201,7 @@ data.groupby(key).transform(np.mean())
 
 
 
-##### Groupby apply a function
+### Groupby apply a function
 apply
 
 If you want to fill ```NaN``` with the mean values for each group:
