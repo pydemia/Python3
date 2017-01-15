@@ -107,25 +107,6 @@
 * [Output Formatting]()
 * [Reading & Writing Files]()
 
----
-## Libraries
-
-### Standard Libraries
-
-* [os]()
-* [sys]()
-* [itertools]()
-
-### Famous Libraries
-
-* [Numpy]()
-* [Scipy]()
-* [Pandas]()
-
-
-* [matplotlib]()
-* [seaborn]()
-* [Plotly]()
 
 
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)

@@ -63,7 +63,7 @@ yrlist = ['e', 'c', 'd']
 | Get index | _list_.**index(var)** | mylist.index('a') | 0 |
 | Count | _list_.**count(var)** | mylist.count('b') | 1 |
 | Sort | asc: _list_.**sort( )** <br/> desc: _list_.**sort(reverse=True)** | yrlist.sort() <br/> yrlist.sort(reverse=True) | ['c', 'd', 'e'] <br/> 'e', 'd', 'c'] |
-
+list + list
 ### Built-in Function
 
 | OPERATION | FUNCTION | EXAMPLE | RESULT |
