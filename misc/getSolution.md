@@ -1,8 +1,8 @@
 Define 3 Equations:
 
->4x -2y + z =11
->-2x +4y -2z = -16
->x -2y + 4z = 17
+>4x -2y + z =11  
+>-2x +4y -2z = -16  
+>x -2y + 4z = 17  
 
 
 Get the Solution:
