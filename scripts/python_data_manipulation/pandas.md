@@ -36,6 +36,16 @@ mydf = pd.DataFrame({'col1': [1, 2, 4,],
 mydf = pd.DataFrame({'col1': [1, 2, 4,],
                      'col2': list('abc')})
 
+a['col1']    # pd.Series
+a[['col1']]  # pd.DataFrame
+a.col1       # pd.Series
+
+a.col3 = ['d', 'e', 'f']
+a.col3
+a['col3'] = ['aa', 'bb', 'cc']
+a
+a[['col3']]
+a.col3
 ```
 
 ```python
