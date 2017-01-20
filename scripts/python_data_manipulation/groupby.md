@@ -198,6 +198,11 @@ return a new resut ```DataFrame```
 data.groupby(key).transform(np.mean())
 ```
 
+filter()
+```python
+data.groupby(key).filter(lambda x: len(x['col'].dropna()) >= 10)
+data.groupby(key).filter(lambda x: len(x['col'].std() != 0)
+```
 
 
 
