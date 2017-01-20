@@ -29,6 +29,16 @@ import numpy as np
 ### Operation
  
 ```python
+mydf = pd.DataFrame({'col1': [1, 2, 4,],
+                     'col2': 'abc'})
+
+
+mydf = pd.DataFrame({'col1': [1, 2, 4,],
+                     'col2': list('abc')})
+
+```
+
+```python
 codes
 ```
 
