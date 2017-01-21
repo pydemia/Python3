@@ -40,7 +40,7 @@ True
 | Operator | Description |
 | :------: | :---------- |
 | and(&) | Equal to |
-| or(|) | NOT Equal to |
+| or(\|) | NOT Equal to |
 | not(!)  | Less than |
 
 Comparison Operator **is PRIOR to** Boolean Operator
