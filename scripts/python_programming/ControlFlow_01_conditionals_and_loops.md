@@ -480,5 +480,5 @@ This returns a Generator object.[Go to "Generators"]()
 [↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#generators)
 
