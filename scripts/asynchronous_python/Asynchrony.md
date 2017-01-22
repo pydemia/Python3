@@ -148,39 +148,140 @@ Out[]: 'GEN_CLOSED'
 It can receive inputs with ```send()``` Method. Each operation stops and awaits a input after the ```yield``` Statements;```'GEN_SUSPENDED'```. ```coroutine``` runs & stops the iteration if all ```yield``` Statements are used. ```myco.send(7)``` operates the remaining but cannot receive ```7``` since there are no ```yield``` Statement anymore. That's why it was printed ```Cannot Receive 3. It's over```, not```Cannot Receive 7```. and then it ends with showing ```StopIteration``` Exception.  
 
 
-## Sequential Crawler
+### Advanced Coroutine
+
+Use ```yield```:
 
 ```python
+def gen():
+    
+    for c in 'AB':
+        yield c
+    
+    for i in range(1, 3):
+        yield i
+```
 
-import grequests
-import string
-import random
+```python
+list(gen())
+Out[]: ['A', 'B', 1, 2]
+```
+
+Use ```yield from```:
+
+```python
+def gen():
+    yield from 'AB'
+    yield from range(1,3)
+```
+
+```python
+list(gen())
+Out[]: ['A', 'B', 1, 2]
+```
+
+```yieldfrom``` is important for open channels between the outbound ```callers``` and the inner ```generators```
 
 
-def generate_urls(base_url, num_urls):
-    for i in xrange(num_urls):
-        yield base_url + "".join(random.sample(string.ascii_lowercase, 10))
+## Asyncio
 
 
-def run_experiment(base_url, num_iter=500):
-    urls = generate_urls(base_url, num_iter)
-    requests = (grequests.get(u) for u in urls)
-    response_futures = grequests.imap(requests, size=100)
-    response_size = sum(len(r.text) for r in response_futures)
-    return response_size
+A normal Function:
 
-if __name__ == "__main__":
-    import time
-    delay = 100
-    num_iter = 500
+```python
+import timeit
+from urllib.request import urlopen
 
-    start = time.time()
-    result = run_experiment(
-        "http://127.0.0.1:8080/add?name=grequests&delay={}&".format(delay),
-        num_iter)
-    end = time.time()
-    print result, (end - start)
+urls = ['http://b.ssut.me', 'https://google.com', 'https://apple.com', 'https://ubit.info', 'https://github.com/ssut']
+start = timeit.default_timer()
+
+for url in urls:
+    print('Start', url)
+    urlopen(url)
+    print('Done', url)
+
+duration = timeit.default_timer() - start 
+
+# Start http://b.ssut.me
+# Done http://b.ssut.me
+# Start https://google.com
+# Done https://google.com
+# Start https://apple.com
+# Done https://apple.com
+# Start https://ubit.info
+# Done https://ubit.info
+# Start https://github.com/ssut
+# Done https://github.com/ssut
+# => duration = 2.4946455230019637
 ```
 
 
-## 
+Using ```thread```
+
+```python
+import timeit
+from concurrent.futures import ThreadPoolExecutor
+from urllib.request import urlopen
+
+urls = ['http://b.ssut.me', 'https://google.com', 'https://apple.com', 'https://ubit.info', 'https://github.com/ssut']
+
+def fetch(url):
+    print('Start', url)
+    urlopen(url)
+    print('Done', url)
+
+start = timeit.default_timer()
+with ThreadPoolExecutor(max_workers=5) as executor:
+    for url in urls:
+        executor.submit(fetch, url)
+
+duration = timeit.default_timer() - start
+
+# Start http://b.ssut.me
+# Start https://google.com
+# Start https://apple.com
+# Start https://ubit.info
+# Start https://github.com/ssut
+# Done https://ubit.info
+# Done http://b.ssut.me
+# Done https://google.com
+# Done https://apple.com
+# Done https://github.com/ssut
+```
+
+Using ```asyncio```, ```aiohttp```
+```python
+
+import aiohttp
+import asyncio
+import timeit
+
+@asyncio.coroutine
+def fetch(url):
+    print('Start', url)
+    req = yield from aiohttp.request('GET', url)
+    print('Done', url)
+
+@asyncio.coroutine
+def fetch_all(urls):
+    fetches = [asyncio.Task(fetch(url)) for url in urls]
+    yield from asyncio.gather(*fetches)
+
+urls = ['http://b.ssut.me', 'https://google.com', 'https://apple.com', 'https://ubit.info', 'https://github.com/ssut']
+
+start = timeit.default_timer()
+asyncio.get_event_loop().run_until_complete(fetch_all(urls))
+duration = timeit.default_timer() - start
+
+# Start http://b.ssut.me
+# Start https://google.com
+# Start https://apple.com
+# Start https://ubit.info
+# Start https://github.com/ssut
+# Done https://ubit.info
+# Done http://b.ssut.me
+# Done https://google.com
+# Done https://apple.com
+# Done https://github.com/ssut
+# => duration = 0.9832467940016068
+```
