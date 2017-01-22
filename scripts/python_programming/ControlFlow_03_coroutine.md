@@ -78,6 +78,41 @@ Out[]: 'GEN_CLOSED'
 It can receive inputs with ```send()``` Method. Each operation stops and awaits a input after the ```yield``` Statements;```'GEN_SUSPENDED'```. ```coroutine``` runs & stops the iteration if all ```yield``` Statements are used. ```myco.send(7)``` operates the remaining but cannot receive ```7``` since there are no ```yield``` Statement anymore. That's why it was printed ```Cannot Receive 3. It's over```, not```Cannot Receive 7```. and then it ends with showing ```StopIteration``` Exception.  
 
 
+
+### Advanced Coroutine
+
+Use ```yield```:
+
+```python
+def gen():
+    
+    for c in 'AB':
+        yield c
+    
+    for i in range(1, 3):
+        yield i
+```
+
+```python
+list(gen())
+Out[]: ['A', 'B', 1, 2]
+```
+
+Use ```yield from```:
+
+```python
+def gen():
+    yield from 'AB'
+    yield from range(1,3)
+```
+
+```python
+list(gen())
+Out[]: ['A', 'B', 1, 2]
+```
+
+```yieldfrom``` is important for open channels between the outbound ```callers``` and the inner ```generators```
+
 ## Coroutine
 
 * Body 안에 yield 문을 가진 일종의 Generator
