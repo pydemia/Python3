@@ -1,4 +1,4 @@
-#Control Flow(제어 흐름) 1: Iterables, Iterator, Generator
+# Iterables, Iterator, Generator
 데이터 처리를 위한 반복작업을 위한 항목
 
 ---
