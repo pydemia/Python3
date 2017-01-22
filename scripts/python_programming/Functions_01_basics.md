@@ -446,8 +446,76 @@ editor(numlist, lambda i: i+1)
 ---
 ## Generators
 
-The Python Sequence Objects.  
-It's _iterable_ so you can iterate through HUGE Sequences without creating & storing the entire sequence in memory at once.  
+The Python Sequence Objects which is a Function generates an Iterator.
+It's _iterable_ so you can iterate through HUGE Sequences without creating & storing the entire sequence in memory at once. 
+
+
+
+```python
+# Create a custom range function
+def rangeGenerator(number):
+    n = 0
+    while n < number:
+        yield n
+        n += 1
+```
+
+```python
+rangeGenerator(5)
+Out[]: <generator object rangeGenerator at 0x7f2829dd37d8>
+
+tmp = rangeGenerator(5)
+
+next(tmp)
+Out[]: 0
+
+next(tmp)
+Out[]: 1
+
+next(tmp)
+Out[]: 2
+
+next(tmp)
+Out[]: 3
+next(tmp)
+Out[]: 4
+
+next(tmp)
+Traceback (most recent call last):
+
+  File "<ipython-input-40-6bbd56cbcde7>", line 1, in <module>
+    next(tmp)
+
+StopIteration
+
+```
+
+
+Usage:
+```python
+for _ in rangeGenerator(5):
+    print (_)
+    
+Out[]: 
+0
+1
+2
+3
+4
+```
+  
+A normal function has ```return``` and It is operated only one time. Besides, ```generator``` has ```yield``` instead of ```return```. It returns a result on and on, not repeats the result but operates to the next. It could be done because after ```yield``` returns a result, ```yield``` remembers the operation & the result to operate the next job.  
+A ```generator``` returns a ```generator``` object. internally it is called by ```next()``` Method. When we call ```generator``` with ```next()```, ```generator``` operates and stops at the point of ```yield``` Statement.
+We generally use ```generator``` in ```for loop``` for extract the results.
+Its ADVANTAGE is the less-memory usage for iteration. Creating a list like ```[0,1,2,3,4]``` needs a fixed memory size related to its length. But using a ```generator``` as the above, we need less to keep the status of ```n```.
+
+
+```generator``` can be used for ```pipeline```
+
+> input --> generator -> generator -> generator -> for x in s:
+
+
+
 ```range()``` is the most famous generator in Python3(```xrange()``` in Python2).  
 
 Look at the custom ver. of ```range()```
@@ -459,7 +527,7 @@ def myrange(start, end, step):
         i += step
 ```
 
-It's a normal Function,  
+It`s a normal Function,  
 and it returns a **_Generator Object_**.  
 This function can show how **_Generator_** works.  
 ```yield``` Statements can throw out the output of ```i```, step by step, while the function is operating(the ```while``` Statement is looping).  
@@ -470,9 +538,9 @@ This function can show how **_Generator_** works.
 ## Decorators
 
 Using **_Decorators_**, you can modify existing functions without changing it.  
-It's a _Function_ takes one function as input & returns another.
+It`s a _Function_ takes one function as input & returns another.
 
-Let's define a **_Decorator_**.
+Let`s define a **_Decorator_**.
 ```python
 def plusone(func):
     def function(*args):
