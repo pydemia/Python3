@@ -9,6 +9,8 @@ This contains the information &amp; sources of Python, which is a programming la
   - [Control Flow](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#control-flow)
   - [Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#functions)
     - [Intermediate Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#intermediate-functions)
+      * [Nested Functions(Inner Functions)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#nested-functions---inner-functions)
+    
       * [Closures](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming.md#basic-objects#closures)
       * [Lambda](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming.md#basic-objects#lambda-functions)
       * [Generators](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming.md#basic-objects#generators)
