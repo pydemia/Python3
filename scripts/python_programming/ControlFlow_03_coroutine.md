@@ -111,7 +111,7 @@ list(gen())
 Out[]: ['A', 'B', 1, 2]
 ```
 
-```yieldfrom``` is important for open channels between the outbound ```callers``` and the inner ```generators```
+```yield from``` is important for open channels between the outbound ```callers``` and the inner ```generators```
 
 ## Coroutine
 
