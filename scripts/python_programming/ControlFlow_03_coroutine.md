@@ -1,5 +1,4 @@
-# Control Flow
-## Coroutine
+# Coroutine
 Coroutine: kind of Improved Generator.
 ```generator``` is used by generating & getting values. ```coroutine``` is used by pushing a value with ```.send()``` Method.
 
