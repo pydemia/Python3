@@ -1,6 +1,84 @@
 # Control Flow
 ## Coroutine
-Coroutine: kind of Improved Generator
+Coroutine: kind of Improved Generator.
+```generator``` is used by generating & getting values. ```coroutine``` is used by pushing a value with ```.send()``` Method.
+
+```python
+from inspect import getgeneratorstate as gs
+
+def coroutineObject(number):
+    
+    print('Started: a:', number)
+    res1 = yield number
+    
+    print('Received: b:', number)
+    print('Calculation: a + b')
+    res2 = yield res1 + number
+    
+    print('Received: c:', number)
+    res3 = yield res2 * number
+    
+    print('Cannot Receive {}. It\'s over'.format(number))
+
+```
+
+```python
+myco = coroutineObject(3)
+
+# 'GEN_CREATED' ----------#
+myco
+Out[]: <generator object coroutineObject at 0x7f282906c360>
+
+gs(myco)
+Out[]: 'GEN_CREATED'
+
+
+# 'GEN_SUSPENDED' 1 ------#
+next(myco)
+Started: a: 3
+Out[]: 3
+
+gs(myco)
+Out[]: 'GEN_SUSPENDED'
+
+# 'GEN_SUSPENDED' 2 ------#
+myco.send(5)
+Received: b: 5
+Calculation: a + b
+Out[]: 8
+
+gs(myco)
+Out[]: 'GEN_SUSPENDED'
+
+# 'GEN_SUSPENDED' 3 ------#
+myco.send(10)
+Received: b: 5
+Calculation: a + b
+Out[]: 8
+
+gs(myco)
+Out[]: 'GEN_SUSPENDED'
+
+# 'GEN_CLOSED' -----------#
+myco.send(7)
+
+Cannot Receive 3; It's over
+Traceback (most recent call last):
+
+  File "<ipython-input-154-ddb1255cc7ad>", line 1, in <module>
+    myco.send(7)
+
+StopIteration
+
+gs(myco)
+Out[]: 'GEN_CLOSED'
+```
+
+```coroutine``` uses ```yield``` Statement not to return a result but to receive a input. Since it operates like a ```generator```, the assignment cannot generate a value;```GEN_CREATED```. We called ```next()``` Method to initiate it. It stops after the first ```yield``` Statement.  
+It can receive inputs with ```send()``` Method. Each operation stops and awaits a input after the ```yield``` Statements;```'GEN_SUSPENDED'```. ```coroutine``` runs & stops the iteration if all ```yield``` Statements are used. ```myco.send(7)``` operates the remaining but cannot receive ```7``` since there are no ```yield``` Statement anymore. That's why it was printed ```Cannot Receive 3. It's over```, not```Cannot Receive 7```. and then it ends with showing ```StopIteration``` Exception.  
+
+
+## Coroutine
 
 * Body 안에 yield 문을 가진 일종의 Generator
 * 값을 반환할 수 있는 Generator
