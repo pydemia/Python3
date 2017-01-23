@@ -22,6 +22,7 @@
 | ```os.stat(path)```         | get informations of the given <path> directory            |    ```os.stat('~/python')```              |
 | ```os.utime(path, times)``` | change the access time and modified time of the given <path>, if <times>=None then now()            |    ```os.utime('~/python')```              |
 | ```os.walk(top, topdown=True, onerror=None, followlinks=False)```         | loop startswith the given <top> directory and return pathes and directory names  |    ```os.walk('~/python')```              |
+| ```os.getenv(env, failvalue)``` | return the ```environment variable``` if successed or failvalue if failed   |    ```os.getenv('PYTHONPATH', 'Not Found')```              |
 
 
 
@@ -29,4 +30,97 @@
 
 ```import sys```
 
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
 
+
+
+
+
+## ```itertools```
+
+```import itertools```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+## ```functools```
+
+```import functools```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+## ```string```
+
+```import string```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+
+## ```datetime```
+
+```import datetime```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+## ```math```
+
+```import math```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+## ```re```
+
+```import re```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+## ```collections```
+
+```import collections```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+## ```tkinter```
+
+```import tkinter```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+
+
+
+
+## ```bisect```
+
+```import bisect```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
