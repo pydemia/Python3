@@ -37,6 +37,12 @@ This contains the information &amp; sources of Python, which is a programming la
   - [tkinter](https://github.com/dawkiny/Python3/blob/master/scripts/BuiltinLibraries.md#input--output)
   - [bisect](https://github.com/dawkiny/Python3/blob/master/scripts/BuiltinLibraries.md#input--output)
 
+## Python Additional Data Structure
+* [array.array]()
+* [numpy.array]()
+* [numpy.ndarray]()
+* [pandas.Series]()
+* [pandas.DataFrame]()
 
 ---
 ## Python Data Manipulation
