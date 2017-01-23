@@ -102,9 +102,9 @@ This contains the information &amp; sources of Python, which is a programming la
 * [aiohttp]()
 
 ---
-## Python Multithreading & Multiprocessing
-* [threading](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
-* [multiprocessing](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+## Python Parallel Programming
+* [threading](https://github.com/pydemia/Python3/blob/master/scripts/python_parallelprogramming/multithreading_and_multiprocessing.md#threading)
+* [multiprocessing](https://github.com/pydemia/Python3/blob/master/scripts/python_parallelprogramming/multithreading_and_multiprocessing.md#multiprocessing)
 
 ---
 ## Python Asynchronous I/O, event loop, coroutines and tasks ...
