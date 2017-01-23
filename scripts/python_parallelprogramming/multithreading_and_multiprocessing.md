@@ -2,6 +2,9 @@
 
 ## ```threading```
 
+You can use ```threading.Thread``` to operate multi-threading jobs.
+```run()``` Method is required to use it.
+
 ```python
 import threading
 
@@ -41,7 +44,15 @@ Receiving...
 
 ```threading``` can make us use multithreading.
 
-## Comparison ```threading``` and ```multiprocessing```
+
+## ```multiprocessing```
+
+```python
+
+```
+
+
+## Comparison 1: ```threading``` and ```multiprocessing```
 
 Single Thread:
 ```python
@@ -134,3 +145,64 @@ print ('Result : ',sum,'time =',time.time()-s_time)
 Result :  3199999960000000 time = 2.290956735610962
 ```
 
+## Comparison 2: ```threading``` and ```multiprocessing```
+
+```python
+
+from threading import Thread
+from queue import Queue
+import urllib.request
+
+import json
+from urllib.request import urlopen
+ 
+exchange = urlopen("http://api.fixer.io/latest?base=USD").read().decode("utf-8")
+ex = json.loads(exchange)
+
+url = 'http://fx.kebhana.com/fxportal/jsp/RS/DEPLOY_EXRATE/fxrate_all.html'
+
+
+def getRate(pair, outq, url_tmplt=url):
+    with urllib.request.urlopen(url_tmplt.format(pair)) as res:
+        body = res.read()
+        outq.put((pair, float(body.strip())))
+
+getRate('$',)
+if __name__ == '__main__':
+
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('pairs', type=str, nargs='+')
+    args = parser.parse_args()
+
+    outputq = Queue()
+    for pair in args.pairs:
+        t = Thread(target=getRate, kwargs={'pair': pair,
+                                           'outq': outputq})
+
+        t.daemon = True
+        t.start()
+
+    for _ in args.pairs:
+        pair, rate = outputq.get()
+        print(pair, rate)
+        outputq.task_done()
+    outputq.join()
+
+#%%
+
+import json
+from urllib.request import urlopen
+ 
+exchange = urlopen("http://api.fixer.io/latest?base=USD").read().decode("utf-8")
+ex = json.loads(exchange)
+ 
+def exCal(dollar):
+    exchange = urlopen("http://api.fixer.io/latest?base=USD").read().decode("utf-8")
+    ex = json.loads(exchange)
+    for rate in sorted(ex.get('rates').keys()) :    
+        print(rate+" "+str(dollar*ex.get('rates').get(rate)))
+ 
+exCal(100)
+```
