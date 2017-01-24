@@ -1,5 +1,7 @@
-[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_intermediate.md#intermediate-python)
 
+
+---
 
 # Classes
 
@@ -98,4 +100,4 @@ super().{superclass_method}
 
 
 ---
-[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_intermediate.md#intermediate-python)
