@@ -1,3 +1,5 @@
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_intermediate.md#intermediate-python)
+
 
 # Objects
 
@@ -75,3 +77,5 @@ words = "python"
 This returns a Generator object.[Go to "Generators"](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#generators)
 
 [↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
+
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_intermediate.md#intermediate-python)
