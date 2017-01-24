@@ -3,6 +3,26 @@
 ---
 # Functions
 
+
+## Functions as _Objects_
+
+**_Functions_** can be **_Arguments_**.
+
+```python
+def adder(a, b):
+    return a + b
+
+def runfunc_and_double(func, a, b):
+    res = func(a, b)
+    return res * 2
+
+runfunc_and_double(adder, 3, 5)
+16 # res = adder(3, 5) = 3+5, and res*2 = 8*2 = 16
+```
+
+
+
+
 ---
 ## Nested Functions - Inner Functions
 
