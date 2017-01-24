@@ -7,7 +7,6 @@
 * [if Statememts](#if-statements)
 * [while Statements](#while-statements)
 * [for Statements](#for-statements)
-* [Comprehensions](#comprehensions)
 
 ---
 ## Conditionals
