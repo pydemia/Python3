@@ -1,3 +1,7 @@
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+---
+
+
 # Coroutine
 Coroutine: kind of Improved Generator.
 ```generator``` is used by generating & getting values. ```coroutine``` is used by pushing a value with ```.send()``` Method.
@@ -233,3 +237,5 @@ getgeneratorstate(exc_coro)#'GET_CLOSED'
 이 무한루프는 처리되지 않은 예외에 의해서만 중단, 예외 처리하지 않으면 Coroutine 실행이 중단됨.
 ---
 
+
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
