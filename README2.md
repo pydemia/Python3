@@ -59,6 +59,7 @@ This contains the information &amp; sources of Python, which is a programming la
 * [numpy.ndarray]()
 * [pandas.Series]()
 * [pandas.DataFrame]()
+* [pandas.Frozenlist]()
 
 ---
 ## Python Data Manipulation
