@@ -24,10 +24,10 @@ This contains the information &amp; sources of Python, which is a programming la
     * [Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#generators)
     * [Decorators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#decorators)
 
-* [Intermediate Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#classes)
-  - [Inheritance](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#inheritance)  
-  - [Method Overriding](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#method-overriding)  
-  - [```super()``` Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#super-methods)
+  - [Intermediate Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#classes)
+    * [Inheritance](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#inheritance)  
+    * [Method Overriding](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#method-overriding)  
+    * [```super()``` Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#super-methods)
 
 
 
