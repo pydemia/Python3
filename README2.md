@@ -5,29 +5,32 @@ This contains the information &amp; sources of Python, which is a programming la
 ## Python Programming
 
 ### Basics on Python
-* [Python Basics](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming_basic.md)
-  - [Basic Objects](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#basic-objects)
-  - [Control Flow](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#control-flow)
-  - [Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#functions)
-  - [Classes](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#classes)
-  - [Modules & Packages](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#modules--packages)
-  - [Input & Output](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)  
+* [Python Basics](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
+  - [Basic Objects](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#objects)
+  - [Control Flow](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#control-flow)
+  - [Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#functions)
+  - [Classes](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#classes)
+  - [Modules & Packages](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#modules--packages)
+  - [Input & Output](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#input--output)  
   
 ### Intermediate Python
- - [Intermediate Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#intermediate-functions)
-    * [Nested Functions(Inner Functions)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#nested-functions---inner-functions)
-    * [Closures](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#closures)
-    * [Lambda](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#lambda-functions)
-    * [Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#generators)
-    * [Decorators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#decorators)
+* [Intermediate Python](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
+ - [Objects](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#objects)
+    * [Comprehensions](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#comprehensions)
+ - [Intermediate Functions](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#functions)
+    * [Nested Functions(Inner Functions)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#nested-functions---inner-functions)
+    * [Closures](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#closures)
+    * [```Lambda```](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#lambda-functions)
+    * [Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#generators)
+    * [Decorators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#decorators)
 
 
 
 ### Advanced Python
 
- - [Advanced Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#advanced-functions)
-      * [Iterables, Iterators and Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/ControlFlow_02_iter.md#iterables-iterator-generator)
-      * [Coroutines](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/ControlFlow_03_coroutine.md#coroutine)
+ - [Advanced Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+      * [Iterables, Iterators and Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Iterator_and_Generator.md#iterables-iterator-generator)
+      * [Coroutines](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Coroutine.md#coroutine)
 
 
 
