@@ -26,11 +26,6 @@
 * [```while``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#while-statements)
 * [```for``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#for-statements)
 
-### Advanced Loops
-
-* [Comprehensions](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#comprehensions)
-
-
 ---
 ## Functions
 
@@ -54,20 +49,6 @@
 * [Clean-up Actions](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#clean-up-actions)  
 
 
-### Intermediate Functions
-
-* [Functions as Objects](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#functions-as-objects)
-* [Nested Functions - Inner Functions](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#nested-functions---inner-functions)
-* [Closures](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#closures)
-* [```lambda``` Functions](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#lambda-functions)
-* [Generators](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#generators)
-* [Decorators](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#decorators)
-
-
-### Advanced Functions
-* [Iterables, Iterators and Generators](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_02_iter.md#control-flow제어-흐름-1-iterables-iterator-generator)
-* [Coroutine](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_03_coroutine.md#coroutine)
-
 ---
 ## Classes
 
@@ -78,22 +59,6 @@
 * [Class Variables and Method Variables](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#class- variables-and-method-variables)  
 * [Scopes and Namespaces](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#scopes-and-namespaces)
 
-### Intermediate Classes
-
-* [Inheritance](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#inheritance)  
-* [Method Overriding](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#inheritance#method-overriding)  
-* [Add new Methods](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#add-new-methods)  
-* [```super()``` Methods](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#super-methods)
-
-### Advanced Classes
-
-* [Property](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#property)
-* [Private Name Mangling](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#private-name-mangling)
-* [Method Types](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#method-types)
-* [Duck-typing(lazy-polymorphism)](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#duck-typing)
-* [Special Methods](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#special-methods)
-* [Composition & Aggregation](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#composition-and-aggregation)
-* [Named-Tuple](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#named-tuple)
 
 ---
 ## Modules & Packages
