@@ -56,13 +56,14 @@
 * [Defining Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Class.md#defining-classes)
 * [Class Variables and Method Variables](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Class.md#class-variables-and-method-variables)  
 * [Scopes and Namespaces](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Class.md#scopes-and-namespaces)
+* [Add new Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Class.md#add-new-methods)  
 
 
 ---
 ## Modules & Packages
 
-* [Modules](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Modules_and_Packages.md#modules)
-* [Packages](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Modules_and_Packages.md#packages)
+* [Modules]()
+* [Packages]()
 
 ---
 ## Input & Output
