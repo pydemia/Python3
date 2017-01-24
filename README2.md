@@ -5,13 +5,14 @@ This contains the information &amp; sources of Python, which is a programming la
 ## Python Programming
 
 ### Basics on Python
-* [Python Basics](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+* [Python Basics](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming_basic.md)
   - [Basic Objects](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#basic-objects)
   - [Control Flow](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#control-flow)
   - [Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#functions)
   - [Classes](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#classes)
   - [Modules & Packages](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#modules--packages)
-  - [Input & Output](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output) 
+  - [Input & Output](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#input--output)  
+  
 ### Intermediate Python
  - [Intermediate Functions](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md#intermediate-functions)
     * [Nested Functions(Inner Functions)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#nested-functions---inner-functions)
