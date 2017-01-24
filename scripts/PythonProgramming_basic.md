@@ -1,12 +1,17 @@
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
 
 
-# Python Basics
+# Basics on Python
 
 ---
-## Writing Python Codes
-* Comments: \#
-* Line Continuation: \\
+## Write Python Codes
+
+* Comments: ```#```
+* Line Continuation: ```\```
+* Indent: ```[Tab]``` or ```spaces(2 or 4)```
+* Simple Quatation: ```' '``` or ```" "```
+* Line-over Quatation(for ```docstring```): ```""" """``` or ```''' '''```
+* Assignment: ```=```
 
 ---
 ## Objects
