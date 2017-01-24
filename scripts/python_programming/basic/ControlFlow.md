@@ -1,5 +1,7 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
 
+
+---
 
 # Control Flow
 
@@ -405,5 +407,5 @@ list(zip(mylist, xylist))#[('l', 1), ('i', 2)]; its length = the shortest sequen
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
 
