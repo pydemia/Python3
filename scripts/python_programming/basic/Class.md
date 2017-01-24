@@ -208,6 +208,10 @@ print("In global scope:", spam)
 [↑ Up to the Top](#classes)
 
 
+### Add new Methods   
+Just use ```def``` Statements to define new _Functions_!  
+
+
 
 
 ---
