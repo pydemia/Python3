@@ -73,10 +73,6 @@ newbruce = NewMembership('Bruce Lee')    # Instance bruce
 newbruce.introduce()                        # Hello, I'm a member of brand-new council, Bruce Lee
 ```
 
-### Add new Methods   
-Just use ```def``` Statements to define new _Functions_!  
-
-
 ### ```super()``` Methods
 
 To call the _Methods_ from _Superclass_ within _Subclass_, use ```super()``` _Methods_ in **_Subclasses_**!
