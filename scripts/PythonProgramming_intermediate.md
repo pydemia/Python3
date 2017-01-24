@@ -14,8 +14,6 @@
 ---
 ## Control Flow
 
-### Conditionals & Loops
-
 * [```with``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#if-statements)
 
 
