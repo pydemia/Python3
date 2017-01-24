@@ -15,9 +15,9 @@ This contains the information &amp; sources of Python, which is a programming la
   
 ### Intermediate Python
 * [Intermediate Python](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
-- [Objects](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#objects)
+  - [Objects](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#objects)
     * [Comprehensions](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#comprehensions)
- - [Intermediate Functions](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#functions)
+  - [Intermediate Functions](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#functions)
     * [Nested Functions(Inner Functions)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#nested-functions---inner-functions)
     * [Closures](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#closures)
     * [```Lambda```](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#lambda-functions)
@@ -32,19 +32,19 @@ This contains the information &amp; sources of Python, which is a programming la
 
 
 ### Advanced Python
-
- - [Advanced Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+* [Advanced Python](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+  - [Advanced Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
       * [Iterables, Iterators and Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Iterator_and_Generator.md#iterables-iterator-generator)
       * [Coroutines](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Coroutine.md#coroutine)
 
-* [Advanced Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#classes)
-  - [Property](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#property)
-  - [Private Name Mangling](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#private-name-mangling)
-  - [Method Types](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#method-types)
-  - [Duck-typing(lazy-polymorphism)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#duck-typing)
-  - [Special Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#special-methods)
-  - [Composition & Aggregation](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#composition-and-aggregation)
-  - [Named-Tuple](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#named-tuple)
+  - [Advanced Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#classes)
+    * [Property](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#property)
+    * [Private Name Mangling](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#private-name-mangling)
+    * [Method Types](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#method-types)
+    * [Duck-typing(lazy-polymorphism)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#duck-typing)
+    * [Special Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#special-methods)
+    * [Composition & Aggregation](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#composition-and-aggregation)
+    * [Named-Tuple](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#named-tuple)
 
 
 
