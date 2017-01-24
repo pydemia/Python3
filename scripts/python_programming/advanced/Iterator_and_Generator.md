@@ -1,3 +1,6 @@
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+
+
 # Iterables, Iterator, Generator
 데이터 처리를 위한 반복작업을 위한 항목
 
@@ -128,3 +131,5 @@ from itertools import *
 from functools import *
 ```
 
+
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
