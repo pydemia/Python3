@@ -24,6 +24,11 @@ This contains the information &amp; sources of Python, which is a programming la
     * [Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#generators)
     * [Decorators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#decorators)
 
+* [Intermediate Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#classes)
+  - [Inheritance](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#inheritance)  
+  - [Method Overriding](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#method-overriding)  
+  - [```super()``` Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Class.md#super-methods)
+
 
 
 ### Advanced Python
@@ -31,6 +36,15 @@ This contains the information &amp; sources of Python, which is a programming la
  - [Advanced Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
       * [Iterables, Iterators and Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Iterator_and_Generator.md#iterables-iterator-generator)
       * [Coroutines](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Coroutine.md#coroutine)
+
+* [Advanced Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#classes)
+  - [Property](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#property)
+  - [Private Name Mangling](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#private-name-mangling)
+  - [Method Types](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#method-types)
+  - [Duck-typing(lazy-polymorphism)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#duck-typing)
+  - [Special Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#special-methods)
+  - [Composition & Aggregation](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#composition-and-aggregation)
+  - [Named-Tuple](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#named-tuple)
 
 
 
