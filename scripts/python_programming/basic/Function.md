@@ -6,7 +6,7 @@
 ---
 ## Defining Functions
 
-A **Fuction** has 2 steps;_Define_ & _Call_.
+A **Fuction** has 2 steps;   _Define_ & _Call_ .  
 It operates when it is _called_.
 
 
