@@ -9,7 +9,7 @@
 * Line Continuation: \\
 
 ---
-## Basic Objects
+## Objects
 
 * [Data Types](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Objects_01_datatype.md)
 * [Data Structures](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Objects_02_datastructure.md)
@@ -19,17 +19,12 @@
 ## Control Flow
 
 * [Conditionals](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#conditionals)
-
-### Conditionals & Loops
-
 * [```if``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#if-statements)
 * [```while``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#while-statements)
 * [```for``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/ControlFlow_01_conditionals_and_loops.md#for-statements)
 
 ---
 ## Functions
-
-### Basics on Functions
 
 * [Defining Fuctions](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#defining-functions)  
  1. [```def``` Statements](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#def-statements)  
@@ -51,8 +46,6 @@
 
 ---
 ## Classes
-
-### Basics on Classes
 
 * [Objects & Classes](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#objects-and-classes)
 * [Defining Classes](https://github.com/dawkiny/Python3/blob/master/scripts/python_programming/Classes_01_basics.md#defining-classes)
