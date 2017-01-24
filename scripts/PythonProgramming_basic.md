@@ -62,8 +62,8 @@
 ---
 ## Modules & Packages
 
-* [Modules]()
-* [Packages]()
+* [Modules](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Modules_and_Packages.md#modules)
+* [Packages](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/Modules_and_Packages.md#packages)
 
 ---
 ## Input & Output
