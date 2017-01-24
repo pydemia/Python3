@@ -31,11 +31,8 @@ This contains the information &amp; sources of Python, which is a programming la
 
 
 
+### Built-in Libraries
 
- 
-
-
-* [Built-in Libraries](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#built-in-libraries)
   - [os](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#os)
   - [sys](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
   - [itertools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#itertools)
