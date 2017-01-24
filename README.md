@@ -15,7 +15,7 @@ This contains the information &amp; sources of Python, which is a programming la
   
 ### Intermediate Python
 * [Intermediate Python](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
- - [Objects](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#objects)
+- [Objects](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#objects)
     * [Comprehensions](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Object.md#comprehensions)
  - [Intermediate Functions](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#functions)
     * [Nested Functions(Inner Functions)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/intermediate/Function.md#nested-functions---inner-functions)
