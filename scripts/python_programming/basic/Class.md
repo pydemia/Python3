@@ -1,5 +1,7 @@
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
 
+
+---
 
 # Classes
 
@@ -215,4 +217,4 @@ Just use ```def``` Statements to define new _Functions_!
 
 
 ---
-[← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/scripts/PythonProgramming.md)
+[← back to *Main Page*](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
