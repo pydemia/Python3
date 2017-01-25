@@ -211,9 +211,25 @@ def myrange(start, end, step):
 It`s a normal Function,  
 and it returns a **_Generator Object_**.  
 This function can show how **_Generator_** works.  
-```yield``` Statements can throw out the output of ```i```, step by step, while the function is operating(the ```while``` Statement is looping).  
+```yield``` Statements can throw out the output of ```i```, step by step, while the function is operating(the ```while``` Statement is looping). 
 
+#### Example
+In many times, you don't need to generate a list to append. Let's change this;
 
+From:
+```python
+def returnList():
+    res = []
+    for _ in iterable:
+        res.append(_)
+   	return res
+```
+To:
+```python
+def generatorExample():
+    for _ in iterable:
+        yield _
+```
 
 ---
 ## Decorators
