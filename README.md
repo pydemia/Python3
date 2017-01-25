@@ -6,12 +6,12 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Basics on Python
 * [Python Basics](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)  
-  - [Basic Objects](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#objects)
-  - [Control Flow](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#control-flow)
-  - [Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#functions)
-  - [Classes](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#classes)
-  - [Modules & Packages](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#modules--packages)
-  - [Input & Output](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#input--output)  
+ - [Basic Objects](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#objects)
+ - [Control Flow](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#control-flow)
+ - [Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#functions)
+ - [Classes](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#classes)
+ - [Modules & Packages](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#modules--packages)
+ - [Input & Output](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#input--output)  
   
 ### Intermediate Python
 * [Intermediate Python](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#basics-on-python)
