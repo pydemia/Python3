@@ -214,7 +214,7 @@ This function can show how **_Generator_** works.
 ```yield``` Statements can throw out the output of ```i```, step by step, while the function is operating(the ```while``` Statement is looping). 
 
 #### Example
-In many times, you don't need to generate a list to append. Let's change this;
+In many times, you don't need to generate a list to append elements but each elements itself unless you need a container either. Let's change it;
 
 From:
 ```python
