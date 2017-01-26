@@ -2,8 +2,9 @@
 
 ## ```os```
 
-```import os```
-
+```python
+import os
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -28,7 +29,9 @@
 
 ## ```sys```
 
-```import sys```
+```python
+import sys
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -39,7 +42,9 @@
 
 ## ```itertools```
 
-```import itertools```
+```python
+import itertools
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -49,7 +54,9 @@
 
 ## ```functools```
 
-```import functools```
+```python
+import functools
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -59,7 +66,9 @@
 
 ## ```string```
 
-```import string```
+```python
+import string
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -70,7 +79,9 @@
 
 ## ```datetime```
 
-```import datetime```
+```python
+import datetime
+```
 
 Timestamp format:
 
@@ -171,7 +182,9 @@ obj_timezone = datetime.timezone(offset, name=None)
 
 ## ```math```
 
-```import math```
+```python
+import math
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -181,7 +194,9 @@ obj_timezone = datetime.timezone(offset, name=None)
 
 ## ```re```
 
-```import re```
+```python
+import re
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -191,7 +206,9 @@ obj_timezone = datetime.timezone(offset, name=None)
 
 ## ```collections```
 
-```import collections```
+```python
+import collections
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -201,7 +218,10 @@ obj_timezone = datetime.timezone(offset, name=None)
 
 ## ```tkinter```
 
-```import tkinter```
+```python
+import tkinter
+```
+
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
@@ -211,7 +231,9 @@ obj_timezone = datetime.timezone(offset, name=None)
 
 ## ```bisect```
 
-```import bisect```
+```python
+import bisect
+```
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
