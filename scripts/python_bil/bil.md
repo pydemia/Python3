@@ -111,41 +111,42 @@ Timestamp format:
 
 #### Types & Objects
 
-```timedelta```:
+
+class ```timedelta``` :
 
 ```python
 obj_timedelta = datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)
 ```
 
-```date```:
+class ```date``` :
 
 ```python
 obj_date = datetime.date(year, month, day)
 ```
 
 
-```datetime```:
+class ```datetime``` :
 
 ```python
 obj_datetime = datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 ```
 
 
-```time```:
+class ```time``` :
 
 ```python
 obj_time = datetime.time(hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 ```
 
 
-```tzinfo```:
+class ```tzinfo``` :
 
 ```python
 obj_tzinfo = datetime.tzinfo
 ```
 
 
-```timezone```:
+class ```timezone``` :
 
 ```python
 obj_timezone = datetime.timezone(offset, name=None)
