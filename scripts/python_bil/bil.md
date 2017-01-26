@@ -167,8 +167,7 @@ obj_datetime = datetime.datetime(year, month, day, hour=0, minute=0, second=0, m
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
 | ```datetimeObj.ctime()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
 | ```datetimeObj.strftime('format')```        | change a ```datetime``` type to ```str```         |    ```nowStr = nowTs.strftime('%Y-%m-%d %H:%M:%S')```     |
-| ```datetimeObj.replace(str, 'format')``` | change a ```str``` type to ```datetime```  |    ```datetime.datetime.strptime(nowStr, '%Y-%m-%d %H:%M:%S')``` |
-
+| ```datetimeObj.replace(year=self.year, month=self.month, day=self.day, hour=self.hour, minute=self.minute, second=self.second, microsecond=self.microsecond, tzinfo=self.tzinfo, * fold=0)``` | change a ```str``` type to ```datetime```  |    ```nowTs.replace(nowStr, '%Y-%m-%d %H:%M:%S')``` |
 | ```datetimeObj.fold()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
 | ```datetimeObj.min()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
 | ```datetimeObj.max()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
