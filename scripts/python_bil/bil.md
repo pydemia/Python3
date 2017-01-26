@@ -163,34 +163,37 @@ class ```datetime``` :
 obj_datetime = datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 ```
 
+| Attributes                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+| ```datetimeObj.fold```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.fold```     |
+| ```datetimeObj.min```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.min```     |
+| ```datetimeObj.max```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.max```     |
+| ```datetimeObj.year```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.year```     |
+| ```datetimeObj.month```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.month```     |
+| ```datetimeObj.day```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.day```     |
+| ```datetimeObj.hour```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.hour```     |
+| ```datetimeObj.minute```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.minute```     |
+| ```datetimeObj.second```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.second```     |
+| ```datetimeObj.microsecond```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.microsecond```     |
+| ```datetimeObj.tzinfo```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.tzinfo```     |
+
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
 | ```datetimeObj.ctime()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
 | ```datetimeObj.strftime('format')```        | change a ```datetime``` type to ```str```         |    ```nowStr = nowTs.strftime('%Y-%m-%d %H:%M:%S')```     |
-| ```datetimeObj.replace(year=self.year, month=self.month, day=self.day, hour=self.hour, minute=self.minute, second=self.second, microsecond=self.microsecond, tzinfo=self.tzinfo, * fold=0)``` | change a ```str``` type to ```datetime```  |    ```nowTs.replace(nowStr, '%Y-%m-%d %H:%M:%S')``` |
-| ```datetimeObj.fold()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.min()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.max()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.year()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.month()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.day()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.hour()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.minute()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.second()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.microsecond()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.tzinfo()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.timetz()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.astimetzone(tz=None)```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.dst()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.tzname()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.timetuple()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.utctimetuple()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.toordinal()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.timestamp()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.weekday()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.isoweekday()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.isocalendar()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```datetimeObj.isoformat(sep='T', timespec='auto')```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.replace(day=self.day, )``` | change a ```str``` type to ```datetime```  |    ```nowTs.replace(year=2016, day=10)``` |
+| ```datetimeObj.timetz()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.timetz()```     |
+| ```datetimeObj.astimetzone(tz=None)```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.astimezone(tz='EST')```     |
+| ```datetimeObj.dst()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.dst()```     |
+| ```datetimeObj.tzname()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.tzname()```     |
+| ```datetimeObj.timetuple()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.timetuple()```     |
+| ```datetimeObj.utctimetuple()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.utctimetuple()```     |
+| ```datetimeObj.toordinal()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.toordinal()```     |
+| ```datetimeObj.timestamp()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.timestamp()```     |
+| ```datetimeObj.weekday()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.weekday()```     |
+| ```datetimeObj.isoweekday()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.isoweekday()```     |
+| ```datetimeObj.isocalendar()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.isocalendar()```     |
+| ```datetimeObj.isoformat(sep='T', timespec='auto')```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.isoformat(sep='T', timespec='auto')```     |
 
 class ```tzinfo``` :
 
