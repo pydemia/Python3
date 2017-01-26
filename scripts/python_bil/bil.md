@@ -109,6 +109,13 @@ Timestamp format:
 | ```%X``` | Locale TimeFormat (```%I:%M:%s %p```) |
 | ```%x``` | Locale DateFormat (```%m/%d/%Y```) |
 
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+| ```datetime.datetime.today()```           | return ```datetime``` & ```tzinfo``` of the present ```datetime```            |    ```nowTs = datetime.datetime.today()```              |
+| ```datetime.datetime.now()```           | return ```datetime``` of the present ```datetime```            |    ```nowTs = datetime.datetime.now()```              |
+
+
 #### Types & Objects
 
 
@@ -118,17 +125,28 @@ class ```timedelta``` :
 obj_timedelta = datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)
 ```
 
+| Operation |	Description |
+| :-------- | :------- |
+|```t1 = t2 + t3```	 | Sum of ```t2``` and ```t3```. Afterwards ```t1-t2 == t3``` and ```t1-t3 == t2``` are ```True```. (1) |
+|```t1 = t2 - t3```	 | Difference of ```t2``` and ```t3```. Afterwards ```t1 == t2 - t3``` and ```t2 == t1 + t3``` are ```True```. (1) |
+|```t1 = t2 * i``` </br> or ```t1 = i * t2```	 | Delta multiplied by an ```integer```. Afterwards ```t1 // i == t2``` is ```True```, provided ```i != 0```. </br> In general, ```t1 * i == t1 * (i-1) + t1``` is ```True```. (1) |
+|```t1 = t2 * f``` </br> or ```t1 = f * t2```	 | Delta multiplied by a ```float```. The result is rounded to the nearest multiple of ```timedelta.resolution``` using round-half-to-even. |
+|```f = t2 / t3```	 | Division (3) of ```t2``` by ```t3```. Returns a ```float``` object. |
+|```t1 = t2 / f``` </br> or ```t1 = t2 / i```	 | Delta divided by a ```float``` or an ```int```. The result is rounded to the nearest multiple of ```timedelta```.resolution using round-half-to-even. |
+|```t1 = t2 // i``` </br> or ```t1 = t2 // t3```	 | The floor is computed and the remainder (if any) is thrown away. In the second case, an ```integer``` is returned. (3) |
+|```t1 = t2 % t3```	 | The remainder is computed as a ```timedelta``` object. (3) |
+| ```q, r = divmod(t1, t2)```	 | Computes the quotient and the remainder: ```q = t1 // t2``` (3) and ```r = t1 % t2```. q is an ```integer``` and ```r``` is a ```timedelta``` object. |
+|```+t1```	 | Returns a ```timedelta``` object with the same value. (2) |
+|```-t1```	 | equivalent to ```timedelta(-t1.days, -t1.seconds, -t1.microseconds)```, and to ```t1* -1```. (1)(4) |
+|```abs(t)```	 | equivalent to ```+t``` when ```t.days >= 0```, and to ```-t``` when ```t.days < 0```. (2) |
+|```str(t)```	 | Returns a ```str``` in the form ```[D day[s], ][H]H:MM:SS[.UUUUUU]```, where ```D``` is negative for negative ```t```. (5) |
+| ```repr(t)```	 | Returns a ```str``` in the form ```datetime.timedelta(D[, S[, U]])```, where ```D``` is negative for negative ```t```. (5) |
+
+
 class ```date``` :
 
 ```python
 obj_date = datetime.date(year, month, day)
-```
-
-
-class ```datetime``` :
-
-```python
-obj_datetime = datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 ```
 
 
@@ -138,6 +156,42 @@ class ```time``` :
 obj_time = datetime.time(hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 ```
 
+
+class ```datetime``` :
+
+```python
+obj_datetime = datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
+```
+
+| Method                      | Description                                     | Usage                           |
+| :-------------------------- | :---------------------------------------------- | :------------------------------ |
+| ```datetimeObj.ctime()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.strftime('format')```        | change a ```datetime``` type to ```str```         |    ```nowStr = nowTs.strftime('%Y-%m-%d %H:%M:%S')```     |
+| ```datetimeObj.replace(str, 'format')``` | change a ```str``` type to ```datetime```  |    ```datetime.datetime.strptime(nowStr, '%Y-%m-%d %H:%M:%S')``` |
+
+| ```datetimeObj.fold()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.min()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.max()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.year()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.month()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.day()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.hour()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.minute()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.second()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.microsecond()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.tzinfo()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.timetz()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.astimetzone(tz=None)```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.dst()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.tzname()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.timetuple()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.utctimetuple()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.toordinal()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.timestamp()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.weekday()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.isoweekday()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.isocalendar()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```datetimeObj.isoformat(sep='T', timespec='auto')```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
 
 class ```tzinfo``` :
 
@@ -151,33 +205,6 @@ class ```timezone``` :
 ```python
 obj_timezone = datetime.timezone(offset, name=None)
 ```
-
-
-| Operation |	Result |
-| :-------- | :------- |
-|```t1 = t2 + t3```	 | Sum of ```t2``` and ```t3```. Afterwards ```t1-t2 == t3``` and ```t1-t3 == t2``` are ```True```. (1)
-|```t1 = t2 - t3```	 | Difference of ```t2``` and ```t3```. Afterwards ```t1 == t2 - t3``` and ```t2 == t1 + t3``` are ```True```. (1)
-|```t1 = t2 * i``` </br> or ```t1 = i * t2```	 | Delta multiplied by an ```integer```. Afterwards ```t1 // i == t2``` is ```True```, provided ```i != 0```. </br> In general, ```t1 * i == t1 * (i-1) + t1``` is ```True```. (1)
-|```t1 = t2 * f </br> or t1 = f * t2```	 | Delta multiplied by a ```float```. The result is rounded to the nearest multiple of ```timedelta.resolution``` using round-half-to-even.
-|```f = t2 / t3```	 | Division (3) of ```t2``` by ```t3```. Returns a ```float``` object.
-|```t1 = t2 / f``` </br> or ```t1 = t2 / i```	 | Delta divided by a ```float``` or an ```int```. The result is rounded to the nearest multiple of ```timedelta```.resolution using round-half-to-even.
-|```t1 = t2 // i``` </br> or ```t1 = t2 // t3```	 | The floor is computed and the remainder (if any) is thrown away. In the second case, an ```integer``` is returned. (3)
-|```t1 = t2 % t3```	 | The remainder is computed as a ```timedelta``` object. (3)
-| ```q, r = divmod(t1, t2)```	 | Computes the quotient and the remainder: ```q = t1 // t2``` (3) and ```r = t1 % t2```. q is an ```integer``` and ```r``` is a ```timedelta``` object.
-|```+t1```	 | Returns a ```timedelta``` object with the same value. (2)
-|```-t1```	 | equivalent to ```timedelta(-t1.days, -t1.seconds, -t1.microseconds)```, and to ```t1* -1```. (1)(4)
-|```abs(t)```	 | equivalent to ```+t``` when ```t.days >= 0```, and to ```-t``` when ```t.days < 0```. (2)
-|```str(t)```	 | Returns a ```str``` in the form ```[D day[s], ][H]H:MM:SS[.UUUUUU]```, where ```D``` is negative for negative ```t```. (5)
-| ```repr(t)```	 | Returns a ```str``` in the form ```datetime.timedelta(D[, S[, U]])```, where ```D``` is negative for negative ```t```. (5)
-
-
-| Method                      | Description                                     | Usage                           |
-| :-------------------------- | :---------------------------------------------- | :------------------------------ |
-| ```datetime.datetime.today()```           | return ```datetime``` & ```tzinfo``` of the present ```datetime```            |    ```nowTs = datetime.datetime.today()```              |
-| ```datetime.datetime.now()```           | return ```datetime``` of the present ```datetime```            |    ```nowTs = datetime.datetime.now()```              |
-| ```Timestamp.ctime()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
-| ```Timestamp.strftime('format')```        | change a ```datetime``` type to ```str```         |    ```nowStr = nowTs.strftime('%Y-%m-%d %H:%M:%S')```     |
-| ```Timestamp.replace(str, 'format')``` | change a ```str``` type to ```datetime```  |    ```datetime.datetime.strptime(nowStr, '%Y-%m-%d %H:%M:%S')``` |
 
 
 
