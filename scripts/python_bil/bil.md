@@ -93,49 +93,56 @@ Timestamp format:
 | ```%a``` | Weekday-alias(str)[0:Sun] |
 | ```%U``` | Week(startswith Sun) |
 | ```%W``` | Week(startswith Mon) |
-| ```%F``` | %Y-%m-%d |
-| ```%D``` | %m/%d/%y |
-| ```%X``` | Locale TimeFormat (%I:%M:%s %p) |
-| ```%x``` | Locale DateFormat (%m/%d/%Y) |
+| ```%F``` | ```%Y-%m-%d``` |
+| ```%D``` | ```%m/%d/%y``` |
+| ```%X``` | Locale TimeFormat (```%I:%M:%s %p```) |
+| ```%x``` | Locale DateFormat (```%m/%d/%Y```) |
 
 #### Types & Objects
 
 ```timedelta```:
+
 ```python
 obj_timedelta = datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)
 ```
 
 ```date```:
+
 ```python
 obj_date = datetime.date(year, month, day)
 ```
 
 
 ```datetime```:
+
 ```python
 obj_datetime = datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 ```
 
 
 ```time```:
+
 ```python
 obj_time = datetime.time(hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 ```
 
 
 ```tzinfo```:
+
 ```python
 obj_tzinfo = datetime.tzinfo
 ```
 
 
 ```timezone```:
+
 ```python
 obj_timezone = datetime.timezone(offset, name=None)
 ```
 
 
 | Operation |	Result |
+| :-------: | :------: |
 |```t1 = t2 + t3```	Sum of ```t2``` and ```t3```. Afterwards ```t1-t2 == t3``` and ```t1-t3 == t2``` are ```True```. (1)
 |```t1 = t2 - t3```	Difference of ```t2``` and ```t3```. Afterwards ```t1 == t2 - t3``` and ```t2 == t1 + t3``` are ```True```. (1)
 |```t1 = t2 * i``` or ```t1 = i * t2```	Delta multiplied by an ```integer```. Afterwards ```t1 // i == t2``` is ```True```, provided ```i != 0```. </br> In general, ```t1 * i == t1 * (i-1) + t1``` is ```True```. (1)
@@ -154,24 +161,11 @@ obj_timezone = datetime.timezone(offset, name=None)
 
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
-| ```datetime.datetime.now()```           | return Timestamp of the present datetime            |    ```nowTs = datetime.datetime.now()```              |
-| ```Timestamp.strftime('format')```        | change a Timestamp type to str         |    ```nowStr = nowTs.strftime('%Y-%m-%d %H:%M:%S')```     |
-| ```Timestamp.replace(str, 'format')``` | change a str type to Timestamp  |    ```datetime.datetime.strptime(nowStr, '%Y-%m-%d %H:%M:%S')``` |
-| ```datetime.listdir(path)```      | return a list of files and directories in the <path> or the present working directory            |    ```datetime.listdir()```              |
-| ```datetime.mkdir(path, mode)```  | create a directory on the given <path> with <mode>  |    ```datetime.mkdir('~/python/newdir', '0777')```              |
-| ```datetime.makedirs(path, mode)``` | same as 'mkdir -r'; create a directory on the given <path> and subdirectories with <mode>  |    ```datetime.makedirs('~/python/another/subdir'```      |
-| ```datetime.remove(path)```       | remove the given <path> file               |    ```datetime.remove('~/python/test.temp')```              |
-| ```datetime.unlink(path)```       | remove the given <path> file                    |    ```datetime.unlink('~/python/test.temp')```              |
-| ```datetime.rmdir(path)```        | remove the given <path> directory            |    ```datetime.rmdir('~/python/another/subdir')```              |
-| ```datetime.removedirs(path)```   | same as 'rmdir -r'; remove a directory on the given <path> and subdirectories           |    ```datetime.rmdir('~/python/another/subdir')```              |
-| ```datetime.rename(src, dst)```   | same as 'mv'; rename or move the given <path> directory or file            |    ```datetime.rename('~/python/newdir', '~/python/newdirectory')```              |
-| ```datetime.renames(src, dst)```  | same as 'mv -r'; rename or move the given <path> directory or file creating directories if needed           |    ```datetime.renames('~/python/newdirectory', '~/python/temp/newdirectory')```              |
-| ```datetime.stat(path)```         | get informations of the given <path> directory            |    ```datetime.stat('~/python')```              |
-| ```datetime.utime(path, times)``` | change the access time and modified time of the given <path>, if <times>=None then now()            |    ```datetime.utime('~/python')```              |
-| ```datetime.walk(top, topdown=True, onerror=None, followlinks=False)```         | loop startswith the given <top> directory and return pathes and directory names  |    ```datetime.walk('~/python')```              |
-| ```datetime.getenv(env, failvalue)``` | return the ```environment variable``` if successed or failvalue if failed   |    ```datetime.getenv('PYTHONPATH', 'Not Found')```              |
-
-        |
+| ```datetime.datetime.today()```           | return ```datetime``` & ```tzinfo``` of the present ```datetime```            |    ```nowTs = datetime.datetime.today()```              |
+| ```datetime.datetime.now()```           | return ```datetime``` of the present ```datetime```            |    ```nowTs = datetime.datetime.now()```              |
+| ```Timestamp.ctime()```        | return a ```str``` from ```datetime```         |    ```nowStr = nowTs.ctime()```     |
+| ```Timestamp.strftime('format')```        | change a ```datetime``` type to ```str```         |    ```nowStr = nowTs.strftime('%Y-%m-%d %H:%M:%S')```     |
+| ```Timestamp.replace(str, 'format')``` | change a ```str``` type to ```datetime```  |    ```datetime.datetime.strptime(nowStr, '%Y-%m-%d %H:%M:%S')``` |
 
 
 
