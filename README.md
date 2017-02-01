@@ -61,6 +61,7 @@ This contains the information &amp; sources of Python, which is a programming la
   - [re](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#re)
   - [collections](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#collections)
   - [tkinter](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#tkinter)
+  - [PyQt5](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#pyqt5)
   - [bisect](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#bisect)
   - [tarfile & zipfile](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
   - [tty](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
