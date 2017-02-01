@@ -68,9 +68,8 @@
 ---
 ## Input & Output
 
+* [Reading & Writing Files](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/IO.md#input--output)
 * [Output Formatting]()
-* [Reading & Writing Files]()
-
 
 
 [← back to *Main Page*](https://github.com/dawkiny/Python3/blob/master/README.md)
