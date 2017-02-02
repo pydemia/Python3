@@ -65,12 +65,36 @@ Out[]:
 
 You can use not only ```await``` & ```await```, but also ```await``` & ```yield``` For now!
 ```python
-async def ticker(delay, to):
-    """Yield numbers from 0 to *to* every *delay* seconds."""
-    for i in range(to):
-        yield i
-        await asyncio.sleep(delay)
+def func():            # a function
+    return
 
+def genfunc():         # a generator function
+    yield
+
+async def coro():      # a coroutine function
+    await smth()
+
+async def asyncgen():  # an asynchronous generator function
+    await smth()
+    yield 42
+
+
+async def gen():
+    try:
+        await asyncio.sleep(0.1)
+        yield 'hello'
+    except ZeroDivisionError:
+        await asyncio.sleep(0.2)
+        yield 'world'
+
+g = gen()
+v = await g.asend(None)
+print(v)                # Will print 'hello' after
+                        # sleeping for 0.1 seconds.
+
+v = await g.athrow(ZeroDivisionError)
+print(v)                # Will print 'world' after
+                        $ sleeping 0.2 seconds.
 ```
 
 
