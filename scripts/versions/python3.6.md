@@ -1,7 +1,7 @@
 # What's new in Python 3.6
 
 
-## PEP 498: Formatted string literals
+### PEP 498: Formatted string literals
 
 
 ```python
@@ -21,7 +21,7 @@ Out[]:
 ```
 
 
-## PEP 526: Syntax for variable annotations
+### PEP 526: Syntax for variable annotations
 
 ```python
 primes: List[int] = []
@@ -33,7 +33,7 @@ class Starship:
 ```
 
 
-## PEP 515: Underscores in Numeric Literals(!)
+### PEP 515: Underscores in Numeric Literals(!)
 
 
 ```python
@@ -55,7 +55,7 @@ Out[]:
 ```
 
 
-## PEP 525: Asynchronous Generators(!)
+### PEP 525: Asynchronous Generators(!)
 
 You can use not only ```await``` & ```await```, but also ```await``` & ```yield``` For now!
 ```python
@@ -68,7 +68,7 @@ async def ticker(delay, to):
 ```
 
 
-## PEP 530: Asynchronous Comprehensions
+### PEP 530: Asynchronous Comprehensions
 
 
 ```python
@@ -78,7 +78,7 @@ result = [await fun() for fun in funcs if await condition()]
 ```
 
 
-## PEP 487: Simpler customization of class creation( Add  ```__init_subclass__```)
+### PEP 487: Simpler customization of class creation( Add  ```__init_subclass__```)
 
 ```python
 class PluginBase:
@@ -96,7 +96,7 @@ class Plugin2(PluginBase):
 ```
 
 
-## PEP 487: Descriptor Protocol Enhancements( Add ```__set_name__()```)
+### PEP 487: Descriptor Protocol Enhancements( Add ```__set_name__()```)
 ```python
 class IntField:
     def __get__(self, instance, owner):
@@ -116,7 +116,7 @@ class Model:
 ```
 
 
-## PEP 519: Adding a file system path protocol( easy to use path strings)
+### PEP 519: Adding a file system path protocol( easy to use path strings)
 ```python
 #--------------------------------------------------#
 import pathlib
@@ -139,7 +139,7 @@ os.fspath(pathlib.Path("some_file.txt"))
 ```
 
 
-## PEP 529: Change Windows filesystem & console encoding to UTF-8
+### PEP 529: Change Windows filesystem & console encoding to UTF-8
 ```python
 sys.getfilesystemencoding()
 
@@ -147,5 +147,5 @@ Out:[]
 'utf-8'
 ```
 
-## PEP 523: Adding a frame evaluation API to CPython
+### PEP 523: Adding a frame evaluation API to CPython
 
