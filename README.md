@@ -2,6 +2,11 @@
 This contains the information &amp; sources of Python, which is a programming language.
 
 ---
+
+#### Version
+* [What's new in Python 3.6]()
+
+---
 ## Python Programming
 
 ### Basics on Python
