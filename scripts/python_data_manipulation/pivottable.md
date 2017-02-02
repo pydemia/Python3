@@ -34,7 +34,7 @@ Out[2]:
 ```
 Select & Subset by a index in MultiIndex: 
 ```python
-fcor = corr.xs('EC', level='cd', axis=0).xs('TF', level='cd', axis=1)
+fcor = corr.xs('EC', level='{int | name}', axis=0, drop_level=False).xs('TF', level='{int | name}', axis=1, drop_level=False)
 ```
 
 Flatten a MultiIndex:
