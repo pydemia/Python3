@@ -94,7 +94,7 @@ print(v)                # Will print 'hello' after
 
 v = await g.athrow(ZeroDivisionError)
 print(v)                # Will print 'world' after
-                        $ sleeping 0.2 seconds.
+                        # sleeping 0.2 seconds.
 ```
 
 
