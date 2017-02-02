@@ -32,10 +32,22 @@ Out[2]:
 3                          Ash     g    3.28  
 4                       Energy  kcal  376.00  
 ```
-
-words
+Select & Subset by a index in MultiIndex: 
 ```python
 fcor = corr.xs('EC', level='cd', axis=0).xs('TF', level='cd', axis=1)
+```
+
+Flatten a MultiIndex:
+```python
+pd.DataFrame.columns = pd.DataFrame.columns.tolist()
+
+pd.DataFrame.columns = ['__'.join(t) for t in df.columns]
+```
+
+Undo - return a flattened index into MultiIndex
+
+```python
+pd.DataFrame.columns = pd.MultiIndex.from_tuples(pd.DataFrames.columns, names={iterables})
 ```
 ### words
 
