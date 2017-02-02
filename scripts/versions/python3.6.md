@@ -24,9 +24,15 @@ Out[]:
 ### PEP 526: Syntax for variable annotations
 
 ```python
+from typing import List
 primes: List[int] = []
-
 captain: str  # Note: no initial value!
+
+from typing import Sequence, TypeVar
+T = TypeVar('T')      # Declare type variable
+
+def greeting(name: str) -> str:
+    return 'Hello ' + name
 
 class Starship:
     stats: Dict[str, int] = {}
