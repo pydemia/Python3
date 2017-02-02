@@ -4,7 +4,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 
 #### Version
-* [What's new in Python 3.6]()
+* [What's new in Python 3.6](https://github.com/pydemia/Python3/blob/master/scripts/versions/python3.6.md#whats-new-in-python-36)
 
 ---
 ## Python Programming
