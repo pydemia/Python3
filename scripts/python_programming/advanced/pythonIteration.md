@@ -168,7 +168,9 @@ When Python arrives ```yield``` statement, it generates(not return) an value and
 
 ### ```yield from``` Statement
 
-It is used for generator delegation (Subgenerator), allowing a ```generator``` to delegate part of its operations to another ```generator```. This allows a section of code containing ```yield``` to be factored out and placed in another ```generator```. Additionally, the ```subgenerator``` is allowed to return with a value, and the value is made available to the delegating ```generator```.
+It is used for generator delegation (Subgenerator), allowing a ```generator``` to delegate part of its operations to another ```generator```. You can understand '```yield from``` == ```yield``` a value, with another value from ```yield``` of another ```generator```'  
+
+This allows a section of code containing ```yield``` to be factored out and placed in another ```generator```. Additionally, the ```subgenerator``` is allowed to return with a value, and the value is made available to the delegating ```generator```.
 
 For simple iterators, ```yield from iterable``` is essentially just a shortened form of ```for item in iterable: yield item:```
 
@@ -184,7 +186,7 @@ Out[]:
 [5, 4, 3, 2, 1, 0, 1, 2, 3, 4]
 ```
 
-unlike an ordinary loop, yield from allows subgenerators to receive sent and thrown values directly from the calling scope, and return a final value to the outer generator:
+Unlike an ordinary loop, yield from allows subgenerators to receive sent and thrown values directly from the calling scope, and return a final value to the outer generator:
 ```python
 
 def accumulate():
