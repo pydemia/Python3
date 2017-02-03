@@ -50,9 +50,8 @@ This contains the information &amp; sources of Python, which is a programming la
     * [Coroutine](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#coroutine)
     
     
-    
-      * [Iterables, Iterators and Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Iterator_and_Generator.md#iterables-iterator-generator)
-      * [Coroutines](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Coroutine.md#coroutine)
+      * [Iterables, Iterators and Generators(deprecated)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Iterator_and_Generator.md#iterables-iterator-generator)
+      * [Coroutines(deprecated)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Coroutine.md#coroutine)
 
   - [Advanced Classes](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#classes)
     * [Property](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#property)
