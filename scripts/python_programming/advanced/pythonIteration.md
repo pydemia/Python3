@@ -138,8 +138,9 @@ And then it repeatedly calls ```__next__()``` Method of the ```iterator``` until
 ## Generator
 
 An ```iterator``` contains ```yield``` operator, which produces values in lazy.  
-It is named ```generator``` since it can literally generate an item with ```yield``` operator, like an factory.  
+It is named ```generator``` since it can literally generate an item with ```yield``` statement, like an factory.  
 
+### ```yield``` Statement
 
 Here is an example:
 ```python
@@ -162,10 +163,67 @@ next(fibo)  # 610
 
 ```
 
-```yield``` operator looks like ```return``` operator, but it plays an input-taker role as well.  
-When Python arrives ```yield``` operator, it generates(not return) an value and standby until ```__next___()``` Method is called, and so on.
+```yield``` operator looks like ```return``` statement, but it plays an input-taker role as well.  
+When Python arrives ```yield``` statement, it generates(not return) an value and standby until ```__next___()``` Method is called, and so on.
 
-#### Generator Comprehension
+### ```yield from``` Statement
+
+It is used for generator delegation (Subgenerator), allowing a ```generator``` to delegate part of its operations to another ```generator```. This allows a section of code containing ```yield``` to be factored out and placed in another ```generator```. Additionally, the ```subgenerator``` is allowed to return with a value, and the value is made available to the delegating ```generator```.
+
+For simple iterators, ```yield from iterable``` is essentially just a shortened form of ```for item in iterable: yield item:```
+
+
+```python
+def g(x):
+    yield from range(x, 0, -1)
+    yield from range(x)
+
+list(g(5))
+
+Out[]:
+[5, 4, 3, 2, 1, 0, 1, 2, 3, 4]
+```
+
+unlike an ordinary loop, yield from allows subgenerators to receive sent and thrown values directly from the calling scope, and return a final value to the outer generator:
+```python
+
+def accumulate():
+    tally = 0
+    while 1:
+        next = yield
+        if next is None:
+            return tally
+        tally += next
+
+def gather_tallies(tallies):
+    while 1:
+        tally = yield from accumulate()
+        tallies.append(tally)
+
+
+tallies = []
+acc = gather_tallies(tallies)
+next(acc)  # Ensure the accumulator is ready to accept values
+
+
+for i in range(4):
+    acc.send(i)
+
+acc.send(None)  # Finish the first tally
+
+
+for i in range(5):
+    acc.send(i)
+
+acc.send(None)  # Finish the second tally
+tallies
+
+Out[]:
+[6, 10]
+
+```
+
+### Generator Comprehension
 ```python
 (expression for expression in itreables)
 (expression for expression in itreables if condition)
