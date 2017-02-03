@@ -74,7 +74,7 @@ words = "python"
 (expression for expression in itreables if condition)
 ```
 
-This returns a Generator object.[Go to "Generators"](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/Functions_01_basics.md#generators)
+This returns a Generator object.[Go to "Generators"](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#generator)
 
 [↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
 
