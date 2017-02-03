@@ -74,6 +74,13 @@ from pandas import Series as sr
 from pandas import DataFrame as df
 ```
 
+
+
+### Sort values
+
+```python
+DataFrame.sort_values(by=['col1', 'col2'], ascending=True)```
+```
 words
 
 ### words
