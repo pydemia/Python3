@@ -3,6 +3,8 @@
 
 ```panda``` support ```pivot table``` for data manipulation & aggregation.
 
+## Pivot Table(```pandas.pivot_table```, ```pandas.DataFrame.pivot```)
+
 ### Standby a Dataset
 ```python
 from unipy.sample.datasets import dataManager
@@ -32,6 +34,10 @@ Out[2]:
 3                          Ash     g    3.28  
 4                       Energy  kcal  376.00  
 ```
+
+
+## MultiIndex(```pandas.DataFrame.MultiIndex```)
+
 Select & Subset by a index in MultiIndex: 
 ```python
 fcor = corr.xs('EC', level='{int | name}', axis=0, drop_level=False).xs('TF', level='{int | name}', axis=1, drop_level=False)
