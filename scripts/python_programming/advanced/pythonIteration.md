@@ -168,7 +168,7 @@ When Python arrives ```yield``` statement, it generates(not return) an value and
 
 ### ```yield from``` Statement
 
-It is used for generator delegation (Subgenerator), allowing a ```generator``` to delegate part of its operations to another ```generator```. You can understand '```yield from``` == ```yield``` a value, with another value from ```yield``` of another ```generator```'  
+It is used for generator delegation (Subgenerator), allowing a ```generator``` to delegate part of its operations to another ```generator```. You can understand '```yield from``` == ```yield``` a value, with another value from ```yield``` of another ```generator```'.  
 
 This allows a section of code containing ```yield``` to be factored out and placed in another ```generator```. Additionally, the ```subgenerator``` is allowed to return with a value, and the value is made available to the delegating ```generator```.
 
@@ -231,3 +231,7 @@ Out[]:
 (expression for expression in itreables if condition)
 ```
 
+
+## Coroutine
+
+```coroutine```
