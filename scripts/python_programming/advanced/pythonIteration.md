@@ -13,6 +13,7 @@
 #### Comparision
 
 ```python
+
 def func():            # a generic function
     return
 
@@ -35,20 +36,18 @@ async def asyncgen():  # an asynchronous generator function
 Any object can return one of its items(members).  
 
 
-```list```
-```set```  
-```dict```  
-```tuple```  
+* ```list```
+* ```set```  
+* ```dict```  
+* ```tuple```  
 ...  
 
 
 ## Iterables
 
-
-
 An ```iterable``` can return an ```iterator``` with the purpose of returning __all(!) of its elements__. ( by ```__iter__()``` )  
 An Sequencial object can be an ```iterable```. ( by ```__getitem__()``` ) == most containers are also iterable.  
-\* ```iter()```: built-in function for making an ```iterator``` object with an ```iterable```
+\* ```iter()```: built-in function for making an ```iterator``` object with an ```iterable```.  
 All ```iterable```s returns an ```iterator``` with ```iter()```:  
 
 
@@ -163,7 +162,8 @@ next(fibo)  # 610
 
 ```
 
-```yield``` operator looks like ```return``` operator, but it plays an input-taker role as well. When Python arrives ```yield``` operator, it generates(not return) an value and standby until ```__next___()``` Method is called, and so on.
+```yield``` operator looks like ```return``` operator, but it plays an input-taker role as well.  
+When Python arrives ```yield``` operator, it generates(not return) an value and standby until ```__next___()``` Method is called, and so on.
 
 #### Generator Comprehension
 ```python
