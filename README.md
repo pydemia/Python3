@@ -40,6 +40,17 @@ This contains the information &amp; sources of Python, which is a programming la
 ### Advanced Python
 * [Advanced Python](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
   - [Advanced Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_advanced.md#advanced-python)
+    * [Container](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#container)
+    * [Iterables](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#iterables)
+    * [Iterators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#iterators)
+    * [Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#generator)
+      - [```yield``` Statements](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#yield-statement)
+      - [```yield from``` Statements](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#yield-from-statement)
+      - [Generator Comprehension](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#generator-comprehension)
+    * [Coroutine](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#coroutine)
+    
+    
+    
       * [Iterables, Iterators and Generators](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Iterator_and_Generator.md#iterables-iterator-generator)
       * [Coroutines](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Coroutine.md#coroutine)
 
