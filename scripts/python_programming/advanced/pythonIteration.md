@@ -235,8 +235,6 @@ Out[]:
 ## Coroutine
 
 
-```coroutine```  
-
 
 ### Native ```coroutine```
 
