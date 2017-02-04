@@ -48,8 +48,6 @@ This contains the information &amp; sources of Python, which is a programming la
       - [```yield from``` Statements](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#yield-from-statement)
       - [Generator Comprehension](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#generator-comprehension)
     * [Coroutine](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/pythonIteration.md#coroutine)
-    
-    
     * [Iterables, Iterators and Generators(deprecated)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Iterator_and_Generator.md#iterables-iterator-generator)
     * [Coroutines(deprecated)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Coroutine.md#coroutine)
 
