@@ -166,11 +166,12 @@ next(fibo)  # 610
 ```yield``` operator looks like ```return``` statement, but it plays an input-taker role as well.  
 When Python arrives ```yield``` statement, it generates(not return) an value and standby until ```__next___()``` Method is called, and so on.
 
+
 ### ```yield from``` Statement
 
 It is used for generator delegation (Subgenerator), allowing a ```generator``` to delegate part of its operations to another ```generator```. You can understand '```yield from``` == ```yield``` a value, with another value from ```yield``` of another ```generator```'.  
 
-This allows a section of code containing ```yield``` to be factored out and placed in another ```generator```. Additionally, the ```subgenerator``` is allowed to return with a value, and the value is made available to the delegating ```generator```.
+This allows a section of code containing ```yield``` to be factored out and placed in another ```generator```. Additionally, the ```subgenerator``` is allowed to return with a value, and the value is made available to the delegating ```generator```. 
 
 For simple iterators, ```yield from iterable``` is essentially just a shortened form of ```for item in iterable: yield item:```
 
@@ -337,6 +338,17 @@ fiboCoro.send(3)     # 14 : (4+7) + 3   : suspended at 2nd yield, yield as a pro
 
 ```
 
+### Asynchronous Coroutines
 
-### ```coroutine``` with ```async``` / ```await```
+### ```@asyncio.coroutine``` with ```yield from``` Statements
+
+```python
+
+```
+
+### ```coroutine``` with ```async``` / ```await``` : For ```asyncio``` API only
+
+```python
+
+``
 
