@@ -235,3 +235,22 @@ Out[]:
 ## Coroutine
 
 ```coroutine```
+
+
+### Native ```coroutine```
+
+You can simply understand a ```coroutine``` is that if ```yield``` have an assignment.
+
+```python
+def coro():
+    hello = yield "Hello"
+    yield hello
+ 
+ 
+c = coro()
+print(next(c))
+print(c.send("World"))
+```
+
+### ```coroutine``` with ```async``` / ```await```
+
