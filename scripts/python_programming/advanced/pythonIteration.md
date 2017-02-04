@@ -241,6 +241,13 @@ In Python systax, You can simply understand a ```coroutine``` is made if ```yiel
 
 #### ```coroutine``` Status
 
+```python
+from inspect import getgeneratorstate as gs
+
+gs(coroutine)
+
+```
+
 | Status | Description |
 | :----- | :---------- |
 | __'GEN_CREATED'__  | Waiting for execution |
