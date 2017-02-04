@@ -232,24 +232,102 @@ Out[]:
 ```
 
 
-## Coroutine
+## Coroutine  
 
 
+```coroutine``` is similar to ```generator```, but it is the difference that ```generator``` is a value producer and ```coroutine```  is a value consumer. ```yield```Statement in ```coroutine``` receives a value from outside of the Function by ```send()``` Method.  
+In Python systax, You can simply understand a ```coroutine``` is made if ```yield``` are assigned as a variable.
 
-### Native ```coroutine```
 
-You can simply understand a ```coroutine``` is that if ```yield``` have an assignment.
+#### ```coroutine``` Status
+
+* 'GEN_CREATED'  : Waiting for execution
+* 'GEN_RUNNING'  : Being executed (by Interpreter)
+* 'GEN_SUSPENDED': Being suspended at ```yield``` Statement after generating a value
+* 'GEN_CLOSED'   : execution ended
+
+
+### Native ```coroutine``` from ```generator```
+
+
+a ```generator```: a value producer
 
 ```python
-def coro():
-    hello = yield "Hello"
-    yield hello
- 
- 
-c = coro()
-print(next(c))
-print(c.send("World"))
+def fibonacci():
+    prev, curr = 0, 1
+    while True:
+        yield curr
+        prev, curr = curr, prev + curr
+
+fibo = fibonacci()
+fibo.__next__()  # 1  : (1)    # started
+fibo.send(3)     # 1  : (0+1)  # same as next() : because generator cannot receive 3 as a value.
+next(fibo)       # 2  : (1+1)  # same as next()
+next(fibo)       # 3  : (1+2)
+next(fibo)       # 5  : (2+3)
+next(fibo)       # 8  : (3+5)
+next(fibo)       # 13 : (5+8)
+
 ```
+
+a ```coroutine``` : a value consumer
+
+```python
+def fibonacciCoro():
+    prev, curr = 0, 1
+    while True:
+        curr += yield
+        prev, curr = curr, prev + curr
+
+fiboCoro = fibonacciCoro()
+fiboCoro.__next__()  # Noting is shown
+fiboCoro.send(3)     # Noting is shown
+fiboCoro.send(3)     # Noting is shown
+fiboCoro.send(3)     # Noting is shown
+
+```
+
+We have used ```send()``` Method but nothing is shown, unlike the ```generator``` case. Actually It worked! The only problem is that ```yield``` Statements in ```coroutine``` only receive a given value by ```send()``` Method, don't produce something.  
+If you want to check it, put ```print()``` function in the Function:
+
+```python
+def fibonacciCoro():
+    prev, curr = 0, 1
+    while True:
+        curr += yield
+        print(curr)
+        prev, curr = curr, prev + curr
+
+fiboCoro = fibonacciCoro()
+fiboCoro.__next__()  # Nothing is shown : (1)  # started
+fiboCoro.send(3)     # 4  : (1) + 3
+fiboCoro.send(3)     # 7  : (0+4) + 3
+fiboCoro.send(3)     # 14 : (4+7) + 3
+fiboCoro.send(3)     # 24 : (7+14) + 3
+fiboCoro.send(3)     # 41 : (14+24) + 3
+
+```
+
+To understand the roles of ```yield``` Statements in separate, put it together in the Function:
+
+```python
+def fibonacciCoro():
+    prev, curr = 0, 1
+    while True:
+        curr += yield
+        yield curr
+        prev, curr = curr, prev + curr
+
+fiboCoro = fibonacciCoro()
+fiboCoro.__next__()  # Nothing is shown : (1)  # started
+fiboCoro.send(3)     # 4  : (1) + 3     : suspended at 2nd yield, yield as a producer
+fiboCoro.send(3)     # Nothing is shown : yield as a consumer
+fiboCoro.send(3)     # 7  : (0+4) + 3   : suspended at 2nd yield, yield as a producer
+fiboCoro.send(3)     # Nothin is shown  : yield as a consumer
+fiboCoro.send(3)     # 14 : (4+7) + 3   : suspended at 2nd yield, yield as a producer
+
+```
+
 
 ### ```coroutine``` with ```async``` / ```await```
 
