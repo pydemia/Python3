@@ -241,10 +241,10 @@ In Python systax, You can simply understand a ```coroutine``` is made if ```yiel
 
 #### ```coroutine``` Status
 
-* 'GEN_CREATED'  : Waiting for execution
-* 'GEN_RUNNING'  : Being executed (by Interpreter)
-* 'GEN_SUSPENDED': Being suspended at ```yield``` Statement after generating a value
-* 'GEN_CLOSED'   : execution ended
+* __'GEN_CREATED'__  : Waiting for execution
+* __'GEN_RUNNING'__  : Being executed (by Interpreter)
+* __'GEN_SUSPENDED'__: Being suspended at ```yield``` Statement after generating a value
+* __'GEN_CLOSED'__   : execution ended
 
 
 ### Native ```coroutine``` from ```generator```
