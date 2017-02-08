@@ -98,10 +98,18 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Pandas](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pandas.md)
   - [DataFrame](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pandas.md#dataframe)  
   - [DataFrameGroupby](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/groupby.md)  
-  - [PivotTable & MultiIndex](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pivottable.md)  
+  - [PivotTable & MultiIndex](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pivottable.md) 
   - [CrossTab](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/crosstab.md)  
+  - [Panel](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pivottable.md)  
 * [Datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
-* [PyTables](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
+* [PyTables-```out-of-memory operation```](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
+
+--
+## Python Vectorization
+
+* [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/numpy.md)
+* [Numexpr](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/numexpr.md)
+* [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/numpy.md)
 
 
 ---
@@ -157,6 +165,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ## Python Parallel Programming
 * [threading](https://github.com/pydemia/Python3/blob/master/scripts/python_parallelprogramming/multithreading_and_multiprocessing.md#threading)
 * [multiprocessing](https://github.com/pydemia/Python3/blob/master/scripts/python_parallelprogramming/multithreading_and_multiprocessing.md#multiprocessing)
+* [Numexpr](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/numexpr.md)
 
 ---
 ## Python Asynchronous I/O, event loop, coroutines and tasks ...
