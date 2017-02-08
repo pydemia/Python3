@@ -55,6 +55,23 @@ Undo - return a flattened index into MultiIndex
 ```python
 pd.DataFrame.columns = pd.MultiIndex.from_tuples(pd.DataFrames.columns, names={iterables})
 ```
+
+
+## Groupby MultiIndex
+
+Aggregation(axis=column)
+```python
+pvtbl = pvtbl.groupby(level=list(range(6)), axis=1).agg(max)
+```
+
+Fill ( axis=row)
+```python
+pvtbl = pvtbl.reset_index()
+pvtbl = pvtbl.set_index(['col1_fromindex'])
+pvtbl = pvtbl.groupby(pvtbl.index).fillna(method='ffill', axis='index')
+pvtbl = pvtbl.groupby(pvtbl.index).fillna(method='bfill', axis='index')
+pvtbl = pvtbl.set_index(['col2_fromindex'], append=True)
+```
 ### words
 
 ### Operation
