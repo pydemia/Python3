@@ -107,7 +107,14 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Python DataBases
 
-* [Python SQL](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#conditionals)
+* [Python SQL](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#python-sqlrdbms)
+  - [SELECT FROM DB](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#select--export-to-dataframe)
+    - [IBM_DB2](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#ibm_db2-sqlalchemy-fetchall)
+    - [PostgreSQL](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#postgresql-psycopg2)
+    - [MySQL(MariaDB)](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#mysqlmariadbpymysql)
+    - [OracleSQL](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#oraclesql-cx_oracle)
+  - [IMPORT ```DataFrame```](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#import-dataframe-to-db)
+    - [MySQL(MariaDB)](https://github.com/pydemia/Python3/blob/master/scripts/PythonDataBase/pythonsql.md#mysqlmariadbsqlalchemy)
 * [Python on Hadoop](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#conditionals)
 
 
