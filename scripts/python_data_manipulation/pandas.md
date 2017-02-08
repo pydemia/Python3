@@ -81,7 +81,12 @@ from pandas import DataFrame as df
 ```python
 DataFrame.sort_values(by=['col1', 'col2'], ascending=True)```
 ```
-words
+
+Drop duplicates keeping last
+```py
+data = data.drop_duplicates(subset=['col1', 'col2', 'col3'],
+                            keep='last')
+```
 
 ### words
 
