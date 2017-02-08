@@ -5,6 +5,17 @@
 
 ## Pivot Table(```pandas.pivot_table```, ```pandas.DataFrame.pivot```)
 
+```python
+import pandas as pd
+
+pvtbl = pd.pivot_table(data,
+                       index=['col1', 'col2'],            # Row index(MultiIndex)
+                       columns=[col3', 'col4', 'col5'],   # Columns(MultiIndex)
+                       values=['col6', 'col7'],           # Column values(Upper level of columns)
+                       aggfunc='mean')                    # How to aggregate if there are multiple records on column group.
+
+```
+
 ### Standby a Dataset
 ```python
 from unipy.sample.datasets import dataManager
@@ -56,6 +67,10 @@ Undo - return a flattened index into MultiIndex
 pd.DataFrame.columns = pd.MultiIndex.from_tuples(pd.DataFrames.columns, names={iterables})
 ```
 
+Get a specific level name list:
+```python
+pvtbl.columns.get_level_values(3)  # That argument can be a number or level name
+```
 
 ## Groupby MultiIndex
 
@@ -72,7 +87,23 @@ pvtbl = pvtbl.groupby(pvtbl.index).fillna(method='ffill', axis='index')
 pvtbl = pvtbl.groupby(pvtbl.index).fillna(method='bfill', axis='index')
 pvtbl = pvtbl.set_index(['col2_fromindex'], append=True)
 ```
-### words
+### Un-pivot(melt)
+
+```python
+pvtbl = pvtbl.reset_index()                             # To keep the data in pivot-table index
+melted = pd.melt(pvtbl, id_vars=['col1', 'col2'])       # Un-pivot(melt) the pivot-table
+```
+
+Fill ```NaN``` : group by specify columns and re-pivot
+```python
+melted['value'] = melted.groupby([col3', 'col4'])['value'].apply(lambda x; x.fillna(x.max()))
+pvtbl = pd.pivot_table(melted,
+                       index=['col1', 'col2'],
+                       columns=[col3', 'col4', 'col5'],
+                       values=['col6', 'col7'],
+                       aggfunc='mean')
+
+```
 
 ### Operation
  
