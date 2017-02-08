@@ -126,3 +126,37 @@ def oracleSQL(query, h=None, port=None, db=None, u=None, p=None):
 
     return query_result
 ```
+
+## IMPORT DataFrame to DB
+
+### MySQL(MariaDB)(```sqlalchemy```)
+
+```py
+import pandas as pd
+import sqlalchemy as sa
+from datetime import datetime
+
+
+def mariaDB(dataframe, name=None, h=None, port=None, db=None, u=None, p=None,
+            if_exists='append'):
+
+    print('Using MariaDB')
+
+    # DB Connection
+    connStr = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'
+    engine = sa.create_engine(connStr.format(u, p, h, str(port), db))
+    conn = engine.connect()
+    start_tm = datetime.now()
+    print(' Start :', str(start_tm))
+
+    # Get a DataFrame
+    dataframe.to_sql(con=conn, name=None, if_exists=if_exists,
+                     flavor='mysql', index=False, chunksize=None)
+
+    # Close Connection
+    end_tm = datetime.now()
+    print(' Finish :', str(end_tm))
+    print('Elapsed :', str(end_tm - start_tm))
+    conn.close()
+
+```
