@@ -48,9 +48,85 @@ Receiving...
 ## ```multiprocessing```
 
 ```python
-
+import multiprocessing as mp
 ```
 
+
+Geometric Brownian Motion Simulator:
+```python
+import math
+import numpy as np
+
+
+def gbmSimulator( (M, I) ):
+    """
+    M : Time Step
+    I : Path
+    """
+    
+    
+    S0 = 100
+    r = .05
+    sigma = .2
+    T = 1.
+    
+    dt = T / M
+    paths = np.zeros((M + 1, I))
+    paths[0] = S0
+    
+    for t in range(1, M + 1):
+        paths[t] = paths[t - 1] * np.exp((r - .5 * sigma ** 2) *
+                                         dt + 
+                                         sigma * math.sqrt(dt) *
+                                         np.random.standard_normal(I))
+    return paths
+
+paths = gbmSimulator( (5, 2) )
+
+Out[ ]: 
+array([[ 100.        ,  100.        ],
+       [  99.94976099,   99.14653149],
+       [ 106.41670363,  108.37233599],
+       [ 113.37268768,  115.41356086],
+       [ 119.70794979,  127.24228509],
+       [ 119.09420198,  135.71834787]])
+```
+
+Multiprocessing with 8 cores:
+```python
+from time import time
+import multiprocessing as mp
+
+
+I = 10000   # Path count
+M = 100     # Time Interval count
+t = 100     # Simulation Work count
+
+
+times = []
+for w in range(1, 17):
+    t0 = time()
+    pool = mp.Pool(processes=w)
+    res = pool.map(gbmSimulator, t * [(M, I)])
+    times.append(time() - t0)
+
+res
+
+Out[ ]:
+[array([[ 100.        ,  100.        ,  100.        , ...,  100.        ,
+          100.        ,  100.        ],
+        [  95.4614054 ,   99.32541185,   99.29378877, ...,   99.35183236,
+          101.62628441,   94.02503549],
+        [  97.10811184,   97.59807847,   98.37464388, ...,   94.96544446,
+          101.17951869,   94.02642567],
+        ..., 
+        [ 109.23640209,  117.45733482,   85.59906901, ...,  121.98372504,
+           99.81951919,   68.90487463],
+        [ 108.51083798,  118.48864251,   86.65450804, ...,  122.57590247,
+           99.66786906,   67.16923468],
+        [ 109.42731802,  120.51233245,   87.4577772 , ...,
+
+```
 
 ## Comparison 1: ```threading``` and ```multiprocessing```
 
