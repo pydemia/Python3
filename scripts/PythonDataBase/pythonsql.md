@@ -1,4 +1,4 @@
-# Python RDBMS
+# Python SQL(RDBMS)
 
 
 ## SELECT & EXPORT TO DataFrame
