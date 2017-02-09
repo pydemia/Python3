@@ -119,7 +119,9 @@ pvtbl = pd.pivot_table(aData,
                        aggfunc='mean')
 
 pvtbl.head()
+```
 
+```py
 Out[]:
 sex                         Female                                           \
 native_country                   ?                                 Cambodia   
