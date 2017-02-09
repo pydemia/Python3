@@ -109,7 +109,25 @@ pvtbl = pd.pivot_table(melted,
 
 Groupby specific column levels, apply rows with ```max(x)```:
 ```python
-pvtbl = pvtbl.groupby(level=list(pvtbl.columns.names), axis=1).apply(lambda x: x.fillna(np.max(x)), axis=1)
+import numba
+
+fillRows = lambda x: x.fillna(np.max(x))    # define lambda first : 
+                                            # numba does not support function creation;lambda
+fillRows = lambda x: x.replace(to_replace=x, value=np.max(x))
+
+@numba.jit
+def fillRowsbyCols(DataFrame, level_key=None, axis=1):
+
+    grouped = DataFrame.groupby(level=level_key, axis=axis)
+    resDict = dict(list(grouped))
+    resKeys = resDict.keys()
+    
+    for _ in range(len(resDict)):
+        keyX = list(resKeys)[_]
+        tblX = resDict[keyX]
+        tblX = tblX.apply(fillRows, axis=1)
+    
+    return DataFrame
 ```
 
 
