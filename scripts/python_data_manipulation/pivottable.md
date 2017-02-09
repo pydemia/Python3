@@ -118,7 +118,9 @@ fillRows = lambda x: x.replace(to_replace=x, value=np.max(x))
 @numba.jit
 def fillRowsbyCols(DataFrame, level_key=None, axis=1):
 
-    grouped = DataFrame.groupby(level=level_key, axis=axis)
+    res = pd.DataFrame(index=DataFrame.index)
+     
+    grouped = DataFrame.groupby(level=level_key, axis=axis)
     resDict = dict(list(grouped))
     resKeys = resDict.keys()
     
@@ -126,8 +128,14 @@ def fillRowsbyCols(DataFrame, level_key=None, axis=1):
         keyX = list(resKeys)[_]
         tblX = resDict[keyX]
         tblX = tblX.apply(fillRows, axis=1)
+        
+        res = pd.concat([res, tblX], axis=1)
     
-    return DataFrame
+    res.columns = pd.MultiIndex.from_tuples(res.columns)
+    
+    return res
+
+DataFrame = fillRowsbyCols(DataFraem, level_key=[], axis=1)
 ```
 
 
