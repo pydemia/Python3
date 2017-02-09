@@ -9,10 +9,11 @@
 import pandas as pd
 
 pvtbl = pd.pivot_table(data,
-                       index=['col1', 'col2'],            # Row index(MultiIndex)
-                       columns=[col3', 'col4', 'col5'],   # Columns(MultiIndex)
-                       values=['col6', 'col7'],           # Column values(Upper level of columns)
-                       aggfunc='mean')                    # How to aggregate if there are multiple records on column group.
+                       index=['col1', 'col2'],          # Row index(MultiIndex)
+                       columns=[col3', 'col4', 'col5'], # Columns(MultiIndex)
+                       values=['col6', 'col7'],         # Column values(Upper level of columns)
+                       aggfunc='mean')                  # How to aggregate 
+                                                        # if there are multiple records on column group.
 
 ```
 
@@ -51,7 +52,11 @@ Out[2]:
 
 Select & Subset by a index in MultiIndex: 
 ```python
-fcor = corr.xs('EC', level='{int | name}', axis=0, drop_level=False).xs('TF', level='{int | name}', axis=1, drop_level=False)
+
+DataFrame.xs('col1', level=2, axis=0, drop_level=False)
+
+sbpvt = pvtbl.xs('EC', level='{int | name}', axis=0, drop_level=False) \
+             .xs('TF', level='{int | name}', axis=1, drop_level=False)
 ```
 
 Flatten a MultiIndex:
