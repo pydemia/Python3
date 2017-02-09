@@ -72,14 +72,14 @@ Get a specific level name list:
 pvtbl.columns.get_level_values(3)  # That argument can be a number or level name
 ```
 
-## Groupby MultiIndex
+## MultiIndex ```groupby```
 
-Aggregation(axis=column)
+Aggregation( axis=column )
 ```python
 pvtbl = pvtbl.groupby(level=list(range(6)), axis=1).agg(max)
 ```
 
-Fill ( axis=row)
+Fill ( axis=row )
 ```python
 pvtbl = pvtbl.reset_index()
 pvtbl = pvtbl.set_index(['col1_fromindex'])
@@ -105,9 +105,9 @@ pvtbl = pd.pivot_table(melted,
 
 ```
 
-### MultiIndex Groupby
+### Nested ```Groupby```
 
-Groupby specific column levels, apply rows with ```max(x)```:
+```Groupby``` specific column levels(axis=1), apply ```replace``` rows(```x```) with ```max(x)```(axis=1):
 ```python
 import numba
 
