@@ -28,25 +28,145 @@ dataManager.init()
 dataManager.datalist()
 
 # Load Datasets
-ndata = dataManager.load('nutrients')
+aData = dataManager.load('adult')
 
-ndata.head()
+aData.head()
 Out[2]: 
-     id manufacturer              food_group            foods nutrient_group  \
-0  1008          NaN  Dairy and Egg Products  Cheese, caraway    Composition   
-1  1008          NaN  Dairy and Egg Products  Cheese, caraway    Composition   
-2  1008          NaN  Dairy and Egg Products  Cheese, caraway    Composition   
-3  1008          NaN  Dairy and Egg Products  Cheese, caraway          Other   
-4  1008          NaN  Dairy and Egg Products  Cheese, caraway         Energy   
+   age          workclass  fnlwgt   education  education_num  \
+0   39          State-gov   77516   Bachelors             13   
+1   50   Self-emp-not-inc   83311   Bachelors             13   
+2   38            Private  215646     HS-grad              9   
+3   53            Private  234721        11th              7   
+4   28            Private  338409   Bachelors             13   
 
-                     nutrients units   value  
-0                      Protein     g   25.18  
-1            Total lipid (fat)     g   29.20  
-2  Carbohydrate, by difference     g    3.06  
-3                          Ash     g    3.28  
-4                       Energy  kcal  376.00  
+        marital_status          occupation    relationship    race      sex  \
+0        Never-married        Adm-clerical   Not-in-family   White     Male   
+1   Married-civ-spouse     Exec-managerial         Husband   White     Male   
+2             Divorced   Handlers-cleaners   Not-in-family   White     Male   
+3   Married-civ-spouse   Handlers-cleaners         Husband   Black     Male   
+4   Married-civ-spouse      Prof-specialty            Wife   Black   Female   
+
+   capital_gain  capital_loss  hours_per_week  native_country  net_capital  
+0          2174             0              40   United-States         2174  
+1             0             0              13   United-States            0  
+2             0             0              40   United-States            0  
+3             0             0              40   United-States            0  
+4             0             0              40            Cuba            0 
+
+
 ```
 
+```python
+aData.info()
+
+Out[]:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 32561 entries, 0 to 32560
+Data columns (total 15 columns):
+age               32561 non-null int64
+workclass         32561 non-null object
+fnlwgt            32561 non-null int64
+education         32561 non-null object
+education_num     32561 non-null int64
+marital_status    32561 non-null object
+occupation        32561 non-null object
+relationship      32561 non-null object
+race              32561 non-null object
+sex               32561 non-null object
+capital_gain      32561 non-null int64
+capital_loss      32561 non-null int64
+hours_per_week    32561 non-null int64
+native_country    32561 non-null object
+net_capital       32561 non-null int64
+dtypes: int64(7), object(8)
+memory usage: 3.7+ MB
+
+
+aData.apply(lambda x: x.nunique(), axis=0)
+
+Out[]:
+age                  73
+workclass             9
+fnlwgt            21648
+education            16
+education_num        16
+marital_status        7
+occupation           15
+relationship          6
+race                  5
+sex                   2
+capital_gain        119
+capital_loss         92
+hours_per_week       94
+native_country       42
+net_capital         210
+dtype: int64
+```
+
+#### Create a Pivot Table
+
+```python
+pvtbl = pd.pivot_table(aData,
+                       index=['age'],
+                       columns=['sex', 'native_country', 'race'],
+                       values='net_capital',
+                       aggfunc='mean')
+
+pvtbl.head()
+
+Out[]:
+sex                         Female                                           \
+native_country                   ?                                 Cambodia   
+race            Asian-Pac-Islander  Black  Other  White  Asian-Pac-Islander   
+age                                                                           
+17                             NaN    NaN    NaN    0.0                 NaN   
+18                             NaN    NaN    0.0    0.0                 NaN   
+19                             NaN    NaN    NaN    0.0                 NaN   
+20                             0.0    NaN    NaN    0.0                 NaN   
+21                             NaN    NaN    NaN    0.0                 NaN   
+
+sex                                                                           \
+native_country                      Canada                      China          
+race             Black  Asian-Pac-Islander  White  Asian-Pac-Islander  White   
+age                                                                            
+17                 NaN                 NaN    NaN                 NaN    NaN   
+18             -1602.0                 NaN    NaN                 NaN    NaN   
+19                 NaN                 NaN    NaN                 NaN    NaN   
+20                 NaN                 NaN    0.0                 NaN    NaN   
+21                 NaN                 NaN    NaN                 NaN    NaN   
+
+sex                ...                    Male                             \
+native_country     ...         Trinadad&Tobago              United-States   
+race               ...      Asian-Pac-Islander  Black  Amer-Indian-Eskimo   
+age                ...                                                      
+17                 ...                     NaN    NaN                 0.0   
+18                 ...                     NaN    NaN                 0.0   
+19                 ...                     NaN    NaN                 0.0   
+20                 ...                     NaN    NaN                 0.0   
+21                 ...                     NaN    NaN                 0.0   
+
+sex                                                                 \
+native_country                                                       
+race            Asian-Pac-Islander        Black  Other       White   
+age                                                                  
+17                             NaN     0.000000    0.0    5.164773   
+18                             0.0  -123.230769    0.0  185.893617   
+19                             0.0     0.000000    0.0  -10.683673   
+20                             0.0  1284.777778 -267.0    1.084639   
+21                          -658.0    15.758621    0.0    4.379421   
+
+sex                                                    
+native_country             Vietnam         Yugoslavia  
+race            Asian-Pac-Islander  White       White  
+age                                                    
+17                             NaN    NaN         NaN  
+18                             NaN    NaN         NaN  
+19                             0.0    NaN         NaN  
+20                             0.0    NaN         0.0  
+21                             0.0    NaN         NaN  
+
+[5 rows x 186 columns]
+```
 
 ## MultiIndex(```pandas.DataFrame.MultiIndex```)
 
