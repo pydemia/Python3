@@ -48,11 +48,6 @@ a[['col3']]
 a.col3
 ```
 
-```python
-codes
-```
-
-
 
 [↑ Up to the Top](#python-data-manipulation)
 
@@ -74,7 +69,10 @@ from pandas import Series as sr
 from pandas import DataFrame as df
 ```
 
-
+#### Show Unique counts for each columns
+```python
+DataFrame.apply(lambda x: x.nunique(), axis=0)
+```
 
 ### Sort values
 
