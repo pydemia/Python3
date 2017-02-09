@@ -58,7 +58,9 @@ Out[2]:
 
 ```python
 aData.info()
+```
 
+```py
 Out[]:
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 32561 entries, 0 to 32560
@@ -81,9 +83,13 @@ net_capital       32561 non-null int64
 dtypes: int64(7), object(8)
 memory usage: 3.7+ MB
 
+```
 
+```py
 aData.apply(lambda x: x.nunique(), axis=0)
+```
 
+```py
 Out[]:
 age                  73
 workclass             9
