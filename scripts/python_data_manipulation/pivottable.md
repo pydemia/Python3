@@ -105,10 +105,11 @@ pvtbl = pd.pivot_table(melted,
 
 ```
 
-### Operation
- 
+### MultiIndex Groupby
+
+Groupby specific column levels, apply rows with ```max(x)```:
 ```python
-codes
+pvtbl = pvtbl.groupby(level=list(pvtbl.columns.names), axis=1).apply(lambda x: x.fillna(np.max(x)), axis=1)
 ```
 
 
