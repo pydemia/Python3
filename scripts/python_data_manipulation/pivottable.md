@@ -220,6 +220,12 @@ pvtbl = pvtbl.groupby(pvtbl.index).fillna(method='ffill', axis='index')
 pvtbl = pvtbl.groupby(pvtbl.index).fillna(method='bfill', axis='index')
 pvtbl = pvtbl.set_index(['col2_fromindex'], append=True)
 ```
+
+## MultiIndex aggregtion by a level
+```py
+pvtbl = pvtbl.groupby(level=list(pvtbl.columns.names), axis=1).agg(max)
+```
+
 ### Un-pivot(melt)
 
 ```python
