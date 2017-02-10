@@ -271,7 +271,10 @@ def fillRowsbyCols(DataFrame, level_key=None, axis=1):
 DataFrame = fillRowsbyCols(DataFraem, level_key=[], axis=1)
 ```
 
-
+This is the same:
+```py
+DataFrame = DataFrame.groupby(level=[], exis=1).transform(max)
+```
 
 [↑ Up to the Top](#python-data-manipulation)
 
