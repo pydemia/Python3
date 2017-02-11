@@ -37,7 +37,7 @@ An operation returns boolean(True or False)
 
 ### Difference between `==` and `is`
 
-`==` is the equality comparison.
+`==` is the equality comparison.  
 `is` is the identity comparison.
 
 ```py
@@ -48,7 +48,7 @@ a is b      # True
 a == b      # True
 ```
 
-That's weird. `a is b` should returns `False` since `a` and `b` is not the same object.  
+That's weird. `a is b` should return `False` since `a` and `b` is not the same object.  
 That's because integer 0 ~ 256 is internally pre-assigned for convenience.
 
 ```py
