@@ -14,6 +14,8 @@ This contains the information &amp; sources of Python, which is a programming la
 
  - [Basic Objects](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#objects)
  - [Control Flow](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#control-flow)
+   - [Conditionals](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/ControlFlow.md#conditionals)
+     - [Difference between `is` and `==`](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/basic/ControlFlow.md#difference-between--and-is)
  - [Functions](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#functions)
  - [Classes](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#classes)
  - [Modules & Packages](https://github.com/pydemia/Python3/blob/master/scripts/PythonProgramming_basic.md#modules--packages)
