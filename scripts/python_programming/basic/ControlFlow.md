@@ -27,6 +27,39 @@ An operation returns boolean(True or False)
 | >= | Greater than or Equal to |
 | in | Membership |
 
+* Statements
+
+| Statement | Description |
+| :------: | :---------- |
+| `is` | Same to |
+| `not` | NOT Same to |
+
+
+### Difference between `==` and `is`
+
+`==` is the equality comparison.
+`is` is the identity comparison.
+
+```py
+a = 256
+b = 256
+
+a is b      # True
+a == b      # True
+```
+
+That's weird. `a is b` should returns `False` since `a` and `b` is not the same object.  
+That's because integer 0 ~ 256 is internally pre-assigned for convenience.
+
+```py
+a = 257
+b = 257
+
+a is b      # False
+a == b      # True
+```
+Now it works theoretically.
+
 Chaining Comparison is supported in Python
 ```python
 x = 5
