@@ -86,6 +86,12 @@ data = data.drop_duplicates(subset=['col1', 'col2', 'col3'],
                             keep='last')
 ```
 
+### Select excluding specific columns
+
+```py
+DataFrame[DataFrame.columns.difference(['col1', 'col2'])]
+```
+
 ### words
 
 ### Operation
