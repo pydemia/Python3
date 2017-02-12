@@ -21,8 +21,32 @@ Out[]:
 ```
 
 
-### PEP 526: Syntax for variable annotations
+### PEP 526: Syntax for variable annotations(related to PEP 484: Type hints)
 
+It's useful when defining a function.
+
+
+```py
+def sayHello(name: str) -> str:
+    return 'Hello, ' + name
+
+sayHello(12)
+
+# Traceback (most recent call last):
+# 
+#  File "<ipython-input-21-ebcad19ed18d>", line 1, in <module>
+#     sayHello(12)
+# 
+#  File "<ipython-input-19-eb4e86d0b2ac>", line 2, in sayHello
+#     return 'Hello, ' + name
+#
+# TypeError: must be str, not int
+
+sayHello('12')
+
+Out[]:
+'Hello, 12'
+```
 ```python
 from typing import List
 primes: List[int] = []
@@ -37,6 +61,7 @@ def greeting(name: str) -> str:
 class Starship:
     stats: Dict[str, int] = {}
 ```
+
 
 
 ### PEP 515: Underscores in Numeric Literals(!)
