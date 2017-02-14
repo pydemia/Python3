@@ -203,6 +203,8 @@ pd.DataFrame.columns = pd.MultiIndex.from_tuples(pd.DataFrames.columns, names={i
 Get a specific level name list:
 ```python
 pvtbl.columns.get_level_values(3)  # That argument can be a number or level name
+pvtbl.volumns.levels(3)
+pvtbl.columns.names.index('name')
 ```
 
 ## MultiIndex ```groupby```
