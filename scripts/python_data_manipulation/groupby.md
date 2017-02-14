@@ -216,8 +216,16 @@ data.groupby(key)[value_column].apply(lambda x: x.fillna(x.mean())
 
 To create a column of the weighted averages for each group:
 ```python
-data.groupby(key)[value_column].apply(lambda x: np.average(x['value_colunn'], weights=x['weights'])
+data['newcol'] = data.groupby(key)[value_column].apply(lambda x: np.average(x['value_column'], weights=x['weights'])
 ```
+
+Use `apply` to use indirect Function:
+```py
+DataFrame.groupby(key).fillna(method='ffill', axis=0)
+DataFrame.groupby(key).apply(lambda grp:grp.interpolate(method='values', axis=0))
+
+```
+
 
 Groupby OLS:
 ```python
