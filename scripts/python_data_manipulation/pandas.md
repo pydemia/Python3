@@ -54,6 +54,11 @@ a[['col3']]
 a.col3
 ```
 
+### Split str and select
+```py
+DataFrame['col1'].str.split('_').str.get(0)
+```
+
 #### Show Unique counts for each columns
 ```python
 DataFrame.apply(lambda x: x.nunique(), axis=0)
