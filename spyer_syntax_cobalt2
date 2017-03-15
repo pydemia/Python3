@@ -1,7 +1,7 @@
-Background	#193549
-Side areas	#0d3a58
+Background	#041927 #193549
+Side areas	#19364b #0d3a58 
 
-Current cell	#1f4662
+Current cell	#072539 #1f4662 #0d3a58
 Current line 	#0d3a58
 Occurrence 	#3b5364
 Matched parens 	#0088ff
