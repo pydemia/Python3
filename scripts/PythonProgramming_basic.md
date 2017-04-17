@@ -9,8 +9,8 @@
 * Comments: ```#```
 * Line Continuation: ```\```
 * Indent: ```[Tab]``` or ```spaces(2 or 4)```
-* Simple Quatation: ```' '``` or ```" "```
-* Line-over Quatation(for ```docstring```): ```""" """``` or ```''' '''```
+* Simple Quotation: ```' '``` or ```" "```
+* Line-over Quotation(for ```docstring```): ```""" """``` or ```''' '''```
 * Assignment: ```=```
 
 ---
