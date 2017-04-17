@@ -302,13 +302,13 @@ x = [1, 3, 5, 7, 9]
 ord = 0
 #-------------#
 while ord < len(x):
-    number = x[ord]
-    if x % 2 == 0:#if 'x' is even number
+    num = x[ord]
+    if num % 2 == 0:#if 'x' is even number
         print('An even number is detected!')
         break
     x += 1
-else: 
-    print ('There is no even number found!')
+    else: 
+        print('There is no even number found!')
 #-------------#
 "There is no even number found!"
 ```
