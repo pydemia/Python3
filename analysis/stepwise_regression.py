@@ -26,12 +26,12 @@ def forward_selected(data, response):
             formula = "{} ~ {} + 1".format(response,
                                            ' + '.join(selected + [candidate]))
             score = smf.ols(formula, data).fit().rsquared_adj
-            scores_with_candidates.append((score, candidate))
+            scores_with_candidates + [(score, candidate)]
         scores_with_candidates.sort()
         best_new_score, best_candidate = scores_with_candidates.pop()
         if current_score < best_new_score:
             remaining.remove(best_candidate)
-            selected.append(best_candidate)
+            selected + [best_candidate]
             current_score = best_new_score
     formula = "{} ~ {} + 1".format(response,
                                    ' + '.join(selected))
