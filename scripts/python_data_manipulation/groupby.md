@@ -243,6 +243,16 @@ data.groupby(key).apply(regress, yvar, xvars)
 ```
 
 
+### Groupby Iteration
+
+```py
+ndata = dm.load('nutrients')
+ndata.columns
+grouped = ndata.groupby(['nutrients'])
+for key, value in grouped['value']:
+    print(key, value.max())
+```
+
 [↑ Up to the Top](#python-data-manipulation)
 
 
