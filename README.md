@@ -146,6 +146,8 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Scikit-Learn](https://github.com/pydemia/Python3/blob/master/scripts/python_statistics/sklearn.md#scikit-learn)
 * [PyMC3](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#if-statements)
 
+* [Statistics Notebook](https://github.com/pydemia/Python3/blob/master/scripts/python_statistics/statistics_notebook.md#statistics))
+
 ---
 ## Python Neural Networks
 
