@@ -133,6 +133,20 @@ print(model.summary())
 
 ```
 
+* Stepwise Regression(F-score)
+
+```py
+from sklearn.linear_model import LinearRegression as linreg
+
+tmp = linreg(fit_intercept=True).fit(arrX, y)
+tmp.coef_
+tmp = linreg(fit_intercept=True).fit(arrX.iloc[:,1:], y)
+tmp.coef_
+
+import sklearn.feature_selection as fs
+res = fs.SelectKBest(fs.f_regression, k=1).fit_transform(arrX, y)
+```
+
 ### Time-Series Analysis
 
 
