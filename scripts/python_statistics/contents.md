@@ -5,11 +5,11 @@
   * [Populations & Samples]()
     - [Scipy : numpy.random](https://docs.scipy.org/doc/numpy/reference/routines.random.html)
   * [Distributions]()
-    - [F-Dist.]
+    - [F-Dist.]()
   * [Hypothesis Test]()
-    - [T-Test]
-    - [Wilcoxon]
-    - [Mann-Whitney Rank Test]
+    - [T-Test]()
+    - [Wilcoxon]()
+    - [Mann-Whitney Rank Test]()
 
 * [Population Estimation]()
 * [Point Estimation]()
@@ -38,3 +38,10 @@
     - [LASSO Regression]()
 * [Time-Series Analysis]
   - [Auto Regressive Intergrated Moving Average (ARIMA)]
+* [Classification]()
+  - []()
+* [Decomposition]()
+  - [Principal Component Analysis(PCA)]()
+  - [Partial Least Squares(PLS)]()
+  - [Support Vector Machine(SVM)]()
+  
