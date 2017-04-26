@@ -40,8 +40,8 @@
     - [Stepwise Regression(F-score)]()
     - [Ridge Regression]()
     - [LASSO Regression]()
-* [Time-Series Analysis]
-  - [Auto Regressive Intergrated Moving Average (ARIMA)]
+* [Time-Series Analysis]()
+  - [Auto Regressive Intergrated Moving Average (ARIMA)]()
 * [Classification]()
   - []()
 * [Decomposition]()
