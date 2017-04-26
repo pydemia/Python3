@@ -17,6 +17,12 @@ dm.init()
 dm.datalist()
 data = dm.load(dm.datalist()[0])
 col = data['age']
+
+ndata = dm.load['nutrients']
+
+from sklearn.datasets import load_iris
+idata = load_iris()
+
 ```
 
 ### Representative Values
@@ -68,7 +74,37 @@ ax.plot(x, st.f.pdf(x, dfn, dfd), 'r-', lw=5, alpha=0.6, label='f pdf')
 
 ### Hypothesis Test
 
+```py
+idata = dm.load('iris')
+idata.columns
+x, y = idata['sepal_length'], idata['sepal_width']
 
+```
+
+* T-Test
+
+```py
+idata = dm.load('iris')
+idata.columns
+tstat, pval = st.ttest_1samp(x, 0)
+tstat, pval = st.ttest_ind(x, y)
+
+
+```
+
+* Wilcoxon
+
+```py
+wstat, pval = st.wilcoxon(x, y, zero_method='wilcox', correction=False)
+
+```
+
+* Mann-Whitney Rank Test
+
+```py
+ustat, pval = st.mannwhitneyu(x, y, use_continuity=True, alternative=None)
+
+```
 
 ### Population Estimation
 
@@ -85,8 +121,17 @@ ax.plot(x, st.f.pdf(x, dfn, dfd), 'r-', lw=5, alpha=0.6, label='f pdf')
 ### Correlation Analysis
 
 
+
 ### Regression Analysis
 
+```py
+from statsmodels.formula.api import ols
+
+model = ols('sepal_width ~ species + petal_length', idata).fit()
+print(model.summary()) 
+
+
+```
 
 ### Time-Series Analysis
 
