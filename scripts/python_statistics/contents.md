@@ -16,12 +16,14 @@
   - [Point Estimation]()
   - [Interval Estimation]()
 * [Analysis of Variance (ANOVA)]()
+
 * [Correlation Analysis]()
   - [Pearson's R]()
   - [Spearman's rho(Rank)]()
-  - [Kendall's Tau]()
+  - [Kendall's Tau]()
+  
 * [Regression Analysis]()
-  - [Univariate Regression]()
+  - [Univariate Regression]()
     - [Least Squares]()
       - [Ordinary Least Squares(OLS)]()
       - [Generalized Least Squares(GLS)]()
@@ -40,9 +42,11 @@
     - [Stepwise Regression(F-score)]()
     - [Ridge Regression]()
     - [LASSO Regression]()
+    
 * [Classification]()
   - [Decision Tree]()
   - [Random Forest]()
+  
 * [Decomposition - Dimensionality Reduction]()
   - [Principal Component Analysis(PCA)]()
   - [Principal Component Regression(PCR)]()
@@ -51,6 +55,7 @@
   - [Singular Value Decomposition(SVD)]()
   - [Non-negative Matrix Factorization(NMF)]()
   - [Support Vector Machine(SVM)]()
+  
 * [Clustering]()
   - [K-NN]()
   - [DBSCAN]()
@@ -59,8 +64,10 @@
   - [Structured Prediction]()
   - [Structured Prediction]()
   - [Anomaly Detection]()
+  
 * [Time-Series Analysis]()
   - [Auto Regressive Intergrated Moving Average (ARIMA)]()
+  
 * [Others]()
   - [Bagging]()
   - [Bootstrap]()
