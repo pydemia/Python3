@@ -38,3 +38,10 @@ systemctl enable jupyter.service
 systemctl daemon-reload
 systemctl restart jupyter.service
 ```
+
+## Conda 
+
+```sh
+conda install nb_conda
+conda install -c conda-forge nb_conda_kernels
+```
