@@ -87,6 +87,13 @@ This contains the information &amp; sources of Python, which is a programming la
   - [2to3](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
 
 
+## PyPI
+
+* [Create an Account](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#Create an Account)
+* [Build a Package](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#Build a Package)
+* [Distribute on PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#Distribute on PyPI)
+
+
 ## Python Additional Data Structure
 * [array.array]()
 * [numpy.array]()
