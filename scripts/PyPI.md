@@ -4,7 +4,7 @@
 
 ## Create an Account
 
-### `.pypirc`
+### `~/.pypirc`
 
 ```vi
 [distutils]
