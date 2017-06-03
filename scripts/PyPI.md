@@ -9,22 +9,25 @@ pip install twine
 
 ## Create an Account
 
+* [testPyPI](https://testpypi.python.org/pypi)
+* [PyPI](https://pypi.python.org/pypi)
+
 ### `~/.pypirc`
 
 ```vim
 [distutils]
 index-servers =
   pypi
-  pypitest
+  testpypi
 
 [pypi]
-repository=https://pypi.python.pypi
+repository=https://pypi.python/pypi
 username=<username>
 password=<password>
 
 
-[pypitest]
-repository=https://testpypi.python.pypi
+[testpypi]
+repository=https://testpypi.python/pypi
 username=<username>
 password=<password>
 ```
@@ -72,8 +75,6 @@ Create Package Folder:
 ```sh
 mkdir pydemia
 vim pydemia/__init__.py
-
-
 ```
 
 
@@ -81,11 +82,19 @@ vim pydemia/__init__.py
 
 ```sh
 python setup.py sdist bdist_wheel
-
 ```
+
+
+## Register a new Package (only at the First time)
+
+```sh
+python setup.py register -r https://testpypi.python.org/pypi
+python setup.py register -r https://pypi.python.org/pypi
+```
+
 
 ## Distribute it on PyPI
 
 ```sh
-twine upload dist/<package>.tar.gz
+twine upload dist/<package>.tar.gz <package>.whl
 ```
