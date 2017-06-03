@@ -89,9 +89,9 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ## PyPI
 
-* [Create an Account](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#Create an Account)
-* [Build a Package](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#Build a Package)
-* [Distribute on PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#Distribute it on PyPI)
+* [Create an Account](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#create-an-account)
+* [Build a Package](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#build-a-package)
+* [Distribute on PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#distribute-it-on-pypi)
 
 
 ## Python Additional Data Structure
