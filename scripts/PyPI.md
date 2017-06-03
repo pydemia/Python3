@@ -11,7 +11,7 @@ pip install twine
 
 ### `~/.pypirc`
 
-```vi
+```vim
 [distutils]
 index-servers =
   pypi
@@ -40,7 +40,7 @@ vim setup.py
 
 ```
 
-```vi
+```py
 from setuptools import setup, find_packages
 
 
