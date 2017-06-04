@@ -52,6 +52,8 @@ mydf.T
 mydf.transpose()
 
 mydf.iloc[:2,1]
+mydf.loc[:2, 'a']
+
 mydf['a']
 mydf[['a']]
 mydf[mydf['a'] < 2]['b']
