@@ -235,7 +235,6 @@ Out[]:
 ### Benefits of using Generator
 
 Memory Usage
-
 ```py
 import sys
 print(sys.getsizeof( [i for i in range(100) if i % 2] ))  # 528
@@ -246,6 +245,22 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2) ))  # 88
 
 ```
 
+Lazy-Evaluation
+```py
+def operation_checker(x):
+    print('Operating...')
+    return x
+
+# List
+cont = [operation_checker(i) for i in range(10) if i % 2]
+for _ in cont:
+    print(_)
+
+# Generator
+cont = (operation_checker(i) for i in range(10) if i % 2)    
+for _ in cont:
+    print(_)
+```
 
 ## Coroutine  
 
