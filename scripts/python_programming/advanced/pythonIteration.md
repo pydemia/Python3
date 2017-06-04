@@ -226,10 +226,24 @@ Out[]:
 
 ```
 
-### Generator Comprehension
+### Generator Comprehension (Generator Expression)
 ```python
 (expression for expression in itreables)
 (expression for expression in itreables if condition)
+```
+
+### Benefits of using Generator
+
+Memory Usage
+
+```py
+import sys
+print(sys.getsizeof( [i for i in range(100) if i % 2] ))  # 528
+print(sys.getsizeof( [i for i in range(1000) if i % 2] ))  # 4272
+
+print(sys.getsizeof( (i for i in range(100) if i % 2) ))  # 88
+print(sys.getsizeof( (i for i in range(1000) if i % 2) ))  # 88
+
 ```
 
 
