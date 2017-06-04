@@ -29,7 +29,7 @@ mylist#[3,5,7]
 
 mylist = ['a', 'b', 'c']
 xylist = [1, 2]
-ids = [(i, j) for i in mylist for j in xylist]#geneerate a list of tuples
+ids = [(i, j) for i in mylist for j in xylist]#generate a list of tuples
 for i, j in ids:#Unpacking a tuple!
     print(i, j)
 ```
