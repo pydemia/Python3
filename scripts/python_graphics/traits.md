@@ -3,8 +3,8 @@
 ## Installation
 
 ```py
-pip install traits
-conda install traits
+pip install traits traitsui
+conda install traits traitsui
 
 ```
 
