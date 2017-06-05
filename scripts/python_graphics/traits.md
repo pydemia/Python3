@@ -10,8 +10,8 @@ conda install traits
 
 ## Import
 ```py
-import traits.api as trapi
-
+import traits.api as trapi  # for input GUI
+import traitsui.api as trui  # fr output GUI
 ```
 
 ## Usage
