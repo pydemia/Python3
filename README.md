@@ -63,7 +63,6 @@ This contains the information &amp; sources of Python, which is a programming la
     * [Duck-typing(lazy-polymorphism)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#duck-typing)
     * [Special Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#special-methods)
     * [Composition & Aggregation](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#composition-and-aggregation)
-    * [Named-Tuple](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#named-tuple)
 
 
 
