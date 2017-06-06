@@ -95,7 +95,7 @@ This contains the information &amp; sources of Python, which is a programming la
 
 
 ## Python Additional Type Object [ex) Data Structure]
-* [enum.Enum]()
+* [enum.Enum](https://github.com/pydemia/Python3/blob/master/scripts/additional_type/additionaltype.md#python-additional-type-object#enum)
 
 * [array.array]()
 * [numpy.array]()
