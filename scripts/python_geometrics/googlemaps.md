@@ -20,4 +20,4 @@ Mine : AIzaSyAY1rBsdeUQ83WV4JqG-vmQG-74N2DZmB0
 
 
 
-[!googlemaps_geocode_api_example](https://github.com/pydemia/Python3/edit/master/scripts/python_geometrics/googlemaps_geocode_api_example.png)
+![googlemaps_geocode_api_example](https://github.com/pydemia/Python3/edit/master/scripts/python_geometrics/googlemaps_geocode_api_example.png)
