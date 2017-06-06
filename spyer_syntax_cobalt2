@@ -1,4 +1,4 @@
-Background	#041927 #193549
+Background	#041927 #193549 
 Side areas	#19364b #0d3a58 
 
 Current cell	#072539 #1f4662 #0d3a58
@@ -14,5 +14,25 @@ String 		#3ad900
 Number 		#ff628c
 Keyword 	#ff9d00
 Builtin 	#edef7d
+Definition 	#ffc600
+Instance 	#ff80e1
+
+
+Background	#041927 #193549 
+Side areas	#19364b #0d3a58 
+
+Current cell	#092c43
+Current line 	#092c43
+Occurrence 	#2f4350
+Matched parens 	#0088ff
+Unmatchedparens #e1efff
+Link 		#0088ff
+
+Normal text 	#ffffff
+Comment 	#0088ff
+String 		#3ad900
+Number 		#ff628c
+Keyword 	#ff9d00
+Builtin 	#edef7d  #ffaa00
 Definition 	#ffc600
 Instance 	#ff80e1
