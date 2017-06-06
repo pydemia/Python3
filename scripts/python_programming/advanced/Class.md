@@ -99,6 +99,19 @@ tbd
 
 ### Special Methods
 
+* **`__init__`** : Do something when a `instance` is `initiated` (cannot use `return` Statement)
+* **`__new__`** : Do & Retun something when `initiated` (can use `return` Statement)
+* **`__str__`** : Show something when a `instance` is `printed`
+* **`__repr__`** : Show something when a `instance` is called from console
+* **`__call__`** : tbd
+* **`__getitem__`** : Be able to subset & slice it
+* **`__setitem__`** : Show something when a `instance` is called from console
+* **`__iter__`** : tbd
+* **`__next__`** : tbd
+* **`__dir__`** : tbd
+* **`__doc__`** : tbd
+* **`__getattr__`**, **`__getattribute__`** : tbd
+* **`__setattr__`** : tbd
 
 ```py
 class myobject(object):
