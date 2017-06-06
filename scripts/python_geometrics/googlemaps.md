@@ -19,5 +19,10 @@ Mine : AIzaSyDcR76D4dh7A2V_ERzn89-PJ5z8OLPh6xI
 Mine : AIzaSyAY1rBsdeUQ83WV4JqG-vmQG-74N2DZmB0  
 
 
+```py
+import googlemaps as gm
 
-![googlemaps_geocode_api_example](https://github.com/pydemia/Python3/blob/master/scripts/python_geometrics/googlemaps_geocode_api_example.png?raw=true)
+
+gmapsClient = gm.Client(key='AIzaSyD3hyIgUZotbLboevi38kgWhFPisaxw6rw')
+```
+
