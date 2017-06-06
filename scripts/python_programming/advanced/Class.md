@@ -187,10 +187,6 @@ len(myobj)
 
 tbd
 
-### Named-tuple
-A _Subclass_ of **_Tuple_**. You can access its values with ```.name``` and ```[offset]```.
-
-
 
 [↑ Up to the Top](#classes)
 
