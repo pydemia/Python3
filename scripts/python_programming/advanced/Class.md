@@ -99,6 +99,8 @@ tbd
 
 ### Special Methods
 
+This contains the basics of Special Methods. More informations are [here](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/special_methods.md)
+
 * **`__init__`** : **Do** something when a `instance` is **`initiated`**. _(cannot use `return` Statement)_
 * **`__new__`** : **Do & Return** something when **`initiated`**. _(can use `return` Statement)_
 * **`__str__`** : **Show** something when a `instance` is **`printed`**.
