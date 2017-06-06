@@ -94,11 +94,14 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Distribute on PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#distribute-it-on-pypi)
 
 
-## Python Additional Type Object [ex) Data Structure]
+## Python Additional Type Object
+
+### Built-in Libraries
 * [enum.Enum](https://github.com/pydemia/Python3/blob/master/scripts/additional_type/additionaltype.md#python-additional-type-object#enum)
 * [collections.namedtuple]()
 * [collections.defaultdict]()
 
+### Third-party Libraries
 * [array.array]()
 * [numpy.array]()
 * [numpy.ndarray]()
