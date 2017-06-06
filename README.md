@@ -174,7 +174,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ## Python Graphics
 * [traits](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/traits.md#traits)
 * [PyQt](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
-
+* [Folium - Geographics](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/folium.md#folium)
 
 ---
 ## Python and Web
@@ -186,7 +186,7 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ## Python Geometrics
 * [googlemaps](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/googlemaps.md#googlemaps)
-
+* [Folium - Geographics](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/folium.md#folium)
 
 ---
 ## Python Concurrency(Queue)
