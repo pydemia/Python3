@@ -94,7 +94,9 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Distribute on PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#distribute-it-on-pypi)
 
 
-## Python Additional Data Structure
+## Python Additional Type Object [ex) Data Structure]
+* [enum.Enum]()
+
 * [array.array]()
 * [numpy.array]()
 * [numpy.ndarray]()
@@ -172,9 +174,12 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ---
 ## Python Graphics
-* [traits](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/traits.md#traits)
+* [Tkinter](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [PyQt](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+* [wxPython](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+* [PySide](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [Folium - Geographics](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/folium.md#folium)
+* [traits-python2](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/traits.md#traits)
 
 ---
 ## Python and Web
