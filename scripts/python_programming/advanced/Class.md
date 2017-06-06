@@ -99,13 +99,13 @@ tbd
 
 ### Special Methods
 
-* **`__init__`** : Do something when a `instance` is `initiated` (cannot use `return` Statement)
-* **`__new__`** : Do & Retun something when `initiated` (can use `return` Statement)
-* **`__str__`** : Show something when a `instance` is `printed`
-* **`__repr__`** : Show something when a `instance` is called from console
+* **`__init__`** : **Do** something when a `instance` is **`initiated`**. _(cannot use `return` Statement)_
+* **`__new__`** : **Do & Return** something when **`initiated`**. _(can use `return` Statement)_
+* **`__str__`** : **Show** something when a `instance` is **`printed`**.
+* **`__repr__`** : **Show** something when a `instance` is **`called` from console**.
 * **`__call__`** : tbd
-* **`__getitem__`** : Be able to subset & slice it
-* **`__setitem__`** : Show something when a `instance` is called from console
+* **`__getitem__`** : Be able to **subset** & **slice** it.
+* **`__setitem__`** : Be able to **replace** existing item.
 * **`__iter__`** : tbd
 * **`__next__`** : tbd
 * **`__dir__`** : tbd
