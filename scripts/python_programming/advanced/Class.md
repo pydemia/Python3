@@ -99,7 +99,76 @@ tbd
 
 ### Special Methods
 
-tbd
+
+```py
+class myobject(object):
+    
+    def __init__(self, obj, name):
+        
+        # Check if listobj is list type OR just you can change it to list
+        if not isinstance(obj, list):
+            obj = list(obj)
+        
+        self.data = obj
+        self.name = name
+        #self.InitData(data)
+    
+    def __new__(cls, *args, **kwargs):
+        #return super(myobject, cls).__new__(cls)
+        return super().__new__(cls)
+    
+    def __str__(self):
+        return str(self.data)
+    
+    #def __call__(self):
+    #    print(self.name)
+    #    print(self.data)
+    
+    def __getitem__(self, index):
+        return self.data[index]
+    
+    def __setitem__(self, index, value):
+        self.data[index] = value
+        #return self.data
+    
+    #def __delitem__(self):
+    #    pass
+    
+    def __len__(self):
+        return len(self.data)
+    
+    def __repr__(self):
+        return str(self.data)
+```
+   
+```py
+# Create a new instance : __init__, __new__
+tmpls = [1,2,3]
+myobj = myobject(tmpls, 'Test')
+
+# Check attributes
+myobj.data
+myobj.name
+
+# Type(Class)
+type(myobj)
+
+
+# print & str : __str__, __repr__
+print(myobj)
+str(myobj)
+myobj
+
+# Indexing : __getitem__
+myobj[1]
+
+# Replacing : __setitem__
+myobj[2] = 4
+
+# Container Size : __len__
+len(myobj)
+```
+
 
 ### Composition and Aggregation
 
