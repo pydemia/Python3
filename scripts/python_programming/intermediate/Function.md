@@ -53,8 +53,61 @@ runfunc_and_mult(3, 5, 4)
 Closures can be generated to other Functions, and operate & change the variables from _the outer Functions._
 When do you use **_Closure_**?  
 
-* Not to use _Global Variables_.
-* Keep & Hide the inner data.  
+* Not to use something as a _Global Variables_ but a _Local Variables_.
+* Trying to keep & hide the inner data but only to use it.  
+
+You can generate a function from another function with Closure.  
+We can preserve given parameters with this.
+
+__Nested Function__
+```py
+def print_messege(string):
+
+    def printer():
+        print(string)
+
+    printer()
+```
+
+```py
+print_messege('Python')
+```
+
+__Closure__
+```py
+def print_messege(string):
+
+    def printer():
+        print(string)
+
+    return printer  # The nested function returns a function itself!
+```
+
+```py
+print_messege('Python')
+Out[ ]: <function __main__.print_messege.<locals>.printer>
+
+closureFunc = print_messege('Python')
+closureFunc()
+
+# Python  # The closureFunc is a function that keeps a value from print_messege() was called.
+```
+
+This `closureFunc` is preserved even `print_messege` is removed from the namespace.
+```py
+del print_messege
+print_messege()
+
+NameError: name 'print_messege' is not defined
+```
+
+```py
+closureFunc()
+
+# Python
+```
+
+
 
 ```python
 def runfunc_and_mult(a, b):
