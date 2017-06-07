@@ -101,13 +101,14 @@ print_messege()
 NameError: name 'print_messege' is not defined
 ```
 
+
 ```py
 closureFunc()
 
 # Python
 ```
 
-
+Another example:
 
 ```python
 def runfunc_and_mult(a, b):
@@ -118,8 +119,10 @@ def runfunc_and_mult(a, b):
 a = runfunc_and_mult(1,2)
 a
 <function runfunc_and_mult.<locals>.adder at 0x7fc9bace8620>
+
 type(a)
 <class 'function'>
+
 a()
 3                          # It remembers the variables from the outer functions.
 ```
