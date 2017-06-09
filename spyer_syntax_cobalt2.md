@@ -66,7 +66,7 @@ Keyword   ff9d00  (Bold)
 Keyword Argument    42FF45  (Bold)
 Line Comment    00B4FF  (Italic)
 Number    ff628c
-Operation Sign    FFE438
+Operation Sign    ff9d00
 Parameter   ffffff
 Parentheses   FFFFFF
 Predefined item definition    FF0000  (Bold, Italic)
