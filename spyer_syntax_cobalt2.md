@@ -5,6 +5,7 @@
 
 ### Spyder
 
+```txt
 Background	#041927 #193549 
 Side areas	#19364b #0d3a58 
 
@@ -43,13 +44,14 @@ Keyword 	#ff9d00
 Builtin 	#edef7d  #ffaa00
 Definition 	#ffc600
 Instance 	#ff80e1
-
+```
 ---
 
 ## Pycharm
 
 Editor -> Colors & Fonts -> Python
 
+```txt
 `self` parameter    ff80e1  (Bold, Italic)
 Braces    ffffff
 Brackets    ffffff
@@ -74,6 +76,7 @@ Predefined name    FF0000  (Bold, Italic)
 String(bytes)   7DD961
 String(Unicode)   3ad900
 Valid escape sequence   ffffff, 0088FF (Foreground/Background)
+```
 
 
 
@@ -83,8 +86,7 @@ Valid escape sequence   ffffff, 0088FF (Foreground/Background)
 
 
 
-
-
+```txt
 Block Comment   0088ff
 Invalid string escape   
 Keyword1    ff9d00
@@ -95,3 +97,4 @@ Line comment
 Number    
 String    3ad900
 Valid string escape   0088ff
+```
