@@ -73,7 +73,7 @@ Parameter   ffffff
 Parentheses   FFFFFF
 Predefined item definition    FF0000  (Bold, Italic)
 Predefined name    FF0000  (Bold, Italic)
-String(bytes)   497C33
+String(bytes)   497C33  008080
 String(Unicode)   3ad900
 Valid escape sequence   ffffff, 7DD961 (Foreground/Background)
 ```
