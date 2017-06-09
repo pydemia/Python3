@@ -65,7 +65,7 @@ Dot   ffffff
 Function definition   ffc600 (Bold)
 Invalid escape sequence   ffffff, 800F00 (Foreground/Background)
 Keyword   ff9d00  (Bold)
-Keyword Argument    42FF45  (Bold)
+Keyword Argument    42FF45 B700FF  (Bold)
 Line Comment    00B4FF  (Italic)
 Number    ff628c
 Operation Sign    ff9d00
@@ -73,9 +73,9 @@ Parameter   ffffff
 Parentheses   FFFFFF
 Predefined item definition    FF0000  (Bold, Italic)
 Predefined name    FF0000  (Bold, Italic)
-String(bytes)   7DD961
+String(bytes)   497C33
 String(Unicode)   3ad900
-Valid escape sequence   ffffff, 0088FF (Foreground/Background)
+Valid escape sequence   ffffff, 7DD961 (Foreground/Background)
 ```
 
 
