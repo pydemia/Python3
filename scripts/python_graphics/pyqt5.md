@@ -15,6 +15,8 @@ For example, All Widget stuffs are separated to independent Modules from each mo
 ```sh
 sudo apt-get install qttools5-dev-tools
 sudo apt-get install qtcreator
+
+sudo apt-get install qt5-default  # for kit
 ```
 
 ![qt creator](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/qt_creator.png?raw=True)
