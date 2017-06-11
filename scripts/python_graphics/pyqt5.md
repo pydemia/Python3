@@ -40,5 +40,12 @@ StartupNotify=true
 Then reboot.Done.
 
 
-
 ![qt creator](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/qt-designer.png?raw=True)
+
+
+
+### Convert `.ui` file to `.py` file
+
+```sh
+pyuic4 input.ui -o output.py
+```
