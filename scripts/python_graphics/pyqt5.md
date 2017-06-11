@@ -8,15 +8,14 @@ For example, All Widget stuffs are separated to independent Modules from each mo
 
 ## Tools
 
-### Qt Creator for `PyQt5`
-
-(QtDesigner in `PyQt4`)
+### Qt Designer for `PyQt5`
 
 ```sh
-sudo apt-get install qttools5-dev-tools
-sudo apt-get install qtcreator
 
-sudo apt-get install qt5-default  # for kit
+
+sudo apt-get install python3-pyqt5 python3-pyqt5.qtsql qttools5-dev-tools
 ```
 
-![qt creator](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/qt_creator.png?raw=True)
+
+
+![qt creator](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/qt-designer.png?raw=True)
