@@ -14,7 +14,30 @@ For example, All Widget stuffs are separated to independent Modules from each mo
 
 
 sudo apt-get install python3-pyqt5 python3-pyqt5.qtsql qttools5-dev-tools
+which designer
+designer
 ```
+
+### Create Shorcut
+```sh
+sudo vim /usr/share/applications/qtdesigner.desktop
+```
+
+```vim
+[Desktop Entry]
+Type=Application
+Name=Qt Designer
+GenericName=Qt Designer
+Comment=PyQt5 Design Tool - Python3
+TryExec=designer
+Exec=designer
+Categories=Development;Science;IDE;Qt;
+Icon=QtProject-qtcreator
+Terminal=false
+StartupNotify=true
+
+```
+Then reboot.Done.
 
 
 
