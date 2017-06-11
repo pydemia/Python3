@@ -47,5 +47,5 @@ Then reboot.Done.
 ### Convert `.ui` file to `.py` file
 
 ```sh
-pyuic4 input.ui -o output.py
+pyuic5 input.ui -o output.py
 ```
