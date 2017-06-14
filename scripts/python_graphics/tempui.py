@@ -158,7 +158,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.pushButton_CONFIRM.clicked.connect(self.createDict)
         self.pushButton_CANCEL.clicked.connect(MainWindow.close)
-        self.END_DT_inputText.editingFinished.connect(self.START_DT.show)
+        self.END_DT_inputText.editingFinished.connect(self.start_tm_calculate)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -203,7 +203,10 @@ class Ui_MainWindow(object):
 
     def start_tm_calculate(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        self.START_DT.setText(_translate("MainWindow", "M14"))
+        end_dt = datetime.strptime(self.END_DT_inputText.text(), '%Y%m%d')
+        window = datetime.timedelta(days=int(self.TM_WINDOW_inputText.text()))
+        self.START_DT.setText(_translate("MainWindow",
+                                         (end_dt - window).strftime('%Y%m%d')))
 
     def createDict(self):
         resDict = {'FAC_ID': self.FAC_ID_inputText.text(),
