@@ -6,6 +6,7 @@
 #
 
 
+import datetime as dt
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
@@ -201,12 +202,12 @@ class Ui_MainWindow(object):
         self.actionSetting1.setText(_translate("MainWindow", "setting1"))
 
 
-    def start_tm_calculate(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        end_dt = datetime.strptime(self.END_DT_inputText.text(), '%Y%m%d')
-        window = datetime.timedelta(days=int(self.TM_WINDOW_inputText.text()))
-        self.START_DT.setText(_translate("MainWindow",
-                                         (end_dt - window).strftime('%Y%m%d')))
+    def start_tm_calculate(self):
+        #_translate = QtCore.QCoreApplication.translate
+        end_dt = dt.datetime.strptime(self.END_DT_inputText.text(), '%Y%m%d')
+        window = dt.timedelta(days=int(self.TM_WINDOW_inputText.text()))
+        self.START_DT.setText((end_dt - window).strftime('%Y%m%d'))
+
 
     def createDict(self):
         resDict = {'FAC_ID': self.FAC_ID_inputText.text(),
