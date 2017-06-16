@@ -1,6 +1,12 @@
 # Syntax Color Themes
 
 
+## Console
+
+#0B2443 #002B36
+#D3D7CF #AABFC1
+
+
 ## Cobalt2
 
 ### Spyder
