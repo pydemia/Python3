@@ -20,7 +20,7 @@ vim ~/.bashrc
 ```vim
 
 # PyPy PATH
-export PATH="$APP_PATH/pypy3/bin"
+export PATH="$APP_PATH/pypy3/bin:PATH"
 export PYPY_PATH="$APP_PATH/pypy3"
 
 ```
