@@ -27,7 +27,7 @@ export PYPY_PATH="$APP_PATH/pypy3"
 
 ## Run
 
-```py
+```console
 pypy3
 
 Python 3.5.3 (a39af0be3a22, Jun 05 2017, 20:18:00)
