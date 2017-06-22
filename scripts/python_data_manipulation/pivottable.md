@@ -178,6 +178,15 @@ age
 
 ## MultiIndex(```pandas.DataFrame.MultiIndex```)
 
+### Add a level to existing `columns` or `levels`
+
+```py
+df.columns = pd.MultiIndex.from_product([['NEW_LEVEL'], df.columns])
+
+```
+
+### Select & Subset by `columns`
+
 Select & Subset by a index in MultiIndex: 
 ```python
 
@@ -186,6 +195,8 @@ DataFrame.xs('col1', level=2, axis=0, drop_level=False)
 sbpvt = pvtbl.xs('EC', level='{int | name}', axis=0, drop_level=False) \
              .xs('TF', level='{int | name}', axis=1, drop_level=False)
 ```
+
+### Flatten MultiIndex `levels`
 
 Flatten a MultiIndex:
 ```python
@@ -199,6 +210,8 @@ Undo - return a flattened index into MultiIndex
 ```python
 pd.DataFrame.columns = pd.MultiIndex.from_tuples(pd.DataFrames.columns, names={iterables})
 ```
+
+### Select by `levels`
 
 Get a specific level name list:
 ```python

@@ -99,15 +99,95 @@ tbd
 
 ### Special Methods
 
-tbd
+This contains the basics of Special Methods. More informations are [here].(https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/special_methods.md)
+
+* **`__init__`** : **Do** something when a `instance` is **`initiated`**. _(cannot use `return` Statement)_
+* **`__new__`** : **Do & Return** something when **`initiated`**. _(can use `return` Statement)_
+* **`__str__`** : **Show** something when a `instance` is **`printed`**.
+* **`__repr__`** : **Show** something when a `instance` is **`called` from console**.
+* **`__call__`** : tbd
+* **`__getitem__`** : Be able to **subset** & **slice** it.
+* **`__setitem__`** : Be able to **replace** existing item.
+* **`__iter__`** : tbd
+* **`__next__`** : tbd
+* **`__dir__`** : tbd
+* **`__doc__`** : tbd
+* **`__getattr__`**, **`__getattribute__`** : tbd
+* **`__setattr__`** : tbd
+
+```py
+class myobject(object):
+    
+    def __init__(self, obj, name):
+        
+        # Check if listobj is list type OR just you can change it to list
+        if not isinstance(obj, list):
+            obj = list(obj)
+        
+        self.data = obj
+        self.name = name
+        #self.InitData(data)
+    
+    def __new__(cls, *args, **kwargs):
+        #return super(myobject, cls).__new__(cls)
+        return super().__new__(cls)
+    
+    def __str__(self):
+        return str(self.data)
+    
+    #def __call__(self):
+    #    print(self.name)
+    #    print(self.data)
+    
+    def __getitem__(self, index):
+        return self.data[index]
+    
+    def __setitem__(self, index, value):
+        self.data[index] = value
+        #return self.data
+    
+    #def __delitem__(self):
+    #    pass
+    
+    def __len__(self):
+        return len(self.data)
+    
+    def __repr__(self):
+        return str(self.data)
+```
+   
+```py
+# Create a new instance : __init__, __new__
+tmpls = [1,2,3]
+myobj = myobject(tmpls, 'Test')
+
+# Check attributes
+myobj.data
+myobj.name
+
+# Type(Class)
+type(myobj)
+
+
+# print & str : __str__, __repr__
+print(myobj)
+str(myobj)
+myobj
+
+# Indexing : __getitem__
+myobj[1]
+
+# Replacing : __setitem__
+myobj[2] = 4
+
+# Container Size : __len__
+len(myobj)
+```
+
 
 ### Composition and Aggregation
 
 tbd
-
-### Named-tuple
-A _Subclass_ of **_Tuple_**. You can access its values with ```.name``` and ```[offset]```.
-
 
 
 [↑ Up to the Top](#classes)

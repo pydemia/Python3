@@ -19,7 +19,7 @@ conda config --set ssl_verify false
 
 #### ```pip```
 ```sh
-pip --cert [sslproxy.crt] [PackageName]
+pip --cert=[sslproxy.crt] [PackageName]
 ```
 
 #### ```conda```

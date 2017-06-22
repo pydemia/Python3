@@ -63,7 +63,6 @@ This contains the information &amp; sources of Python, which is a programming la
     * [Duck-typing(lazy-polymorphism)](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#duck-typing)
     * [Special Methods](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#special-methods)
     * [Composition & Aggregation](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#composition-and-aggregation)
-    * [Named-Tuple](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#named-tuple)
 
 
 
@@ -94,7 +93,18 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Distribute on PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#distribute-it-on-pypi)
 
 
-## Python Additional Data Structure
+## Python Compiler
+
+* [PyPy](https://github.com/pydemia/Python3/blob/master/scripts/python_compiler/PyPy.md#pypy)
+
+## Python Additional Type Object
+
+### Built-in Libraries
+* [enum.Enum](https://github.com/pydemia/Python3/blob/master/scripts/additional_type/additionaltype.md#python-additional-type-object#enum)
+* [collections.namedtuple]()
+* [collections.defaultdict]()
+
+### Third-party Libraries
 * [array.array]()
 * [numpy.array]()
 * [numpy.ndarray]()
@@ -122,6 +132,7 @@ This contains the information &amp; sources of Python, which is a programming la
   - [Time-Series](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/pandas.md#dataframe)  
 * [Datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
 * [PyTables-```out-of-memory operation```](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
+* [Pandasql](https://github.com/pydemia/Python3/blob/master/scripts/python_data_manipulation/pandasql.md)
 
 --
 ## Python Vectorization
@@ -171,9 +182,12 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ---
 ## Python Graphics
-* [traits](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
-* [PyQt](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
-
+* [Tkinter](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+* [PyQt (PyQt5)](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/pyqt5.md#pyqt5)
+* [wxPython](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+* [PySide](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
+* [Folium - Geographics](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/folium.md#folium)
+* [traits-python2](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/traits.md#traits)
 
 ---
 ## Python and Web
@@ -181,6 +195,11 @@ This contains the information &amp; sources of Python, which is a programming la
 * [httplib](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [urllib](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [aiohttp]()
+
+
+## Python Geometrics
+* [googlemaps](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/googlemaps.md#googlemaps)
+* [Folium - Geographics](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/folium.md#folium)
 
 ---
 ## Python Concurrency(Queue)
