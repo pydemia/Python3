@@ -183,7 +183,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ---
 ## Python Graphics
 * [Tkinter](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
-* [PyQt(PyQt5)](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/pyqt5.md#pyqt5)
+* [PyQt (PyQt5)](https://github.com/pydemia/Python3/blob/master/scripts/python_graphics/pyqt5.md#pyqt5)
 * [wxPython](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [PySide](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [Folium - Geographics](https://github.com/dawkiny/Python3/blob/master/scripts/python_geometrics/folium.md#folium)
