@@ -96,6 +96,8 @@ python setup.py register -r https://pypi.python.org/pypi
 
 ### PyPI : Distributte a Package
 
+Note : The name and version of a package is not be overrided.
 ```sh
 twine upload dist/<package>.tar.gz <package>.whl
 ```
+
