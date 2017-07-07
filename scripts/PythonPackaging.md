@@ -2,6 +2,11 @@
 
 ## PyPI
 
+### Installation
+```sh
+python get-pip.py
+```
+
 ```sh
 pip install wheel
 pip install twine
@@ -22,13 +27,15 @@ index-servers =
   testpypi
 
 [pypi]
-repository=https://pypi.python/pypi
+#repository=https://pypi.python/pypi
+repository:https://upload.pypi.org/legacy/
 username=<username>
 password=<password>
 
 
 [testpypi]
-repository=https://testpypi.python/pypi
+#repository=https://testpypi.python/pypi
+repository:https://test.pypi.org/legacy/
 username=<username>
 password=<password>
 ```
@@ -101,3 +108,10 @@ Note : The name and version of a package is not be overrided.
 twine upload dist/<package>.tar.gz <package>.whl
 ```
 
+## Conda
+
+### Create a conda Package from PyPI
+
+```sh
+conda install
+```
