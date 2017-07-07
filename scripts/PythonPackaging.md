@@ -77,7 +77,10 @@ setup(name='pydemia',
                 'Programming Language :: Python :: 3.5'
                 ],
         packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-        #install_requires=[],
+        install_requires=['pandas>=0.20.2',
+                          'pymysql',
+                          'psycopg2==2.7.1',
+                          'matplotlib>=2.0.2, <2.1.0',],
         zip_safe=False)
 ```
 
