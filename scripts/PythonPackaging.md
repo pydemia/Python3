@@ -34,7 +34,7 @@ password=<password>
 ```
 
 
-### PyPI : Create an Package
+### PyPI : Create a Package
 
 Create `setup.py`:
 
