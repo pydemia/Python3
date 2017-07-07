@@ -180,4 +180,9 @@ logout successful
 
 ```
 
+### Install your Package
+
+```sh
+conda install -c <id> <package_name>
+```
 Done.
