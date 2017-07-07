@@ -3,10 +3,13 @@
 ## PyPI
 
 ### Installation
+
+Get pip:
 ```sh
 python get-pip.py
 ```
 
+Get wheel, twine:
 ```sh
 pip install wheel
 pip install twine
