@@ -8,7 +8,7 @@ pip install twine
 ```
 
 
-### Create an Account
+### PyPI : Create an Account
 
 * [testPyPI](https://testpypi.python.org/pypi)
 * [PyPI](https://pypi.python.org/pypi)
@@ -34,7 +34,7 @@ password=<password>
 ```
 
 
-### Create an Package
+### PyPI : Create an Package
 
 Create `setup.py`:
 
@@ -79,14 +79,14 @@ vim pydemia/__init__.py
 ```
 
 
-### Build a Package
+### PyPI : Build a Package
 
 ```sh
 python setup.py sdist bdist_wheel
 ```
 
 
-### Register a new Package (only at the First time)
+### PyPI : Register a new Package (only at the First time)
 
 ```sh
 python setup.py register -r https://testpypi.python.org/pypi
@@ -94,7 +94,7 @@ python setup.py register -r https://pypi.python.org/pypi
 ```
 
 
-## Distribute it on PyPI
+### PyPI : Distributte a Package
 
 ```sh
 twine upload dist/<package>.tar.gz <package>.whl
