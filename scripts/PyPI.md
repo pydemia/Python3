@@ -1,5 +1,6 @@
-# PyPI
+# Python Packaging
 
+## PyPI
 
 ```sh
 pip install wheel
@@ -7,12 +8,12 @@ pip install twine
 ```
 
 
-## Create an Account
+### Create an Account
 
 * [testPyPI](https://testpypi.python.org/pypi)
 * [PyPI](https://pypi.python.org/pypi)
 
-### `~/.pypirc`
+#### `~/.pypirc`
 
 ```vim
 [distutils]
@@ -33,7 +34,7 @@ password=<password>
 ```
 
 
-## Create an Package
+### Create an Package
 
 Create `setup.py`:
 
@@ -78,14 +79,14 @@ vim pydemia/__init__.py
 ```
 
 
-## Build a Package
+### Build a Package
 
 ```sh
 python setup.py sdist bdist_wheel
 ```
 
 
-## Register a new Package (only at the First time)
+### Register a new Package (only at the First time)
 
 ```sh
 python setup.py register -r https://testpypi.python.org/pypi
