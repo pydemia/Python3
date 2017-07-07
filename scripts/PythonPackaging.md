@@ -116,8 +116,68 @@ twine upload dist/<package>.tar.gz <package>.whl
 
 ## Conda
 
-### Create a conda Package from PyPI
+### Installation
 
 ```sh
-conda install
+conda install conda-build anaconda-client
 ```
+Then, Create an Account on [Anaconda.org](https://anaconda.org)
+
+### Build a conda Package from PyPI
+
+Note : Not all of PyPI Packages are in conda repository, Your build can be failed with package dependencies.
+```sh
+conda skeleton pypi <package_name>
+conda build <--python 3.5> <package_name>
+```
+Check it:
+```sh
+<your-path-to-anaconda>/conda-bld
+```
+You can see `linux-64`, `osx-64`, `win-64`, etc.
+
+Convert it to other platform:
+Linux & OS X:
+```sh
+conda convert -f --platform all <your-path-to-anaconda>/conda-bld/<your-os>/<your-package-file> -o <outputdir>/
+```
+Windows:
+```sh
+conda convert -f --platform all <your-path-to-anaconda>/conda-bld/<your-os>/<your-package-file> -o <outputdir>\
+```
+
+
+
+
+### Log-in
+```sh
+anaconda login
+
+Using Anaconda API: https://api.anaconda.org
+Username: pydemia
+pydemia's Password: 
+login successful
+
+```
+
+### Upload to `Anaconda.org`
+
+```sh
+anaconda upload <your-package-name>
+```
+
+(Optional) If you want to upload the package at the same time when your build is finished:
+```sh
+conda config --set anaconda_upload yes
+```
+
+### Log-out
+```sh
+anaconda logout
+
+Using Anaconda API: https://api.anaconda.org
+logout successful
+
+```
+
+Done.
