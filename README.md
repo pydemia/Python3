@@ -86,11 +86,27 @@ This contains the information &amp; sources of Python, which is a programming la
   - [2to3](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
 
 
-## PyPI
+## Python Packaging
 
-* [Create an Account](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#create-an-account)
-* [Build a Package](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#build-a-package)
-* [Distribute on PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PyPI.md#distribute-it-on-pypi)
+### PyPI
+
+* [PyPI](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi)  
+  - [Create an Account](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--create-an-account)
+  - [Create a Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--create-a-package)
+  - [Build a Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--build-a-package)
+  - [Register a new Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--register-a-new-package-only-at-the-first-time)
+  - [Distribute a Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--distributte-a-package)
+
+
+* [conda](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#conda)  
+  - [Create an Account](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--create-an-account)
+  - [Create a Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--create-a-package)
+  - [Build a Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--build-a-package)
+  - [Register a new Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--register-a-new-package-only-at-the-first-time)
+  - [Distribute a Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--distributte-a-package)
+
+
+
 
 
 ## Python Compiler
