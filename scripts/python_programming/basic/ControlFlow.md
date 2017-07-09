@@ -35,7 +35,25 @@ An operation returns boolean(True or False)
 | `not` | NOT Same to |
 
 
-### Difference between `==` and `is`
+### Difference between `Comparison Operators` and `Boolean Operators`
+
+* Case 1 : `&` and `and` (`|` and `or`)  
+Comparison Operators can be operated with the same type.
+
+```py
+print(True & 'OK')
+print(False | 'OK')
+
+TypeError: unsupported operand type(s) for &: 'bool' and 'str'
+```
+
+```py
+print(True and 'OK')     # Ok
+print(False and 'OK')    # False
+```
+
+
+* Case 2: `==` and `is`  
 
 `==` is the equality comparison.  
 `is` is the identity comparison.
@@ -73,9 +91,10 @@ True
 
 | Operator | Description |
 | :------: | :---------- |
-| and(&) | Equal to |
-| or(\|) | NOT Equal to |
-| not(!)  | Less than |
+| and | Equal to |
+| or | NOT Equal to |
+| not  | Less than |
+
 
 Comparison Operator **is PRIOR to** Boolean Operator
 ```python
@@ -86,7 +105,7 @@ x = 5
 True
 ```
 
-* The returned Values of these operators  
+* The returned Values of `Boolean operators`  
 
 ```py
 # and
@@ -105,11 +124,27 @@ print(False or 'OK' or 'No')      # OK
 ```
 
 `and` :  
+```py
+def and(x, y):
+    if x == False:
+        return x
+    else
+        return y
+```
+
 `x` `and` `y` first evaluates `x`.
 If `x` is `False`, its value is returned.
 Otherwise, `y` is evaluated and the resulting value is returned.
 
 * `or` :  
+```py
+def and(x, y):
+    if x == True:
+        return x
+    else
+        return y
+```
+
 The expression `x` `or` `y` first evaluates `x`.
 If `x` is `True`, its value is returned.
 Otherwise, `y` is evaluated and the resulting value is returned.
