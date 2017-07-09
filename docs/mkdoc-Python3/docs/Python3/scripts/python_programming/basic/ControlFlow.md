@@ -15,17 +15,16 @@
 
 An operation returns boolean(True or False)
 
-* Comparison Opeators
+### Comparison Opeators
 
-| Operator | Description |
-| :------: | :---------- |
-| ```==``` | Equal to |
-| != | NOT Equal to |
-| <  | Less than |
-| >  | Greater than |
-| <= | Less than or Equal to |
-| >= | Greater than or Equal to |
-| in | Membership |
+| Operator | Description              |
+| :------: | :----------              |
+| `==`     | Equal to                 |
+| `!=`     | NOT Equal to             |
+| `<`      | Less than                |
+| `>`      | Greater than             |
+| `<=`     | Less than or Equal to    |
+| `>=`     | Greater than or Equal to |
 
 * Statements
 
@@ -33,9 +32,10 @@ An operation returns boolean(True or False)
 | :------: | :---------- |
 | `is` | Same to |
 | `not` | NOT Same to |
+| `in` | Membership |
 
 
-### Difference between `==` and `is`
+#### Difference between `==` and `is`  
 
 `==` is the equality comparison.  
 `is` is the identity comparison.
@@ -69,13 +69,14 @@ x = 5
 True
 ```
 
-* Boolean Operators
+### Boolean Operators
 
 | Operator | Description |
 | :------: | :---------- |
-| and(&) | Equal to |
-| or(\|) | NOT Equal to |
-| not(!)  | Less than |
+| `and` | Equal to |
+| `or` | NOT Equal to |
+| `not`  | Less than |
+
 
 Comparison Operator **is PRIOR to** Boolean Operator
 ```python
@@ -86,13 +87,92 @@ x = 5
 True
 ```
 
+* The returned Values of `Boolean operators`  
+
+```py
+# and
+print(True and 'OK')              # Ok
+print(False and 'OK')             # False
+
+print(True and 'OK' or 'NO')      # OK
+print(False and 'OK' or 'No')     # No
+
+# or
+print(True and 'OK')              # True
+print(False and 'OK')             # Ok
+
+print(True or 'OK' or 'No')       # True 
+print(False or 'OK' or 'No')      # OK
+```
+
+`and` :  
+```py
+def and(x, y):
+    if x == False:
+        return x
+    else
+        return y
+```
+
+`x` `and` `y` first evaluates `x`.
+If `x` is `False`, its value is returned.
+Otherwise, `y` is evaluated and the resulting value is returned.
+
+* `or` :  
+```py
+def and(x, y):
+    if x == True:
+        return x
+    else
+        return y
+```
+
+The expression `x` `or` `y` first evaluates `x`.
+If `x` is `True`, its value is returned.
+Otherwise, `y` is evaluated and the resulting value is returned.
+
+Note : Neither `and` nor `or` restrict the value and type they return to `False` and `True`, but rather return `the last evaluated argument`.
+
+
+### Bitwise Operators
+
+| Operator | Description         | Looks like    |
+| :------: | :----------         | :------       |
+| `&`      | bitwise `and`       | `x and y`     |
+| `|`      | bitwise `or`        | `x or y`      |
+| `~`      | bitwise `not`       | `not x`       |
+| `^`      | bitwise `xor`       | ``      |
+| `<<`     | bitwise right shift(1111 0000) | `x * (2**y)`  |
+| `>>`     | bitwise left shift(0000 1111)  | `x //(2**y)`  |
+
+
+#### Difference between `Bitwise Operators` and `Boolean Operators`
+
+#### Case 1 : `&` and `and` (`|` and `or`)  
+Comparison Operators can be operated with the same type.
+
+```py
+print(True & 'OK')
+print(False | 'OK')
+
+TypeError: unsupported operand type(s) for &: 'bool' and 'str'
+```
+
+```py
+print(True and 'OK')     # Ok
+print(False and 'OK')    # False
+```
+
+
+
+
 * Other False Cases
 
 | Objects | Description |
 | :-----: | :---------- |
-| null | None |
-| int 0 | 0 |
-| float 0 | 0.0 |
+| `null` | None |
+| `int` 0 | 0 |
+| `float` 0 | 0.0 |
 | an empty string | "" |
 | an empty list | [] |
 | an empty tuple | () |
@@ -100,6 +180,7 @@ True
 | an empty set | set() |
 
 [↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
+
 
 ---
 ## if Statements

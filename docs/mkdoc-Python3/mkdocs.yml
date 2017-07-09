@@ -1,0 +1,5 @@
+site_name: Pydemia-Python3
+pages:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
