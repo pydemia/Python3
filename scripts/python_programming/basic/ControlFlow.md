@@ -86,6 +86,38 @@ x = 5
 True
 ```
 
+* The returned Values of these operators  
+
+```py
+# and
+print(True and 'OK')              # Ok
+print(False and 'OK')             # False
+
+print(True and 'OK' or 'NO')      # OK
+print(False and 'OK' or 'No')     # No
+
+# or
+print(True and 'OK')              # True
+print(False and 'OK')             # Ok
+
+print(True or 'OK' or 'No')       # True 
+print(False or 'OK' or 'No')      # OK
+```
+
+`and` :  
+`x` `and` `y` first evaluates `x`.
+If `x` is `False`, its value is returned.
+Otherwise, `y` is evaluated and the resulting value is returned.
+
+* `or` :  
+The expression `x` `or` `y` first evaluates `x`.
+If `x` is `True`, its value is returned.
+Otherwise, `y` is evaluated and the resulting value is returned.
+
+Note : Neither `and` nor `or` restrict the value and type they return to `False` and `True`, but rather return `the last evaluated argument`.
+
+
+
 * Other False Cases
 
 | Objects | Description |
