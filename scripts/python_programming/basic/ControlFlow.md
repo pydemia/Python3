@@ -19,13 +19,13 @@ An operation returns boolean(True or False)
 
 | Operator | Description |
 | :------: | :---------- |
-| ```==``` | Equal to |
-| != | NOT Equal to |
-| <  | Less than |
-| >  | Greater than |
-| <= | Less than or Equal to |
-| >= | Greater than or Equal to |
-| in | Membership |
+| `==` | Equal to |
+| `!=` | NOT Equal to |
+| `<`  | Less than |
+| `>`  | Greater than |
+| `<=` | Less than or Equal to |
+| `>=` | Greater than or Equal to |
+| `in` | Membership |
 
 * Statements
 
@@ -91,9 +91,9 @@ True
 
 | Operator | Description |
 | :------: | :---------- |
-| and | Equal to |
-| or | NOT Equal to |
-| not  | Less than |
+| `and` | Equal to |
+| `or` | NOT Equal to |
+| `not`  | Less than |
 
 
 Comparison Operator **is PRIOR to** Boolean Operator
@@ -157,9 +157,9 @@ Note : Neither `and` nor `or` restrict the value and type they return to `False`
 
 | Objects | Description |
 | :-----: | :---------- |
-| null | None |
-| int 0 | 0 |
-| float 0 | 0.0 |
+| `null` | None |
+| `int` 0 | 0 |
+| `float` 0 | 0.0 |
 | an empty string | "" |
 | an empty list | [] |
 | an empty tuple | () |
