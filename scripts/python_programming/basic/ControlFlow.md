@@ -15,17 +15,16 @@
 
 An operation returns boolean(True or False)
 
-* Comparison Opeators
+### Comparison Opeators
 
-| Operator | Description |
-| :------: | :---------- |
-| `==` | Equal to |
-| `!=` | NOT Equal to |
-| `<`  | Less than |
-| `>`  | Greater than |
-| `<=` | Less than or Equal to |
-| `>=` | Greater than or Equal to |
-| `in` | Membership |
+| Operator | Description              |
+| :------: | :----------              |
+| `==`     | Equal to                 |
+| `!=`     | NOT Equal to             |
+| `<`      | Less than                |
+| `>`      | Greater than             |
+| `<=`     | Less than or Equal to    |
+| `>=`     | Greater than or Equal to |
 
 * Statements
 
@@ -33,27 +32,10 @@ An operation returns boolean(True or False)
 | :------: | :---------- |
 | `is` | Same to |
 | `not` | NOT Same to |
+| `in` | Membership |
 
 
-### Difference between `Comparison Operators` and `Boolean Operators`
-
-#### Case 1 : `&` and `and` (`|` and `or`)  
-Comparison Operators can be operated with the same type.
-
-```py
-print(True & 'OK')
-print(False | 'OK')
-
-TypeError: unsupported operand type(s) for &: 'bool' and 'str'
-```
-
-```py
-print(True and 'OK')     # Ok
-print(False and 'OK')    # False
-```
-
-
-#### Case 2: `==` and `is`  
+#### Difference between `==` and `is`  
 
 `==` is the equality comparison.  
 `is` is the identity comparison.
@@ -87,7 +69,7 @@ x = 5
 True
 ```
 
-* Boolean Operators
+### Boolean Operators
 
 | Operator | Description |
 | :------: | :---------- |
@@ -152,6 +134,37 @@ Otherwise, `y` is evaluated and the resulting value is returned.
 Note : Neither `and` nor `or` restrict the value and type they return to `False` and `True`, but rather return `the last evaluated argument`.
 
 
+### Bitwise Operators
+
+| Operator | Description         | Looks like    |
+| :------: | :----------         | :------       |
+| `&`      | bitwise `and`       | `x and y`     |
+| `|`      | bitwise `or`        | `x or y`      |
+| `~`      | bitwise `not`       | `not x`       |
+| `^`      | bitwise `xor`       | ``      |
+| `<<`     | bitwise right shift | `x * (2**y)`  |
+| `>>`     | bitwise left shift  | `x //(2**y)`  |
+
+
+#### Difference between `Bitwise Operators` and `Boolean Operators`
+
+#### Case 1 : `&` and `and` (`|` and `or`)  
+Comparison Operators can be operated with the same type.
+
+```py
+print(True & 'OK')
+print(False | 'OK')
+
+TypeError: unsupported operand type(s) for &: 'bool' and 'str'
+```
+
+```py
+print(True and 'OK')     # Ok
+print(False and 'OK')    # False
+```
+
+
+
 
 * Other False Cases
 
@@ -167,6 +180,7 @@ Note : Neither `and` nor `or` restrict the value and type they return to `False`
 | an empty set | set() |
 
 [↑ Up to the Top](#control-flow-statements(conditionals-&-loops))
+
 
 ---
 ## if Statements
