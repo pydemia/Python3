@@ -37,7 +37,7 @@ An operation returns boolean(True or False)
 
 ### Difference between `Comparison Operators` and `Boolean Operators`
 
-* Case 1 : `&` and `and` (`|` and `or`)  
+#### Case 1 : `&` and `and` (`|` and `or`)  
 Comparison Operators can be operated with the same type.
 
 ```py
@@ -53,7 +53,7 @@ print(False and 'OK')    # False
 ```
 
 
-* Case 2: `==` and `is`  
+#### Case 2: `==` and `is`  
 
 `==` is the equality comparison.  
 `is` is the identity comparison.
