@@ -142,8 +142,8 @@ Note : Neither `and` nor `or` restrict the value and type they return to `False`
 | `|`      | bitwise `or`        | `x or y`      |
 | `~`      | bitwise `not`       | `not x`       |
 | `^`      | bitwise `xor`       | ``      |
-| `<<`     | bitwise right shift | `x * (2**y)`  |
-| `>>`     | bitwise left shift  | `x //(2**y)`  |
+| `<<`     | bitwise right shift(1111 0000) | `x * (2**y)`  |
+| `>>`     | bitwise left shift(0000 1111)  | `x //(2**y)`  |
 
 
 #### Difference between `Bitwise Operators` and `Boolean Operators`
