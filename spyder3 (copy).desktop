@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Spyder3
+Comment=Scientific PYthon Development EnviRonment - Python3
+Exec=/home/pydemia/apps/anaconda3/bin/spyder %F
+Icon=/usr/share/icons/spyder3.png
+Terminal=false
+Type=Application
+Categories=Developer
