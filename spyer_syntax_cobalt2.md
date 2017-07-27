@@ -39,7 +39,7 @@ Current cell	#092c43
 Current line 	#092c43
 Occurrence 	#2f4350
 Matched parens 	#0088ff
-Unmatchedparens #e1efff
+Unmatchedparens #aa0000
 Link 		#0088ff
 
 Normal text 	#ffffff
