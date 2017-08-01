@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Orange3
+Comment=vOrange - Data Manipulation & Visualization Tool
+Exec=/home/pydemia/apps/anaconda3/bin/python -m Orange.canvas %F
+Icon=/usr/share/icons/orange-logo.png
+Terminal=false
+Type=Application
+Categories=Developer
+
