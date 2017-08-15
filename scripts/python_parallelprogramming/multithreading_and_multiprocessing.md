@@ -282,3 +282,26 @@ def exCal(dollar):
  
 exCal(100)
 ```
+
+
+## Sample
+
+Multi-Processing
+```py
+import multiprocessing
+
+if __name__ == '__main__':
+    pool = multiprocessing.pool.Pool(processes=4)
+    response = pool.map(getDB_normal, qList, chunksize=1)
+
+```
+
+Multi-Threading
+```py
+import multiprocessing
+
+if __name__ == '__main__':
+    pool = multiprocessing.pool.ThreadPool(processes=4)
+    response = pool.map(getDB_normal, qList, chunksize=1)
+
+```
