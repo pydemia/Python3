@@ -1,10 +1,13 @@
 # warnings
 
+```py
+import warnings
+```
 
 ## Classes
 
 | Class | Descriptions |
-| :---: | :----------: |
+| :---- | :----------- |
 | Warning	| This is the base class of all warning category classes. It is a subclass of Exception. |
 | UserWarning	| The default category for warn(). |
 | DeprecationWarning	| Base category for warnings about deprecated features. |
@@ -23,7 +26,7 @@ warnings.simplefilter('default', ImportWarning)
 ```
 
 | Value | Descriptions |
-| :---: | :----------: |
+| :---- | :----------- |
 | "error" | turn matching warnings into exceptions |
 | "ignore" | never print matching warnings |
 | "always" | always print matching warnings |
