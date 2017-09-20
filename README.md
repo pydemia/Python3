@@ -65,17 +65,17 @@ This contains the information &amp; sources of Python, which is a programming la
     * [Composition & Aggregation](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#composition-and-aggregation)
 
 
+---
+## Built-in Libraries
 
-### Built-in Libraries
-
-#### Files & System
+### Files & System
   - [os](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/os.md#os)
   - [sys](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/sys.md#sys)
   - [argparse](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/argparse.md#argparse)
   - [tarfile & zipfile](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/tarfile_zipfile.md#tarfile)
   - [curse](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/curse.md#curse)
   
-#### Programming
+### Programming
   - [itertools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/itertools.md#itertools)
   - [functools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/functools.md#functools) 
   - [distutils](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/distutils.md#distutils)
@@ -84,26 +84,26 @@ This contains the information &amp; sources of Python, which is a programming la
   - [syslog](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/syslog.md#syslog)
   - [2to3](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/2to3.md#2to3)
 
-#### Calculation
+### Calculation
   - [math](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/math.md#math)
 
-#### Regular Expression
+### Regular Expression
   - [re](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/re.md#re)
 
-#### Data Types
+### Data Types
   - [string](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/string.md#string)
   - [datetime](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/datetime.md#datetime)
 
-#### Data Structure
+### Data Structure
   - [array](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/array.md#array)
   - [collections](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/collections.md#collections)
   - [bisect](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bisect.md#bisect)
 
-#### GUI
+### GUI
   - [tkinter](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/tkinter.md#tkinter)
   
 
-
+---
 ## Python Packaging
 
 ### PyPI
@@ -124,17 +124,24 @@ This contains the information &amp; sources of Python, which is a programming la
   - [Distribute a Package](https://github.com/pydemia/Python3/blob/master/scripts/PythonPackaging.md#pypi--distributte-a-package)
 
 
+---
 ## Python Documentation
 
 * [readthedocs.org]()
 * [mkdocs.org]()
 
 
-
+---
 ## Python Compiler
+### AOT(Ahead of time) Compiler
+* [Cython](https://github.com/pydemia/Python3/blob/master/scripts/python_compiler/cython.md#cython)
 
+### JIT(Just in time) Compiler
+* [Numba]()
 * [PyPy](https://github.com/pydemia/Python3/blob/master/scripts/python_compiler/PyPy.md#pypy)
 
+
+---
 ## Python Additional Type Object
 
 ### Built-in Libraries
@@ -172,7 +179,7 @@ This contains the information &amp; sources of Python, which is a programming la
 * [PyTables-```out-of-memory operation```](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
 * [Pandasql](https://github.com/pydemia/Python3/blob/master/scripts/python_data_manipulation/pandasql.md)
 
---
+---
 ## Python Vectorization
 
 * [Numpy](https://github.com/dawkiny/Python3/blob/master/scripts/python_data_manipulation/numpy.md)
@@ -251,10 +258,3 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Future](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 * [asyncio](https://github.com/dawkiny/Python3/blob/master/scripts/ControlFlow_01_conditionals_and_loops.md#comprehensions)
 
-## Python Compiler
-### AOT(Ahead of time) Compiler
-* [Cython](https://github.com/pydemia/Python3/blob/master/scripts/python_compiler/cython.md#cython)
-
-### JIT(Just in time) Compiler
-* [Numba]()
-* [PyPy]()
