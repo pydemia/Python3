@@ -47,7 +47,7 @@ import argparse
 ```py
 parser = argparse.ArgumentParser(description='This is a Sample')
 parser.add_argument('--method', '-I',
-                    name='method'
+                    dest='method'
                     action="store_true",
                     type=str,
                     choices=['mean', 'var'],
@@ -59,6 +59,20 @@ parser.parse_args()
 method = parser.method
 ```
 
+## `distutils`
+
+```py
+import distutils
+```
+
+`strtobool`
+```py
+from distutils.util import strtobool
+bool('False')  # True
+bool('')  # False
+strtobool('False')  # False
+```
+
 ## ```itertools```
 
 ```python
@@ -68,7 +82,7 @@ import itertools
 | Method                      | Description                                     | Usage                           |
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
 
-
+## disutils
 
 
 ## ```functools```
