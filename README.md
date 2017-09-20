@@ -93,6 +93,7 @@ This contains the information &amp; sources of Python, which is a programming la
 ### Data Types
   - [string](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/string.md#string)
   - [datetime](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/datetime.md#datetime)
+  - [time](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/time.md#time)
 
 ### Data Structure
   - [array](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/array.md#array)
