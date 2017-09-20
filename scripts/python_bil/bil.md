@@ -59,20 +59,6 @@ parser.parse_args()
 method = parser.method
 ```
 
-## `distutils`
-
-```py
-import distutils
-```
-
-`strtobool`
-```py
-from distutils.util import strtobool
-bool('False')  # True
-bool('')  # False
-strtobool('False')  # False
-```
-
 ## ```itertools```
 
 ```python
@@ -148,6 +134,21 @@ Timestamp format:
 | :-------------------------- | :---------------------------------------------- | :------------------------------ |
 | ```datetime.datetime.today()```           | return ```datetime``` & ```tzinfo``` of the present ```datetime```            |    ```nowTs = datetime.datetime.today()```              |
 | ```datetime.datetime.now()```           | return ```datetime``` of the present ```datetime```            |    ```nowTs = datetime.datetime.now()```              |
+
+
+## `distutils`
+
+```py
+import distutils
+```
+
+`strtobool`
+```py
+from distutils.util import strtobool
+bool('False')  # True
+bool('')  # False
+strtobool('False')  # False
+```
 
 
 #### Types & Objects
