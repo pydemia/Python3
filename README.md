@@ -68,25 +68,40 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ### Built-in Libraries
 
-  - [os](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#os)
-  - [sys](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
-  - [argparse](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#argparse)
-  - [itertools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#itertools)
-  - [functools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#functools) 
-  - [distutils](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#distutils)
-  - [warnings](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#warnings)
-  - [logging](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#logging)
-  - [string](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#string)
-  - [datetime](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#datetime)
-  - [math](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#math)
-  - [re](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#re)
-  - [collections](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#collections)
-  - [tkinter](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#tkinter)
-  - [bisect](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#bisect)
-  - [tarfile & zipfile](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
-  - [tty](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
-  - [syslog](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
-  - [2to3](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#sys)
+#### Files & System
+  - [os](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/os.md#os)
+  - [sys](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/sys.md#sys)
+  - [argparse](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/argparse.md#argparse)
+  - [tarfile & zipfile](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/tarfile_zipfile.md#tarfile)
+  - [curse](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/curse.md#curse)
+  
+#### Programming
+  - [itertools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/itertools.md#itertools)
+  - [functools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/functools.md#functools) 
+  - [distutils](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/distutils.md#distutils)
+  - [warnings](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/warnings.md#warnings)
+  - [logging](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/logging.md#logging)
+  - [syslog](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/syslog.md#syslog)
+  - [2to3](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/2to3.md#2to3)
+
+#### Calculation
+  - [math](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/math.md#math)
+
+#### Regular Expression
+  - [re](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/re.md#re)
+
+#### Data Types
+  - [string](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/string.md#string)
+  - [datetime](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/datetime.md#datetime)
+
+#### Data Structure
+  - [array](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/array.md#array)
+  - [collections](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/collections.md#collections)
+  - [bisect](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bisect.md#bisect)
+
+#### GUI
+  - [tkinter](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/tkinter.md#tkinter)
+  
 
 
 ## Python Packaging
