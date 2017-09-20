@@ -23,6 +23,3 @@ import os
 | ```os.walk(top, topdown=True, onerror=None, followlinks=False)```         | loop startswith the given <top> directory and return pathes and directory names  |    ```os.walk('~/python')```              |
 | ```os.getenv(env, failvalue)``` | return the ```environment variable``` if successed or failvalue if failed   |    ```os.getenv('PYTHONPATH', 'Not Found')```              |
 
-
-
-## ```sys```
