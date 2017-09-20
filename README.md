@@ -74,6 +74,8 @@ This contains the information &amp; sources of Python, which is a programming la
   - [itertools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#itertools)
   - [functools](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#functools) 
   - [distutils](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#distutils)
+  - [warnings](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#warnings)
+  - [logging](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#logging)
   - [string](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#string)
   - [datetime](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#datetime)
   - [math](https://github.com/pydemia/Python3/blob/master/scripts/python_bil/bil.md#math)
