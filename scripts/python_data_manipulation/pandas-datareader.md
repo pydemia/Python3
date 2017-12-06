@@ -21,6 +21,10 @@ class FixedGoogleDailyReader(GoogleDailyReader):
         # 'http://www.google.com/finance/historical' -> 'http://finance.google.com/finance/historical'
         return 'http://finance.google.com/finance/historical'
 
+import datetime as dt
+
+start_dt = dt.datetime(2010, 1, 1)
+end_dt = dt.datetime(2017, 11, 30)
 
 FixedGoogleDailyReader('KRX:KOSPI200', start_dt, end_dt).read()
 ```
