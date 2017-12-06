@@ -21,5 +21,7 @@ class FixedGoogleDailyReader(GoogleDailyReader):
         # 'http://www.google.com/finance/historical' -> 'http://finance.google.com/finance/historical'
         return 'http://finance.google.com/finance/historical'
 
+
+FixedGoogleDailyReader('KRX:KOSPI200', start_dt, end_dt).read()
 ```
 
