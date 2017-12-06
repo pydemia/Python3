@@ -179,6 +179,8 @@ This contains the information &amp; sources of Python, which is a programming la
 * [Datetime](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#datetime)
 * [PyTables-```out-of-memory operation```](https://github.com/dawkiny/Python3/blob/master/scripts/PythonDataManipulation.md#pytables)
 * [Pandasql](https://github.com/pydemia/Python3/blob/master/scripts/python_data_manipulation/pandasql.md)
+* [Pandas-datareader](https://github.com/pydemia/Python3/blob/master/scripts/python_data_manipulation/pandas-datareader.md)
+
 
 ---
 ## Python Vectorization
