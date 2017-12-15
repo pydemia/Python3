@@ -52,6 +52,26 @@ for i, j in ids:#Unpacking a tuple!
 ```
 
 
+* Advanced Version
+
+```py
+aa = [{'a': 1, 'b': 34, 'c': 556},
+      {'a': 3, 'b': 5, 'c': 7},
+      {'a': 2, 'b': 3, 'c': 8},
+     ]
+
+bb = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+[dict(item, **{'body': item['a']*5, 'title': item['b']*5})\
+           for item in aa]
+
+
+[{'a': 1, 'b': 34, 'body': 5, 'c': 556, 'title': 170},
+ {'a': 3, 'b': 5, 'body': 15, 'c': 7, 'title': 25},
+ {'a': 2, 'b': 3, 'body': 10, 'c': 8, 'title': 15}]
+```
+
 ### Set Comprehension
 
 ```python
