@@ -303,6 +303,18 @@ DataFrame = DataFrame.groupby(level=[], exis=1).transform(max)
 ## datetime
 words
 
+## `groupby` as `pivot_table`
+```py
+DataFrame.pivot_table(index=['a', 'b'],
+                      columns=['d'],
+                      values='e',
+                      aggfunc='max)
+                      
+DataFrame.groupby(['a', 'b', 'd'])\
+         .agg({'e': 'max'})\
+         .unstack(level='d')['e']
+```
+
 ### words
 
 ### Operation

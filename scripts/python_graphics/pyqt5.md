@@ -13,7 +13,7 @@ For example, All Widget stuffs are separated to independent Modules from each mo
 ```sh
 
 
-sudo apt-get install python3-pyqt5 python3-pyqt5.qtsql qttools5-dev-tools
+sudo apt-get install qtcreator python3-pyqt5 python3-pyqt5.qtsql qttools5-dev-tools
 which designer
 designer
 ```

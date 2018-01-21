@@ -129,6 +129,21 @@ otdict == mydict#False
 #Even if one is changed, the other will NOT be changed.
 ```
 
+### Concatenate
+
+```py
+import itertools as it
+
+alist = [0, 1, 2]
+blist = [3, 4]
+clist = [5, 6, 7, 8]
+
+alist + blist + clist
+it.chain(alist, blist, clist)
+sum([alist, blist, clist], [])
+
+```
+
 
 [↑ Up to the Top](#data-structure)
 
