@@ -60,6 +60,36 @@ tmp.set_name('txmp') # the setter; 'txmp'
 tmp.name = 'ttmp'    # the setter; 'ttmp'
 ```
 
+```py
+class EmptyClass(object):
+    pass
+
+emp = EmptyClass()
+emp.attribute = 17
+emp.attribute
+```
+
+```py
+class AnotherClass(object):
+    def __init__(self, name: str) -> str:
+        self.name = name
+    @property
+    def attribute(self):
+        return self._attribute
+
+    @attribute.setter
+    def attribute(self, value: float) -> float:
+        if not isinstance(value, float):
+            value = float(value)
+        self._attribute = value
+
+anc = AnotherClass('anc')
+anc.name
+anc.attribute = '17'
+anc.attribute
+```
+
+
 ```property``` can refer to calculated values!
 ```python
 class circle():
