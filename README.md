@@ -65,6 +65,12 @@ This contains the information &amp; sources of Python, which is a programming la
     * [Composition & Aggregation](https://github.com/pydemia/Python3/blob/master/scripts/python_programming/advanced/Class.md#composition-and-aggregation)
 
 
+### Far More Interesting in Python
+* [Code Pattern](scripts/PythonProgramming_farmoreinteresting.md#far-more-interesting-in-python#code-pattern)
+  - [Lazy Evaluation](scripts/PythonProgramming_farmoreinteresting.md#far-more-interesting-in-python#lazy-evaluation)
+    * [Container]()
+
+
 ---
 ## Built-in Libraries
 
