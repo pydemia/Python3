@@ -7,7 +7,7 @@
 #### Lazy Evaluation in Class
 
 
-* __Eager Evaluation__: execute when it is defined
+* __Eager Evaluation__: execute when it is defined.
 ```py
 class Calc:
     def __init__(self, n):
@@ -20,7 +20,7 @@ class Calc:
 ```
 
 
-* __Eager Evaluation__: execute when it is called
+* __Lazy Evaluation__: execute when it is called.
 
 ```py
 class Calc:
@@ -41,6 +41,26 @@ class Calc:
         return res
 ```
 
+#### Lazy Evaluation in `Generator Expression`
+
+* __Eager Evaluation__: execute when it is defined.
+```py
+int_seq = [x for x in range(10000000)]
+doubled = [x*2 for x in int_seq]
+filtered = [x for x in doubled if x % 10 == 0]
+x_length = len(filtered)
+x_length
+```
+
+* __Lazy Evaluation__: execute when it is called.
+```py
+int_seq = (x for x in range(10000000))
+doubled = (x*2 for x in int_seq)
+filtered = (x for x in doubled if x % 10 == 0)
+lazy_eval = list(filtered)
+x_length = len(lazy_eval)
+x_length
+```
 
 ### Memoization
 
