@@ -6,14 +6,63 @@
 
 #### Lazy Evaluation in Class
 
+def fib(n):
+    n, t_0, t_1 = 0, 0, 1
+    while t_1 < n:
+        
+        yield t_0
+        t_0, t_1 = t_1, t_0 + t_1
+
 * __Eager Evaluation__:
 ```py
-class Multiplier(object):
-    def __init__(self, name):
-        self.name = name
-        self.answer = 
+class Calc:
+    def __init__(self, n):
+        self.n = n
+        self.solution = self._calculate()
+    
+    def _calculate(self):
+        res = ...
+        return res
 ```
 
+```py
+class Calc:
+    def __init__(self, n):
+        self.n = n
+        self.solution = []
+    
+    @property
+    def result(self):
+        if not self.result:
+            res = self._calculate()
+        else:
+            res = self.solution
+        return res
+
+    def _calculate(self):
+        res = ...
+        return res
+```
+
+
+```py
+class Calc:
+    def __init__(self, n):
+        self.n = n
+        self.solution = []
+    
+    @property
+    def solution(self):
+        if not self.solution:
+            res = self._calculate()
+        else:
+            res = self.solution
+        return res
+
+    def _calculate(self):
+        res = ...
+        return res
+```
 
 ### Memoization
 
@@ -22,9 +71,9 @@ class Multiplier(object):
 ```py
 ## Example 1: Using looping technique
 def fib(n):
- a,b = 1,1
+ a, b = 0, 1
  for i in range(n-1):
-  a,b = b,a+b
+  a, b = b, a+b
  return a
 print fib(5)
  
