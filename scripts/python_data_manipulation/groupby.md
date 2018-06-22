@@ -7,16 +7,16 @@ It is for 'split - apply - combine' operation.
 
 ## Standby a Dataset
 ```python
-from unipy.sample.datasets import dataManager
+import unipy.dataset.api as dm
 
 # Extract Datasets for the first time
-dataManager.init()
+dm.init()
 
 # Get a Dataset list
-dataManager.datalist()
+dm.datalist()
 
 # Load Datasets
-ndata = dataManager.load('nutrients')
+ndata = dm.load('nutrients')
 
 ndata.head()
 Out[2]: 
