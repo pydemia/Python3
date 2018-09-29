@@ -3,8 +3,10 @@ This contains the information &amp; sources of Python, which is a programming la
 
 ---
 
+[test](https://colab.research.google.com/github/pydemia/Python3/blob/master/Simple%20Linear%20Regression%20(wine%20quality)-plotting.ipynb)
+
 #### Version
-* [What's new in Python 3.6](https://github.com/pydemia/Python3/blob/master/scripts/versions/python3.6.md#whats-new-in-python-36)
+* [What's new in Python 3.6](https://colab.research.google.com/github/pydemia/Python3/blob/master/Simple%20Linear%20Regression%20(wine%20quality)-plotting.ipynb)
 
 ---
 ## Python Programming
