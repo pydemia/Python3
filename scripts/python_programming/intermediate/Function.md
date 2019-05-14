@@ -51,6 +51,7 @@ runfunc_and_mult(3, 5, 4)
 ## Closures
 
 Closures can be generated to other Functions, and operate & change the variables from _the outer Functions._
+Objects are data with methods attached, closures are functions with data attached.   
 When do you use **_Closure_**?  
 
 * Not to use something as a _Global Variables_ but a _Local Variables_.
