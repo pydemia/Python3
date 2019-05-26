@@ -367,6 +367,74 @@ fiboCoro.send(3)     # 14 : (4+7) + 3   : suspended at 2nd yield, yield as a pro
 
 ```
 
+#### Example: Rolling Average
+
+```py
+def total_rolling_average(start_sum):
+    total_sum = start_sum
+    count = 0
+    inside_average = 0.
+    while True:
+        print(f'throw      : {inside_average}')
+        new_record = yield inside_average
+        print(f'sent       : {new_record}')
+        total_sum += new_record
+        count += 1
+        print(f'calculating: {total_sum}/{count}')
+        inside_average = total_sum/count
+
+# %%
+>>> a_cal = total_rolling_average(0)
+>>> next(a_cal)
+throw      : 0.0
+0.0
+
+
+# %%
+>>> a_cal.send(4)
+sent       : 4
+calculating: 4/1
+throw      : 4.0
+4.0
+
+>>> a_cal.send(2)
+sent       : 2
+calculating: 6/2
+throw      : 3.0
+3.0
+
+>>> a_cal.send(6)
+sent       : 6
+calculating: 12/3
+throw      : 4.0
+4.0
+
+>>> a_cal.send(8)
+sent       : 8
+calculating: 20/4
+throw      : 5.0
+5.0
+```
+
+#### 
+
+```py
+def total_rolling_average(start_sum):
+    total_sum = start_sum
+    total_count = 0
+    inside_average = 0.
+    while True:
+        print(f'throw      : {inside_average}')
+        new_record = yield inside_average, total_count
+        print(f'sent       : {new_record}')
+        total_sum += new_record
+        count += 1
+        print(f'calculating: {total_sum}/{total_count}')
+        inside_average = total_sum/count
+        
+ 
+```
+
 ### Asynchronous Coroutines
 
 ### ```@asyncio.coroutine``` with ```yield from``` Statements
