@@ -195,7 +195,7 @@ Not a sequence;(UNOREDERED) An dictionary cannot be indexed & cannot use offset.
 ### Operation
 ```python
 mydict = {'coffee': 7, 'milk': 11, 'water': 20, 'wine': 'outofstock'}
-yrdict = {'milk' : 8, 'juice' = 7 }
+yrdict = {'milk' : 8, 'juice': 7 }
 ```
 
 | OPERATION | METHOD          | EXAMPLE   | RESULT    |
