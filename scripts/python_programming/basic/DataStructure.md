@@ -250,7 +250,7 @@ An **UNORDERED** Data Structure consists of **UNIQUE** items.(As a dict, only th
 ```python
 myset = {'e', 'l', 'e', 'm', 'e', 'n', 't', 's'}
 myset#{'e', 'l', 'm', 'n', 't', 's'}
-yrset = {'e', 'l', 'e', 'f', 'a', 'n', 't', 's'}
+yrset = {'e', 'l', 'e', 'p', 'h', 'a', 'n', 't', 's'}
 yrset#{'e', 'l', 'f', 'a', 'n', 't', 's'}
 
 myset = { }#It generates A DICTIONARY, NOT A SET!
