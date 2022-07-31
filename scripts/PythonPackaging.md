@@ -131,7 +131,9 @@ python3 -m build
 ```sh
 #python setup.py register -r https://testpypi.python.org/pypi
 #python setup.py register -r https://pypi.python.org/pypi
-python3 -m twine upload --repository <package> dist/*
+python3 -m twine upload --repository pypi dist/* \
+    -u <username> \
+    -p <password>
 ```
 
 
