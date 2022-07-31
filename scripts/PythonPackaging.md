@@ -120,15 +120,18 @@ vim pydemia/__init__.py
 ### PyPI : Build a Package
 
 ```sh
-python setup.py sdist bdist_wheel
+python3 -m pip install --upgrade build
+python3 -m build
+#python setup.py sdist bdist_wheel
 ```
 
 
 ### PyPI : Register a new Package (only at the First time)
 
 ```sh
-python setup.py register -r https://testpypi.python.org/pypi
-python setup.py register -r https://pypi.python.org/pypi
+#python setup.py register -r https://testpypi.python.org/pypi
+#python setup.py register -r https://pypi.python.org/pypi
+python3 -m twine upload --repository <package> dist/*
 ```
 
 
@@ -136,6 +139,7 @@ python setup.py register -r https://pypi.python.org/pypi
 
 Note : The name and version of a package is not be overrided.
 ```sh
+python3 -m pip install --upgrade twine
 twine upload dist/<package>.tar.gz <package>.whl
 ```
 
