@@ -2,6 +2,9 @@
 
 ```bash
 # openssl
+openssl version -a
+OPENSSLDIR: "/home/kube/miniconda3/envs/<conda-env-name>/ssl"
+
 export SSL_CERT_DIR="${HOME}/.ssl"                                              
 export SSL_CERT_FILE="${HOME}/.ssl/SK_SSL.crt"                                  
 
